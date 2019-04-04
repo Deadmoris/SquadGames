@@ -1,0 +1,12 @@
+////////////////////////////////////////////////////////////////////
+//DeRap: cup_basedata\Data\penetration\plastic_material.rvmat
+//Produced from mikero's Dos Tools Dll version 6.34
+//'now' is Thu Mar 28 21:15:49 2019 : 'file' last modified on Thu Mar 28 08:50:28 2019
+//http://dev-heaven.net/projects/list_files/mikero-pbodll
+////////////////////////////////////////////////////////////////////
+
+#define _ARMA_
+
+surfaceInfo = "sg_cup_vehicles\Data\penetration\plastic_material.bisurf";
+diffuse[] = {0.5,0.5,1,1};
+ambient[] = {0.5,0.5,1,1};

@@ -1,0 +1,21 @@
+////////////////////////////////////////////////////////////////////
+//DeRap: cup_basedata\Data\penetration\fabricP.bisurf
+//Produced from mikero's Dos Tools Dll version 6.34
+//'now' is Thu Mar 28 21:15:49 2019 : 'file' last modified on Thu Mar 28 08:50:28 2019
+//http://dev-heaven.net/projects/list_files/mikero-pbodll
+////////////////////////////////////////////////////////////////////
+
+#define _ARMA_
+
+Density = 3000;
+Thickness = 1;
+rough = 0.3;
+dust = 0;
+bulletPenetrability = 990;
+bulletPenetrabilityWithThickness = 500;
+soundEnviron = "Empty";
+isWater = "false";
+friction = 0.7;
+restitution = 0.3;
+impact = "Hit_Plaster";
+soundHit = "building";
