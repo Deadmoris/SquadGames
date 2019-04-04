@@ -1,2 +1,2 @@
-# armaproject
-https://armaproject.ru
+# squadgames
+https://squadgames.ru
