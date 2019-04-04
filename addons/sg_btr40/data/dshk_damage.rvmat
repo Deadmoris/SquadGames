@@ -1,0 +1,41 @@
+////////////////////////////////////////////////////////////////////
+//DeRap: cup_wheeledvehicles_uaz\data\dshk_damage.rvmat
+//Produced from mikero's Dos Tools Dll version 6.34
+//'now' is Sun Mar 31 12:48:54 2019 : 'file' last modified on Thu Mar 28 08:08:37 2019
+//http://dev-heaven.net/projects/list_files/mikero-pbodll
+////////////////////////////////////////////////////////////////////
+
+#define _ARMA_
+
+ambient[] = {1,1,1,1};
+diffuse[] = {1,1,1,1};
+forcedDiffuse[] = {0,0,0,0};
+emmisive[] = {0,0,0,1};
+specular[] = {0.4,0.4,0.4,1};
+specularPower = 256;
+PixelShaderID = "NormalMapSpecularDIMap";
+VertexShaderID = "NormalMap";
+class Stage1
+{
+	texture = "sg_btr40\data\DShKM_NOHQ.paa";
+	uvSource = "tex";
+	class uvTransform
+	{
+		aside[] = {1,0,0};
+		up[] = {0,1,0};
+		dir[] = {0,0,0};
+		pos[] = {0,0,0};
+	};
+};
+class Stage2
+{
+	texture = "sg_btr40\data\DShKM_SMDI.paa";
+	uvSource = "tex";
+	class uvTransform
+	{
+		aside[] = {1,0,0};
+		up[] = {0,1,0};
+		dir[] = {0,0,0};
+		pos[] = {0,0,0};
+	};
+};
