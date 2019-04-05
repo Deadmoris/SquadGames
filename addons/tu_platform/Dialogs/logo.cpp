@@ -17,8 +17,8 @@ class RscDisplayMain : RscStandardDisplay {
 		
 		class Logo : RscActivePicture {
 			text = "\tu_platform\data\logo.paa";
-			onButtonClick = "";
-			tooltip = "www.squadgames.ru";
+			onButtonClick = "_this call compile preprocessFileLineNumbers '\tu_platform\fn_connect.sqf';";
+			tooltip = "www.squadgames.ru\n\nНажми на логотип, чтобы подключиться к серверу";
 			onLoad = "";
 		};
 	};
