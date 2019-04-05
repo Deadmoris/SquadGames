@@ -601,6 +601,76 @@ class rhs_bmd1_base: rhs_bmd_base
 	};
 };
 
+class rhs_bmd1r: rhs_bmd1_base
+{
+	class Turrets: Turrets
+	{
+		class MainTurret: MainTurret
+		{
+			class OpticsIn
+			{
+				class pn22m1
+				{
+					initAngleX = 0;
+					minAngleX = -110;
+					maxAngleX = "+110";
+					initAngleY = 0;
+					minAngleY = -110;
+					maxAngleY = "+110";
+					opticsZoomMin = 0.14;
+					opticsZoomMax = 0.14;
+					distanceZoomMin = 200;
+					distanceZoomMax = 2000;
+					initFov = "0.7/10";
+					minFov = "0.7/10";
+					maxFov = "0.7/10";
+					visionMode[] = {"Normal"};
+					gunnerOpticsModel = "\x\a3ru\addons\a3ru_main\RHS_Patch\models\btr\rhs_1pn22m1n";
+					gunnerOpticsEffect[] = {"TankGunnerOptics1","OpticsBlur2","OpticsCHAbera3"};
+				};
+				delete pn22m2;
+				class tnpo170a
+				{
+					initAngleX = 0;
+					minAngleX = -110;
+					maxAngleX = "+110";
+					initAngleY = 0;
+					minAngleY = -110;
+					maxAngleY = "+110";
+					opticsZoomMin = 0.14;
+					opticsZoomMax = 0.14;
+					distanceZoomMin = 200;
+					distanceZoomMax = 2000;
+					initFov = "0.7/1.5";
+					minFov = "0.7/1.5";
+					maxFov = "0.7/1.5";
+					visionMode[] = {"Normal"};
+					gunnerOpticsModel = "\rhsafrf\addons\rhs_optics\vehicles\rhs_tnpo170a";
+				};
+				class pn22m2n
+				{
+					initAngleX = 0;
+					minAngleX = -110;
+					maxAngleX = "+110";
+					initAngleY = 0;
+					minAngleY = -110;
+					maxAngleY = "+110";
+					opticsZoomMin = 0.14;
+					opticsZoomMax = 0.14;
+					distanceZoomMin = 200;
+					distanceZoomMax = 2000;
+					initFov = "0.7/10";
+					minFov = "0.7/10";
+					maxFov = "0.7/10";
+					visionMode[] = {"NVG"};
+					gunnerOpticsModel = "\x\a3ru\addons\a3ru_main\RHS_Patch\models\btr\rhs_1pn22m1n";
+					gunnerOpticsEffect[] = {"TankGunnerOptics1","OpticsBlur2","OpticsCHAbera3"};
+				};
+			};
+		};
+	};
+};
+
 
 
 	
@@ -786,9 +856,26 @@ class rhs_bmp2e_vdv: rhs_bmp1_vdv {
 			};
 			class Turrets: Turrets
 			{
-				class CommanderOptics: CommanderOptics
+				class CommanderOptics: NewTurret
 				{
 					primaryObserver = 1;
+					class ViewOptics
+					{
+						initAngleX = 0;
+						minAngleX = -110;
+						maxAngleX = 110;
+						initAngleY = 0;
+						minAngleY = -100;
+						maxAngleY = 100;
+						opticsZoomMin = 0.14;
+						opticsZoomMax = 0.14;
+						distanceZoomMin = 100;
+						distanceZoomMax = 2000;
+						initFov = "0.7/10";
+						minFov = "0.7/10";
+						maxFov = "0.7/10";
+						visionMode[] = {"Normal","NVG"};
+					};
 				};
 			};
 		};
