@@ -1,0 +1,50 @@
+/*
+ * Author: esteldunedain
+ * Update the map tool markers, position, size, rotation and visibility.
+ *
+ * Arguments:
+ * 0: The Map <CONTROL>
+ *
+ * Return Value:
+ * None
+ *
+ * Example:
+ * [CONTROL] call ACE_maptools_fnc_updateMapToolMarkers
+ *
+ * Public: No
+ */
+#include "\z\ace\addons\maptools\script_component.hpp"
+
+params ["_theMap"];
+
+if ((GVAR(mapTool_Shown) == 0) || {!("ACE_MapTools" in items ACE_player)}) exitWith {};
+
+private _rotatingTexture = "";
+private _textureWidth = 0;
+if (GVAR(mapTool_Shown) == 1) then {
+    _rotatingTexture = "\tu_ace_fix\maptools\data\mapToolRotatingNormal.paa";
+    _textureWidth = TEXTURE_WIDTH_IN_M;
+} else {
+    _rotatingTexture = "\tu_ace_fix\maptools\data\mapToolRotatingSmall.paa";
+    _textureWidth = TEXTURE_WIDTH_IN_M / 2;
+};
+
+if (GVAR(freedrawing)) then {[_theMap, _textureWidth] call FUNC(drawLinesOnRoamer);};
+
+// Update scale of both parts
+getResolution params ["_resWidth", "_resHeight", "", "", "_aspectRatio"];
+private _scaleX = 32 * _textureWidth * CONSTANT_SCALE * (call FUNC(calculateMapScale));
+private _scaleY = _scaleX * ((_resWidth / _resHeight) / _aspectRatio); //handle bad aspect ratios
+
+// Position of the fixed part
+private _xPos = GVAR(mapTool_pos) select 0;
+private _yPos = (GVAR(mapTool_pos) select 1) + _textureWidth * CENTER_OFFSET_Y_PERC;
+
+private _mapToolPath = missionNamespace getVariable ["TU_ARTY_MAP_TOOLS_TEXTURE","\tu_ace_fix\maptools\data\mapToolFixed.paa"]; // Bn_
+_theMap drawIcon [_mapToolPath, [1,1,1,1], [_xPos,_yPos], _scaleX, _scaleY, 0, "", 0];
+
+// Position and rotation of the rotating part
+_xPos = (GVAR(mapTool_pos) select 0) + sin(GVAR(mapTool_angle)) * _textureWidth * CENTER_OFFSET_Y_PERC;
+_yPos = (GVAR(mapTool_pos) select 1) + cos(GVAR(mapTool_angle)) * _textureWidth * CENTER_OFFSET_Y_PERC;
+
+_theMap drawIcon [_rotatingTexture, [1,1,1,1], [_xPos,_yPos], _scaleX, _scaleY, GVAR(mapTool_angle), "", 0];

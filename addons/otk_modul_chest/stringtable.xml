@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project name="OTK_M23 Pioneers_Pack"><Package name="OTK_M23 Pioneers_names">
+ <Container name="OTK some words">
+<Key ID="STR_OTK_author">
+<English>MODUL</English>
+<Original>MODUL</Original>
+<Russian>MODUL</Russian>
+			</Key>
+			<Key ID="STR_OTK_khaki1_1_RHS">
+				<English>M23-1 Pioneer (Khaki 1) RHS</English>
+				<Original>M23-1 Pioneer (Khaki 1) RHS</Original>
+				<Russian>Пионер М23-1 (Хаки 1) RHS</Russian>
+			</Key>
+			<Key ID="STR_OTK_khaki1_2_RHS">
+				<English>M23-2 Pioneer (Khaki 1) RHS</English>
+				<Original>M23-2 Pioneer (Khaki 1) RHS</Original>
+				<Russian>Пионер М23-2 (Хаки 1) RHS</Russian>
+			</Key>
+			<Key ID="STR_OTK_khaki2_1_RHS">
+                <English>M23-1 Pioneer (Khaki 2) RHS</English>
+                <Original>M23-1 Pioneer (Khaki 2) RHS</Original>
+                <Russian>Пионер М23-1 (Хаки 2) RHS</Russian>
+            </Key>
+			<Key ID="STR_OTK_khaki2_2_RHS">
+                <English>M23-2 Pioneer (Khaki 2) RHS</English>
+                <Original>M23-2 Pioneer (Khaki 2) RHS</Original>
+                <Russian>Пионер М23-2 (Хаки 2) RHS</Russian>
+            </Key>
+			<Key ID="STR_OTK_khaki3_1_RHS">
+                <English>M23-1 Pioneer (Khaki 3) RHS</English>
+                <Original>M23-1 Pioneer (Khaki 3) RHS</Original>
+                <Russian>Пионер М23-1 (Хаки 3) RHS</Russian>
+            </Key>
+			<Key ID="STR_OTK_khaki3_2_RHS">
+                <English>M23-2 Pioneer (Khaki 3) RHS</English>
+                <Original>M23-2 Pioneer (Khaki 3) RHS</Original>
+                <Russian>Пионер М23-2 (Хаки 3) RHS</Russian>
+            </Key>
+			<Key ID="STR_OTK_olive1_1_RHS">
+                <English>M23-1 Pioneer (Olive Light) RHS</English>
+                <Original>M23-1 Pioneer (Olive Light) RHS</Original>
+                <Russian>Пионер М23-1 (Оливковый Светлый) RHS</Russian>
+            </Key>
+			<Key ID="STR_OTK_olive1_2_RHS">
+                <English>M23-2 Pioneer (Olive Light) RHS</English>
+                <Original>M23-2 Pioneer (Olive Light) RHS</Original>
+                <Russian>Пионер М23-2 (Оливковый Светлый) RHS</Russian>
+            </Key>
+			<Key ID="STR_OTK_olive2_1_RHS">
+                <English>M23-1 Pioneer (Olive Dark) RHS</English>
+                <Original>M23-1 Pioneer (Olive Dark) RHS</Original>
+                <Russian>Пионер М23-1 (Оливковый Темный) RHS</Russian>
+            </Key>
+			<Key ID="STR_OTK_olive2_2_RHS">
+                <English>M23-2 Pioneer (Olive Dark) RHS</English>
+                <Original>M23-2 Pioneer (Olive Dark) RHS</Original>
+                <Russian>Пионер М23-2 (Оливковый Темный) RHS</Russian>
+            </Key>
+			<Key ID="STR_OTK_black_1_RHS">
+                <English>M23-1 Pioneer (Black) RHS</English>
+                <Original>M23-1 Pioneer (Black) RHS</Original>
+                <Russian>Пионер М23-1 (Черный) RHS</Russian>
+            </Key>
+			<Key ID="STR_OTK_black_2_RHS">
+                <English>M23-2 Pioneer (Black) RHS</English>
+                <Original>M23-2 Pioneer (Black) RHS</Original>
+                <Russian>Пионер М23-2 (Черный) RHS</Russian>
+            </Key>
+			<Key ID="STR_OTK_winter_1_RHS">
+                <English>M23-1 Pioneer (Winter) RHS</English>
+                <Original>M23-1 Pioneer (Winter) RHS</Original>
+                <Russian>Пионер М23-1 (Зимний) RHS</Russian>
+            </Key>
+			<Key ID="STR_OTK_winter_2_RHS">
+                <English>M23-2 Pioneer (Winter) RHS</English>
+                <Original>M23-2 Pioneer (Winter) RHS</Original>
+                <Russian>Пионер М23-2 (Зимний) RHS</Russian>
+            </Key>
+			<Key ID="STR_OTK_vsr1_1_RHS">
+                <English>M23-1 Pioneer (VSR-93 1) RHS</English>
+                <Original>M23-1 Pioneer (VSR-93 1) RHS</Original>
+                <Russian>Пионер М23-1 (ВСР-93 1) RHS</Russian>
+            </Key>
+			<Key ID="STR_OTK_vsr1_2_RHS">
+                <English>M23-2 Pioneer (VSR-93 1) RHS</English>
+                <Original>M23-2 Pioneer (VSR-93 1) RHS</Original>
+                <Russian>Пионер М23-2 (ВСР-93 1) RHS</Russian>
+            </Key>
+			<Key ID="STR_OTK_vsr2_1_RHS">
+                <English>M23-1 Pioneer (VSR-93 2) RHS</English>
+                <Original>M23-1 Pioneer (VSR-93 2) RHS</Original>
+                <Russian>Пионер М23-1 (ВСР-93 2) RHS</Russian>
+            </Key>
+			<Key ID="STR_OTK_vsr2_2_RHS">
+                <English>M23-2 Pioneer (VSR-93 2) RHS</English>
+                <Original>M23-2 Pioneer (VSR-93 2) RHS</Original>
+                <Russian>Пионер М23-2 (ВСР-93 2) RHS</Russian>
+            </Key>
+			<Key ID="STR_OTK_flora1_1_RHS">
+                <English>M23-1 Pioneer (Flora) RHS</English>
+                <Original>M23-1 Pioneer (Flora) RHS</Original>
+                <Russian>Пионер М23-1 (Флора) RHS</Russian>
+            </Key>
+			<Key ID="STR_OTK_flora1_2_RHS">
+                <English>M23-2 Pioneer (Flora) RHS</English>
+                <Original>M23-2 Pioneer (Flora) RHS</Original>
+                <Russian>Пионер М23-2 (Флора) RHS</Russian>
+            </Key>
+			<Key ID="STR_OTK_emr1_1_RHS">
+                <English>M23-1 Pioneer (EMR 1) RHS</English>
+                <Original>M23-1 Pioneer (EMR 1) RHS</Original>
+                <Russian>Пионер М23-1 (ЕМР 1) RHS</Russian>
+            </Key>
+			<Key ID="STR_OTK_emr1_2_RHS">
+                <English>M23-2 Pioneer (EMR 1) RHS</English>
+                <Original>M23-2 Pioneer (EMR 1) RHS</Original>
+                <Russian>Пионер М23-2 (ЕМР 1) RHS</Russian>
+            </Key>
+			<Key ID="STR_OTK_emr3_1_RHS">
+                <English>M23-1 Pioneer (EMR 2) RHS</English>
+                <Original>M23-1 Pioneer (EMR 2) RHS</Original>
+                <Russian>Пионер М23-1 (ЕМР 2) RHS</Russian>
+            </Key>
+			<Key ID="STR_OTK_emr3_2_RHS">
+                <English>M23-2 Pioneer (EMR 2) RHS</English>
+                <Original>M23-2 Pioneer (EMR 2) RHS</Original>
+                <Russian>Пионер М23-2 (ЕМР 2) RHS</Russian>
+            </Key>
+			<Key ID="STR_OTK_ttsko_1_RHS">
+                <English>M23-1 Pioneer (TTsKO) RHS</English>
+                <Original>M23-1 Pioneer (TTsKO) RHS</Original>
+                <Russian>Пионер М23-1 (Дубок) RHS</Russian>
+            </Key>
+			<Key ID="STR_OTK_ttsko_2_RHS">
+                <English>M23-2 Pioneer (TTsKO) RHS</English>
+                <Original>M23-2 Pioneer (TTsKO) RHS</Original>
+                <Russian>Пионер М23-2 (Дубок) RHS</Russian>
+            </Key>
+			<Key ID="STR_OTK_classic3_1_RHS">
+                <English>M23-1 Pioneer (Kamysh) RHS</English>
+                <Original>M23-1 Pioneer (Kamysh) RHS</Original>
+                <Russian>Пионер М23-1 (Камыш) RHS</Russian>
+            </Key>
+			<Key ID="STR_OTK_classic3_2_RHS">
+                <English>M23-2 Pioneer (Kamysh) RHS</English>
+                <Original>M23-2 Pioneer (Kamysh) RHS</Original>
+                <Russian>Пионер М23-2 (Камыш) RHS</Russian>
+            </Key>
+			<Key ID="STR_OTK_classic4_1_RHS">
+                <English>M23-1 Pioneer (Woodland) RHS</English>
+                <Original>M23-1 Pioneer (Woodland) RHS</Original>
+                <Russian>Пионер М23-1 (Woodland) RHS</Russian>
+            </Key>
+			<Key ID="STR_OTK_classic4_2_RHS">
+                <English>M23-2 Pioneer (Woodland) RHS</English>
+                <Original>M23-2 Pioneer (Woodland) RHS</Original>
+                <Russian>Пионер М23-2 (Woodland) RHS</Russian>
+            </Key>			
+			<Key ID="STR_OTK_khaki1_1">
+				<English>M23-1 Pioneer (Khaki 1)</English>
+				<Original>M23-1 Pioneer (Khaki 1)</Original>
+				<Russian>Пионер М23-1 (Хаки 1)</Russian>
+			</Key>
+			<Key ID="STR_OTK_khaki1_2">
+				<English>M23-2 Pioneer (Khaki 1)</English>
+				<Original>M23-2 Pioneer (Khaki 1)</Original>
+				<Russian>Пионер М23-2 (Хаки 1)</Russian>
+			</Key>
+			<Key ID="STR_OTK_khaki2_1">
+                <English>M23-1 Pioneer (Khaki 2)</English>
+                <Original>M23-1 Pioneer (Khaki 2)</Original>
+                <Russian>Пионер М23-1 (Хаки 2)</Russian>
+            </Key>
+			<Key ID="STR_OTK_khaki2_2">
+                <English>M23-2 Pioneer (Khaki 2)</English>
+                <Original>M23-2 Pioneer (Khaki 2)</Original>
+                <Russian>Пионер М23-2 (Хаки 2)</Russian>
+            </Key>
+			<Key ID="STR_OTK_khaki3_1">
+                <English>M23-1 Pioneer (Khaki 3)</English>
+                <Original>M23-1 Pioneer (Khaki 3)</Original>
+                <Russian>Пионер М23-1 (Хаки 3)</Russian>
+            </Key>
+			<Key ID="STR_OTK_khaki3_2">
+                <English>M23-2 Pioneer (Khaki 3)</English>
+                <Original>M23-2 Pioneer (Khaki 3)</Original>
+                <Russian>Пионер М23-2 (Хаки 3)</Russian>
+            </Key>
+			<Key ID="STR_OTK_olive1_1">
+                <English>M23-1 Pioneer (Olive Light)</English>
+                <Original>M23-1 Pioneer (Olive Light)</Original>
+                <Russian>Пионер М23-1 (Оливковый Светлый)</Russian>
+            </Key>
+			<Key ID="STR_OTK_olive1_2">
+                <English>M23-2 Pioneer (Olive Light)</English>
+                <Original>M23-2 Pioneer (Olive Light)</Original>
+                <Russian>Пионер М23-2 (Оливковый Светлый)</Russian>
+            </Key>
+			<Key ID="STR_OTK_olive2_1">
+                <English>M23-1 Pioneer (Olive Dark)</English>
+                <Original>M23-1 Pioneer (Olive Dark)</Original>
+                <Russian>Пионер М23-1 (Оливковый Темный)</Russian>
+            </Key>
+			<Key ID="STR_OTK_olive2_2">
+                <English>M23-2 Pioneer (Olive Dark)</English>
+                <Original>M23-2 Pioneer (Olive Dark)</Original>
+                <Russian>Пионер М23-2 (Оливковый Темный)</Russian>
+            </Key>
+			<Key ID="STR_OTK_black_1">
+                <English>M23-1 Pioneer (Black)</English>
+                <Original>M23-1 Pioneer (Black)</Original>
+                <Russian>Пионер М23-1 (Черный)</Russian>
+            </Key>
+			<Key ID="STR_OTK_black_2">
+                <English>M23-2 Pioneer (Black)</English>
+                <Original>M23-2 Pioneer (Black)</Original>
+                <Russian>Пионер М23-2 (Черный)</Russian>
+            </Key>
+			<Key ID="STR_OTK_winter_1">
+                <English>M23-1 Pioneer (Winter)</English>
+                <Original>M23-1 Pioneer (Winter)</Original>
+                <Russian>Пионер М23-1 (Зимний)</Russian>
+            </Key>
+			<Key ID="STR_OTK_winter_2">
+                <English>M23-2 Pioneer (Winter)</English>
+                <Original>M23-2 Pioneer (Winter)</Original>
+                <Russian>Пионер М23-2 (Зимний)</Russian>
+            </Key>
+			<Key ID="STR_OTK_vsr1_1">
+                <English>M23-1 Pioneer (VSR-93 1)</English>
+                <Original>M23-1 Pioneer (VSR-93 1)</Original>
+                <Russian>Пионер М23-1 (ВСР-93 1)</Russian>
+            </Key>
+			<Key ID="STR_OTK_vsr1_2">
+                <English>M23-2 Pioneer (VSR-93 1)</English>
+                <Original>M23-2 Pioneer (VSR-93 1)</Original>
+                <Russian>Пионер М23-2 (ВСР-93 1)</Russian>
+            </Key>
+			<Key ID="STR_OTK_vsr2_1">
+                <English>M23-1 Pioneer (VSR-93 2)</English>
+                <Original>M23-1 Pioneer (VSR-93 2)</Original>
+                <Russian>Пионер М23-1 (ВСР-93 2)</Russian>
+            </Key>
+			<Key ID="STR_OTK_vsr2_2">
+                <English>M23-2 Pioneer (VSR-93 2)</English>
+                <Original>M23-2 Pioneer (VSR-93 2)</Original>
+                <Russian>Пионер М23-2 (ВСР-93 2)</Russian>
+            </Key>
+			<Key ID="STR_OTK_flora1_1">
+                <English>M23-1 Pioneer (Flora)</English>
+                <Original>M23-1 Pioneer (Flora)</Original>
+                <Russian>Пионер М23-1 (Флора)</Russian>
+            </Key>
+			<Key ID="STR_OTK_flora1_2">
+                <English>M23-2 Pioneer (Flora)</English>
+                <Original>M23-2 Pioneer (Flora)</Original>
+                <Russian>Пионер М23-2 (Флора)</Russian>
+            </Key>
+			<Key ID="STR_OTK_emr1_1">
+                <English>M23-1 Pioneer (EMR 1)</English>
+                <Original>M23-1 Pioneer (EMR 1)</Original>
+                <Russian>Пионер М23-1 (ЕМР 1)</Russian>
+            </Key>
+			<Key ID="STR_OTK_emr1_2">
+                <English>M23-2 Pioneer (EMR 1)</English>
+                <Original>M23-2 Pioneer (EMR 1)</Original>
+                <Russian>Пионер М23-2 (ЕМР 1)</Russian>
+            </Key>
+			<Key ID="STR_OTK_emr3_1">
+                <English>M23-1 Pioneer (EMR 2)</English>
+                <Original>M23-1 Pioneer (EMR 2)</Original>
+                <Russian>Пионер М23-1 (ЕМР 2)</Russian>
+            </Key>
+			<Key ID="STR_OTK_emr3_2">
+                <English>M23-2 Pioneer (EMR 2)</English>
+                <Original>M23-2 Pioneer (EMR 2)</Original>
+                <Russian>Пионер М23-2 (ЕМР 2)</Russian>
+            </Key>
+			<Key ID="STR_OTK_ttsko_1">
+                <English>M23-1 Pioneer (TTsKO)</English>
+                <Original>M23-1 Pioneer (TTsKO)</Original>
+                <Russian>Пионер М23-1 (Дубок)</Russian>
+            </Key>
+			<Key ID="STR_OTK_ttsko_2">
+                <English>M23-2 Pioneer (TTsKO)</English>
+                <Original>M23-2 Pioneer (TTsKO)</Original>
+                <Russian>Пионер М23-2 (Дубок)</Russian>
+            </Key>
+			<Key ID="STR_OTK_classic3_1">
+                <English>M23-1 Pioneer (Kamysh)</English>
+                <Original>M23-1 Pioneer (Kamysh)</Original>
+                <Russian>Пионер М23-1 (Камыш)</Russian>
+            </Key>
+			<Key ID="STR_OTK_classic3_2">
+                <English>M23-2 Pioneer (Kamysh)</English>
+                <Original>M23-2 Pioneer (Kamysh)</Original>
+                <Russian>Пионер М23-2 (Камыш)</Russian>
+            </Key>
+			<Key ID="STR_OTK_classic4_1">
+                <English>M23-1 Pioneer (Woodland)</English>
+                <Original>M23-1 Pioneer (Woodland)</Original>
+                <Russian>Пионер М23-1 (Woodland)</Russian>
+            </Key>
+			<Key ID="STR_OTK_classic4_2">
+                <English>M23-2 Pioneer (Woodland)</English>
+                <Original>M23-2 Pioneer (Woodland)</Original>
+                <Russian>Пионер М23-2 (Woodland)</Russian>
+            </Key>
+        </Container>
+    </Package>
+</Project>
