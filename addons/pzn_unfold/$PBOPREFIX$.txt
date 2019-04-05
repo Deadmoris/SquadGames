@@ -1,0 +1,5 @@
+///'pzn_unfold.pbo' from Mikero's dos tools, dll version 5.66///
+prefix=pzn_unfold
+Pbo Type is: Arma Addon
+Sha: 'A0F933B00A5002ABED9F91224BC3E8A8170C1800'
+//////</HEADER>//////

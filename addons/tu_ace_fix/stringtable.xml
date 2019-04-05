@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ID="Tushino">
+    <Package ID="TU_ACE_FIX">
+        <Key ID="STR_ACE_Spectator_Module_DisplayName">
+            <Russian>Спектатор</Russian>
+        </Key>
+        <Key ID="STR_ACE_Spectator_Settings_DisplayName">
+            <Russian>ACE Спектатор</Russian>
+        </Key>
+        <Key ID="STR_ACE_Spectator_ai_DisplayName">
+            <Russian>Смотреть ботов</Russian>
+        </Key>
+        <Key ID="STR_ACE_Spectator_ai_Description">
+            <Russian>Сделать ботов доступными для выбора в спектаторе</Russian>
+        </Key>
+
+        <!-- Controls -->
+        <Key ID="STR_ACE_Spectator_uiIcons">
+            <Russian>Иконки</Russian>        
+        </Key>
+        <Key ID="STR_ACE_Spectator_uiProjectiles">
+            <Russian>Трассы снарядов</Russian>        
+        </Key>
+        <Key ID="STR_ACE_Spectator_nextVis">
+            <Russian>Режим камеры</Russian>        
+        </Key>
+        <Key ID="STR_ACE_Spectator_camSlow">
+            <Russian>Медленно двигать</Russian>
+        </Key>
+
+        <Key ID="STR_TU_Advanced_Fatigue_Pain_Level_Penalty">
+            <English>Pain level stamina penalty</English>
+            <Russian>Влияние боли на стамину</Russian>
+        </Key>
+        <Key ID="STR_TU_Advanced_Fatigue_Total_Damage_Penalty">
+            <English>Total damage stamina penalty</English>
+            <Russian>Влияние повреждений на стамину</Russian>
+        </Key>
+        <Key ID="STR_TU_Advanced_Fatigue_Blood_Volume_Penalty">
+            <English>Bloodloss stamina penalty</English>
+            <Russian>Влияние кровопотери на стамину</Russian>
+        </Key>
+        <Key ID="STR_TU_Advanced_Fatigue_Open_Wounds_Penalty">
+            <English>Open wounds stamina penalty</English>
+            <Russian>Влияние открытых ран на стамину</Russian>
+        </Key>
+        <Key ID="STR_TU_Sway_Settings">
+            <English>Weapon sway settings</English>
+            <Russian>Раскачка оружия</Russian>
+        </Key>
+
+        <Key ID="STR_TU_Sway_Stand">
+            <English>Base sway for STAND</English>
+            <Russian>Раскачка в положении стоя</Russian>
+        </Key>
+        <Key ID="STR_TU_Sway_Crouch">
+            <English>Base sway for CROUCH</English>
+            <Russian>Раскачка в положении сидя</Russian>
+        </Key>
+        <Key ID="STR_TU_Sway_Prone">
+            <English>Base sway for PRONE</English>
+            <Russian>Раскачка в положении лежа</Russian>
+        </Key>
+        
+        <Key ID="STR_TU_Fatigue_Stand_Aim_Penalty">
+            <English>Fatigue penalty for STAND</English>
+            <Russian>Влияние усталости в положении стоя</Russian>
+        </Key>
+        <Key ID="STR_TU_Fatigue_Crouch_Aim_Penalty">
+            <English>Fatigue penalty for CROUCH</English>
+            <Russian>Влияние усталости в положении сидя</Russian>
+        </Key>
+        <Key ID="STR_TU_Fatigue_Prone_Aim_Penalty">
+            <English>Fatigue penalty for PRONE</English>
+            <Russian>Влияние усталости в положении лежа</Russian>
+        </Key>
+
+        <Key ID="STR_TU_Pain_Level_Aim_Penalty">
+            <English>Pain level aim penalty</English>
+            <Russian>Влияние боли</Russian>
+        </Key>
+        <Key ID="STR_TU_Total_Damage_Aim_Penalty">
+            <English>Total damage aim penalty</English>
+            <Russian>Влияние повреждений</Russian>
+        </Key>
+        <Key ID="STR_TU_Open_Wounds_Aim_Penalty">
+            <English>Open wounds aim penalty</English>
+            <Russian>Влияние открытых ран</Russian>
+        </Key>
+        <Key ID="STR_TU_Medical_Pain_Threshold">
+            <English>Pain threshold for knock out</English>
+            <Russian>Порог боли для бессознанки</Russian>
+        </Key>
+        <Key ID="STR_TU_Medical_Pain_Factor">
+            <English>Pain factor for knock out<</English>
+            <Russian>Влияние боли на бессознанку</Russian>
+        </Key>
+        <Key ID="STR_TU_Medical_Bleeding_Factor">
+            <English>Bleeding factor for knock out<</English>
+            <Russian>Влияние открытых ран на бессознанку</Russian>
+        </Key>
+        <Key ID="STR_TU_Medical_Сonscious_SecsToWakeUp">
+            <English>Seconds to wake up</English>
+            <Russian>Секунд до восстановления сознания (чем больше, тем быстрее вырубаешься)</Russian>
+        </Key>
+        <Key ID="STR_TU_Break">
+            <English>Break</English>
+            <Russian>Разбить</Russian>
+        </Key>
+        
+    </Package> 
+</Project>
