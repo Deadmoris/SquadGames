@@ -80,18 +80,22 @@ swt_markers_logicClient_create = {
 swt_markers_logicClient_del = {
 	_mark = _this select 0;
 	if (_mark in swt_markers_allMarkers) then {
-		_player = _this select 1;
-		deleteMarkerLocal _mark;
-		_paramsOut = [];
-		//Modifying local data
-		{
-			if (_x select 0 == _mark) exitWith {
-				_paramsOut = swt_markers_allMarkers_params deleteAt _forEachIndex;
-			};
-		} forEach swt_markers_allMarkers_params;
+		if (((getMarkerType _mark == "swt_kv") || (getMarkerType _mark == "swt_dv")) && (a3a_var_started)) then {
+			[localize "STR_SWT_CANCEL_DELETE",true, 3] call ace_common_fnc_displayText;
+		} else {
+			_player = _this select 1;
+			deleteMarkerLocal _mark;
+			_paramsOut = [];
+			//Modifying local data
+			{
+				if (_x select 0 == _mark) exitWith {
+					_paramsOut = swt_markers_allMarkers_params deleteAt _forEachIndex;
+				};
+			} forEach swt_markers_allMarkers_params;
 
-		swt_markers_allMarkers deleteAt (swt_markers_allMarkers find _mark);
-		["DEL", [name _player, _paramsOut]] call swt_markers_log;
+			swt_markers_allMarkers deleteAt (swt_markers_allMarkers find _mark);
+			["DEL", [name _player, _paramsOut]] call swt_markers_log;
+		};
 	};
 };
 
