@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project ID="Arma3">
+	<Package ID="ruPal_Lobby_Fix">
+		<Container ID="Translation">
+			<Key ID="STR_ruPal_Lobby_Blufor">
+				<Original>Blufor</Original>
+				<Russian>Синие</Russian>
+			</Key>
+			<Key ID="STR_ruPal_Lobby_Opfor">
+				<Original>Opfor</Original>
+				<Russian>Красные</Russian>
+			</Key>
+			<Key ID="STR_ruPal_Lobby_Independent">
+				<Original>Indep</Original>
+				<Russian>Независ-ые</Russian>
+			</Key>
+			<Key ID="STR_ruPal_Lobby_Civilian">
+				<Original>Civil</Original>
+				<Russian>Граждан-ие</Russian>
+			</Key>
+			<Key ID="STR_ruPal_Lobby_Virtual">
+				<Original>Virtual</Original>
+				<Russian>Вирт-ый</Russian>
+			</Key>
+			<Key ID="STR_ruPal_Lobby_Zeus">
+				<Original>Zeus</Original>
+				<Russian>Zeus</Russian>
+			</Key>
+		</Container>
+	</Package>
+</Project>
