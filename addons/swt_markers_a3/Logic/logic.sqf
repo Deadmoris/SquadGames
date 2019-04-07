@@ -53,7 +53,7 @@ swt_markers_sys_load_fnc = {
 			(owner _x) publicVariableClient "swt_markers_sys_load_client";
 		};
 	} forEach (playableUnits+switchableUnits);
-	//Сраный респаун
+
 	_index1 = 0;
 	_marks_to_send = [];
 	if ((side _player) in swt_markers_sys_sides) then {
@@ -87,7 +87,7 @@ swt_change_dir_PV_fnc = {
 	_dir = _this select 1;
 	_player = _this select 2;
 	diag_log format ["SWT MARKERS SERVER: %1 CHANGE DIR MARKER %2 TO %3",name _player,_mark,_dir];
-	//Для поциков не на серве дирекшен пока не меняется...
+
 	_send = false;
 	{
 		_swt_id = _x getVariable "swt_id";
@@ -220,7 +220,7 @@ if (isServer) then {
 				if ((_x != _player) and ((leader group _x) != _x)) then {
 					_swt_id = _x getVariable "swt_id";
 				};
-			} forEach (units group _player); //Ищем похожий
+			} forEach (units group _player); 
 
 			if (_swt_id == 0) then {
 				if (isNil {missionNamespace getVariable format ["swt_markers_sys_side_%1",side _player]}) then {

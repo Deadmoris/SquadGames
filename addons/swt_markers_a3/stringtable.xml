@@ -272,5 +272,22 @@
 
 
 
+<Key ID="STR_SWT_M_KV">
+<English>SW Radio</English>
+<Russian>КВ рация</Russian>
+</Key>
+<Key ID="STR_SWT_M_DV">
+<English>LR Radio</English>
+<Russian>ДВ рация</Russian>
+</Key>
+
+
+<Key ID="STR_SWT_CANCEL_DELETE">
+<English>You can`t remove SW / LR markers after the warbegins signal</English>
+<Russian>Нельзя удалять маркера КВ / ДВ после сигнала варбегин</Russian>
+</Key>
+
+
+
 </Container>
 </Package></Project>

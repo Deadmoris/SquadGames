@@ -62,6 +62,26 @@ class RscButtonMenuOK;	// External class reference
 class RscButtonMenuCancel;	// External class reference
 class RscCheckBox;	// External class reference
 
+
+class CfgMarkers
+{
+	class swt_kv
+	{
+		scope=2;
+		swt_show=1;
+		name="$STR_SWT_M_KV";
+		icon="\swt_markers_a3\data\marker_kv_ca.paa";
+		color[]={1,0,0,1};
+		size=29;
+		shadow=0.8;
+	};
+	class swt_dv: swt_kv
+	{
+		name="$STR_SWT_M_DV";
+		icon="\swt_markers_a3\data\marker_dv_ca.paa";
+	};
+};
+
 class swt_RscButtonMenu : RscButtonMenu {
 	style = 2;
 	w = "10 * (((safezoneW/safezoneH) min 1.2)/40)";
@@ -497,7 +517,7 @@ class swt_RscDisplayInsertMarker {
 		
 		class swt_icon_1405 : RscPicture {
 			idc = 1405;
-			text = "\A3\ui_f\data\map\markers\handdrawn\unknown_CA.paa";
+			text = "\swt_markers_a3\data\marker_kv_ca.paa";
 			w = 0.05;
 			h = 0.0666667;
 		};
