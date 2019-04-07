@@ -9,7 +9,8 @@
 ADDON = false;
 
 PREP_RECOMPILE_START;
-#include "XEH_PREP.hpp"
+PREP(onCut);
+PREP(onPrepare);
 PREP_RECOMPILE_END;
 
 ADDON = true;
