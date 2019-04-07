@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project name="Arma3">
+  <Package name="SG">
+    <Container ID="SG_Inventory">
+        <Key ID="STR_SG_Inventory">
+          <English>Inventory</English>
+          <Russian>Инвентарь</Russian>
+        </Key>
+        <Key ID="STR_SG_JoinInGroup">
+          <English>Join in group</English>
+          <Russian>Взять в группу</Russian>
+        </Key>
+        <Key ID="STR_SG_AllowChangeGroup">
+          <English>Allow change group (20 seconds)</English>
+          <Russian>Разрешить смену группы (20 секунд)</Russian>
+        </Key>
+        <Key ID="STR_SG_MaxGoupSize">
+          <English>You can'n join in group more then 20 units</English>
+          <Russian>Вы не можете принять в отряд больше 20 человек</Russian>
+        </Key>
+        <Key ID="STR_SG_joinedInGruop">
+          <English>%1 joined in group</English>
+          <Russian>%1 присоединился к отряду</Russian>
+        </Key>
+    </Container>
+  </Package>
+</Project>
