@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="squadgames">
+  <Package name="sg_weapons">
+    <Container name="Names">
+		<Key ID="STR_LIB_MN_PPSH41_MAG">
+			<Original>PPSh-41 Magazine</Original>
+			<English>PPSh-41 Magazine</English>
+			<Russian>Магазин ППШ-41</Russian>
+			<German>PPSсh-41 Magazin</German>
+			<French>PPSh-41 Magazine</French>
+			<Spanish>PPSh-41 Magazine</Spanish>
+			<Italian>PPSh-41 Magazine</Italian>
+			<Polish>Magazynek do PPSh-41</Polish>
+			<Czech>PPSh-41 Magazine</Czech>
+			<Portuguese>PPSh-41 Magazine</Portuguese>
+		</Key>
+		<Key ID="STR_LIB_DSS_35RND_PPSH41">
+			<Original>35 Rounds Magazine for PPSh-41</Original>
+			<English>35 Rounds Magazine for PPSh-41</English>
+			<Russian>Магазин на 35 патронов к ППШ-41</Russian>
+			<German>35 Schuss Magazin für PPSсh-41</German>
+			<French>35 Rounds Magazine for PPSh-41</French>
+			<Spanish>35 Rounds Magazine for PPSh-41</Spanish>
+			<Italian>35 Rounds Magazine for PPSh-41</Italian>
+			<Polish>35 nabojów do PPSh-41</Polish>
+			<Czech>35 Rounds Magazine for PPSh-41</Czech>
+			<Portuguese>35 Rounds Magazine for PPSh-41</Portuguese>
+		</Key>
+		<Key ID="STR_LIB_MN_PPSH41_DRUM">
+			<Original>PPSh-41 Drum</Original>
+			<English>PPSh-41 Drum</English>
+			<Russian>Диск ППШ-41</Russian>
+			<German>PPSсh-41 Trommelmagazin</German>
+			<French>PPSh-41 Drum</French>
+			<Spanish>PPSh-41 Drum</Spanish>
+			<Italian>PPSh-41 Drum</Italian>
+			<Polish>Bęben do PPSh-41</Polish>
+			<Czech>PPSh-41 Drum</Czech>
+			<Portuguese>PPSh-41 Drum</Portuguese>
+		</Key>
+		<Key ID="STR_LIB_DSS_71RND_PPSH41">
+			<Original>71 Rounds Drum Magazine for PPSh-41</Original>
+			<English>71 Rounds Drum Magazine for PPSh-41</English>
+			<Russian>Дисковый магазин на 71 патрон к ППШ-41</Russian>
+			<German>71 Schuss Trommelmagazin für PPSсh-41</German>
+			<French>71 Rounds Magazine for PPSh-41</French>
+			<Spanish>71 Rounds Drum for PPSh-41</Spanish>
+			<Italian>71 Rounds Drum for PPSh-41</Italian>
+			<Polish>Bęben 71 nabojowy do PPSh-41</Polish>
+			<Czech>71 Rounds Magazine for PPSh-41</Czech>
+			<Portuguese>71 Rounds Drum Magazine for PPSh-41</Portuguese>
+		</Key>	
+		<Key ID="STR_DN_LIB_PPSH41">
+			<Original>PPSh-41</Original>
+			<English>PPSh-41</English>
+			<Russian>ППШ-41 (обр.1941г.)</Russian>
+			<German>PPSch-41</German>
+			<French>PPSh-41</French>
+			<Spanish>PPSh-41</Spanish>
+			<Italian>PPSh-41</Italian>
+			<Polish>PPSh-41</Polish>
+			<Czech>PPSh-41</Czech>
+			<Portuguese>PPSh-41</Portuguese>
+		</Key>
+		<Key ID="STR_LIB_DSS_PPSH41">
+			<Original>PPSh-41 Submachinegun</Original>
+			<English>PPSh-41 Submachinegun</English>
+			<Russian>Пистолет-пулемет ППШ-41</Russian>
+			<German>PPSch-41 Maschinenpistole</German>
+			<French>PPSh-41 Submachinegun</French>
+			<Spanish>PPSh-41 Submachinegun</Spanish>
+			<Italian>PPSh-41 Submachinegun</Italian>
+			<Polish>Pistolet maszynowy PPSh-41</Polish>
+			<Czech>PPSh-41 Submachinegun</Czech>
+			<Portuguese>PPSh-41 Submachinegun</Portuguese>
+		</Key>
+		<Key ID="STR_DN_LIB_PPSh41_m">
+			<Original>PPSh-41</Original>
+			<English>PPSh-41</English>
+			<Russian>ППШ-41 (обр.1942г.)</Russian>
+			<German>PPSch-41</German>
+			<French>PPSh-41</French>
+			<Spanish>PPSh-41</Spanish>
+			<Italian>PPSh-41</Italian>
+			<Polish>PPSh-41</Polish>
+			<Czech>PPSh-41</Czech>
+			<Portuguese>PPSh-41</Portuguese>
+		</Key>    
+	 
+		<Key ID="STR_DN_LIB_K98ZF39">
+			<Original>Kar98k ZF39</Original>
+			<English>Kar98k ZF39</English>
+			<Russian>Kar98k ZF39</Russian>
+			<German>Kar98k ZF39</German>
+			<French>Kar98k ZF39</French>
+			<Spanish>Kar98k ZF39</Spanish>
+			<Italian>Kar98k ZF39</Italian>
+			<Polish>Kar98k ZF39</Polish>
+			<Czech>Kar98k ZF39</Czech>
+			<Portuguese>Kar98k ZF39</Portuguese>
+		</Key>
+		
+		<Key ID="STR_LIB_DSS_K98ZF39">
+			<Original>Kar98k with ZF39 sight</Original>
+			<English>Kar98k with ZF39 sight</English>
+			<Russian>Kar98k с оптическим прицелом ZF39</Russian>
+			<German>Kar98k mit ZF39 Zielfernrohr</German>
+			<French>Kar98k with ZF39 sight</French>
+			<Spanish>Kar98k with ZF39 sight</Spanish>
+			<Italian>Kar98k with ZF39 sight</Italian>
+			<Polish>Kar98k z lunetą ZF39</Polish>
+			<Czech>Kar98k with ZF39 sight</Czech>
+			<Portuguese>Kar98k with ZF39 sight</Portuguese>
+		</Key>
+	 
+	 		<Key ID="STR_DN_LIB_M9130PU">
+			<Original>Mosin-Nagant M91/30 PU</Original>
+			<English>Mosin-Nagant M91/30 PU</English>
+			<Russian>Винтовка Мосина M91/30 ПУ</Russian>
+			<German>Mosin-Nagant M91/30 PU</German>
+			<French>Mosin-Nagant M91/30 PU</French>
+			<Spanish>Mosin-Nagant M91/30 PU</Spanish>
+			<Italian>Mosin-Nagant M91/30 PU</Italian>
+			<Polish>Mosin-Nagant M91/30 PU</Polish>
+			<Czech>Mosin-Nagant M91/30 PU</Czech>
+			<Portuguese>Mosin-Nagant M91/30 PU</Portuguese>
+		</Key>
+	 
+	 		<Key ID="STR_LIB_DSS_M9130PU">
+			<Original>Mosin-Nagant rifle with PU sight</Original>
+			<English>Mosin-Nagant rifle with PU sight</English>
+			<Russian>Винтовка системы Мосина с оптическим прицелом ПУ</Russian>
+			<German>Mosin-Nagant Gewehr mit PU Zielfernrohr</German>
+			<French>Mosin-Nagant rifle with PU sight</French>
+			<Spanish>Mosin-Nagant rifle with PU sight</Spanish>
+			<Italian>Mosin-Nagant rifle with PU sight</Italian>
+			<Polish>Mosin-Nagant z lunetą PU</Polish>
+			<Czech>Mosin-Nagant rifle with PU sight</Czech>
+			<Portuguese>Mosin-Nagant rifle with PU sight</Portuguese>
+		</Key>
+	 
+	 	<Key ID="STR_LIB_MN_M1903A4_Springfield">
+			<Original>M1903A4 Springfield Mag</Original>
+			<English>M1903A4 Springfield Mag</English>
+			<Russian>Обойма M1903A4 Springfield</Russian>
+			<German>M1903A4 Springfield Mag</German>
+			<French>M1903A4 Springfield Mag</French>
+			<Spanish>M1903A4 Springfield Mag</Spanish>
+			<Italian>M1903A4 Springfield Mag</Italian>
+			<Polish>Magazynek do M1903A4 Springfield</Polish>
+			<Czech>M1903A4 Springfield Mag</Czech>
+			<Portuguese>M1903A4 Springfield Mag</Portuguese>
+		</Key>
+	 
+	 	<Key ID="STR_LIB_DSS_5RND_M1903A4_Springfield">
+			<Original>5 .30-06 Rounds Magazine for M1903A4 Springfield</Original>
+			<English>5 .30-06 Rounds Magazine for M1903A4 Springfield</English>
+			<Russian>Обойма на 5 патронов калибра 7.62x63 мм. к М1903А4 Спрингфилд</Russian>
+			<German>5 .30-06 Rounds Magazine for M1903A4 Springfield</German>
+			<French>5 .30-06 Rounds Magazine for M1903A4 Springfield</French>
+			<Spanish>5 .30-06 Rounds Magazine for M1903A4 Springfield</Spanish>
+			<Italian>5 .30-06 Rounds Magazine for M1903A4 Springfield</Italian>
+			<Polish>5 nabojów .30-06 do M1903A4 Springfield</Polish>
+			<Czech>5 .30-06 Rounds Magazine for M1903A4 Springfield</Czech>
+			<Portuguese>5 .30-06 Rounds Magazine for M1903A4 Springfield</Portuguese>
+		</Key>
+	 
+		<Key ID="STR_DN_LIB_M1903A4_Springfield">
+			<Original>M1903A4 Springfield</Original>
+			<English>M1903A4 Springfield</English>
+			<Russian>M1903A4 Springfield</Russian>
+			<German>M1903A4 Springfield</German>
+			<French>M1903A4 Springfield</French>
+			<Spanish>M1903A4 Springfield</Spanish>
+			<Italian>M1903A4 Springfield</Italian>
+			<Polish>M1903A4 Springfield</Polish>
+			<Czech>M1903A4 Springfield</Czech>
+			<Portuguese>M1903A4 Springfield</Portuguese>
+		</Key>
+	 
+		<Key ID="STR_LIB_DSS_M1903A4_Springfield">
+			<Original>M1903A4 Springfield .30-06 Sniper rifle</Original>
+			<English>M1903A4 Springfield .30-06 Sniper rifle</English>
+			<Russian>Снайперская винтовка M1903A4 Springfield калибра 7.62x63 мм.</Russian>
+			<German>M1903A4 Springfield .30-06 Sniper rifle</German>
+			<French>M1903A4 Springfield .30-06 Sniper rifle</French>
+			<Spanish>M1903A4 Springfield .30-06 Sniper rifle</Spanish>
+			<Italian>M1903A4 Springfield .30-06 Sniper rifle</Italian>
+			<Polish>Karabin snajperski M1903A4 Springfield .30-06</Polish>
+			<Czech>M1903A4 Springfield .30-06 Sniper rifle</Czech>
+			<Portuguese>M1903A4 Springfield .30-06 Sniper rifle</Portuguese>
+		</Key>
+	 
+	
+			<Key ID="STR_M1A1_NAME">
+				<Original>M1A1 Thompson</Original>
+				<Russian>M1A1 Thompson</Russian>
+			</Key>
+			<Key ID="STR_M1A1_DESCRIPTION">
+				<Original>The U.S. submachine gun of World War II</Original>
+				<Russian>Американский пистолет-пулемёт времён Второй мировой войны</Russian>
+			</Key>			
+			<Key ID="STR_M1A1_MAG_NAME">
+				<Original>M1A1 Thompson Magazine</Original>
+				<Russian>Магазин M1A1 Thompson</Russian>
+			</Key>			
+			<Key ID="STR_M1A1_MAG_DESCRIPTION">
+				<Original>Box magazine for 30 rounds .45 АСР</Original>
+				<Russian>Коробчатый магазин на 30 патронов 11,43×23мм</Russian>
+			</Key>	
+	
+	
+	
+	
+			<Key ID="STR_UZI_F_NAME">
+				<Original>UZI (folded)</Original>
+				<Russian>UZI (сложен.)</Russian>
+			</Key>
+			
+			<Key ID="STR_UZI_DESCRIPTION">
+				<Original>The Israel submachine designed in the late 1940s</Original>
+				<Russian>Израильский пистолет-пулемёт разработанный в конце 40х</Russian>
+			</Key>			
+			<Key ID="STR_UZI_MAG_NAME">
+				<Original>UZI Magazine</Original>
+				<Russian>Магазин УЗИ</Russian>
+			</Key>			
+			<Key ID="STR_UZI_MAG_DESCRIPTION">
+				<Original>Box magazine for 32 rounds 9x19mm</Original>
+				<Russian>Коробчатый магазин на 32 патрона 9×19мм</Russian>
+			</Key>	
+			
+			<Key ID="STR_UZI_SUP_NAME">
+				<Original>Suppressor UZI</Original>
+				<Russian>Глушитель УЗИ</Russian>
+			</Key>
+	
+	
+	
+	
+	
+	
+	
+	
+			<Key ID="STR_RPD_NAME">
+				<Original>RPD</Original>
+				<Russian>РПД</Russian>
+			</Key>
+			<Key ID="STR_RPD_DESCRIPTION">
+				<Original>Soviet machine gun developed in 1944</Original>
+				<Russian>Советский ручной пулемёт разработанный в 1944 году</Russian>
+			</Key>			
+			<Key ID="STR_RPD_MAG_NAME">
+				<Original>Cartridge box for RPD</Original>
+				<Russian>Патронная коробка к РПД</Russian>
+			</Key>			
+			<Key ID="STR_RPD_MAG_DESCRIPTION">
+				<Original>Tape for 100 rounds in a round metal box</Original>
+				<Russian>Лента на 100 патронов в круглом металлическом коробе</Russian>
+			</Key>	
+			
+			
+			<Key ID="STR_SKS_NAME">
+				<Original>SKS</Original>
+				<Russian>СКС</Russian>
+			</Key>
+			<Key ID="STR_SKS_DESCRIPTION">
+				<Original>Soviet machine gun developed in 1944</Original>
+				<Russian>Советский ручной пулемёт разработанный в 1944 году</Russian>
+			</Key>			
+			<Key ID="STR_SKS_MAG_NAME">
+				<Original>SKS Clip</Original>
+				<Russian>Обойма СКС</Russian>
+			</Key>	
+			<Key ID="STR_SKS_MAG_T_NAME">
+				<Original>SKS Clip (Tracer)</Original>
+				<Russian>Обойма СКС (Трас.)</Russian>
+			</Key>			
+			<Key ID="STR_SKS_MAG_DESCRIPTION">
+				<Original>10-round clip 7.62х39mm</Original>
+				<Russian>Обойма на 10 патронов 7.62х39мм</Russian>
+			</Key>
+			
+			
+			
+			
+			
+			
+			<Key ID="STR_DP_NAME">
+				<Original>DP-27</Original>
+				<Russian>ДП-27</Russian>
+			</Key>
+			<Key ID="STR_DP_DESCRIPTION">
+				<Original>The first machine gun Soviet mass production</Original>
+				<Russian>Первый ручной пулемёт СССР серийного производства</Russian>
+			</Key>			
+			<Key ID="STR_DP_MAG_NAME">
+				<Original>Disc magazine for DP-27</Original>
+				<Russian>Дисковый магазин к ДП-27</Russian>
+			</Key>			
+			<Key ID="STR_DP_MAG_DESCRIPTION">
+				<Original>Flat disc magazine for 47 rounds 7.62×54mmR</Original>
+				<Russian>Плоский дисковый магазин на 47 патронов 7,62×54ммR</Russian>
+			</Key>	
+			<Key ID="STR_DP_BIPOD_NAME">
+				<Original>Bipod DP-27</Original>
+				<Russian>Сошки ДП-27</Russian>
+			</Key>
+			
+			
+			
+			
+			
+			
+			
+			<Key ID="STR_BAR_NAME">
+				<Original>Browning M1918</Original>
+				<Russian>Browning M1918</Russian>
+			</Key>
+			<Key ID="STR_BAR_DESCRIPTION">
+				<Original>American automatic rifle</Original>
+				<Russian>Американская автоматическая винтовка</Russian>
+			</Key>			
+			<Key ID="STR_BAR_MAG_NAME">
+				<Original>M1918 Magazine</Original>
+				<Russian>Магазин M1918</Russian>
+			</Key>			
+			<Key ID="STR_BAR_MAG_DESCRIPTION">
+				<Original>Box magazine for 20 rounds .30-06 Springfield</Original>
+				<Russian>Коробчатый двухрядный магазин на 20 патронов 7,62x63мм</Russian>
+			</Key>
+			
+			
+			<Key ID="STR_STANAG_20_NAME">
+				<Original>20rnd. STANAG Magazine</Original>
+				<Russian>20п. магазин STANAG</Russian>
+			</Key>		
+			<Key ID="STR_STANAG_20_DESCRIPTION">
+				<Original>Box magazine for 20 rounds 5,56x45mm</Original>
+				<Russian>Коробчатый магазин на 20 патронов 5,56x45мм</Russian>
+			</Key>	
+			<Key ID="STR_STANAG_30_NAME">
+				<Original>30rnd. STANAG Magazine</Original>
+				<Russian>30п. магазин STANAG</Russian>
+			</Key>	
+			<Key ID="STR_STANAG_30_DESCRIPTION">
+				<Original>Box magazine for 30 rounds 5,56x45mm</Original>
+				<Russian>Коробчатый магазин на 30 патронов 5,56x45мм</Russian>
+			</Key>
+			<Key ID="STR_STANAG_20_T_NAME">
+				<Original>20rnd. STANAG Magazine (Tracer)</Original>
+				<Russian>20п. магазин STANAG (Трас.)</Russian>
+			</Key>	
+			<Key ID="STR_STANAG_30_T_NAME">
+				<Original>30rnd. STANAG Magazine (Tracer)</Original>
+				<Russian>30п. магазин STANAG (Трас.)</Russian>
+			</Key>	
+			<Key ID="STR_M16_SUP_NAME">
+				<Original>Suppressor M16</Original>
+				<Russian>Глушитель M16</Russian>
+			</Key>
+			
+			<Key ID="STR_M16_BAYO_NAME">
+				<Original>Bayonet M7</Original>
+				<Russian>Штык-нож M7</Russian>
+			</Key>
+			
+			<Key ID="STR_M16_Leatherwood_NAME">
+				<Original>Scope (Leatherwood 3-9x)</Original>
+				<Russian>Прицел (Leatherwood 3-9x)</Russian>
+			</Key>
+			
+			<Key ID="STR_M16_Colt_NAME">
+				<Original>Scope (Colt 4x)</Original>
+				<Russian>Прицел (Colt 4x)</Russian>
+			</Key>
+			
+			
+			<Key ID="STR_M16_DESCRIPTION">
+				<Original>M16 (more formally United States Rifle, Caliber 5.56 mm, M16) is the U.S. military designation for a family of rifles derived from the ArmaLite AR-15 and further developed by Colt starting in the mid-20th century. The M16 rifle family has been the primary infantry rifle of the United States military since the 1960s.</Original>
+				<Russian>M16 (официальное наименование — Rifle, 5.56 mm, M16) — американская автоматическая винтовка калибра 5,56 мм, разработанная и принятая на вооружение в 1960-х годах.</Russian>
+			</Key>	
+			
+			<Key ID="STR_M16_DESCRIPTION_SHORT">
+				<Original>American automatic rifle 5.56mm</Original>
+				<Russian>Американская автоматическая винтовка калибра 5,56 мм</Russian>
+			</Key>	
+			
+			
+			
+			
+			
+			
+			
+</Container>
+</Package>
+</Project>
