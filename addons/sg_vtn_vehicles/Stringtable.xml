@@ -1,0 +1,461 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project name="Arma3">
+	<Package name="VTN">
+		<Container name="VTN_CARS">
+			<Key ID="STR_DN_VTN_UAZ3151">
+				<German>UAS-3151</German>
+				<English>UAZ-3151</English>
+				<Italian>UAZ-3151</Italian>
+				<Spanish>UAZ-3151</Spanish>
+				<French>UAZ-3151</French>
+				<Czech>UAZ-3151</Czech>
+				<Russian>УАЗ-3151</Russian>
+				<Polish>UAZ-3151</Polish> 
+				<Hungarian>UAZ-3151</Hungarian> 
+			</Key>
+			<Key ID="STR_DN_VTN_UAZ3151_OPEN">
+				<German>UAS-3151 offen</German>
+				<English>UAZ-3151 open</English>
+				<Italian>UAZ-3151 open</Italian>
+				<Spanish>UAZ-3151 open</Spanish>
+				<French>UAZ-3151 open</French>
+				<Czech>UAZ-3151 open</Czech>
+				<Russian>УАЗ-3151 открытый</Russian>
+				<Polish>UAZ-3151 open</Polish>
+				<Hungarian>UAZ-3151 open</Hungarian> 
+			</Key>
+			<Key ID="STR_DN_VTN_UAZ469">
+				<German>UAS-469</German>
+				<English>UAZ-469</English>
+				<Italian>UAZ-469</Italian>
+				<Spanish>UAZ-469</Spanish>
+				<French>UAZ-469</French>
+				<Czech>UAZ-469</Czech>
+				<Russian>УАЗ-469</Russian>
+				<Polish>UAZ-469</Polish> 
+				<Hungarian>UAZ-469</Hungarian> 
+			</Key>
+			<Key ID="STR_DN_VTN_UAZ469_OPEN">
+				<German>UAS-469 offen</German>
+				<English>UAZ-469 open</English>
+				<Italian>UAZ-469 open</Italian>
+				<Spanish>UAZ-469 open</Spanish>
+				<French>UAZ-469 open</French>
+				<Czech>UAZ-469 open</Czech>
+				<Russian>УАЗ-469 открытый</Russian>
+				<Polish>UAZ-469 open</Polish>
+				<Hungarian>UAZ-469 open</Hungarian> 
+			</Key>
+			<Key ID="STR_DN_VTN_UAZ469_PKM">
+				<German>UAS-469 PKM</German>
+				<English>UAZ-469 PKM</English>
+				<Italian>UAZ-469 PKM</Italian>
+				<Spanish>UAZ-469 PKM</Spanish>
+				<French>UAZ-469 PKM</French>
+				<Czech>UAZ-469 PKM</Czech>
+				<Russian>УАЗ-469 ПКМ</Russian>
+				<Polish>УАЗ-469 PKM</Polish>
+				<Hungarian>UAZ-469 PKM</Hungarian> 
+			</Key>
+			<Key ID="STR_DN_VTN_UAZ469_NSVS">
+				<German>UAS-469 NSWS</German>
+				<English>UAZ-469 NSVS</English>
+				<Italian>UAZ-469 NSVS</Italian>
+				<Spanish>UAZ-469 NSVS</Spanish>
+				<French>UAZ-469 NSVS</French>
+				<Czech>UAZ-469 NSVS</Czech>
+				<Russian>УАЗ-469 НСВС</Russian>
+				<Polish>УАЗ-469 NSWS</Polish>
+				<Hungarian>UAZ-469 NSVS</Hungarian> 
+			</Key>
+			<Key ID="STR_DN_VTN_UAZ469_KORD">
+				<German>UAS-469 KORD</German>
+				<English>UAZ-469 KORD</English>
+				<Italian>UAZ-469 KORD</Italian>
+				<Spanish>UAZ-469 KORD</Spanish>
+				<French>UAZ-469 KORD</French>
+				<Czech>UAZ-469 KORD</Czech>
+				<Russian>УАЗ-469 КОРД</Russian>
+				<Polish>УАЗ-469 KORD</Polish>
+				<Hungarian>UAZ-469 KORD</Hungarian> 
+			</Key>
+			<Key ID="STR_DS_VTN_UAZ469_KHAKI">
+				<German>UAS-469&lt;br/&gt;Allradantrieb 4x4&lt;br/&gt;Farbe: Olivgrün</German>
+				<English>UAZ-469&lt;br/&gt;AWD 4x4&lt;br/&gt;Color: olive</English>
+				<Italian>UAZ-469&lt;br/&gt;AWD 4x4&lt;br/&gt;Colore: olive</Italian>
+				<Spanish>UAZ-469&lt;br/&gt;AWD 4x4&lt;br/&gt;Color: olive</Spanish>
+				<French>UAZ-469&lt;br/&gt;AWD 4x4&lt;br/&gt;Couleur: olive</French>
+				<Czech>UAZ-469&lt;br/&gt;AWD 4x4&lt;br/&gt;Barva: olive</Czech>
+				<Russian>УАЗ-469&lt;br/&gt;Полный привод 4x4&lt;br/&gt;Расцветка: оливковая</Russian>
+				<Polish>UAZ-469&lt;br/&gt;AWD 4x4&lt;br/&gt;Kolor: olive</Polish>
+				<Hungarian>UAZ-469&lt;br/&gt;AWD 4x4&lt;br/&gt;Szín: olive</Hungarian>
+			</Key>
+			<Key ID="STR_DS_VTN_UAZ469_DES">
+				<German>UAS-469&lt;br/&gt;Allradantrieb 4x4&lt;br/&gt;Farbe: Sand</German>
+				<English>UAZ-469&lt;br/&gt;AWD 4x4&lt;br/&gt;Color: sand</English>
+				<Italian>UAZ-469&lt;br/&gt;AWD 4x4&lt;br/&gt;Colore: sand</Italian>
+				<Spanish>UAZ-469&lt;br/&gt;AWD 4x4&lt;br/&gt;Color: sand</Spanish>
+				<French>UAZ-469&lt;br/&gt;AWD 4x4&lt;br/&gt;Couleur: sand</French>
+				<Czech>UAZ-469&lt;br/&gt;AWD 4x4&lt;br/&gt;Barva: sand</Czech>
+				<Russian>УАЗ-469&lt;br/&gt;Полный привод 4x4&lt;br/&gt;Расцветка: песочная</Russian>
+				<Polish>UAZ-469&lt;br/&gt;AWD 4x4&lt;br/&gt;Kolor: sand</Polish>
+				<Hungarian>UAZ-469&lt;br/&gt;AWD 4x4&lt;br/&gt;Szín: sand</Hungarian>
+			</Key>
+			<Key ID="STR_DN_VTN_UAZ469_INS_UNARMED">
+				<German>UAS-469 unbewaffnet</German>
+				<English>UAZ-469 unarmed</English>
+				<Italian>UAZ-469 unarmed</Italian>
+				<Spanish>UAZ-469 unarmed</Spanish>
+				<French>UAZ-469 unarmed</French>
+				<Czech>UAZ-469 unarmed</Czech>
+				<Russian>УАЗ-469 невооруженный</Russian>
+				<Polish>UAZ-469 unarmed</Polish> 
+				<Hungarian>UAZ-469 unarmed</Hungarian> 
+			</Key>
+		</Container>
+			
+		<Container name="VTN_CARS_EXTERIOR">
+			<Key ID="STR_DN_SHIELD">
+				<German>Schutzschilder entfernen</German>
+				<English>Remove shields</English>
+				<Italian>Remove shields</Italian>
+				<Spanish>Remove shields</Spanish>
+				<French>Remove shields</French>
+				<Czech>Remove shields</Czech>
+				<Russian>Убрать экраны</Russian>
+				<Polish>Remove shields</Polish>
+				<Hungarian>Remove shields</Hungarian>
+			</Key>
+			<Key ID="STR_DN_SHIELD_MG">
+				<German>MG-Schutzschild entfernen</German>
+				<English>Remove MG shield</English>
+				<Italian>Remove MG shield</Italian>
+				<Spanish>Remove MG shield</Spanish>
+				<French>Remove MG shield</French>
+				<Czech>Remove MG shield</Czech>
+				<Russian>Убрать пулемётный экран</Russian>
+				<Polish>Remove MG shield</Polish>
+				<Hungarian>Remove MG shield</Hungarian>
+			</Key>
+			
+			<Key ID="STR_UAZ_AnimationSources_HideTent">
+				<German>Plane demontieren</German>
+				<English>Remove tent</English>
+				<Italian>Remove tent</Italian>
+				<Spanish>Remove tent</Spanish>
+				<French>Remove tent</French>
+				<Czech>Remove tent</Czech>
+				<Russian>Снять тент</Russian>
+				<Polish>Remove tent</Polish>
+				<Hungarian>Remove tent</Hungarian>
+			</Key>
+			<Key ID="STR_UAZ_AnimationSources_HideWindow_FrontLeft">
+				<German>Seitenfenster vorne links demontieren</German>
+				<English>Remove front left side window</English>
+				<Italian>Remove front left side window</Italian>
+				<Spanish>Remove front left side window</Spanish>
+				<French>Remove front left side window</French>
+				<Czech>Remove front left side window</Czech>
+				<Russian>Снять переднее левое боковое окно</Russian>
+				<Polish>Remove front left side window</Polish>
+				<Hungarian>Remove front left side window</Hungarian> 
+			</Key>
+			<Key ID="STR_UAZ_AnimationSources_HideWindow_FrontRight">
+				<German>Seitenfenster vorne rechts demontieren</German>
+				<English>Remove front right side window</English>
+				<Italian>Remove front right side window</Italian>
+				<Spanish>Remove front right side window</Spanish>
+				<French>Remove front right side window</French>
+				<Czech>Remove front right side window</Czech>
+				<Russian>Снять переднее правое боковое окно</Russian>
+				<Polish>Remove front right side window</Polish>
+				<Hungarian>Remove front right side window</Hungarian> 
+			</Key>
+			<Key ID="STR_UAZ_AnimationSources_HideWindow_RearLeft">
+				<German>Seitenfenster hinten links demontieren</German>
+				<English>Remove rear left side window</English>
+				<Italian>Remove rear left side window</Italian>
+				<Spanish>Remove rear left side window</Spanish>
+				<French>Remove rear left side window</French>
+				<Czech>Remove rear left side window</Czech>
+				<Russian>Снять заднее левое боковое окно</Russian>
+				<Polish>Remove rear left side window</Polish>
+				<Hungarian>Remove rear left side window</Hungarian> 
+			</Key>
+			<Key ID="STR_UAZ_AnimationSources_HideWindow_RearRight">
+				<German>Seitenfenster hinten rechts demontieren</German>
+				<English>Remove rear right side window</English>
+				<Italian>Remove rear right side window</Italian>
+				<Spanish>Remove rear right side window</Spanish>
+				<French>Remove rear right side window</French>
+				<Czech>Remove rear right side window</Czech>
+				<Russian>Снять заднее правое боковое окно</Russian>
+				<Polish>Remove rear right side window</Polish>
+				<Hungarian>Remove rear right side window</Hungarian> 
+			</Key>
+			<Key ID="STR_SLOJIT_OKNO">
+				<German>Windscheibe auf</German>
+				<English>Liftdown front window</English>
+				<Italian>Liftdown front window</Italian>
+				<Spanish>Liftdown front window</Spanish>
+				<French>Liftdown front window</French>
+				<Czech>Liftdown front window</Czech>
+				<Russian>Cложить лобовое</Russian>
+				<Polish>Liftdown front window</Polish>
+				<Hungarian>Liftdown front window</Hungarian> 
+			</Key>
+			<Key ID="STR_PODNAT_OKNO">
+				<German>Windscheibe zu</German>
+				<English>Liftup front window</English>
+				<Italian>Liftup front window</Italian>
+				<Spanish>Liftup front window</Spanish>
+				<French>Liftup front window</French>
+				<Czech>Liftup front window</Czech>
+				<Russian>Поднять лобовое</Russian>
+				<Polish>Liftup front window</Polish>
+				<Hungarian>Liftup front window</Hungarian> 
+			</Key>
+			<Key ID="STR_OTKR_DVER">
+				<German>Tür auf</German>
+				<English>Open door</English>
+				<Italian>Open door</Italian>
+				<Spanish>Open door</Spanish>
+				<French>Open door</French>
+				<Czech>Open door</Czech>
+				<Russian>Открыть дверь</Russian>
+				<Polish>Open door</Polish>
+				<Hungarian>Open door</Hungarian> 
+			</Key>	
+			<Key ID="STR_ZAKR_DVER">
+				<German>Tür zu</German>
+				<English>Close door</English>
+				<Italian>Close door</Italian>
+				<Spanish>Close door</Spanish>
+				<French>Close door</French>
+				<Czech>Close door</Czech>
+				<Russian>Закрыть дверь</Russian>
+				<Polish>Close door</Polish>
+				<Hungarian>Close door</Hungarian> 
+			</Key>			
+			<Key ID="STR_OTKR_DVER_3_1">
+				<German>Hecktür auf</German>
+				<English>Open rear door</English>
+				<Italian>Open rear door</Italian>
+				<Spanish>Open rear door</Spanish>
+				<French>Open rear door</French>
+				<Czech>Open rear door</Czech>
+				<Russian>Откинуть задний борт</Russian>
+				<Polish>Open rear door</Polish>
+				<Hungarian>Open rear door</Hungarian> 
+			</Key>
+			<Key ID="STR_ZAKR_DVER_3_1">
+				<German>Hecktür zu</German>
+				<English>Close rear door</English>
+				<Italian>Close rear door</Italian>
+				<Spanish>Close rear door</Spanish>
+				<French>Close rear door</French>
+				<Czech>Close rear door</Czech>
+				<Russian>Поднять задний борт</Russian>
+				<Polish>Close rear door</Polish> 
+				<Hungarian>Close rear door</Hungarian> 
+			</Key>
+			<Key ID="STR_OTKR_KAPOT">
+				<German>Motorhaube auf</German>
+				<English>Open hood</English>
+				<Italian>Open hood</Italian>
+				<Spanish>Open hood</Spanish>
+				<French>Open hood</French>
+				<Czech>Open hood</Czech>
+				<Russian>Открыть капот</Russian>
+				<Polish>Open hood</Polish>
+				<Hungarian>Open hood</Hungarian> 
+			</Key>
+			<Key ID="STR_ZAKR_KAPOT">
+				<German>Motorhaube zu</German>
+				<English>Close hood</English>
+				<Italian>Close hood</Italian>
+				<Spanish>Close hood</Spanish>
+				<French>Close hood</French>
+				<Czech>Close hood</Czech>
+				<Russian>Закрыть капот</Russian>
+				<Polish>Close hood</Polish> 
+				<Hungarian>Close hood</Hungarian> 
+			</Key>
+			<Key ID="STR_DN_VTN_UAZ_GREEN">
+				<German>Grün</German>
+				<English>Green</English>
+				<Italian>Green</Italian>
+				<Spanish>Green</Spanish>
+				<French>Green</French>
+				<Czech>Green</Czech>
+				<Russian>Зеленый</Russian>
+				<Polish>Green</Polish>
+				<Hungarian>Green</Hungarian>
+			</Key>
+			<Key ID="STR_DN_VTN_UAZ_GREEN_CAMO">
+				<German>Tarnmuster Grün</German>
+				<English>Green camo</English>
+				<Italian>Green camo</Italian>
+				<Spanish>Green camo</Spanish>
+				<French>Green camo</French>
+				<Czech>Green camo</Czech>
+				<Russian>Зеленый камуфляж</Russian>
+				<Polish>Green camo</Polish>
+				<Hungarian>Green camo</Hungarian>
+			</Key>
+			<Key ID="STR_DN_VTN_UAZ_SAND">
+				<German>Sand</German>
+				<English>Sand</English>
+				<Italian>Sand</Italian>
+				<Spanish>Sand</Spanish>
+				<French>Sand</French>
+				<Czech>Sand</Czech>
+				<Russian>Песочный</Russian>
+				<Polish>Sand</Polish>
+				<Hungarian>Sand</Hungarian>
+			</Key>
+			<Key ID="STR_DN_VTN_UAZ_SAND_CAMO">
+				<German>Tarnmuster Sand</German>
+				<English>Sand camo</English>
+				<Italian>Sand camo</Italian>
+				<Spanish>Sand camo</Spanish>
+				<French>Sand camo</French>
+				<Czech>Sand camo</Czech>
+				<Russian>Песочный камуфляж</Russian>
+				<Polish>Sand camo</Polish>
+				<Hungarian>Sand camo</Hungarian>
+			</Key>
+			<Key ID="STR_DN_VTN_UAZ_BLUE">
+				<German>Blau</German>
+				<English>Blue</English>
+				<Italian>Blue</Italian>
+				<Spanish>Blue</Spanish>
+				<French>Blue</French>
+				<Czech>Blue</Czech>
+				<Russian>Синий</Russian>
+				<Polish>Blue</Polish>
+				<Hungarian>Blue</Hungarian>
+			</Key>
+		</Container>
+			
+		<Container name="VTN_CARS_CREW">
+			<Key ID="STR_DN_VTN_GUNNERPOS_1">
+				<German>Beifahrer</German>
+				<English>passenger (front seat)</English>
+				<Italian>passenger (front seat)</Italian>
+				<Spanish>passenger (front seat)</Spanish>
+				<French>passenger (front seat)</French>
+				<Czech>passenger (front seat)</Czech>
+				<Russian>пассажира (переднее место)</Russian>
+				<Polish>passenger (front seat)</Polish> 
+				<Hungarian>passenger (front seat)</Hungarian> 
+			</Key>
+			<Key ID="STR_DN_VTN_GUNNERPOS_2">
+				<German>Passagier (Hecktür links)</German>
+				<English>passenger (rear door left))</English>
+				<Italian>passenger (rear door left)</Italian>
+				<Spanish>passenger (rear door left)</Spanish>
+				<French>passenger (rear door left)</French>
+				<Czech>passenger (rear door left)</Czech>
+				<Russian>пассажира (откидной борт слева)</Russian>
+				<Polish>passenger (rear door left)</Polish> 
+				<Hungarian>passenger (rear door left)</Hungarian> 
+			</Key>
+			<Key ID="STR_DN_VTN_GUNNERPOS_3">
+				<German>Passagier (Hecktür rechts)</German>
+				<English>passenger (rear door right))</English>
+				<Italian>passenger (rear door right)</Italian>
+				<Spanish>passenger (rear door right)</Spanish>
+				<French>passenger (rear door right)</French>
+				<Czech>passenger (rear door right)</Czech>
+				<Russian>пассажира (откидной борт справа)</Russian>
+				<Polish>passenger (rear door right)</Polish> 
+				<Hungarian>passenger (rear door right)</Hungarian> 
+			</Key>
+			<Key ID="STR_DN_VTN_GUNNERPOS_4">
+				<German>Passagier (Rücksitz links)</German>
+				<English>passenger (rear seat left)</English>
+				<Italian>passenger (rear seat left)</Italian>
+				<Spanish>passenger (rear seat left)</Spanish>
+				<French>passenger (rear seat left)</French>
+				<Czech>passenger (rear seat left)</Czech>
+				<Russian>пассажира (заднее место слева)</Russian>
+				<Polish>passenger (rear seat left)</Polish> 
+				<Hungarian>passenger (rear seat left)</Hungarian> 
+			</Key>
+			<Key ID="STR_DN_VTN_GUNNERPOS_5">
+				<German>Passagier (Rücksitz rechts)</German>
+				<English>passenger (rear seat right))</English>
+				<Italian>passenger (rear seat right)</Italian>
+				<Spanish>passenger (rear seat right)</Spanish>
+				<French>passenger (rear seat right)</French>
+				<Czech>passenger (rear seat right)</Czech>
+				<Russian>пассажира (заднее место справа)</Russian>
+				<Polish>passenger (rear seat right)</Polish> 
+				<Hungarian>passenger (rear seat right)</Hungarian> 
+			</Key>
+			<Key ID="STR_DN_VTN_GUNNERPOS_6">
+				<German>Passagier (linke Seite)</German>
+				<English>passenger (left side)</English>
+				<Italian>passenger (left side)</Italian>
+				<Spanish>passenger (left side)</Spanish>
+				<French>passenger (left side)</French>
+				<Czech>passenger (left side)</Czech>
+				<Russian>пассажира (левый борт)</Russian>
+				<Polish>passenger (left side)</Polish>
+				<Hungarian>passenger (left side)</Hungarian>
+			</Key>
+			<Key ID="STR_DN_VTN_GUNNERPOS_7">
+				<German>Passagier (rechte Seite)</German>
+				<English>passenger (right side)</English>
+				<Italian>passenger (right side)</Italian>
+				<Spanish>passenger (right side)</Spanish>
+				<French>passenger (right side)</French>
+				<Czech>passenger (right side)</Czech>
+				<Russian>пассажира (правый борт)</Russian>
+				<Polish>passenger (right side)</Polish>
+				<Hungarian>passenger (right side)</Hungarian>
+			</Key>
+			<Key ID="STR_DN_VTN_GUNNERPOS_8">
+				<German>Passagier (in der Mitte)</German>
+				<English>passenger (in the middle)</English>
+				<Italian>passenger (in the middle)</Italian>
+				<Spanish>passenger (in the middle)</Spanish>
+				<French>passenger (in the middle)</French>
+				<Czech>passenger (in the middle)</Czech>
+				<Russian>пассажира (в центре)</Russian>
+				<Polish>passenger (in the middle)</Polish>
+				<Hungarian>passenger (in the middle)</Hungarian>
+			</Key>
+			
+			      <Key ID="STR_SG_CFGMAGAZINES_250rnd_762X51_MAG0">
+			<Original>250rnd PKM 57-N-323S</Original>
+			<English>250rnd PKM 57-N-323S</English>
+			<Czech>250rnd PKM 57-N-323S</Czech>
+			<French>250rnd PKM 57-N-323S</French>
+			<Spanish>250Cart. PKM 57-N-323S</Spanish>
+			<Italian>250rnd PKM 57-N-323S</Italian>
+			<Polish>250rnd PKM 57-N-323S</Polish>
+			<Portuguese>250rnd PKM 57-N-323S</Portuguese>
+			<Russian>250Птр. ПКМ 57-Н-323С</Russian>
+			<German>250rnd PKM 57-N-323S</German>
+      </Key>
+			
+			
+		 <Key ID="STR_SG_CFGMAGAZINES_250RND_762X51_MAG_Desc_0">
+        <Original>Caliber: 7.62x54mmR FMJ&lt;br /&gt;Rounds: 250&lt;br /&gt;Every 4 Rounds: 1x 7T2 Tracer</Original>
+        <English>Caliber: 7.62x54mmR FMJ&lt;br /&gt;Rounds: 250&lt;br /&gt;Every 4 Rounds: 1x 7T2 Tracer</English>
+        <Czech>Caliber: 7.62x54mmR FMJ&lt;br /&gt;Munice: 250&lt;br /&gt;Každých 4 nábojů: 1x 7T2 stopovka</Czech>
+        <French>Caliber: 7.62x54mmR  FMJ&lt;br /&gt;Balle: 250&lt;br /&gt;Chaque 4 cartouche: 1x 7T2 Balle traceux</French>
+        <Spanish>Calibre: 7.62x54mmR FMJ&lt;br /&gt;Cartuchos: 250&lt;br /&gt;Cada 4 cartucho: 1x 7T2 Tracer</Spanish>
+        <Italian>Calibro: 7.62x54mmR FMJ&lt;br /&gt;Colpi: 250&lt;br /&gt;Ogni 4 Colpi: 1x 7T2 Traccianti</Italian>
+        <Polish>Kaliber: 7.62x54mmR FMJ&lt;br /&gt;Naboje: 250&lt;br /&gt;Smugacz (7T2) co 4 pocisków</Polish>
+        <Portuguese>Caliber: 7.62x5.4mmR FMJ&lt;br /&gt;Cartuchos: 250&lt;br /&gt;Cada 4 Cartucho: 1x 7T2</Portuguese>
+        <German>Kaliber: 7.62x5.4mmR FMJ&lt;br /&gt;Patronen: 250&lt;br /&gt;Jede 4. Patrone: 1x 7T2 Leuchtspur</German>
+      </Key>
+			
+			
+			
+		</Container>
+	</Package>
+</Project>

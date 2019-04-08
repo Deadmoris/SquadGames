@@ -1,0 +1,269 @@
+// members
+
+class StageTI
+{
+	texture = "a3\data_f\destruct_ti_ca.paa";
+}; // class StageTI
+ambient[] = 
+{
+	1.000000,
+	1.000000,
+	1.000000,
+	1
+}; // array ambient[4]
+diffuse[] = 
+{
+	0.700000,
+	0.700000,
+	0.700000,
+	1
+}; // array diffuse[4]
+forcedDiffuse[] = 
+{
+	0,
+	0,
+	0,
+	0
+}; // array forcedDiffuse[4]
+emmisive[] = 
+{
+	0,
+	0,
+	0,
+	0
+}; // array emmisive[4]
+specular[] = 
+{
+	0.030000,
+	0.030000,
+	0.030000,
+	1
+}; // array specular[4]
+specularPower = 50;
+PixelShaderID = "Super";
+VertexShaderID = "Super";
+class Stage1
+{
+	texture = "a3\data_f\destruct\destruct_rust_nohq.paa";
+	uvSource = "tex";
+	class uvTransform
+	{
+		aside[] = 
+		{
+			2.200000,
+			0,
+			0
+		}; // array aside[3]
+		up[] = 
+		{
+			0,
+			2.200000,
+			0
+		}; // array up[3]
+		dir[] = 
+		{
+			0,
+			0,
+			0
+		}; // array dir[3]
+		pos[] = 
+		{
+			0,
+			0.500000,
+			0
+		}; // array pos[3]
+	}; // class uvTransform
+}; // class Stage1
+class Stage2
+{
+	texture = "a3\data_f\destruct\destruct_rust_cdt.paa";
+	uvSource = "tex";
+	class uvTransform
+	{
+		aside[] = 
+		{
+			8,
+			8,
+			0
+		}; // array aside[3]
+		up[] = 
+		{
+			-8,
+			8,
+			0
+		}; // array up[3]
+		dir[] = 
+		{
+			0,
+			0,
+			0
+		}; // array dir[3]
+		pos[] = 
+		{
+			0,
+			0,
+			0
+		}; // array pos[3]
+	}; // class uvTransform
+}; // class Stage2
+class Stage3
+{
+	texture = "a3\data_f\destruct\destruct_rust_mca.paa";
+	uvSource = "tex";
+	class uvTransform
+	{
+		aside[] = 
+		{
+			2.200000,
+			0,
+			0
+		}; // array aside[3]
+		up[] = 
+		{
+			0,
+			2.200000,
+			0
+		}; // array up[3]
+		dir[] = 
+		{
+			0,
+			0,
+			0
+		}; // array dir[3]
+		pos[] = 
+		{
+			0,
+			0.500000,
+			0
+		}; // array pos[3]
+	}; // class uvTransform
+}; // class Stage3
+class Stage4
+{
+	texture = "#(argb,8,8,3)color(1,1,1,1,AS)";
+	uvSource = "tex";
+	class uvTransform
+	{
+		aside[] = 
+		{
+			1,
+			0,
+			0
+		}; // array aside[3]
+		up[] = 
+		{
+			0,
+			1,
+			0
+		}; // array up[3]
+		dir[] = 
+		{
+			0,
+			0,
+			1
+		}; // array dir[3]
+		pos[] = 
+		{
+			0,
+			0,
+			1
+		}; // array pos[3]
+	}; // class uvTransform
+}; // class Stage4
+class Stage5
+{
+	texture = "a3\data_f\destruct\destruct_rust_smdi.paa";
+	uvSource = "tex";
+	class uvTransform
+	{
+		aside[] = 
+		{
+			2.200000,
+			0.000000,
+			0.000000
+		}; // array aside[3]
+		up[] = 
+		{
+			0.000000,
+			2.200000,
+			0.000000
+		}; // array up[3]
+		dir[] = 
+		{
+			0.000000,
+			0.000000,
+			1.000000
+		}; // array dir[3]
+		pos[] = 
+		{
+			0.000000,
+			0.500000,
+			1.000000
+		}; // array pos[3]
+	}; // class uvTransform
+}; // class Stage5
+class Stage6
+{
+	texture = "#(ai,64,64,1)fresnel(0.1,0.07)";
+	uvSource = "tex";
+	class uvTransform
+	{
+		aside[] = 
+		{
+			1.000000,
+			0.000000,
+			0.000000
+		}; // array aside[3]
+		up[] = 
+		{
+			0.000000,
+			1.000000,
+			0.000000
+		}; // array up[3]
+		dir[] = 
+		{
+			0.000000,
+			0.000000,
+			0.000000
+		}; // array dir[3]
+		pos[] = 
+		{
+			0.000000,
+			0.000000,
+			0.000000
+		}; // array pos[3]
+	}; // class uvTransform
+}; // class Stage6
+class Stage7
+{
+	texture = "a3\data_f\env_land_ca.paa";
+	useWorldEnvMap = "true";
+	uvSource = "tex";
+	class uvTransform
+	{
+		aside[] = 
+		{
+			1.000000,
+			0.000000,
+			0.000000
+		}; // array aside[3]
+		up[] = 
+		{
+			0.000000,
+			1.000000,
+			0.000000
+		}; // array up[3]
+		dir[] = 
+		{
+			0.000000,
+			0.000000,
+			0.000000
+		}; // array dir[3]
+		pos[] = 
+		{
+			0.000000,
+			0.000000,
+			0.000000
+		}; // array pos[3]
+	}; // class uvTransform
+}; // class Stage7

@@ -1,0 +1,18 @@
+? (is3DEN): exit
+? (!(local(_this select 0))): exit
+? (!(alive(_this select 0))): exit
+
+#n1
+_nrand = random(100)
+
+?_nrand > 80: (_this select 0) setObjectTextureGlobal [0, "\sg_vtn_vehicles\data\n1\n1_ca.paa"]; exit
+?_nrand > 70: (_this select 0) setObjectTextureGlobal [0, "\sg_vtn_vehicles\data\n1\n2_ca.paa"]; exit
+?_nrand > 60: (_this select 0) setObjectTextureGlobal [0, "\sg_vtn_vehicles\data\n1\n3_ca.paa"]; exit
+?_nrand > 50: (_this select 0) setObjectTextureGlobal [0, "\sg_vtn_vehicles\data\n1\n4_ca.paa"]; exit
+?_nrand > 40: (_this select 0) setObjectTextureGlobal [0, "\sg_vtn_vehicles\data\n1\n5_ca.paa"]; exit
+?_nrand > 30: (_this select 0) setObjectTextureGlobal [0, "\sg_vtn_vehicles\data\n1\n6_ca.paa"]; exit
+?_nrand > 20: (_this select 0) setObjectTextureGlobal [0, "\sg_vtn_vehicles\data\n1\n7_ca.paa"]; exit
+?_nrand > 10: (_this select 0) setObjectTextureGlobal [0, "\sg_vtn_vehicles\data\n1\n8_ca.paa"]; exit
+?_nrand > 0:  (_this select 0) setObjectTextureGlobal [0, "\sg_vtn_vehicles\data\n1\n9_ca.paa"]; exit
+
+

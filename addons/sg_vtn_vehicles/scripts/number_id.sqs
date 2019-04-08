@@ -1,0 +1,52 @@
+? (is3DEN): exit
+? (!(local(_this select 0))): exit
+? (!(alive(_this select 0))): exit
+
+? ((toLower(MissionName+"."+WorldName))=="arsenal.vr"): exit 
+? (!(isnull (uinamespace getvariable ["BIS_fnc_arsenal_cam",objnull]))): exit 
+
+#n1
+_nrand = random(100)
+?_nrand > 90: (_this select 0) setObjectTextureGlobal [3, "\sg_vtn_vehicles\data\nomera\n6_ca.paa"]; goto "n2"
+?_nrand > 70: (_this select 0) setObjectTextureGlobal [3, "\sg_vtn_vehicles\data\nomera\n5_ca.paa"]; goto "n2"
+?_nrand > 50: (_this select 0) setObjectTextureGlobal [3, "\sg_vtn_vehicles\data\nomera\n4_ca.paa"]; goto "n2"
+?_nrand > 30: (_this select 0) setObjectTextureGlobal [3, "\sg_vtn_vehicles\data\nomera\n3_ca.paa"]; goto "n2"
+?_nrand > 10: (_this select 0) setObjectTextureGlobal [3, "\sg_vtn_vehicles\data\nomera\n2_ca.paa"]; goto "n2"
+?_nrand > 0:  (_this select 0) setObjectTextureGlobal [3, "\sg_vtn_vehicles\data\nomera\n1_ca.paa"]; goto "n2"
+
+#n2
+_nrand = random(100)
+
+?_nrand > 90: (_this select 0) setObjectTextureGlobal [3, "\sg_vtn_vehicles\data\nomera\n8_ca.paa"]; goto "n3"
+?_nrand > 80: (_this select 0) setObjectTextureGlobal [3, "\sg_vtn_vehicles\data\nomera\n7_ca.paa"]; goto "n3"
+?_nrand > 70: (_this select 0) setObjectTextureGlobal [3, "\sg_vtn_vehicles\data\nomera\n6_ca.paa"]; goto "n3"
+?_nrand > 60: (_this select 0) setObjectTextureGlobal [3, "\sg_vtn_vehicles\data\nomera\n5_ca.paa"]; goto "n3"
+?_nrand > 50: (_this select 0) setObjectTextureGlobal [3, "\sg_vtn_vehicles\data\nomera\n4_ca.paa"]; goto "n3"
+?_nrand > 20: (_this select 0) setObjectTextureGlobal [3, "\sg_vtn_vehicles\data\nomera\n3_ca.paa"]; goto "n3"
+?_nrand > 10: (_this select 0) setObjectTextureGlobal [3, "\sg_vtn_vehicles\data\nomera\n2_ca.paa"]; goto "n3"
+?_nrand > 0:  (_this select 0) setObjectTextureGlobal [3, "\sg_vtn_vehicles\data\nomera\n1_ca.paa"]; goto "n3"
+
+#n3
+_nrand = random(100)
+
+?_nrand > 90: (_this select 0) setObjectTextureGlobal [3, "\sg_vtn_vehicles\data\nomera\n9_ca.paa"]; goto "z1"
+?_nrand > 80: (_this select 0) setObjectTextureGlobal [3, "\sg_vtn_vehicles\data\nomera\n8_ca.paa"]; goto "z1"
+?_nrand > 70: (_this select 0) setObjectTextureGlobal [3, "\sg_vtn_vehicles\data\nomera\n7_ca.paa"]; goto "z1"
+?_nrand > 60: (_this select 0) setObjectTextureGlobal [3, "\sg_vtn_vehicles\data\nomera\n6_ca.paa"]; goto "z1"
+?_nrand > 50: (_this select 0) setObjectTextureGlobal [3, "\sg_vtn_vehicles\data\nomera\n5_ca.paa"]; goto "z1"
+?_nrand > 40: (_this select 0) setObjectTextureGlobal [3, "\sg_vtn_vehicles\data\nomera\n4_ca.paa"]; goto "z1"
+?_nrand > 30: (_this select 0) setObjectTextureGlobal [3, "\sg_vtn_vehicles\data\nomera\n3_ca.paa"]; goto "z1"
+?_nrand > 20: (_this select 0) setObjectTextureGlobal [3, "\sg_vtn_vehicles\data\nomera\n2_ca.paa"]; goto "z1"
+?_nrand > 10: (_this select 0) setObjectTextureGlobal [3, "\sg_vtn_vehicles\data\nomera\n1_ca.paa"]; goto "z1"
+?_nrand > 0:  (_this select 0) setObjectTextureGlobal [3, "\sg_vtn_vehicles\data\nomera\n0_ca.paa"]; goto "z1"
+
+#z1
+_nrand = random(100)
+
+?_nrand > 60: (_this select 0) setObjectTextureGlobal [3, "\sg_vtn_vehicles\data\znaki\z07_ca.paa"]; exit
+?_nrand > 50: (_this select 0) setObjectTextureGlobal [3, "\sg_vtn_vehicles\data\znaki\z06_ca.paa"]; exit
+?_nrand > 40: (_this select 0) setObjectTextureGlobal [3, "\sg_vtn_vehicles\data\znaki\z05_ca.paa"]; exit
+?_nrand > 30: (_this select 0) setObjectTextureGlobal [3, "\sg_vtn_vehicles\data\znaki\z04_ca.paa"]; exit
+?_nrand > 20: (_this select 0) setObjectTextureGlobal [3, "\sg_vtn_vehicles\data\znaki\z03_ca.paa"]; exit
+?_nrand > 10: (_this select 0) setObjectTextureGlobal [3, "\sg_vtn_vehicles\data\znaki\z02_ca.paa"]; exit
+?_nrand > 0:  (_this select 0) setObjectTextureGlobal [3, "\sg_vtn_vehicles\data\znaki\z01_ca.paa"]; exit
