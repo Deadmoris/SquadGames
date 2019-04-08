@@ -18,7 +18,7 @@ class CfgMagazines {
 		picture = "\hlc_wp_ak\tex\ui\m_rpk12_mixed_ca.paa";
 		count = 60;
 		mass= 20;
-		displayName = "60Птр. Ак-74 7Н6М";
+		displayName = "$STR_SG_60_mag_7N6";
 	};
 	class rhs_30Rnd_545x39_7N10_AK;
 	class hlc_rhs_60Rnd_545x39_7N10_AK: rhs_30Rnd_545x39_7N10_AK
@@ -27,7 +27,7 @@ class CfgMagazines {
 		picture = "\hlc_wp_ak\tex\ui\m_rpk12_mixed_ca.paa";
 		count = 60;
 		mass= 20;
-		displayName = "60Птр. Ак-74 7Н10";
+		displayName = "$STR_SG_60_mag_7N10";
 	};
 	class rhs_30Rnd_545x39_AK_green;
 	class hlc_rhs_60Rnd_545x39_t_rpk: rhs_30Rnd_545x39_AK_green
@@ -36,7 +36,7 @@ class CfgMagazines {
 		picture = "\hlc_wp_ak\tex\ui\m_rpk12_mixed_ca.paa";
 		count = 60;
 		mass= 20;
-		displayName = "60Птр. Ак-74 7Т3М (Трасер)";
+		displayName = "$STR_SG_60_mag_AK_green";
 	};
 	class rhs_30Rnd_545x39_7N22_AK;
 	class hlc_rhs_60Rnd_545x39_7N22_AK: rhs_30Rnd_545x39_7N22_AK
@@ -45,7 +45,7 @@ class CfgMagazines {
 		picture = "\hlc_wp_ak\tex\ui\m_rpk12_mixed_ca.paa";
 		count = 60;
 		mass= 20;
-		displayName = "60Птр. Ак-74 7Н22";
+		displayName = "$STR_SG_60_mag_7N22";
 	};
 };
 	

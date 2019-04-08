@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project ID="SG">
+	<Package ID="Peroika">
+		<Key ID="STR_SG_60_mag_7N6">
+			<English>60rnd AK-74 7N6M</English>
+			<Russian>60Птр. Ак-74 7Н6М</Russian>
+        </Key>
+		<Key ID="STR_SG_60_mag_7N10">
+			<English>60rnd AK-74 7N10</English>
+			<Russian>60Птр. Ак-74 7Н10</Russian>
+        </Key>
+		<Key ID="STR_SG_60_mag_7N22">
+			<English>60rnd AK-74 7N22</English>
+			<Russian>60Птр. Ак-74 7Н22</Russian>
+        </Key>
+		<Key ID="STR_SG_60_mag_AK_green">
+			<English>60rnd AK-74 7T3M (Tracer)</English>
+			<Russian>60Птр. Ак-74 7Т3М (Трасер)</Russian>
+        </Key>
+		
+	</Package>
+</Project>
