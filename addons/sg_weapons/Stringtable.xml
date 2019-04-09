@@ -261,12 +261,12 @@
 			
 			
 			<Key ID="STR_SKS_NAME">
-				<Original>SKS</Original>
+				<Original>SKS-45</Original>
 				<Russian>СКС</Russian>
 			</Key>
 			<Key ID="STR_SKS_DESCRIPTION">
-				<Original>Soviet machine gun developed in 1944</Original>
-				<Russian>Советский ручной пулемёт разработанный в 1944 году</Russian>
+				<Original>Soviet semi-automatic carbine designed by Sergei Simonov</Original>
+				<Russian>Советский самозарядный карабин конструкции Сергея Симонова</Russian>
 			</Key>			
 			<Key ID="STR_SKS_MAG_NAME">
 				<Original>SKS Clip</Original>

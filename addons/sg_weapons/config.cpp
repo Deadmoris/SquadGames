@@ -618,7 +618,7 @@ class cfgWeapons
 		descriptionShort = "$STR_LIB_DSS_K98ZF39";
 		model = "\sg_weapons\IF_K98Zf39.p3d";
 		modelOptics = "\sg_weapons\LEN_Optika_Zf39.p3d";
-		picture = "sg_weapons\data\Gear_K98ZF39_X_ca.paa";
+		picture = "\sg_weapons\data\Gear_K98ZF39_X_ca.paa";
 		hiddenSelections[] = {"camo_1","camo_2","camo_3"};
 		hiddenSelectionsTextures[] = {
 			"sg_weapons\data\K98_co.paa",
@@ -683,7 +683,7 @@ class cfgWeapons
 		descriptionShort = "$STR_LIB_DSS_M9130PU";
 		model = "\sg_weapons\IF_M9130PU.p3d";
 		modelOptics = "\sg_weapons\LEN_Optika_PU.p3d";
-		picture = "sg_weapons\data\Gear_M9130PU_X_ca.paa";
+		picture = "\sg_weapons\data\Gear_M9130PU_X_ca.paa";
 		hiddenSelections[] = {"camo_1","camo_2","camo_3"};
 		hiddenSelectionsTextures[] = {
 			"sg_weapons\data\M9130_co.paa",
@@ -746,7 +746,7 @@ class cfgWeapons
 		displayName = "$STR_DN_LIB_PPSh41_m";
 		descriptionShort = "$STR_LIB_DSS_PPSH41";
 		model = "\sg_weapons\IF_PPSh41_M.p3d";
-		picture = "sg_weapons\data\Gear_PPSh41_m_X_ca.paa";
+		picture = "\sg_weapons\data\Gear_PPSh41_m_X_ca.paa";
 		hiddenSelections[] = {"camo_1"};
 		hiddenSelectionsTextures[] = {"sg_weapons\data\PPSh41_co.paa"};
 		discreteDistance[] = {100,200};
@@ -859,7 +859,7 @@ class cfgWeapons
 		displayName = "$STR_DN_LIB_PPSH41";
 		descriptionShort = "$STR_LIB_DSS_PPSH41";
 		model = "\sg_weapons\IF_PPSh41_D.p3d";
-		picture = "sg_weapons\data\Gear_PPSh41_d_X_ca.paa";
+		picture = "\sg_weapons\data\Gear_PPSh41_d_X_ca.paa";
 		magazines[] = {"SG_71Rnd_762x25"};
 		hiddenSelectionsTextures[] = {"sg_weapons\data\PPSh41_co.paa"};
 		inertia = 0.45;
@@ -1858,7 +1858,7 @@ class cfgWeapons
 	{
 		scope = 2;
 		scopeArsenal = 2;
-		displayName = "SKS-45 Rifle";
+		displayName = "$STR_SKS_NAME";
 		model = "\sg_weapons\uns_sks45";
 		picture = "\sg_weapons\data\w_sks.paa";
 		handAnim[] = {"OFP2_ManSkeleton","\sg_weapons\data\anim\M24.rtm"};		
@@ -1869,7 +1869,7 @@ class cfgWeapons
 		dexterity = 1.7;
 		initSpeed = 735;	
 		recoil = "recoil_mk20";
-		descriptionShort = "SKS semi-automatic rifle. Chambered in 10 round clips of 7.62x39mm.";
+		descriptionShort = "$STR_SKS_DESCRIPTION";
 		discreteDistanceInitIndex = 0;
 		discreteDistance[] = {100,200,300,400,500,600,700,800,900,1000};
 		discreteDistanceCameraPoint[] = {"eye_100","eye_200","eye_300","eye_400","eye_500","eye_600","eye_700","eye_800","eye_900","eye_1000"};
@@ -1877,7 +1877,7 @@ class cfgWeapons
 		maxZeroing = 1000;
 		class Library
 		{
-			libtextdesc = "The SKS is a Russian 7.62x39mm calibre semi-automatic carbine, designed in 1945 by Sergei Gavrilovich Simonov. SKS is an acronym for Samozaryadniy Karabin sistemi Simonova, 1945 (Self-loading Carbine, Simonov's system, 1945), or SKS 45. The SKS carbine was rather quickly phased out of first-line service, replaced by the AK-47, but remained in second-line service for decades afterwards.";
+			libtextdesc = "$STR_SKS_DESCRIPTION";
 		};
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
