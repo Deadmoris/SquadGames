@@ -528,7 +528,7 @@ class cfgWeapons
 		class ItemInfo: ItemInfo
 		{
 			mass = 6;
-			modelOptics = "\sg_weapons\optika_colt.p3d";
+			modelOptics = "\tu_colt\optics_colt4x";
 			class OpticsModes: OpticsModes
 			{
 				class scope: scope
