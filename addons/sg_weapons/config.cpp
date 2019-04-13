@@ -202,22 +202,8 @@ class CfgMagazines
 
 	
 	
-	
-	class sg_STANAGmag_base: CA_Magazine
-	{
-		scope = 0;
-		type = 256;
-		mass = 8;
-		displayName = "";
-		picture = "";
-		ammo = "rhs_ammo_556x45_M855_Ball";
-		count = 30;
-		initSpeed = 900;
-		descriptionShort = "";
-		//tracersEvery = 4;
-		//lastRoundsTracer = 4;
-	};
-	class sg_20Rnd_556x45_Stanag: sg_STANAGmag_base
+	class rhs_mag_30Rnd_556x45_M855A1_Stanag;
+	class sg_20Rnd_556x45_Stanag: rhs_mag_30Rnd_556x45_M855A1_Stanag
 	{
 		scope = 2;
 		scopeArsenal = 2;
@@ -230,7 +216,7 @@ class CfgMagazines
 		mass = 6;
 		descriptionShort = "$STR_STANAG_20_DESCRIPTION";
 	};
-	class sg_30Rnd_556x45_Stanag: sg_STANAGmag_base
+	class sg_30Rnd_556x45_Stanag: rhs_mag_30Rnd_556x45_M855A1_Stanag
 	{
 		scope = 2;
 		scopeArsenal = 2;
@@ -755,7 +741,11 @@ class cfgWeapons
 		inertia = 0.4;
 		handAnim[] = {"OFP2_ManSkeleton","\sg_weapons\data\Anim\PPShm.rtm"};
 		magazineReloadTime = 4;
-		magazines[] = {"SG_35Rnd_762x25"};
+		magazines[] = {"SG_35Rnd_762x25"};	
+
+		changeFiremodeSound[] = {"\A3\Sounds_F\arsenal\weapons\SMG\Sting\firemode_Sting.wss",0.25118864,1,5};		
+		reloadMagazineSound[] = {"\sg_weapons\data\sounds\PPSh41_ReloadMagazine.wss",1,1,25};
+		drySound[] = {"\sg_weapons\data\sounds\PPSh41_Dry.wss",1,1,10};
 		
 		modes[] = {"Full","Single","Far","Medium","Short"};
 		class Single: Mode_SemiAuto
@@ -894,6 +884,11 @@ class cfgWeapons
 			class PointerSlot{};
 		};
 		descriptionShort = "$STR_M1A1_DESCRIPTION";
+		
+		changeFiremodeSound[] = {"\A3\Sounds_F\arsenal\weapons\SMG\Vermin\firemode_Vermin.wss",0.25118864,1,5};
+		reloadMagazineSound[] = {"\sg_weapons\data\sounds\thompson_reload.wss",1,1,25};
+		drySound[] = {"\sg_weapons\data\sounds\thompson_dry.wss",1,1,10};
+		
 		modes[] = {"FullAuto","Single","AImode1","AImode2","AImode3","AImode4","AImode5"};
 		class Single: Mode_SemiAuto
 		{
@@ -1047,6 +1042,11 @@ class cfgWeapons
 			class CowsSlot{};
 			class PointerSlot{};
 		};
+		
+		changeFiremodeSound[] = {"\A3\Sounds_F\arsenal\weapons\SMG\Sting\firemode_Sting.wss",0.25118864,1,5};
+		reloadMagazineSound[] = {"\sg_weapons\data\sounds\uzi_reload.wss",1,1,15};
+		drySound[] = {"\sg_weapons\data\sounds\uzi_dry.wss",1,1,20};
+		
 		modes[] = {"FullAuto","Single","AImode1","AImode2","AImode3","AImode4"};
 		class Single: Mode_SemiAuto
 		{
@@ -1286,7 +1286,13 @@ class cfgWeapons
 		{
 			libtextdesc = "$STR_DP_DESCRIPTION";
 		};
-		reloadMagazineSound[] = {"\sg_weapons\dp28_reload.wss",1,1,25};
+		
+		
+		reloadMagazineSound[] = {"\sg_weapons\data\sounds\dp28_reload.wss",1,1,25};
+		drySound[] = {"\sg_weapons\data\sounds\dp28_dry.wss",1,1,25};
+		
+		
+		
 		modes[] = {"FullAuto","AImode1","AImode2","AImode3","AImode4","AImode5"};
 		class FullAuto: Mode_FullAuto
 		{
@@ -1444,7 +1450,11 @@ class cfgWeapons
 		tmr_autorest_deployable = 1;
 		bg_bipod = 1;
 		cse_bipod = 1;
-		reloadMagazineSound[] = {"\sg_weapons\data\sounds\bar_reload",1,1,20};
+		
+		reloadMagazineSound[] = {"\sg_weapons\data\sounds\bar_reload.wss",1,1,20};
+		changeFiremodeSound[] = {"A3\Sounds_F\arsenal\weapons\Machineguns\Zafir\firemode_Zafir.wss",0.25118864,1,5};
+		drySound[] = {"\sg_weapons\data\sounds\bar_dry.wss",1,1,10};
+		
 		modes[] = {"Slow","Fast","AImode1","AImode2","AImode3","AImode4","AImode5"};
 		class Slow: Mode_FullAuto
 		{
