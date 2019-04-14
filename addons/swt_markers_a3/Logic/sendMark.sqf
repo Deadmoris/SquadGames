@@ -58,12 +58,12 @@ switch (_action) do {
 		_displayMark = _params;
 		_WorldCoord = (_displayMap displayCtrl 51) ctrlMapScreenToWorld [((ctrlPosition (_displayMark displayCtrl 204)) select 0)+((ctrlPosition (_displayMark displayCtrl 204)) select 2)/2,((ctrlPosition (_displayMark displayCtrl 204)) select 1)+((ctrlPosition (_displayMark displayCtrl 204)) select 3)/2];
 
-		// Ограничен разер вводимого текста
+		// Ограничен размер вводимого текста
 		_inputText = ctrlText (_displayMark displayctrl 203);
 		if (time > 5) then {
 			switch (swt_markers_channel) do {
 				case (localize "str_channel_side"): {
-					_inputText = toString ((toArray _inputText) select [0,15]);
+					_inputText = toString ((toArray _inputText) select [0,30]);
 				};
 				default {
 					_inputText = toString ((toArray _inputText) select [0,50]);
