@@ -2375,31 +2375,53 @@ class CfgVehicles
 		};
 		class EventHandlers;
 	};
-	class SG_T34_Base: Tank_F
+	class SG_T34_Base: Tank_F  //Двигатель Т-34-85
 	{
 		scope = 1;
 		author = "$STR_SG_CUP";
 		displayName = "T-34-85";
 		simulation = "tankX";
-		enginePower = 433;
-		maxOmega = 300;
-		peakTorque = 2254;
-		torqueCurve[] = {{"(700/2640)",0},{"(1600/2640)","(2150/2850)"},{"(1800/2640)","(2800/2850)"},{"(1900/2640)","(2850/2850)"},{"(2000/2640)","(2800/2850)"},{"(2200/2640)","(2750/2850)"},{"(2400/2640)","(2600/2850)"},{"(3640/2640)",0}};
-		thrustDelay = 0.1;
+		maxSpeed=55;
+		enginePower = 370;
+		engineMOI = 10;
+		minOmega = 63;
+		maxOmega = 209;
+		peakTorque = 2157;
+		
+		torqueCurve[] = {
+		{__EVAL(600/1800),__EVAL(1200/2157)},
+		{__EVAL(800/1800),__EVAL(1700/2157)},
+		{__EVAL(1100/1800),__EVAL(2157/2157)},
+		{__EVAL(1200/1800),__EVAL(2157/2157)},
+		{__EVAL(1300/1800),__EVAL(2060/2157)},
+		{__EVAL(1500/1800),__EVAL(1970/2157)},
+		{__EVAL(1700/1800),__EVAL(1750/2157)},
+		{__EVAL(2000/1800),__EVAL(0/2157)}
+		};
+		
+		thrustDelay = 0.0;
+		engineBrakeCoef	 = 0.9;
 		clutchStrength = 180.0;
 		fuelCapacity = 520;
 		brakeIdleSpeed = 1.78;
-		latency = 0.1;
-		tankTurnForce = 330000;
-		idleRpm = 500;
-		redRpm = 2000;
+		latency = 1;
+		tankTurnForce = 0.75e6;
+		tankTurnForceAngMinSpd	= 0.70;	
+		tankTurnForceAngSpd		= 0.92;	
+		idleRpm = 600;
+		redRpm = 1800;
 		engineLosses = 25;
 		transmissionLosses = 15;
 		changeGearMinEffectivity[] = {0.5,0.15,0.95,0.98,0.95,0.96,0.96999997};
+		
+		accelAidForceCoef = 0;
+		accelAidForceYOffset	= 0;	
+		accelAidForceSpd = 0;
+		
 		class complexGearbox
 		{
-			GearboxRatios[] = {"R2",-8.9,"N",0,"D1",4.5,"D2",3.3,"D3",3.0,"D4",2.7,"D5",2.6};
-			TransmissionRatios[] = {"High",5};
+			GearboxRatios[] = {"R1",-7,"N",0,"D1",5.57,"D2",2.6,"D3",1.855,"D4",1.215,"D5",1};
+			TransmissionRatios[] = {"High",20};
 			gearBoxMode = "auto";
 			moveOffGear = 1;
 			driveString = "D";
@@ -3452,7 +3474,7 @@ class CfgVehicles
 		editorPreview = "sg_cup_vehicles\Data\preview\CUP_O_T34_TKA.jpg";
 	};
 	
-	class SG_T55_Base: Tank_F
+	class SG_T55_Base: Tank_F  //Двигатель Т-55
 	{
 		expansion = 3;
 		displayName = "T-55";
@@ -3485,7 +3507,7 @@ class CfgVehicles
 		normalSpeedForwardCoef = 0.7;
 		class complexGearbox
 		{
-			GearboxRatios[] = {"R2",-7.0,"N",0,"D1",1.25,"D2",1.2,"D3",1.15,"D4",1.05,"D5",0.95};
+			GearboxRatios[] = {"R2",-15.0,"N",0,"D1",1.25,"D2",1.2,"D3",1.15,"D4",1.05,"D5",0.95};  //деф. задней передачи -7
 			TransmissionRatios[] = {"High",11.8};
 			gearBoxMode = "auto";
 			moveOffGear = 0;
