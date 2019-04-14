@@ -458,7 +458,7 @@ swt_markers_profileNil = {
 	swt_markers_mark_info = swt_marker_settings_params select 11;
 
 	swt_cfgMarkerColors = "true" configClasses (configfile >> "CfgMarkerColors");
-	swt_cfgMarkers = "getNumber (_x >> 'scope') > 0 && !(getText (_x >> 'markerClass') in ['NATO_Sizes','Locations','Flags'])" configClasses (configfile >> "CfgMarkers");
+	swt_cfgMarkers = "(getNumber (_x >> 'scope') > 0) && (getNumber (_x >> 'shadow') == 1) && (getText (_x >> 'markerClass') in ['NATO_OPFOR', 'draw'])" configClasses (configfile >> "CfgMarkers");
 	if (isNil {swt_cfgMarkerColors_names}) then {
 		swt_cfgMarkerColors_names = [];
 		{swt_cfgMarkerColors_names pushBack (configName _x)} forEach swt_cfgMarkerColors;
