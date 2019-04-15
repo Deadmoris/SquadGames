@@ -458,7 +458,7 @@ swt_markers_profileNil = {
 	swt_markers_mark_info = swt_marker_settings_params select 11;
 
 	swt_cfgMarkerColors = "true" configClasses (configfile >> "CfgMarkerColors");
-	swt_cfgMarkers = "getNumber (_x >> 'scope') > 0 && !(getText (_x >> 'markerClass') in ['NATO_Sizes','Locations','Flags'])" configClasses (configfile >> "CfgMarkers");
+	swt_cfgMarkers = "(getNumber (_x >> 'scope') > 0) && (getNumber (_x >> 'shadow') == 1) && (getText (_x >> 'markerClass') in ['NATO_OPFOR', 'draw'])" configClasses (configfile >> "CfgMarkers");
 	if (isNil {swt_cfgMarkerColors_names}) then {
 		swt_cfgMarkerColors_names = [];
 		{swt_cfgMarkerColors_names pushBack (configName _x)} forEach swt_cfgMarkerColors;
@@ -490,8 +490,8 @@ swt_markers_profileNil = {
 
 swt_def = {
 	systemChat (localize "STR_SWT_M_MESS_DEF");
-	profileNamespace setVariable ["swt_marker_color_slot_params", ["ColorBlue","ColorRed","ColorGreen","ColorBlack","ColorWhite","ColorYellow"]];
-	profileNamespace setVariable ["swt_marker_icon_slot_params", ["mil_dot","o_inf","o_armor","hd_pickup","hd_warning","hd_unknown"]];
+	profileNamespace setVariable ["swt_marker_color_slot_params", ["ColorBlue","ColorRed","ColorGUER","ColorBlack","ColorWhite","ColorYellow"]];
+	profileNamespace setVariable ["swt_marker_icon_slot_params", ["hd_dot","o_inf","o_armor","hd_pickup","swt_kv","swt_dv"]];
 	profileNamespace setVariable ["swt_marker_settings_params", [false,true,true,false,true,false,true,true,true,"",true, true]];
 	saveProfileNamespace;
 	call swt_markers_profileNil;

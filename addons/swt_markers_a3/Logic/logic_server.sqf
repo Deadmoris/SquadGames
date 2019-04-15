@@ -311,7 +311,7 @@ swt_markers_logicServer_load = {
 	 {swt_cfgMarkerColors_names pushBack (configName _x)} forEach swt_cfgMarkerColors;
 	 if (count swt_cfgMarkerColors_names != 0) then {publicVariable "swt_cfgMarkerColors_names"};
 
-	swt_cfgMarkers = "getNumber (_x >> 'scope') > 0 && !(getText (_x >> 'markerClass') in ['NATO_Sizes','Locations','Flags'])" configClasses (configfile >> "CfgMarkers");
+	swt_cfgMarkers = "(getNumber (_x >> 'scope') > 0) && (getNumber (_x >> 'shadow') == 1) && (getText (_x >> 'markerClass') in ['NATO_OPFOR', 'draw'])" configClasses (configfile >> "CfgMarkers");
 	swt_cfgMarkers_names = [];
 	{swt_cfgMarkers_names pushBack (configName _x)} forEach swt_cfgMarkers;
 	if (count swt_cfgMarkers_names != 0) then {publicVariable "swt_cfgMarkers_names"};
