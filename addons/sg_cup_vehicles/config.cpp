@@ -1977,7 +1977,7 @@ class cfgWeapons
 		midRangeProbab = 0.7;
 		maxRange = 3000;
 		maxRangeProbab = 0.1;
-		reloadTime = 6;
+		reloadTime = 8;
 		magazineReloadTime = 6;
 		autoReload = 1;
 		canLock = 0;
@@ -2388,6 +2388,13 @@ class CfgVehicles
 		maxOmega = 209;
 		peakTorque = 2157;
 		
+		class ViewOptics: ViewOptics
+		{
+					initFov = 0.466;
+					minFov = 0.466;
+					maxFov = 0.466;
+		};	
+		
 		torqueCurve[] = {
 		{__EVAL(600/1800),__EVAL(1200/2157)},
 		{__EVAL(800/1800),__EVAL(1700/2157)},
@@ -2417,6 +2424,8 @@ class CfgVehicles
 		accelAidForceCoef = 0;
 		accelAidForceYOffset	= 0;	
 		accelAidForceSpd = 0;
+		
+		enableGPS = 0;
 		
 		class complexGearbox
 		{
@@ -4553,6 +4562,15 @@ class CfgVehicles
 		engineShiftY = 0.1;
 		acre_hasInfantryPhone = 0;
 		acre_infantryPhoneDisableRinging = 1;
+		
+		
+		class ViewOptics: ViewOptics
+		{
+					initFov = 0.466;
+					minFov = 0.466;
+					maxFov = 0.466;
+		};	
+		
 		class AcreIntercoms
 		{
 			class Intercom_1
