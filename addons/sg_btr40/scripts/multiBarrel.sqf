@@ -7,6 +7,8 @@ _muzzle = _this select 2;
 _mode = _this select 3;
 _ammo = _this select 4;
 
+if (!(_weapon in ["SG_M2_Quad","SG_DSHK_sparka"])) exitwith {};
+
 _multi = 1;
 _multi = getNumber (configFile >> "CfgWeapons" >> _weapon >> _mode >> "multiplier");
 

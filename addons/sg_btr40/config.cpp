@@ -45,6 +45,7 @@ class CfgMovesBasic
 		CUP_BTR40_Gunner_EP1 = "CUP_BTR40_Gunner_EP1";
 		uns_m113_30cal_gunner = "uns_m113_30cal_gunner";		
 		UNS_M113_Driver = "UNS_M113_Driver";
+		SG_Sparka_Gunner = "SG_Sparka_Gunner";
 	};
 };
 class CfgMovesMaleSdr: CfgMovesBasic
@@ -58,6 +59,27 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			interpolateTo[] = {"CUP_BTR40_KIA_Driver_EP1",1};
 			speed = 1e+010;
 		};
+		
+		class SG_Sparka_Gunner_KIA: DefaultDie
+		{
+			actions = "DeadActions";
+			file = "\sg_btr40\Data\Anim\sparka_gunner_kia.rtm";
+			speed = 1e+010;
+			terminal = 1;
+			soundEnabled = 0;
+			looped = 0;
+			connectTo[] = {"Unconscious",0.1};
+		};
+		
+		class SG_Sparka_Gunner: Crew
+		{
+			file = "\sg_btr40\Data\Anim\sparka_gunner.rtm";
+			speed = 1e+010;
+			interpolateTo[] = {"SG_Sparka_Gunner_KIA",1};
+		};
+		
+
+		
 		class CUP_BTR40_KIA_Driver_EP1: DefaultDie
 		{
 			actions = "DeadActions";
@@ -631,7 +653,7 @@ class CfgVehicles
 				gunnerLeftHandAnimName = "handle_l";
 				gunnerRightHandAnimName = "handle_r";
 				selectionFireAnim = "zasleh";
-				ejectDeadGunner = 1;
+				ejectDeadGunner = 0;
 				minElev = -18;
 				maxElev = 30;
 				minTurn = -50;
@@ -1347,7 +1369,7 @@ class CfgVehicles
 				hasgunner = 1;
 				animationSourceBody = "FRONT_Turret";
 				animationSourceGun = "FRONT_Gun";
-				ejectDeadGunner = 1;
+				ejectDeadGunner = 0;
 				memoryPointGunnerOptics = "FRONT_gunnerview";
 				gunnerLeftHandAnimName = "FRONT_handle_l";
 				gunnerRightHandAnimName = "FRONT_handle_r";
@@ -1357,39 +1379,27 @@ class CfgVehicles
 				discreteDistance[] = {100,200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500};
 				discreteDistanceInitIndex = 2;
 				stabilizedInAxes = "StabilizedInAxesNone";
-				gunnerAction = "uns_m113_30cal_gunner";
-				gunnerInAction = "uns_m113_30cal_gunner";				
+				gunnerAction = "SG_Sparka_Gunner";
+				gunnerInAction = "SG_Sparka_Gunner";				
 				gunnerOpticsModel = "a3\weapons_f\reticle\optics_empty.p3d";
 				
 				initElev = 0;
-				minElev = -20;
-				maxElev = 40;
+				minElev = -15;
+				maxElev = 45;
 				initTurn = 0;
-				minTurn = -45;
-				maxTurn = 45;
+				minTurn = -360;
+				maxTurn = 360;
 				class ViewOptics
 				{
 					initAngleX = 0;
-					minAngleX = -25;
-					maxAngleX = 80;
+					minAngleX = -15;
+					maxAngleX = 45;
 					initAngleY = 0;
 					minAngleY = -360;
 					maxAngleY = 360;
 					initFov = 0.4;
 					minFov = 0.4;
 					maxFov = 0.4;
-				};
-				class ViewGunner
-				{
-					initAngleX = 0;
-					minAngleX = -25;
-					maxAngleX = 80;
-					initAngleY = 0;
-					minAngleY = -360;
-					maxAngleY = 360;
-					initFov = 0.7;
-					minFov = 0.7;
-					maxFov = 0.7;
 				};
 			};
 		};
@@ -1675,6 +1685,22 @@ class CfgVehicles
 		displayName = "$STR_BTR40_SPG";
 		model = "\sg_btr40\btr40_spg.p3d";
 		transportSoldier = 3;
+		
+		class TransportMagazines 
+		{ 
+			class _xx_spg_mag_at 
+			{ 
+				magazine = "BN_rhs_mag_pg9v"; 
+				count = 6; 
+			}; 
+			class _xx_spg_mag_he 
+			{ 
+				magazine = "BN_rhs_mag_og9v"; 
+				count = 6; 
+			}; 
+		}; 
+		
+		
 		class Turrets: Turrets
 		{
 			class AT_Turret: MainTurret
@@ -1687,24 +1713,7 @@ class CfgVehicles
 				animationSourceBody = "mainTurret";
 				animationSourceGun = "mainGun";
 				weapons[] = {"BN_rhs_weap_SPG9"};
-				magazines[] = {
-					
-					"BN_rhs_mag_pg9v",
-					"BN_rhs_mag_pg9v",
-					"BN_rhs_mag_pg9v",
-					"BN_rhs_mag_pg9v",
-					"BN_rhs_mag_pg9v",
-					"BN_rhs_mag_pg9v",
-					"BN_rhs_mag_pg9v",
-					
-					"BN_rhs_mag_og9v",
-					"BN_rhs_mag_og9v",
-					"BN_rhs_mag_og9v",
-					"BN_rhs_mag_og9v",
-					"BN_rhs_mag_og9v",
-					"BN_rhs_mag_og9v"
-					
-					};
+				magazines[]= {"BN_rhs_mag_pg9v"};
 				minElev = -10;
 				maxElev = 40;
 				minTurn = -360;
