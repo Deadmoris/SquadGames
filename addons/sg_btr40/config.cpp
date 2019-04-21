@@ -1728,7 +1728,6 @@ class CfgVehicles
 				gunEnd = "konec hlavne";
 				gunBeg = "usti hlavne";
 				memoryPointGunnerOptics = "gunnerView";
-				gunnerOpticsModel = "\rhsafrf\addons\rhs_optics\vehicles\rhs_pgo9_scope";
 				gunnerOpticsEffect[] = {"OpticsCHAbera1","OpticsBlur2","TankGunnerOptics1"};
 				memoryPointsGetInGunner = "pos cargo";
 				memoryPointsGetInGunnerDir = "pos cargo dir";
@@ -1762,6 +1761,24 @@ class CfgVehicles
 					initFov = 0.111;
 					minFov = 0.111;
 					maxFov = 0.111;
+				};
+				gunnerOpticsModel = "\rhsafrf\addons\rhs_optics\vehicles\rhs_pgok9_kum_scope"; 
+				class OpticsIn 
+				{ 
+					class HEAT: ViewOptics 
+					{ 
+					initFov=0.111; 
+					minFov=0.111; 
+					maxFov=0.111; 
+					gunnerOpticsModel = "\rhsafrf\addons\rhs_optics\vehicles\rhs_pgok9_kum_scope.p3d"; 
+					}; 
+				class HE: ViewOptics 
+					{ 
+					initFov=0.111; 
+					minFov=0.111; 
+					maxFov=0.111; 
+					gunnerOpticsModel = "\rhsafrf\addons\rhs_optics\vehicles\rhs_pgok9_of_scope.p3d"; 
+					}; 
 				};
 			};
 
