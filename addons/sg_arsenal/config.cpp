@@ -39,7 +39,6 @@ class RscDisplayArsenal {
 		    text = $STR_SG_CLEAR_EQUIP;
 		    colorBackground[] = {0,0,0.65,0.9};
 		    colorBackgroundFocused[] = {0,0,0.65,1};
-			align="center";
 			action = "[(missionnamespace getvariable ['BIS_fnc_arsenal_center',player])] call sg_arsenal_fnc_arsenal_clean";
 			
 			

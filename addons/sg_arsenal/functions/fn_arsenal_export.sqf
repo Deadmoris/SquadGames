@@ -28,15 +28,19 @@ _out = "// Squad Games" + endl + endl + "_unit addBackpack ""B_Carryall_Base"";"
 
 _out = _out + "// Weapons with attachments:" + endl;
 
-// Осн. оружие
-if (primaryWeapon _unit != "") then {
-	_out = _out + format ["_unit addItem ""%1"";", primaryWeaponMagazine _unit select 0] + endl;
-	_out = _out + format ["_unit addWeapon ""%1"";", primaryWeapon _unit] + endl;
+
+// Труба
+if (secondaryWeapon _unit != "") then {
+	_out = _out + endl;
+	if (secondaryWeaponMagazine _unit select 0 != "<null>") then {
+		_out = _out + format ["_unit addItem ""%1"";", secondaryWeaponMagazine _unit select 0] + endl;
+	};
+	_out = _out + format ["_unit addWeapon ""%1"";", secondaryWeapon _unit] + endl;
 	{
 		if (_x != "") then {
-			_out = _out + format ["_unit addPrimaryWeaponItem ""%1"";", _x] + endl;
+			_out = _out + format ["_unit addSecondaryWeaponItem ""%1"";", _x] + endl;
 		};
-	} count (primaryWeaponItems _unit);
+	} count (secondaryWeaponItems _unit);
 };
 
 
@@ -52,17 +56,18 @@ if (handgunWeapon _unit != "") then {
 	} count (handgunItems _unit);
 };
 
-// Труба
-if (secondaryWeapon _unit != "") then {
-	_out = _out + endl;
-	_out = _out + format ["_unit addItem ""%1"";", secondaryWeaponMagazine _unit select 0] + endl;
-	_out = _out + format ["_unit addWeapon ""%1"";", secondaryWeapon _unit] + endl;
+
+// Осн. оружие
+if (primaryWeapon _unit != "") then {
+	_out = _out + format ["_unit addItem ""%1"";", primaryWeaponMagazine _unit select 0] + endl;
+	_out = _out + format ["_unit addWeapon ""%1"";", primaryWeapon _unit] + endl;
 	{
 		if (_x != "") then {
-			_out = _out + format ["_unit addSecondaryWeaponItem ""%1"";", _x] + endl;
+			_out = _out + format ["_unit addPrimaryWeaponItem ""%1"";", _x] + endl;
 		};
-	} count (secondaryWeaponItems _unit);
+	} count (primaryWeaponItems _unit);
 };
+
 
 // Бинокль
 if (binocular _unit != "") then {
