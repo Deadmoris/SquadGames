@@ -26,8 +26,18 @@ class RscDisplayArsenal {
 			w = "0.15 * safezoneW";
 			h = "0.022 * safezoneH";
 			text = $STR_SG_EXPORT_EQUIP;
-		    colorBackground[] = {0.65,0,0,0.9};
-		    colorBackgroundFocused[] = {0.65,0,0,1};
+			color[] = {1,1,1,1};
+			color2[] = {0,0,0,1};
+			color2Secondary[] = {0,0,0,1};
+			colorBackground[] = {0,0,0,0.8};
+			colorBackground2[] = {0.75,0.75,0.75,1};
+		    colorBackgroundFocused[] = {1,1,1,1};
+			colorDisabled[] = {1,1,1,0.25};
+			colorDisabledSecondary[] = {1,1,1,0.25};
+			colorFocused[] = {0,0,0,1};
+			colorFocusedSecondary[] = {0,0,0,1};
+			colorSecondary[] = {1,1,1,1};
+			colorText[] = {1,1,1,1};
 			action = "[(missionnamespace getvariable ['BIS_fnc_arsenal_center',player]),true] call sg_arsenal_fnc_arsenal_export";
 		};
 		class ButtonClean: RscButtonMenu {
@@ -37,8 +47,18 @@ class RscDisplayArsenal {
 			w = "0.15 * safezoneW";
 			h = "0.022 * safezoneH";
 		    text = $STR_SG_CLEAR_EQUIP;
-		    colorBackground[] = {0,0,0.65,0.9};
-		    colorBackgroundFocused[] = {0,0,0.65,1};
+			color[] = {1,1,1,1};
+			color2[] = {0,0,0,1};
+			color2Secondary[] = {0,0,0,1};
+			colorBackground[] = {0,0,0,0.8};
+			colorBackground2[] = {0.75,0.75,0.75,1};
+		    colorBackgroundFocused[] = {1,1,1,1};
+			colorDisabled[] = {1,1,1,0.25};
+			colorDisabledSecondary[] = {1,1,1,0.25};
+			colorFocused[] = {0,0,0,1};
+			colorFocusedSecondary[] = {0,0,0,1};
+			colorSecondary[] = {1,1,1,1};
+			colorText[] = {1,1,1,1};
 			action = "[(missionnamespace getvariable ['BIS_fnc_arsenal_center',player])] call sg_arsenal_fnc_arsenal_clean";
 			
 			
