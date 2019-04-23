@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="squadgames">
+  <Package name="sg_vehicles">
+    <Container name="Names">
+      <Key ID="STR_AirExplodeDisabled">
+		<Original>Exploding shells in the air is disabled</Original>
+		<Russian>Подрыв снарядов в воздухе отключен</Russian>
+      </Key>
+	  
+	  
+	  
+	  <Key ID="STR_DIALOG_NAME">
+		<Original>Explosion distance</Original>
+		<Russian>Дистанция подрыва</Russian>
+	</Key>
+	
+	<Key ID="STR_DIALOG_CANCEL">
+		<Original>Cancel</Original>
+		<Russian>Отмена</Russian>
+	</Key>
+	
+	<Key ID="STR_DIALOG_CONFIRM">
+		<Original>Confirm</Original>
+		<Russian>Принять</Russian>
+	</Key>
+	
+	
+	
+	<Key ID="STR_57mm_HEAT">
+		<Original>57mm BR-281U</Original>
+		<Russian>57мм БР-281У</Russian>
+	</Key>
+	
+	<Key ID="STR_57mm_HE">
+		<Original>57mm OR-281U</Original>
+		<Russian>57мм ОР-281У</Russian>
+	</Key>
+	
+	
+	
+	
+	<Key ID="STR_S68">
+		<Original>S-68</Original>
+		<Russian>С-68</Russian>
+	</Key>
+	
+		<Key ID="STR_ZSU57">
+		<Original>ZSU-57-2</Original>
+		<Russian>ЗСУ-57-2</Russian>
+	</Key>
+	
+	
+	<Key ID="STR_OPEN_DIALOG">
+		<Original>Set explosion distance</Original>
+		<Russian>Установить дистанцию подрыва</Russian>
+	</Key>
+	
+	<Key ID="STR_DISABLE_AIR_EXPLOSION">
+		<Original>Disable air explosion</Original>
+		<Russian>Отключить подрыв в воздухе</Russian>
+	</Key>
+	
+	
+	
+	
+	
+	<Key ID="STR_BOAT_COMMANDER">
+		<Original>Boat commander</Original>
+		<Russian>Командир катера</Russian>
+	</Key>
+	
+	<Key ID="STR_CARGO_F_L">
+		<Original>Left side (front)</Original>
+		<Russian>Левый борт (спереди)</Russian>
+	</Key>
+
+	<Key ID="STR_CARGO_M_L">
+		<Original>Left side (center)</Original>
+		<Russian>Левый борт (посередине)</Russian>
+	</Key>
+
+	<Key ID="STR_CARGO_R_L">
+		<Original>Left side (rear)</Original>
+		<Russian>Левый борт (сзади)</Russian>
+	</Key>
+
+	<Key ID="STR_CARGO_F_R">
+		<Original>Right side (front)</Original>
+		<Russian>Правый борт (спереди)</Russian>
+	</Key>
+
+	<Key ID="STR_CARGO_M_R">
+		<Original>Right side (center)</Original>
+		<Russian>Правый борт (посередине)</Russian>
+	</Key>
+
+	<Key ID="STR_CARGO_R_R">
+		<Original>Right side (rear)</Original>
+		<Russian>Правый борт (сзади)</Russian>
+	</Key>
+	
+	<Key ID="STR_REAR_GUNNER">
+		<Original>Rear gunner</Original>
+		<Russian>Стрелок на корме</Russian>
+	</Key>
+	
+	<Key ID="STR_FRONT_GUNNER">
+		<Original>Front gunner</Original>
+		<Russian>Стрелок на носу</Russian>
+	</Key>
+	
+	
+	<Key ID="STR_ASSAULT_BOAT">
+		<Original>Assault boat</Original>
+		<Russian>Штурмовой катер</Russian>
+	</Key>
+	
+	
+	<Key ID="STR_ASSAULT_BOAT_AGS">
+		<Original>Assault boat (AGS-30)</Original>
+		<Russian>Штурмовой катер (АГС-30)</Russian>
+	</Key>
+	
+</Container>
+</Package>
+</Project>
