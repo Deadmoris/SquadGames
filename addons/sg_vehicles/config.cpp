@@ -39,14 +39,18 @@ class CfgPatches
 
 class CfgMovesBasic
 {
+	class passenger_flatground_2;
 	class DefaultDie;
 	class ManActions
 	{
 		SG_ZSU57_Gunner = "SG_ZSU57_Gunner";
+		SG_ZSU57_Gunner_Closed = "SG_ZSU57_Gunner_Closed";
 		SG_REAR_Gunner = "SG_REAR_Gunner";
 		
 		SG_REAR_Gunner_M2 = "SG_REAR_Gunner_M2";
 		SG_Gunner_M60 = "SG_Gunner_M60";
+		
+		SG_Gunner_TwinM2 = "SG_Gunner_TwinM2";
 		
 		sg_PBR_Driver = "sg_PBR_Driver";
 	};
@@ -71,12 +75,56 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			connectTo[] = {"Unconscious",0.1};
 			soundEnabled = 0;
 		};
+		
 		class SG_ZSU57_Gunner: Crew
 		{
 			file = "\sg_vehicles\data\anim\sg_zsu_gunner.rtm";
 			disableWeapons = 1;
 			disableWeaponsLong = 1;
 			interpolateTo[] = {"SG_KIA_ZSU57_Gunner",1};
+			leftHandIKCurve[] = {0.5};
+			rightHandIKCurve[] = {0.5};
+		};
+		
+		
+		class SG_KIA_ZSU57_Gunner_Closed: DefaultDie
+		{
+			actions = "DeadActions";
+			file = "\sg_vehicles\data\anim\sg_zsu_gunner_kia_closed.rtm";
+			speed = 1;
+			looped = "false";
+			terminal = "true";
+			connectTo[] = {"Unconscious",0.1};
+			soundEnabled = 0;
+		};
+		
+		class SG_ZSU57_Gunner_Closed: Crew
+		{
+			file = "\sg_vehicles\data\anim\sg_zsu_gunner_closed.rtm";
+			disableWeapons = 1;
+			disableWeaponsLong = 1;
+			interpolateTo[] = {"SG_KIA_ZSU57_Gunner_Closed",1};
+			leftHandIKCurve[] = {0.5};
+			rightHandIKCurve[] = {0.5};
+		};
+		
+		class SG_Gunner_TwinM2_KIA: DefaultDie
+		{
+			actions = "DeadActions";
+			file = "\sg_vehicles\data\anim\sg_twin_gunner_kia.rtm";
+			speed = 1;
+			looped = "false";
+			terminal = "true";
+			connectTo[] = {"Unconscious",0.1};
+			soundEnabled = 0;
+		};
+		
+		class SG_Gunner_TwinM2: Crew
+		{
+			file = "\sg_vehicles\data\anim\sg_twin_gunner.rtm";
+			disableWeapons = 1;
+			disableWeaponsLong = 1;
+			interpolateTo[] = {"SG_Gunner_TwinM2_KIA",1};
 			leftHandIKCurve[] = {0.5};
 			rightHandIKCurve[] = {0.5};
 		};
@@ -399,15 +447,15 @@ class cfgWeapons
 		{
 			class effect1
 			{
-				positionName = "konec_hlavne_1";
-				directionName = "usti_hlavne_1";
+				positionName = "usti_hlavne_1";
+				directionName = "konec_hlavne_1";
 				effectName = "MachineGunCloud";
 			};
 
 			class effect2: effect1
 			{
-				positionName = "konec_hlavne_2";
-				directionName = "usti_hlavne_2";
+				positionName = "usti_hlavne_2";
+				directionName = "konec_hlavne_2";
 			};
 
 		};
@@ -743,6 +791,7 @@ class CfgVehicles
 				gunnerAction = "vehicle_turnout_2";
 				gunnerInAction = "SG_ZSU57_Gunner";
 				ispersonturret = 1;
+				animationSourceHatch = "hatchGunner";
 				
 				class ViewOptics
 				{
@@ -788,6 +837,7 @@ class CfgVehicles
 						viewGunnerInExternal = 1;
 						gunnerForceOptics = 0;						
 						forceHideGunner = 0;
+						animationSourceHatch = "hatchCommander";
 						gunnerAction = "vehicle_turnout_2";
 						gunnerInAction = "SG_ZSU57_Gunner";
 						memoryPointsGetInGunner = "pos commander";
@@ -1491,8 +1541,45 @@ class CfgVehicles
 		typicalCargo[] = {"O_crew_F"};
 	};
 	
-	
-	
+	class SG_ZSU57_Armor: SG_ZSU57
+	{
+		displayName = "$STR_ZSU57";
+		model = "\sg_vehicles\zsu57_armor.p3d";
+		class CargoTurret;
+		class Turrets: Turrets {
+			class MainTurret: MainTurret
+			{
+				
+				
+				gunnerInAction = "SG_ZSU57_Gunner_Closed";		
+				
+				class Turrets: Turrets
+				{
+					class CommanderOptics: CommanderOptics
+					{
+						gunnerInAction = "SG_ZSU57_Gunner_Closed";
+					};
+				};	
+				
+				
+
+					
+				
+							
+			};
+			
+			class CargoTurret_01: CargoTurret_01
+			{};
+			class CargoTurret_02: CargoTurret_02
+			{};
+			
+			class CargoTurret_03: CargoTurret_03
+			{};
+			
+			class CargoTurret_04: CargoTurret_04
+			{};
+		};
+	};
 	
 	
 	
@@ -1578,6 +1665,40 @@ class CfgVehicles
 		{
 			class MainTurret: NewTurret{};
 			class BackTurret: NewTurret{};
+		};
+		
+		bn_csw_loading_style = 1;
+		class ACE_Actions {
+            class ACE_MainActions {
+				// selection = "";
+				distance = 5;
+				condition = 1;
+				class BN_CSW_Load_New {
+					displayName = "Зарядить...";
+					distance = 5;
+					condition = "count ([_target] call bn_csw_fnc_add_subactions) > 0";
+					icon = "\bn_csw_load\data\ui\load.paa";
+					statement = "hint 'Выбери тип снаряда.'";
+					showDisabled = 0;
+					priority = 5;
+					hotkey = "L";
+					position = [0.1,0,0];
+					enableInside = 0;
+					insertChildren = "[_target] call bn_csw_fnc_add_subactions";
+				};
+				class BN_CSW_Unload {
+					displayName = "Разрядить";
+					distance = 5;
+					condition = "true";
+					icon = "\bn_csw_load\data\ui\unload.paa";
+					statement = "0 = [_target, _player] spawn bn_csw_fnc_unload;";
+					showDisabled = 1;
+					priority = 5.1;
+					hotkey = "U";
+					position = [-0.1,0,0];
+					enableInside = 0;
+				};
+			};
 		};
 	};
 	class SG_ASSAULT_BOAT_Base: sg_boat_base_turret
@@ -2088,34 +2209,28 @@ class CfgVehicles
 		{
 			tex[] = {};
 			mat[] = {
-				/*"sg_vehicles\data\korp.rvmat",
+				"sg_vehicles\data\korp.rvmat",
 				"sg_vehicles\data\korp_damage.rvmat",
-				"sg_vehicles\data\korp_damage.rvmat",
+				"sg_vehicles\data\korp_destruct.rvmat",
 				
 				"sg_vehicles\data\penel.rvmat",
 				"sg_vehicles\data\penel_damage.rvmat",
-				"sg_vehicles\data\penel_damage.rvmat",
+				"sg_vehicles\data\penel_destruct.rvmat",
 				
 				"sg_vehicles\data\tur_back.rvmat",
 				"sg_vehicles\data\tur_back_damage.rvmat",
-				"sg_vehicles\data\tur_back_damage.rvmat",
+				"sg_vehicles\data\tur_back_destruct.rvmat",
 				
 				"sg_vehicles\data\tur_front.rvmat",
 				"sg_vehicles\data\tur_front_damage.rvmat",
-				"sg_vehicles\data\tur_front_damage.rvmat"
+				"sg_vehicles\data\tur_front_destruct.rvmat",
 				
 				
-				//"sg_vehicles\data\dekor.rvmat",
-				//"sg_vehicles\data\dekor_damage.rvmat",
-				//"sg_vehicles\data\dekor_destruct.rvmat",
+				"sg_vehicles\data\dekor.rvmat",
+				"sg_vehicles\data\dekor_damage.rvmat",
+				"sg_vehicles\data\dekor_destruct.rvmat"
 				
-				"sg_vehicles\data\pkm.rvmat",
-				"sg_vehicles\data\pkm_damage.rvmat",
-				"sg_vehicles\data\pkm_damage.rvmat",
 				
-				"sg_btr40\data\dshk.rvmat",
-				"sg_btr40\data\dshk_damage.rvmat",
-				"sg_btr40\data\dshk_damage.rvmat"*/
 				
 			};
 		};
@@ -2633,17 +2748,18 @@ class CfgVehicles
 			tex[] = {};
 			mat[] = {
 				
-			/*	"uns_pbr\data\mat\glass.rvmat",
-				"uns_pbr\data\mat\glass.rvmat",
-				"uns_pbr\data\mat\PBR_destruct.rvmat",
 				
-				"uns_pbr\data\mat\pbr_roof.rvmat",
-				"uns_pbr\data\mat\pbr_roof.rvmat",
-				"uns_pbr\data\mat\PBR_destruct.rvmat",
+				"sg_vehicles\data\pbr_roof.rvmat",
+				"sg_vehicles\data\pbr_roof.rvmat",
+				"sg_vehicles\data\PBRm_destruct.rvmat",
 				
-				"uns_pbr\data\mat\PBR.rvmat",
-				"uns_pbr\data\mat\PBR_damage.rvmat",
-				"uns_pbr\data\mat\PBR_destruct.rvmat",
+				"sg_vehicles\data\PBRm.rvmat",
+				"sg_vehicles\data\PBRm_damage.rvmat",
+				"sg_vehicles\data\PBRm_destruct.rvmat"
+				
+			/*	"sg_vehicles\data\glass.rvmat",
+				"sg_vehicles\data\glass.rvmat",
+				"sg_vehicles\data\PBR_destruct.rvmat",
 				
 				"uns_m113\data\m2_ammotray.rvmat",
 				"uns_m113\data\m2_ammotray.rvmat",
@@ -2744,8 +2860,8 @@ class CfgVehicles
 		memoryPointsGetInGunner = "pos gunner";
 		memoryPointsGetInGunnerDir = "pos gunner dir";
 		
-		driverLeftHandAnimName = "volant";
-		driverRightHandAnimName = "volant";
+		//driverLeftHandAnimName = "handle_driver_l";
+		//driverRightHandAnimName = "handle_driver_r";
 		
 	
 		
@@ -2773,10 +2889,6 @@ class CfgVehicles
 		secondaryExplosion = 1;
 		unloadInCombat = 0;
 		nameSound = "veh_ship_attackBoat_s";
-		/*soundEngineOnInt[] = {"uns_pbr\sounds\pbr_startup_int.wss",1,1};
-		soundEngineOnExt[] = {"uns_pbr\sounds\pbr_startup_ext.wss",1,1,150};
-		soundEngineOffInt[] = {"uns_pbr\sounds\pbr_shutdown_int.wss",1,1};
-		soundEngineOffExt[] = {"uns_pbr\sounds\pbr_shutdown_ext.wss",1,1,150};*/
 		insideSoundCoef = 0;
 		attenuationEffectType = "OpenCarAttenuation";
 		class Sounds
@@ -2863,7 +2975,7 @@ class CfgVehicles
 				memoryPointsGetInGunner = "pos gunner";
 				memoryPointsGetInGunnerDir = "pos gunner dir";
 				gunnerName = "$STR_FRONT_GUNNER";
-				gunnerAction = "gunner_Mrap_01";
+				gunnerAction = "SG_Gunner_TwinM2";
 				gunnerGetInAction = "GetInLow";
 				gunnerGetOutAction = "GetOutLow";
 				weapons[] = {"SG_M2_Twin"};
@@ -2951,7 +3063,7 @@ class CfgVehicles
 				showgunneroptics = 1;
 				gunnerForceOptics = 0;
 				castGunnerShadow = 0;
-				minElev = -50;
+				minElev = -10;
 				maxElev = 30;
 				initElev = -5;
 				initTurn = 180;
@@ -2961,7 +3073,7 @@ class CfgVehicles
 				class ViewOptics
 				{
 					initAngleX = 0;
-					minAngleX = -20;
+					minAngleX = -10;
 					maxAngleX = 60;
 					initAngleY = 0;
 					minAngleY = -135;
@@ -2985,7 +3097,7 @@ class CfgVehicles
 				memoryPointsGetInGunner = "m60_pos_gunner";
 				memoryPointsGetInGunnerDir = "m60_pos_gunner_dir";
 				gunnerAction = "SG_Gunner_M60";
-				gunnerName = "M60 Gunner";
+				gunnerName = "$STR_M60_GUNNER_LEFT";
 				weapons[] = {"sg_m60_veh"};
 				magazines[] = {"rhs_mag_762x51_M240_200"};
 				TurretInfoType = "RscWeaponZeroing";
@@ -3002,12 +3114,12 @@ class CfgVehicles
 				animationSourceGun = "m60_MainGun";
 				selectionFireAnim = "m60_zasleh";
 				memoryPointGunnerOptics = "m60_gunnerview";
-				minElev = -50;
-				maxElev = 60;
+				minElev = -15;
+				maxElev = 45;
 				initElev = 15;
 				initTurn = 90;
-				minTurn = 30;
-				maxTurn = 150;
+				minTurn = 45;
+				maxTurn = 135;
 				class ViewOptics
 				{
 					initAngleX = 0;
@@ -3025,22 +3137,14 @@ class CfgVehicles
 				};
 			};
 					
-			class M60Turret1: BackTurret
+			class M60Turret1: M60Turret
 			{
-				commanding = 0;
 				proxyIndex = 3;
-				primaryGunner = 0;
-				primary = 0;
-				outGunnerMayFire = 1;
 				memoryPointsGetInGunner = "m60_pos_gunner_1";
 				memoryPointsGetInGunnerDir = "m60_pos_gunner_dir_1";
 				gunnerAction = "SG_Gunner_M60";
-				gunnerName = "M60 Gunner 2";
+				gunnerName = "$STR_M60_GUNNER_RIGHT";
 				weapons[] = {"sg_m60_veh2"};
-				magazines[] = {"rhs_mag_762x51_M240_200"};
-				TurretInfoType = "RscWeaponZeroing";
-				discreteDistance[] = {100,200,300,400,500,600,700,800,900,1000,1100,1200};
-				discreteDistanceInitIndex = 1;
 				gunnerLeftHandAnimName = "m60_feedtray_cover_1";
 				gunnerRightHandAnimName = "m60_feedtray_cover_1";
 				body = "m60_MainTurret_1";
@@ -3052,27 +3156,9 @@ class CfgVehicles
 				animationSourceGun = "m60_MainGun_1";
 				selectionFireAnim = "m60_zasleh_1";
 				memoryPointGunnerOptics = "m60_gunnerview_1";
-				minElev = -50;
-				maxElev = 60;
-				initElev = 15;
 				initTurn = -90;
-				minTurn = -150;
-				maxTurn = -30;
-				class ViewOptics
-				{
-					initAngleX = 0;
-					minAngleX = -20;
-					maxAngleX = 60;
-					initAngleY = 0;
-					minAngleY = -135;
-					maxAngleY = 135;
-					initFov = 0.4;
-					minFov = 0.4;
-					maxFov = 0.4;
-					turretInfoType = "RscWeaponZeroing";
-					discreteDistance[] = {100,200,300,400,500,600,700,800,900,1000,1100,1200};
-					discreteDistanceInitIndex = 1;
-				};
+				minTurn = -135;
+				maxTurn = -45;
 			};
 			
 			
@@ -3095,7 +3181,7 @@ class CfgVehicles
 				commanding = 5;
 			};
 
-			class CargoTurret_01: CargoTurret
+			class CargoTurret_01: CargoTurret_Cabina
 			{
 				proxyIndex = 2;
 				gunnerAction = "passenger_inside_2";
@@ -3140,6 +3226,7 @@ class CfgVehicles
 			{
 				proxyIndex = 5;
 				gunnerName = "$STR_CARGO_M_R";
+				gunnerAction = "passenger_inside_2";
 				initTurn = 10;
 				minTurn = -50;
 				maxTurn = 50;

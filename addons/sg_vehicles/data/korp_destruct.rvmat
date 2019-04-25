@@ -1,11 +1,5 @@
-////////////////////////////////////////////////////////////////////
-//DeRap: cup_wheeledvehicles_btr40\data\btr40int_destruct.rvmat
-//Produced from mikero's Dos Tools Dll version 6.34
-//'now' is Thu Mar 28 08:28:05 2019 : 'file' last modified on Thu Mar 28 08:08:37 2019
-//http://dev-heaven.net/projects/list_files/mikero-pbodll
-////////////////////////////////////////////////////////////////////
 
-#define _ARMA_
+	#define _ARMA_
 
 ambient[] = {1,1,1,1};
 diffuse[] = {1,1,1,1};

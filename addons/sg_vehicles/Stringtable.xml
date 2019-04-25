@@ -99,17 +99,7 @@
 		<Russian>Правый борт (сзади)</Russian>
 	</Key>
 	
-	<Key ID="STR_REAR_GUNNER">
-		<Original>Rear gunner</Original>
-		<Russian>Стрелок на корме</Russian>
-	</Key>
-	
-	<Key ID="STR_FRONT_GUNNER">
-		<Original>Front gunner</Original>
-		<Russian>Стрелок на носу</Russian>
-	</Key>
-	
-	
+
 	<Key ID="STR_ASSAULT_BOAT">
 		<Original>Assault boat</Original>
 		<Russian>Штурмовой катер</Russian>
@@ -119,6 +109,17 @@
 	<Key ID="STR_ASSAULT_BOAT_AGS">
 		<Original>Assault boat (AGS-30)</Original>
 		<Russian>Штурмовой катер (АГС-30)</Russian>
+	</Key>
+	
+	
+	<Key ID="STR_M60_GUNNER_RIGHT">
+		<Original>M60 Gunner (Right side)</Original>
+		<Russian>Стрелок М60 (Правый борт)</Russian>
+	</Key>
+	
+	<Key ID="STR_M60_GUNNER_LEFT">
+		<Original>M60 Gunner (Right Left)</Original>
+		<Russian>Стрелок М60 (Левый борт)</Russian>
 	</Key>
 	
 </Container>
