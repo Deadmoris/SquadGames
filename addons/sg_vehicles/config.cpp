@@ -439,7 +439,7 @@ class cfgWeapons
 		BarrelName = "barrel";
 		
 		magazineReloadTime = 0;
-		bn_csw_extra_capacity = 3;
+		bn_csw_extra_capacity = 1;
 		bn_csw_ReloadTime = 6;
 		ballisticsComputer = 2;
 		
@@ -1668,38 +1668,6 @@ class CfgVehicles
 		};
 		
 		bn_csw_loading_style = 1;
-		class ACE_Actions {
-            class ACE_MainActions {
-				// selection = "";
-				distance = 5;
-				condition = 1;
-				class BN_CSW_Load_New {
-					displayName = "Зарядить...";
-					distance = 5;
-					condition = "count ([_target] call bn_csw_fnc_add_subactions) > 0";
-					icon = "\bn_csw_load\data\ui\load.paa";
-					statement = "hint 'Выбери тип снаряда.'";
-					showDisabled = 0;
-					priority = 5;
-					hotkey = "L";
-					position = [0.1,0,0];
-					enableInside = 0;
-					insertChildren = "[_target] call bn_csw_fnc_add_subactions";
-				};
-				class BN_CSW_Unload {
-					displayName = "Разрядить";
-					distance = 5;
-					condition = "true";
-					icon = "\bn_csw_load\data\ui\unload.paa";
-					statement = "0 = [_target, _player] spawn bn_csw_fnc_unload;";
-					showDisabled = 1;
-					priority = 5.1;
-					hotkey = "U";
-					position = [-0.1,0,0];
-					enableInside = 0;
-				};
-			};
-		};
 	};
 	class SG_ASSAULT_BOAT_Base: sg_boat_base_turret
 	{
@@ -1908,7 +1876,6 @@ class CfgVehicles
 				commanding = 1;
 				proxyIndex = 2;
 				primaryGunner = 0;
-				primary = 0;
 				memoryPointsGetInGunner = "pos rear gunner";
 				memoryPointsGetInGunnerDir = "pos rear gunner dir";
 				gunnerGetInAction = "GetInLow";
@@ -2464,7 +2431,6 @@ class CfgVehicles
 				commanding = 1;
 				proxyIndex = 2;
 				primaryGunner = 0;
-				primary = 0;
 				memoryPointsGetInGunner = "pos rear gunner";
 				memoryPointsGetInGunnerDir = "pos rear gunner dir";
 				gunnerGetInAction = "GetInLow";
@@ -3035,7 +3001,6 @@ class CfgVehicles
 				commanding = 1;
 				proxyIndex = 2;
 				primaryGunner = 0;
-				primary = 0;
 				memoryPointsGetInGunner = "pos rear gunner";
 				memoryPointsGetInGunnerDir = "pos rear gunner dir";
 				gunnerGetInAction = "GetInLow";
@@ -3092,7 +3057,6 @@ class CfgVehicles
 				commanding = 0;
 				proxyIndex = 4;
 				primaryGunner = 0;
-				primary = 0;
 				outGunnerMayFire = 1;
 				memoryPointsGetInGunner = "m60_pos_gunner";
 				memoryPointsGetInGunnerDir = "m60_pos_gunner_dir";
