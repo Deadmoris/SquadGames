@@ -1,0 +1,35 @@
+////////////////////////////////////////////////////////////////////
+//DeRap: Produced from mikero's Dos Tools Dll version 4.97
+//Sat Oct 03 21:54:58 2015 : Source 'file' date Sat Oct 03 21:54:58 2015
+//http://dev-heaven.net/projects/list_files/mikero-pbodll
+////////////////////////////////////////////////////////////////////
+
+#define _ARMA_
+
+//Class bn_csw_load : data\models\textures\pg9_metal.rvmat{
+ambient[] = {0.906,0.906,0.906,1};
+diffuse[] = {0.911,0.911,0.911,1};
+forcedDiffuse[] = {0,0,0,0};
+emmisive[] = {0,0,0,1};
+specular[] = {0.172,0.172,0.172,1};
+specularPower = 0;
+PixelShaderID = "NormalMap";
+VertexShaderID = "NormalMap";
+class Stage1
+{
+	texture = "ca\weapons\data\pg9_nohq.paa";
+	uvSource = "tex";
+	class uvTransform
+	{
+		aside[] = {1,0,0};
+		up[] = {0,1,0};
+		dir[] = {0,0,1};
+		pos[] = {0,0,0};
+	};
+};
+class Stage3
+{
+	texture = "#(ai,32,128,1)irradiance(8)";
+	uvSource = "none";
+};
+//};
