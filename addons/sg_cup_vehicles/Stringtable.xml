@@ -91,6 +91,16 @@
 		<Russian>Пассажир (сзади)</Russian>
 	</Key>		
 	
+	<Key ID="STR_REAR_GUNNER">
+		<Original>Rear gunner</Original>
+		<Russian>Стрелок на корме</Russian>
+	</Key>
+	
+	<Key ID="STR_FRONT_GUNNER">
+		<Original>Front gunner</Original>
+		<Russian>Стрелок на носу</Russian>
+	</Key>
+	
 	
 </Container>
 </Package>

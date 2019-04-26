@@ -69,6 +69,16 @@ class CfgMovesBasic
 		CUP_Datsun_Cargo03 = "CUP_Datsun_Cargo03";
 		CUP_Datsun_Gunner01 = "CUP_Datsun_Gunner01";
 		CUP_V3S_Driver = "CUP_V3S_Driver";
+		
+		CUP_RHIB_Driver = "CUP_RHIB_Driver";
+		CUP_RHIB_Gunner = "CUP_RHIB_Gunner";
+		CUP_RHIB_Cargo = "CUP_RHIB_Cargo";
+		
+		
+		SG_T34_Driver = "SG_T34_Driver";
+		
+		
+		
 	};
 };
 
@@ -77,6 +87,26 @@ class CfgMovesMaleSdr: CfgMovesBasic
 	class States
 	{
 		class Crew;
+		
+		class SG_T34_Driver: Crew
+		{
+			file = "\sg_cup_vehicles\data\Anim\sg_t34_driver.rtm";
+			connectTo[] = {"SG_KIA_T34_Driver",1};
+			speed = 1e+010;
+		};
+		class SG_KIA_T34_Driver: DefaultDie
+		{
+			actions = "DeadActions";
+			file = "\sg_cup_vehicles\data\Anim\sg_kia_t34_driver.rtm";
+			speed = 1e+010;
+			terminal = 1;
+			soundEnabled = 0;
+			looped = 0;
+			connectTo[] = {"unconscious",0.1};
+		};
+		
+		
+		
 		class CUP_T55_Driver_EP1: Crew
 		{
 			file = "\sg_cup_vehicles\data\Anim\T55_Driver";
@@ -566,6 +596,50 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		{
 			file = "\sg_cup_vehicles\data\anim\V3S_Driver.rtm";
 			interpolateTo[] = {"CUP_KIA_V3S_Driver",1};
+		};
+		
+		class CUP_KIA_RHIB_Driver: DefaultDie
+		{
+			file = "\sg_cup_vehicles\Data\Anim\KIA_RHIB_Driver.rtm";
+			actions = "DeadActions";
+			speed = 0.5;
+			looped = 0;
+			terminal = 1;
+			connectTo[] = {"Unconscious",0.1};
+			leftHandIKCurve[] = {1};
+			rightHandIKCurve[] = {1};
+		};
+		class CUP_RHIB_Driver: Crew
+		{
+			file = "\sg_cup_vehicles\Data\Anim\RHIB_Driver.rtm";
+			interpolateTo[] = {"CUP_KIA_RHIB_Driver",1};
+			leftHandIKCurve[] = {1};
+			rightHandIKCurve[] = {1};
+		};
+		class CUP_RHIB_Gunner: Crew
+		{
+			file = "\sg_cup_vehicles\Data\Anim\RHIB_Gunner.rtm";
+			interpolateTo[] = {"CUP_KIA_RHIB_Cargo",1};
+			leftHandIKCurve[] = {1};
+			rightHandIKCurve[] = {1};
+		};
+		class CUP_KIA_RHIB_Cargo: DefaultDie
+		{
+			file = "\sg_cup_vehicles\Data\Anim\KIA_RHIB_Cargo.rtm";
+			actions = "DeadActions";
+			speed = 0.5;
+			looped = 0;
+			terminal = 1;
+			connectTo[] = {"Unconscious",0.1};
+			leftHandIKCurve[] = {1};
+			rightHandIKCurve[] = {1};
+		};
+		class CUP_RHIB_Cargo: Crew
+		{
+			file = "\sg_cup_vehicles\Data\Anim\RHIB_Cargo.rtm";
+			interpolateTo[] = {"CUP_KIA_RHIB_Cargo",1};
+			leftHandIKCurve[] = {1};
+			rightHandIKCurve[] = {1};
 		};
 	};
 };
@@ -2569,8 +2643,8 @@ class CfgVehicles
 		picture = "\sg_cup_vehicles\data\Ico\picture_t34_ca.paa";
 		Icon = "\sg_cup_vehicles\data\Ico\icon_t34_ca.paa";
 		mapSize = 10;
-		driverAction = "CUP_T55_Driver_EP1";
-		driverInAction = "CUP_T55_Driver_EP1";
+		driverAction = "SG_T34_Driver";
+		driverInAction = "SG_T34_Driver";
 		destrType = "DestructDefault";
 		driverWeaponsInfoType = "CUP_RscOptics_driver_CO";
 		visionMode[] = {"Normal"};
@@ -2583,6 +2657,9 @@ class CfgVehicles
 		acre_infantryPhoneDisableRinging = 0;
 		acre_infantryPhonePosition[] = {0,0,0};
 		acre_infantryPhoneIntercom[] = {"all"};
+		
+		
+
 		class AcreIntercoms
 		{
 			class Intercom_1
@@ -2677,8 +2754,16 @@ class CfgVehicles
 		hiddenselectionstextures[] = {"\sg_cup_vehicles\Data\T34_Body01_CO.paa","\sg_cup_vehicles\Data\T34_Body02_CO.paa","\sg_cup_vehicles\Data\T34_Turret_CO.paa","\sg_cup_vehicles\Data\T34_Wheels_CO.paa","\sg_cup_vehicles\Data\T34_Body03_CO.paa"};
 		class ViewPilot: ViewPilot
 		{
-			minAngleY = -90;
-			maxAngleY = 90;
+			initAngleX = 0;
+			minAngleX = -5;
+			maxAngleX = 5;
+			initAngleY = 0;
+			minAngleY = -15;
+			maxAngleY = 15;
+			//initFov = 0.3;
+			//minFov = 0.98;
+			//maxFov = 0.3;
+			
 		};
 		accuracy = 0.2;
 		forceHideDriver = 0;
@@ -3483,6 +3568,8 @@ class CfgVehicles
 		editorPreview = "sg_cup_vehicles\Data\preview\CUP_O_T34_TKA.jpg";
 	};
 	
+	
+	
 	class SG_T55_Base: Tank_F  //Двигатель Т-55
 	{
 		expansion = 3;
@@ -3667,6 +3754,15 @@ class CfgVehicles
 		acre_infantryPhoneDisableRinging = 0;
 		acre_infantryPhonePosition[] = {0,0,0};
 		acre_infantryPhoneIntercom[] = {"all"};
+		
+				
+		class ViewOptics: ViewOptics
+		{
+					initFov = 0.466;
+					minFov = 0.466;
+					maxFov = 0.466;
+		};	
+		
 		class AcreIntercoms
 		{
 			class Intercom_1
@@ -10982,4 +11078,489 @@ class CfgVehicles
 		editorPreview = "sg_cup_vehicles\Data\preview\CUP_V3S_Repair_TKG.jpg";
 		maximumLoad = 2500;
 	};
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	class Ship;
+	class Ship_F: Ship
+	{
+		class ViewPilot;
+		class AnimationSources;
+		class Eventhandlers;
+		class Turrets;
+		class NewTurret;
+	};
+	class SG_RHIB_Base: Ship_F
+	{
+		
+		bn_csw_loading_style = 1;
+				
+		ace_interaction_canPush = 1;
+		vehicleClass = "Ship";
+		simulation = "shipx";
+		model = "\sg_cup_vehicles\CUP_RHIB.p3d";
+		picture = "\sg_cup_vehicles\Data\UI\rhib_ca.paa";
+		icon = "\sg_cup_vehicles\Data\UI\icomap_rhib_ca.paa";
+		accuracy = 0.5;
+		mapsize = 8;
+		unitInfoType = "UnitInfoShip";
+		attenuationEffectType = "OpenCarAttenuation";
+		insideSoundCoef = 0;
+		soundEngineOnInt[] = {"a3\Sounds_F\vehicles\boat\Motor_Boat\engine_start","db-5",1.0};
+		soundEngineOnExt[] = {"a3\Sounds_F\vehicles\boat\Motor_Boat\engine_start","db-5",1.0,300};
+		soundEngineOffInt[] = {"a3\Sounds_F\vehicles\boat\Motor_Boat\engine_stop","db-5",1.0};
+		soundEngineOffExt[] = {"a3\Sounds_F\vehicles\boat\Motor_Boat\engine_stop","db-5",1.0,300};
+		buildCrash0[] = {"A3\sounds_f\Vehicles\soft\noises\crash_building_01","db0",1,200};
+		buildCrash1[] = {"A3\sounds_f\Vehicles\soft\noises\crash_building_02","db0",1,200};
+		buildCrash2[] = {"A3\sounds_f\Vehicles\soft\noises\crash_building_03","db0",1,200};
+		buildCrash3[] = {"A3\sounds_f\Vehicles\soft\noises\crash_building_04","db0",1,200};
+		soundBuildingCrash[] = {"buildCrash0",0.25,"buildCrash1",0.25,"buildCrash2",0.25,"buildCrash3",0.25};
+		WoodCrash0[] = {"A3\sounds_f\Vehicles\soft\noises\crash_mix_wood_01","db0",1,200};
+		WoodCrash1[] = {"A3\sounds_f\Vehicles\soft\noises\crash_mix_wood_02","db0",1,200};
+		WoodCrash2[] = {"A3\sounds_f\Vehicles\soft\noises\crash_mix_wood_03","db0",1,200};
+		WoodCrash3[] = {"A3\sounds_f\Vehicles\soft\noises\crash_mix_wood_04","db0",1,200};
+		WoodCrash4[] = {"A3\sounds_f\Vehicles\soft\noises\crash_mix_wood_05","db0",1,200};
+		WoodCrash5[] = {"A3\sounds_f\Vehicles\soft\noises\crash_mix_wood_06","db0",1,200};
+		soundWoodCrash[] = {"woodCrash0",0.166,"woodCrash1",0.166,"woodCrash2",0.166,"woodCrash3",0.166,"woodCrash4",0.166,"woodCrash5",0.166};
+		ArmorCrash0[] = {"A3\sounds_f\Vehicles\soft\noises\crash_vehicle_01","db0",1,200};
+		ArmorCrash1[] = {"A3\sounds_f\Vehicles\soft\noises\crash_vehicle_02","db0",1,200};
+		ArmorCrash2[] = {"A3\sounds_f\Vehicles\soft\noises\crash_vehicle_03","db0",1,200};
+		ArmorCrash3[] = {"A3\sounds_f\Vehicles\soft\noises\crash_vehicle_04","db0",1,200};
+		soundArmorCrash[] = {"ArmorCrash0",0.25,"ArmorCrash1",0.25,"ArmorCrash2",0.25,"ArmorCrash3",0.25};
+		class Sounds
+		{
+			class IdleOut
+			{
+				sound[] = {"A3\Sounds_F\vehicles\boat\Motor_Boat\engine_idle","db-7",1.0,300};
+				frequency = "0.95 + ((rpm/1000) factor[(100/1000),(250/1000)])*0.15";
+				volume = "engineOn*(((rpm/1000) factor[(100/1000),(150/1000)])* ((rpm/1000) factor[(270/1000),(200/1000)]))";
+			};
+			class Engine
+			{
+				sound[] = {"A3\Sounds_F\vehicles\boat\Motor_Boat\engine_1","db-4",1.0,350};
+				frequency = "0.85 + ((rpm/1000) factor[(200/1000),(370/1000)])*0.2";
+				volume = "engineOn*(((rpm/1000) factor[(190/1000),(250/1000)])* ((rpm/1000) factor[(380/1000),(280/1000)]))";
+			};
+			class EngineMidOut
+			{
+				sound[] = {"A3\Sounds_F\vehicles\boat\Motor_Boat\engine_3","db-2",1.0,380};
+				frequency = "0.85 + ((rpm/1000) factor[(280/1000),(480/1000)])*0.2";
+				volume = "engineOn*(((rpm/1000) factor[(250/1000),(350/1000)])* ((rpm/1000) factor[(480/1000),(390/1000)]))";
+			};
+			class EngineMaxOut2
+			{
+				sound[] = {"A3\Sounds_F\vehicles\boat\Motor_Boat\engine_4","db-1",1.0,440};
+				frequency = "0.86 + ((rpm/1000) factor[(380/1000),(580/1000)])*0.2";
+				volume = "engineOn*(((rpm/1000) factor[(370/1000),(440/1000)])* ((rpm/1000) factor[(585/1000),(495/1000)]))";
+			};
+			class EngineMaxOut3
+			{
+				sound[] = {"A3\Sounds_F\vehicles\boat\Motor_Boat\engine_5","db0",1.0,500};
+				frequency = "0.85 + ((rpm/1000) factor[(490/1000),(800/1000)])*0.2";
+				volume = "engineOn*(((rpm/1000) factor[(460/1000),(550/1000)])* ((rpm/1000) factor[(780/1000),(620/1000)]))";
+			};
+			class EngineMaxOut4
+			{
+				sound[] = {"A3\Sounds_F\vehicles\boat\Motor_Boat\engine_6","db2",1.0,550};
+				frequency = "0.85 + ((rpm/1000) factor[(650/1000),(1000/1000)])*0.2";
+				volume = "engineOn*((rpm/1000) factor[(600/1000),(800/1000)])";
+			};
+			class WaternoiseOutW0
+			{
+				sound[] = {"A3\Sounds_F\vehicles\boat\SFX\voda-o-bok-lodi-0-speed1","db-3",1.0,150};
+				frequency = "1";
+				volume = "(speed factor[4, 1])";
+			};
+			class WaternoiseOutW1
+			{
+				sound[] = {"A3\Sounds_F\vehicles\boat\SFX\voda-o-bok-lodi-20-speed","db-2",1.0,250};
+				frequency = "1";
+				volume = "((speed factor[2, 6]) min (speed factor[6, 4]))";
+			};
+			class WaternoiseOutW2
+			{
+				sound[] = {"A3\Sounds_F\vehicles\boat\SFX\voda-o-bok-lodi-50-speed","db0",1.0,350};
+				frequency = "1";
+				volume = "(speed factor[3, 9])";
+			};
+		};
+		maxSpeed = 80;
+		overSpeedBrakeCoef = 0.8;
+		enginePower = 500;
+		engineShiftY = 0.4;
+		waterLeakiness = 1.0;
+		turnCoef = 0.2;
+		thrustDelay = 2;
+		waterLinearDampingCoefY = 2;
+		waterLinearDampingCoefX = 2.0;
+		waterAngularDampingCoef = 1.2;
+		waterResistanceCoef = 0.01;
+		rudderForceCoef = 0.1;
+		rudderForceCoefAtMaxSpeed = 0.003;
+		idleRpm = 200;
+		redRpm = 1200;
+		class complexGearbox
+		{
+			GearboxRatios[] = {"R1",-0.782,"N",0,"D1",2.0,"D2",1.85,"D3",1.75};
+			TransmissionRatios[] = {"High",1.0};
+			gearBoxMode = "auto";
+			moveOffGear = 1;
+			driveString = "D";
+			neutralString = "N";
+			reverseString = "R";
+		};
+		driverAction = "CUP_RHIB_Driver";
+		cargoAction[] = {"CUP_RHIB_Cargo"};
+		getInAction = "GetInMedium";
+		getOutAction = "GetOutMedium";
+		cargoGetInAction[] = {"GetInMedium"};
+		cargoGetOutAction[] = {"GetOutMedium"};
+		castDriverShadow = 1;
+		castCargoShadow = 1;
+		gunnerHasFlares = 0;
+		enableGPS = 1;
+		transportSoldier = 10;
+		typicalCargo[] = {};
+		supplyRadius = 3;
+		hiddenSelections[] = {"camo"};
+		class AnimationSources
+		{
+			class ReloadAnim
+			{
+				source = "reload";
+				weapon = "BN_RHS_M2";
+			};
+			class ReloadMagazine
+			{
+				source = "reloadmagazine";
+				weapon = "BN_RHS_M2";
+			};
+			class Revolving
+			{
+				source = "revolving";
+				weapon = "BN_RHS_M2";
+			};
+			class muzzle_rot_HMG
+			{
+				source = "ammorandom";
+				weapon = "BN_RHS_M2";
+			};
+			class muzzle_hide_HMG
+			{
+				source = "reload";
+				weapon = "BN_RHS_M2";
+			};
+		};
+		armor = 200;
+		leftEngineEffect = "LEngEffectsSmall";
+		rightEngineEffect = "REngEffectsSmall";
+		leftFastWaterEffect = "LFastWaterEffects";
+		rightFastWaterEffect = "RFastWaterEffects";
+		memoryPointsLeftEngineEffect = "EngineEffectL";
+		memoryPointsRightEngineEffect = "EngineEffectR";
+		brakeDistance = 3;
+		class Turrets: Turrets
+		{
+			class MainTurret: NewTurret
+			{
+				class HitPoints
+				{
+					class HitTurret
+					{
+						armor = 0.8;
+						material = 60;
+						name = "vez";
+						visual = "vez";
+						passThrough = 1;
+					};
+					class HitGun
+					{
+						armor = 0.6;
+						material = 60;
+						name = "zbran";
+						visual = "zbran";
+						passThrough = 1;
+					};
+				};
+				stabilizedInAxes = 0;
+				body = "MainTurret";
+				gun = "MainGun";
+				animationSourceBody = "mainTurret";
+				animationSourceGun = "mainGun";
+				gunnerAction = "gunner_standup01";
+				gunnerGetInAction = "GetInMedium";
+				gunnerGetOutAction = "GetOutMedium";
+				ejectDeadGunner = 0;
+				outGunnerMayFire = 1;
+				inGunnerMayFire = 0;
+				minElev = -25;
+				maxElev = 60;
+				initElev = 0;
+				minTurn = -135;
+				maxTurn = 135;
+				initTurn = 0;
+				soundServo[] = {"A3\Sounds_F\vehicles\armor\noises\servo_best","db-40",1.0,50};
+				gunBeg = "usti hlavne";
+				gunEnd = "konec hlavne";
+				weapons[] = {"BN_RHS_M2"};
+				magazines[] = {"rhs_mag_100rnd_127x99_mag"};
+				gunnerName = "$STR_FRONT_GUNNER";
+				gunnerOpticsModel = "\a3\weapons_f\Reticle\optics_empty";
+				gunnerForceOptics = 0;
+				startEngine = 0;
+				commanding = 2;
+				primaryGunner = 1;
+				primaryObserver = 1;
+				gunnerLeftHandAnimName = "OtocHlaven_shake";
+				gunnerRightHandAnimName = "OtocHlaven_shake";
+				turretInfoType = "RscOptics_Offroad_01";
+				discreteDistance[] = {100,200,300,400,500,600,800,1000,1200,1500};
+				discreteDistanceInitIndex = 2;
+				class ViewOptics
+				{
+					initAngleX = 0;
+					minAngleX = -30;
+					maxAngleX = 30;
+					initAngleY = 0;
+					minAngleY = -100;
+					maxAngleY = 100;
+					initFov = 0.7;
+					minFov = 0.25;
+					maxFov = 1.1;
+				};
+			};
+		};
+		class MarkerLights
+		{
+			class WhiteStill
+			{
+				name = "pos_light_still_white";
+				color[] = {1.0,1.0,1.0};
+				ambient[] = {0.1,0.1,0.1};
+				intensity = 75;
+				drawLight = 1;
+				drawLightSize = 0.25;
+				drawLightCenterSize = 0.04;
+				activeLight = 0;
+				blinking = 0;
+				dayLight = 0;
+				useFlare = 1;
+			};
+			class RedStill
+			{
+				name = "pos_light_still_red";
+				color[] = {0.8,0.0,0.0};
+				ambient[] = {0.08,0.0,0.0};
+				intensity = 75;
+				drawLight = 1;
+				drawLightSize = 0.25;
+				drawLightCenterSize = 0.04;
+				activeLight = 0;
+				blinking = 0;
+				dayLight = 0;
+				useFlare = 1;
+			};
+			class GreenStill
+			{
+				name = "pos_light_still_green";
+				color[] = {0.0,0.8,0.0};
+				ambient[] = {0.0,0.08,0.0};
+				intensity = 75;
+				drawLight = 1;
+				drawLightSize = 0.25;
+				drawLightCenterSize = 0.04;
+				activeLight = 0;
+				blinking = 0;
+				dayLight = 0;
+				useFlare = 1;
+			};
+		};
+		hideProxyInCombat = 0;
+		driverLeftHandAnimName = "drivingWheel";
+		driverRightHandAnimName = "throttle";
+		class Library
+		{
+			libTextDesc = "RHIB";
+		};
+		extCameraPosition[] = {0,4.0,-14.0};
+		class Damage
+		{
+			tex[] = {};
+			mat[] = {
+				"sg_cup_vehicles\Data\rhib.rvmat",
+				"sg_cup_vehicles\Data\rhib.rvmat",
+				"sg_cup_vehicles\Data\rhib_destruct.rvmat",
+				
+				"sg_cup_vehicles\Data\rhib_dash.rvmat",
+				"sg_cup_vehicles\Data\rhib_dash.rvmat",
+				"sg_cup_vehicles\Data\rhib_dash_destruct.rvmat"
+				
+				};
+		};
+		slingLoadCargoMemoryPoints[] = {"SlingLoadCargo1","SlingLoadCargo2","SlingLoadCargo3","SlingLoadCargo4"};
+		ace_cargo_hasCargo = 1;
+		ace_cargo_space = 6;
+		class VehicleTransport
+		{
+			class Cargo
+			{
+				parachuteClass = "B_Parachute_02_F";
+				parachuteHeightLimit = 40;
+				canBeTransported = 1;
+				dimensions[] = {"BBox_1_1_pos","BBox_1_2_pos"};
+			};
+		};
+	};
+	class SG_RHIB2Turret_Base: SG_RHIB_Base
+	{
+		vehicleClass = "Ship";
+		model = "\sg_cup_vehicles\CUP_RHIB_gunboat.p3d";
+		picture = "\sg_cup_vehicles\Data\UI\rhib_ca.paa";
+		icon = "\sg_cup_vehicles\Data\UI\icomap_gunboat_ca.paa";
+		mapSize = 8;
+		transportSoldier = 7;
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret{};
+			class BackTurret: MainTurret
+			{
+				body = "Turret_2";
+				gun = "Gun_2";
+				animationSourceBody = "Turret_2";
+				animationSourceGun = "Gun_2";
+				animationSourceHatch = "";
+				stabilizedInAxes = 0;
+				proxyIndex = 2;
+				gunnerName = "$STR_REAR_GUNNER";
+				commanding = -2;
+				gunnerOpticsModel = "\a3\weapons_f\Reticle\optics_empty";
+				minElev = -50;
+				maxElev = 25;
+				initElev = -5;
+				minTurn = 120;
+				maxTurn = 240;
+				initTurn = 180;
+				weapons[] = {"BN_RHS_MK19"};
+				magazines[] = {"RHS_48Rnd_40mm_MK19"};
+				gunBeg = "gmg_start";
+				gunEnd = "gmg_end";
+				gunnerLeftHandAnimName = "otochlaven_1";
+				gunnerRightHandAnimName = "otochlaven_1";
+				primaryGunner = 0;
+				primaryObserver = 0;
+				memoryPointGun = "kulas_1";
+				memoryPointGunnerOptics = "gunnerview_1";
+				turretInfoType = "RscOptics_Offroad_01";
+				discreteDistance[] = {100,200,300,400,500,600,800,1000,1200,1500};
+				discreteDistanceInitIndex = 2;
+			};
+		};
+		class AnimationSources: AnimationSources
+		{
+			class muzzle_rot_GMG
+			{
+				source = "ammorandom";
+				weapon = "BN_RHS_MK19";
+			};
+			class muzzle_hide_GMG
+			{
+				source = "reload";
+				weapon = "BN_RHS_MK19";
+			};
+		};
+	};
+	class SG_B_RHIB_USMC: SG_RHIB_Base
+	{
+		scope = 2;
+		scopeCurator = 2;
+		side = 1;
+		faction = "rhs_faction_usmc_wd";
+		crew = "rhsusf_usmc_marpat_wd_rifleman_m4";
+		typicalCargo[] = {"rhsusf_usmc_marpat_wd_rifleman_m4"};
+		
+		accuracy = 0.5;
+		author = "$STR_CUP_AUTHOR_STRING";
+		vehicleClass = "Ship";
+		displayName = "RHIB";
+		hiddenSelectionsTextures[] = {"sg_cup_vehicles\data\rhib_co.paa"};
+		editorPreview = "sg_cup_vehicles\Data\preview\CUP_B_RHIB_USMC.jpg";
+		class TransportWeapons
+		{};
+		class TransportMagazines
+		{};
+		maximumLoad = 2500;
+		class TransportItems
+		{};
+		class TransportBackpacks
+		{};
+	};
+	class SG_B_RHIB2Turret_USMC: SG_RHIB2Turret_Base
+	{
+		scope = 2;
+		scopeCurator = 2;
+		side = 1;
+		faction = "rhs_faction_usmc_wd";
+		crew = "rhsusf_usmc_marpat_wd_rifleman_m4";
+		typicalCargo[] = {"rhsusf_usmc_marpat_wd_rifleman_m4"};
+		
+		
+		accuracy = 0.5;
+		author = "$STR_CUP_AUTHOR_STRING";
+		vehicleClass = "Ship";
+		displayName = "RHIB (Mk19)";
+		hiddenSelectionsTextures[] = {"sg_cup_vehicles\data\rhib_co.paa"};
+		editorPreview = "sg_cup_vehicles\Data\preview\CUP_B_RHIB2Turret_USMC.jpg";
+		class TransportWeapons
+		{};
+		class TransportMagazines
+		{};
+		maximumLoad = 2500;
+		class TransportItems
+		{};
+		class TransportBackpacks
+		{};
+	};
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 };
