@@ -407,6 +407,7 @@ class cfgWeapons
 	class BN_RHS_M2;
 	class SG_M2_Rear: BN_RHS_M2
 	{
+		bn_csw_extra_capacity = 0;
 		class GunParticles
 		{
 			class effect1

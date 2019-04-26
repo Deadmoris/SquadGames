@@ -16,7 +16,7 @@
 			class BN_CSW_Load_New {
 				displayName = "Зарядить...";
 				distance = 2;
-				condition = "_player == gunner (vehicle _player) && {(getNumber (configFile >> 'CfgVehicles' >> typeOf (vehicle _player) >> 'bn_csw_loading_style')) == 1} && {count ([_target] call bn_csw_fnc_add_subactions) > 0}";
+				condition = "count ([_target] call bn_csw_fnc_add_subactions) > 0";
 				icon = "\bn_csw_load\data\ui\load.paa";
 				statement = "";
 				showDisabled = 0;
@@ -29,9 +29,9 @@
 			class BN_CSW_Unload {
 				displayName = "Разрядить";
 				distance = 2;
-				condition = "_player == gunner (vehicle _player) && {(getNumber (configFile >> 'CfgVehicles' >> typeOf (vehicle _player) >> 'bn_csw_loading_style')) == 1}";
+				condition = "count ([_target] call bn_csw_fnc_add_subactions) > 0";
 				icon = "\bn_csw_load\data\ui\unload.paa";
-				statement = "0 = [vehicle _player, _player] spawn bn_csw_fnc_unload;";
+				statement = "0 = [_target, _player] spawn bn_csw_fnc_unload;";
 				showDisabled = 0;
 				priority = 5.1;
 				hotkey = "U";

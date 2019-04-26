@@ -1,4 +1,4 @@
-﻿private ["_gun","_player","_mags","_unload_time", "_loading_style"];
+﻿private ["_gun","_player","_mags","_unload_time", "_loading_style", "_turret_path"];
 _gun = _this select 0;
 _player = _this select 1;
 
