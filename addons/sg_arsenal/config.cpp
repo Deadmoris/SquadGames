@@ -23,7 +23,7 @@ class RscDisplayArsenal {
 		    idc = -1;
 			x = "0.505156 * safezoneW + safezoneX";
 			y = "0.94 * safezoneH + safezoneY";
-			w = "0.15 * safezoneW";
+			w = "0.16 * safezoneW";
 			h = "0.022 * safezoneH";
 			text = $STR_SG_EXPORT_EQUIP;
 			color[] = {1,1,1,1};
@@ -44,7 +44,7 @@ class RscDisplayArsenal {
 		    idc = -1;
 			x = "0.335 * safezoneW + safezoneX";
 			y = "0.94 * safezoneH + safezoneY";
-			w = "0.15 * safezoneW";
+			w = "0.16 * safezoneW";
 			h = "0.022 * safezoneH";
 		    text = $STR_SG_CLEAR_EQUIP;
 			color[] = {1,1,1,1};

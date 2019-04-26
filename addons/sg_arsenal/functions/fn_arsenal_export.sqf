@@ -47,7 +47,9 @@ if (secondaryWeapon _unit != "") then {
 // Вт. оружие
 if (handgunWeapon _unit != "") then {
 	_out = _out + endl;
-	_out = _out + format ["_unit addItem ""%1"";", handgunMagazine _unit select 0] + endl;
+	if (handgunMagazine _unit select 0 != "<null>") then {
+		_out = _out + format ["_unit addItem ""%1"";", handgunMagazine _unit select 0] + endl;
+	};
 	_out = _out + format ["_unit addWeapon ""%1"";", handgunWeapon _unit] + endl;
 	{
 		if (_x != "") then {
@@ -59,7 +61,10 @@ if (handgunWeapon _unit != "") then {
 
 // Осн. оружие
 if (primaryWeapon _unit != "") then {
-	_out = _out + format ["_unit addItem ""%1"";", primaryWeaponMagazine _unit select 0] + endl;
+	_out = _out + endl;	
+	if (primaryWeaponMagazine _unit select 0 != "<null>") then {
+		_out = _out + format ["_unit addItem ""%1"";", primaryWeaponMagazine _unit select 0] + endl;
+	};
 	_out = _out + format ["_unit addWeapon ""%1"";", primaryWeapon _unit] + endl;
 	{
 		if (_x != "") then {
