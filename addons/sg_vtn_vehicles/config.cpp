@@ -555,6 +555,7 @@ class cfgWeapons
 		};
 	};	
 	magazineReloadTime = 0;
+	reloadTime = 0;
 	bn_csw_extra_capacity = 0;
 	bn_csw_ReloadTime = 6;
 	ballisticsComputer = 2;
