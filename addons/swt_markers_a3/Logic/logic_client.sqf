@@ -81,7 +81,10 @@ swt_markers_logicClient_del = {
 	_mark = _this select 0;
 	if (_mark in swt_markers_allMarkers) then {
 		if (((getMarkerType _mark == "swt_kv") || (getMarkerType _mark == "swt_dv")) && (a3a_var_started)) then {
-			[localize "STR_SWT_CANCEL_DELETE",true, 3] call ace_common_fnc_displayText;
+			_player = _this select 1;
+			if (player == _player) then {
+				[localize "STR_SWT_CANCEL_DELETE",true, 3] call ace_common_fnc_displayText;
+			};
 		} else {
 			_player = _this select 1;
 			deleteMarkerLocal _mark;
