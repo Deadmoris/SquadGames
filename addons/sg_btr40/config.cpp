@@ -23,7 +23,7 @@ class CfgPatches
 		units[] = {};
 		weapons[] = {};
 		requiredVersion = 0.01;
-		requiredAddons[] = {"A3_Data_F","A3_Soft_F","A3_Armor_F","A3_Characters_F","A3_Cargoposes_F","rhs_c_heavyweapons","bn_csw_load"};
+		requiredAddons[] = {"A3_Data_F","A3_Soft_F","A3_Armor_F","A3_Characters_F","A3_Cargoposes_F","rhs_heavyweapons","bn_csw_load","rhs_c_cars"};
 	};
 };
 
@@ -1248,38 +1248,7 @@ class CfgVehicles
 		ace_refuel_fuelCapacity = 122;
 		
 		bn_csw_loading_style = 1;
-		class ACE_Actions {
-            class ACE_MainActions {
-				// selection = "";
-				distance = 5;
-				condition = 1;
-				class BN_CSW_Load_New {
-					displayName = "Зарядить...";
-					distance = 3;
-					condition = "count ([_target] call bn_csw_fnc_add_subactions) > 0";
-					icon = "\bn_csw_load\data\ui\load.paa";
-					statement = "hint 'Выбери тип снаряда.'";
-					showDisabled = 0;
-					priority = 5;
-					hotkey = "L";
-					position = [0.1,0,0];
-					enableInside = 0;
-					insertChildren = "[_target] call bn_csw_fnc_add_subactions";
-				};
-				class BN_CSW_Unload {
-					displayName = "Разрядить";
-					distance = 2;
-					condition = "true";
-					icon = "\bn_csw_load\data\ui\unload.paa";
-					statement = "0 = [_target, _player] spawn bn_csw_fnc_unload;";
-					showDisabled = 1;
-					priority = 5.1;
-					hotkey = "U";
-					position = [-0.1,0,0];
-					enableInside = 0;
-				};
-			};
-		};
+		
 		
 	};
 	class SG_BTR40_Base: SG_BTR40_DSHK_Base
@@ -1762,6 +1731,7 @@ class CfgVehicles
 					minFov = 0.111;
 					maxFov = 0.111;
 				};
+				
 				gunnerOpticsModel = "\rhsafrf\addons\rhs_optics\vehicles\rhs_pgok9_kum_scope"; 
 				class OpticsIn 
 				{ 
