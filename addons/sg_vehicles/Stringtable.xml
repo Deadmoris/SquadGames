@@ -44,9 +44,14 @@
 		<Russian>С-68</Russian>
 	</Key>
 	
-		<Key ID="STR_ZSU57">
+	<Key ID="STR_ZSU57">
 		<Original>ZSU-57-2</Original>
 		<Russian>ЗСУ-57-2</Russian>
+	</Key>
+	
+	<Key ID="STR_ZSU57_ARMOR">
+		<Original>ZSU-57-2 (Armor)</Original>
+		<Russian>ЗСУ-57-2 (Брон.)</Russian>
 	</Key>
 	
 	
@@ -60,9 +65,7 @@
 		<Russian>Отключить подрыв в воздухе</Russian>
 	</Key>
 	
-	
-	
-	
+
 	
 	<Key ID="STR_BOAT_COMMANDER">
 		<Original>Boat commander</Original>
@@ -120,6 +123,11 @@
 	<Key ID="STR_M60_GUNNER_LEFT">
 		<Original>M60 Gunner (Right Left)</Original>
 		<Russian>Стрелок М60 (Левый борт)</Russian>
+	</Key>
+	
+	<Key ID="STR_PATROL_BOAT">
+		<Original>Patrol boat</Original>
+		<Russian>Патрульная лодка</Russian>
 	</Key>
 	
 </Container>
