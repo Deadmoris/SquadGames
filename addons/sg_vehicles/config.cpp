@@ -353,8 +353,8 @@ class cfgWeapons
 		};
 	};
 	
-	class rhs_weap_m240_abrams;
-	class sg_m60_veh: rhs_weap_m240_abrams
+	class BN_RHS_M240;
+	class sg_m60_veh: BN_RHS_M240
 	{
 		displayName = "M60";
 		class GunParticles
@@ -375,15 +375,11 @@ class cfgWeapons
 			{
 				effectname = "MachineGunEject";
 			};
-		};	
-		bn_csw_extra_capacity = 0;
-		bn_csw_ReloadTime = 6;
-		reloadTime = 0;
-		magazineReloadTime = 0;
+		};
 	};
 	
 	
-	class sg_m60_veh2: rhs_weap_m240_abrams
+	class sg_m60_veh2: BN_RHS_M240
 	{
 		displayName = "M60";
 		class GunParticles
@@ -445,11 +441,8 @@ class cfgWeapons
 		isMultiBarrel = 1;
 		BarrelCount = 2;
 		BarrelName = "barrel";
-		
-		magazineReloadTime = 0;
+
 		bn_csw_extra_capacity = 1;
-		bn_csw_ReloadTime = 6;
-		ballisticsComputer = 2;
 		
 		class GunParticles
 		{
@@ -1957,7 +1950,7 @@ class CfgVehicles
 				gunnerInAction = "SG_REAR_Gunner";
 				gunnerName = "$STR_REAR_GUNNER";
 				weapons[] = {"SG_VTN_pkm"};
-				magazines[] = {"sg_250Rnd_762x54mmR"};
+				magazines[] = {"rhs_mag_762x54mm_250"};
 				gunBeg = "REAR_usti_hlavne";
 				gunEnd = "REAR_konec_hlavne";
 				body = "REAR_otocvez";
@@ -2367,9 +2360,9 @@ class CfgVehicles
 				magazine = "rhs_mag_127x108mm_50";
 				count = 8;
 			};
-			class _xx_sg_250Rnd_762x54mmR
+			class _xx_rhs_mag_762x54mm_250
 			{
-				magazine = "sg_250Rnd_762x54mmR";
+				magazine = "rhs_mag_762x54mm_250";
 				count = 4;
 			};
 		};
@@ -2731,9 +2724,9 @@ class CfgVehicles
 		
 		class TransportMagazines
 		{
-			class _xx_sg_250Rnd_762x54mmR
+			class _xx_rhs_mag_762x54mm_250
 			{
-				magazine = "sg_250Rnd_762x54mmR";
+				magazine = "rhs_mag_762x54mm_250";
 				count = 4;
 			};
 		};
@@ -2799,7 +2792,7 @@ class CfgVehicles
 				gunnerAction = "SG_REAR_Gunner";
 				gunnerInAction = "SG_REAR_Gunner";
 				weapons[] = {"SG_VTN_pkm"};
-				magazines[] = {"sg_250Rnd_762x54mmR"};
+				magazines[] = {"rhs_mag_762x54mm_250"};
 				gunBeg = "usti hlavne";	
 				gunEnd = "konec hlavne";	
 				body = "mainturret";

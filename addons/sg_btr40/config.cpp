@@ -331,17 +331,10 @@ class cfgWeapons
 				effectName = "MachineGunCartridge2";
 			};
 		};		
-		//magazines[] = {"rhs_mag_127x108mm_50","rhs_mag_127x108mm_150"};
-		//magazines[] = {"rhs_mag_127x108mm_50"};
-		magazineReloadTime = 0;
-		bn_csw_extra_capacity = 0;
-		bn_csw_ReloadTime = 6;
-		ballisticsComputer = 2;
 	};
 	
 	class SG_DSHK_sparka: BN_rhs_weap_DSHKM
 	{
-		//magazines[] = {"rhs_mag_127x108mm_50"};
 		reloadTime = 0.01;
 		isMultiBarrel = 1;
 		BarrelCount = 2;
@@ -397,7 +390,6 @@ class cfgWeapons
 	class SG_M2_Quad: BN_RHS_M2
 	{
 		displayName = "M45 Quadmount M2HB";
-		//magazines[] = {"SG_mag_127x99mm_400"};
 		discreteDistance[] = {100,200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500,1600,1700,1800,1900,2000};
 		discreteDistanceInitIndex = 2;
 		aiDispersionCoefY = 24;
@@ -470,19 +462,6 @@ class cfgWeapons
 		};
 	};
 };
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 class CfgVehicles
 {
@@ -1366,9 +1345,9 @@ class CfgVehicles
 					initAngleY = 0;
 					minAngleY = -360;
 					maxAngleY = 360;
-					initFov = 0.4;
-					minFov = 0.4;
-					maxFov = 0.4;
+					initFov = 0.7;
+					minFov = 0.25;
+					maxFov = 1.1;
 				};
 			};
 		};
@@ -1488,7 +1467,7 @@ class CfgVehicles
 					minAngleY = -100;
 					maxAngleY = 100;
 					initFov = 0.7;
-					minFov = 0.15;
+					minFov = 0.25;
 					maxFov = 1.1;
 					TurretInfoType = "RscWeaponZeroing";
 					discreteDistance[] = {100,200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500,1600,1700,1800,1900,2000};

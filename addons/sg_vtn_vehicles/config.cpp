@@ -414,69 +414,6 @@ class CfgMovesMaleSdr: cfgMovesBasic
 	};
 };
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-class cfgmagazines 
-{
-	class rhs_100Rnd_762x54mmR;
-	class sg_250Rnd_762x54mmR: rhs_100Rnd_762x54mmR
-	{
-		displayName = "$STR_SG_CFGMAGAZINES_250rnd_762X51_MAG0";
-		descriptionShort = "$STR_SG_CFGMAGAZINES_250RND_762X51_MAG_Desc_0";
-		displayNameShort = "57-N-323S";
-		model = "\sg_vtn_vehicles\sg_250_pk_mag";
-		picture = "\rhsafrf\addons\rhs_weapons\icons\pkpbox_ca.paa";
-		ammo = "rhs_B_762x54_Ball";
-		count = 250;
-		mass = 164.35;
-		initSpeed = 798;
-		tracersevery = 4;
-	};
-	
-	
-};
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class cfgWeapons 
 {
 	class BN_rhs_weap_kord;
@@ -505,39 +442,9 @@ class cfgWeapons
 		};
 	};
 	
-	class BN_rhs_weap_nsvt;	
-	class SG_VTN_nsv: BN_rhs_weap_nsvt
+	class BN_RHS_PKM;	
+	class SG_VTN_pkm: BN_RHS_PKM
 	{
-		class GunParticles
-		{
-			class effect1
-			{
-				directionname = "nabojnicestart1";
-				effectname = "MachineGunCartridge2";
-				positionname = "nabojniceend1";
-			};
-			class effect2
-			{
-				directionname = "konec hlavne";
-				effectname = "MachineGunCloud";
-				positionname = "usti hlavne";
-			};
-		};
-	};	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	class rhs_weap_pkt;	
-	class SG_VTN_pkm: rhs_weap_pkt
-	{
-		magazines[] = {"sg_250Rnd_762x54mmR"};
 		class GunParticles
 		{
 			class effect1
@@ -2959,42 +2866,42 @@ class CfgVehicles
 			class ReloadAnim
 			{
 				source = "reload";
-				weapon = "SG_VTN_nsv";
+				weapon = "BN_rhs_weap_nsv";
 			};
 			class ReloadMagazine
 			{
 				source = "reloadmagazine";
-				weapon = "SG_VTN_nsv";
+				weapon = "BN_rhs_weap_nsv";
 			};
 			class trigger1
 			{
 				source = "trigger";
-				weapon = "SG_VTN_nsv";
+				weapon = "BN_rhs_weap_nsv";
 			};
 			class cover1
 			{
 				source = "reload";
-				weapon = "SG_VTN_nsv";
+				weapon = "BN_rhs_weap_nsv";
 			};
 			class cover2
 			{
 				source = "reload";
-				weapon = "SG_VTN_nsv";
+				weapon = "BN_rhs_weap_nsv";
 			};
 			class Revolving
 			{
 				source = "revolving";
-				weapon = "SG_VTN_nsv";
+				weapon = "BN_rhs_weap_nsv";
 			};
 			class ammo_belt
 			{
 				source = "Reload";
-				weapon = "SG_VTN_nsv";
+				weapon = "BN_rhs_weap_nsv";
 			};
 			class Barrel_recoil
 			{
 				source = "Reload";
-				weapon = "SG_VTN_nsv";
+				weapon = "BN_rhs_weap_nsv";
 			};
 			class shield
 			{
@@ -3023,7 +2930,7 @@ class CfgVehicles
 			{
 				body = "mainTurret";
 				gun = "mainGun";
-				weapons[] = {"SG_VTN_nsv"};
+				weapons[] = {"BN_rhs_weap_nsv"};
 				magazines[] = {"rhs_mag_127x108mm_50"};
 				memoryPointGunnerOptics = "eye";
 				discreteDistance[] = {100,200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500,1600,1700,1800,1900,2000};
@@ -3367,7 +3274,7 @@ class CfgVehicles
 				body = "mainTurret";
 				gun = "mainGun";
 				weapons[] = {"SG_VTN_pkm"};
-				magazines[] = {"sg_250Rnd_762x54mmR"};
+				magazines[] = {"rhs_mag_762x54mm_250"};
 				turretInfoType = "RscOptics_Offroad_01";
 				soundServo[] = {"A3\sounds_f\dummysound",0.01,1,10};
 				gunnerCompartments = "Compartment1";
@@ -3499,9 +3406,9 @@ class CfgVehicles
 		};
 		class TransportMagazines
 		{
-			class _xx_sg_250Rnd_762x54mmR
+			class _xx_rhs_mag_762x54mm_250
 			{
-				magazine = "sg_250Rnd_762x54mmR";
+				magazine = "rhs_mag_762x54mm_250";
 				count = 4;
 			};
 		};
