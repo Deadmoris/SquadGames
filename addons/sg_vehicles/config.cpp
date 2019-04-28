@@ -53,6 +53,8 @@ class CfgMovesBasic
 		SG_Gunner_TwinM2 = "SG_Gunner_TwinM2";
 		
 		sg_PBR_Driver = "sg_PBR_Driver";
+		
+		searchlight_Gunner = "searchlight_Gunner";
 	};
 };
 
@@ -156,6 +158,12 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			rightLegIKCurve[] = {1};
 		};
 		
+		
+		class searchlight_Gunner: Crew
+        {
+            file = "sg_vehicles\data\anim\searchlight_Gunner.rtm";
+            connectTo[] = {"Static_Dead",1};
+        };
 		
 	};
 };
@@ -2124,6 +2132,10 @@ class CfgVehicles
 			{
 				source = "revolving";
 			};
+			class pkm_muzzleflashrot: REAR_ReloadAnim
+			{
+				source = "ammoRandom";
+			};
 		};
 		
 
@@ -3888,6 +3900,315 @@ class CfgVehicles
 	
 	
 	
+	
+	
+	
+	class StaticWeapon: LandVehicle
+    {
+        class Turrets
+        {
+            class MainTurret;
+        };
+        class UserActions;
+    };
+    class StaticSEARCHLight: StaticWeapon
+    {
+        class Turrets: Turrets
+        {
+            class MainTurret: MainTurret {};
+        };
+        class UserActions: UserActions {};
+    };
+    class SearchLight_Base: StaticSEARCHLight
+    {
+        scope = 0;
+        model = "sg_vehicles\searchlight_manual.p3d";
+        picture = "\sg_vehicles\data\searchlight_manual_CA.paa";
+        mapSize = 3;
+        nameSound = "light";
+        //BIS uses "Search Light" :^)
+        displayName = "$STR_SEARCHLIGHT";
+        typicalCargo[] = {};
+
+        class Turrets: Turrets
+        {
+            class MainTurret: MainTurret
+            {
+                weapons[] = {"SEARCHLIGHT"};
+                minElev = -25;
+                maxElev = 85;
+                initElev= 0;
+                minTurn = -180;
+                maxTurn = 180;
+                initTurn = 0;
+                gunnerAction = "searchlight_Gunner";
+                //Reversed by default so when player exits he is looking forward
+                //memoryPointsGetInGunner = "pos_gunner_dir";
+                //memoryPointsGetInGunnerDir = "pos_gunner";
+                ejectDeadGunner = true;
+            };
+        };
+        
+        class Reflectors
+        {
+            class main_reflector
+            {
+                color[] = {9500,9000,8500};
+                ambient[] = {85,85,85};
+                position = "light";
+                direction = "lightEnd";
+                hitpoint = "light";
+                selection = "light";
+                size = 1;
+                intensity = 50;
+                innerAngle = 15;
+                outerAngle = 65;
+                coneFadeCoef = 10;
+                useFlare = true;
+                dayLight = false;
+                flareSize = 10;
+                flareMaxDistance = 250;
+                class Attenuation
+                {
+                    start = 0;
+                    constant = 0;
+                    linear = 1;
+                    quadratic = 1;
+                    hardLimitStart = 100;
+                    hardLimitEnd = 200;
+                };
+            };
+            class sub_reflector: main_reflector
+            {
+                flareSize = 5;
+            };
+        };
+        aggregateReflectors[] = {{"main_reflector","sub_reflector"}};
+
+        class Damage
+        {
+            tex[] = {};
+            mat[] = 
+            {
+                "sg_vehicles\data\searchlight_manual.rvmat",
+				"sg_vehicles\data\searchlight_manual_damage.rvmat",
+				"sg_vehicles\data\searchlight_manual_damage.rvmat",
+				
+                "sg_cup_vehicles\data\m2_stojan.rvmat",
+				"sg_cup_vehicles\data\m2_stojan_damage.rvmat",
+				"sg_cup_vehicles\data\m2_stojan_damage.rvmat",
+				
+                "sg_vehicles\data\searchlight_manual_glass.rvmat",
+				"sg_vehicles\data\searchlight_manual_glass_destruct.rvmat",
+				"sg_vehicles\data\searchlight_manual_glass_destruct.rvmat",
+            };
+        };
+
+        class UserActions: UserActions
+        {
+            class lightOn
+            {
+                displayName = "$STR_LIGHTS_ON";
+                shortcut = "Headlights";
+                condition = "player in this && {!(this getVariable ['a2LightOn', false])}";
+                statement = "player action ['lightOn', this]; this setVariable ['a2LightOn', true]";
+                position = "pos_gunner";
+                radius = 2;
+                onlyforplayer = 1;
+                showWindow = 0;
+                hideOnUse = 1;
+            };
+            class lightOff
+            {
+                displayName = "$STR_LIGHTS_OFF";
+                shortcut = "Headlights";
+                condition = "player in this && {(this getVariable ['a2LightOn', false])}";
+                statement = "player action ['lightOff', this]; this setVariable ['a2LightOn', false]";
+                position = "pos_gunner";
+                radius = 2;
+                onlyforplayer = 1;
+                showWindow = 0;
+                hideOnUse = 1;
+            };
+        };
+
+        class assembleInfo
+        {
+            primary = 0;
+            base = "";
+            assembleTo = "";
+            dissasembleTo[] = {"B_Bag_Searchlight"};
+            displayName = "";
+        };
+    };
+
+    class SearchLight_Cool_Base: SearchLight_Base
+    {
+        model = "sg_vehicles\searchlight_manual_cool.p3d";
+        displayName = "$STR_SEARCHLIGHT_COOL";
+        class Reflectors: Reflectors
+        {
+            class main_reflector: main_reflector
+            {
+                color[] = {7000,7500,10000};
+                ambient[] = {70,75,100};
+            };
+            class sub_reflector: main_reflector
+            {
+                flareSize = 5;
+            };
+        };
+
+        class assembleInfo: assembleInfo
+        {
+            dissasembleTo[] = {"B_Bag_Searchlight_Cool"};
+        };
+    };
+
+    class B_SearchLight: SearchLight_base
+    {
+        scope = 2;
+        side = 1;
+        faction = "BLU_F";
+        crew = "B_Soldier_lite_F";
+    };
+    class O_SearchLight: SearchLight_base
+    {
+        scope = 2;
+        side = 0;
+        faction = "OPF_F";
+        crew = "O_Soldier_lite_F";
+        class assembleInfo: assembleInfo
+        {
+            dissasembleTo[] = {"O_Bag_Searchlight"};
+        };
+    };
+    class I_SearchLight: SearchLight_base
+    {
+        scope = 2;
+        side = 2;
+        faction = "IND_F";
+        crew = "I_Soldier_lite_F";
+        class assembleInfo: assembleInfo
+        {
+            dissasembleTo[] = {"I_Bag_Searchlight"};
+        };
+    };
+
+    class B_SearchLight_Cool: SearchLight_Cool_Base
+    {
+        scope = 2;
+        side = 1;
+        faction = "BLU_F";
+        crew = "B_Soldier_lite_F";
+    };
+    class O_SearchLight_Cool: SearchLight_Cool_Base
+    {
+        scope = 2;
+        side = 0;
+        faction = "OPF_F";
+        crew = "O_Soldier_lite_F";
+        class assembleInfo: assembleInfo
+        {
+            dissasembleTo[] = {"O_Bag_Searchlight_Cool"};
+        };
+    };
+    class I_SearchLight_Cool: SearchLight_Cool_Base
+    {
+        scope = 2;
+        side = 2;
+        faction = "IND_F";
+        crew = "I_Soldier_lite_F";
+        class assembleInfo: assembleInfo
+        {
+            dissasembleTo[] = {"I_Bag_Searchlight_Cool"};
+        };
+    };
+
+    class Bag_Base;
+    class Weapon_Bag_Base: Bag_Base
+    {
+        class assembleInfo;
+    };
+    class B_HMG_01_weapon_F: Weapon_Bag_Base {};
+    class B_Bag_Searchlight: B_HMG_01_weapon_F
+    {
+        _generalMacro = "B_Bag_Searchlight";
+        displayName = "$STR_SEARCHLIGHT";
+		
+		model = "\rhsafrf\addons\rhs_heavyweapons\bags\StaticX.p3d";
+		picture = "\rhsafrf\addons\rhs_heavyweapons\bags\staticX_CA.paa";
+		icon = "\rhsafrf\addons\rhs_heavyweapons\bags\mapIcon_backpack_CA.paa";
+		
+        class assembleInfo: assembleInfo
+        {
+            displayName = "$STR_SEARCHLIGHT";
+            assembleTo = "B_SearchLight";
+            base = "";
+        };
+    };
+    class B_Bag_Searchlight_Cool: B_Bag_Searchlight
+    {
+        _generalMacro = "B_Bag_Searchlight_Cool";
+        displayName = "$STR_SEARCHLIGHT_COOL";
+        class assembleInfo: assembleInfo
+        {
+            displayName = "$STR_SEARCHLIGHT_COOL";
+            assembleTo = "B_SearchLight_Cool";
+        };
+    };
+    class O_HMG_01_weapon_F: Weapon_Bag_Base {};
+    class O_Bag_Searchlight: O_HMG_01_weapon_F
+    {
+        _generalMacro = "O_Bag_Searchlight";
+        displayName = "$STR_SEARCHLIGHT";
+        class assembleInfo: assembleInfo
+        {
+            displayName = "$STR_SEARCHLIGHT";
+            assembleTo = "O_SearchLight";
+            base = "";
+        };
+		
+		model = "\rhsafrf\addons\rhs_heavyweapons\bags\StaticX.p3d";
+		picture = "\rhsafrf\addons\rhs_heavyweapons\bags\staticX_CA.paa";
+		icon = "\rhsafrf\addons\rhs_heavyweapons\bags\mapIcon_backpack_CA.paa";
+    };
+    class O_Bag_Searchlight_Cool: O_Bag_Searchlight
+    {
+        _generalMacro = "O_Bag_Searchlight_Cool";
+        displayName = "$STR_SEARCHLIGHT_COOL";
+        class assembleInfo: assembleInfo
+        {
+            displayName = "$STR_SEARCHLIGHT_COOL";
+            assembleTo = "O_SearchLight_Cool";
+        };
+    };
+    class I_HMG_01_weapon_F: Weapon_Bag_Base {};
+    class I_Bag_Searchlight: I_HMG_01_weapon_F
+    {
+        _generalMacro = "I_Bag_Searchlight";
+        displayName = "$STR_SEARCHLIGHT";
+        class assembleInfo: assembleInfo
+        {
+            displayName = "$STR_SEARCHLIGHT";
+            assembleTo = "I_SearchLight";
+            base = "";
+        };
+		
+		model = "\rhsafrf\addons\rhs_heavyweapons\bags\StaticX.p3d";
+		picture = "\rhsafrf\addons\rhs_heavyweapons\bags\staticX_CA.paa";
+		icon = "\rhsafrf\addons\rhs_heavyweapons\bags\mapIcon_backpack_CA.paa";
+    };
+    class I_Bag_Searchlight_Cool: I_Bag_Searchlight
+    {
+        _generalMacro = "I_Bag_Searchlight_Cool";
+        displayName = "$STR_SEARCHLIGHT_COOL";
+        class assembleInfo: assembleInfo
+        {
+            displayName = "$STR_SEARCHLIGHT_COOL";
+            assembleTo = "I_SearchLight_Cool";
+        };
+    };
 	
 	
 	

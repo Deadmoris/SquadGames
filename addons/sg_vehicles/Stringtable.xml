@@ -130,6 +130,35 @@
 		<Russian>Патрульная лодка</Russian>
 	</Key>
 	
+	
+	
+	<Key ID="STR_SEARCHLIGHT">
+		<Original>Searchlight</Original>
+		<Russian>Прожектор</Russian>
+	</Key>
+	
+		<Key ID="STR_SEARCHLIGHT_COOL">
+		<Original>Searchlight (Cool)</Original>
+		<Russian>Прожектор (Холодный свет)</Russian>
+	</Key>
+	
+	<Key ID="STR_LIGHTS_ON">
+		<Original>Lights On</Original>
+		<Russian>Включить свет</Russian>
+	</Key>
+	
+	<Key ID="STR_LIGHTS_OFF">
+		<Original>Lights Off</Original>
+		<Russian>Выключить свет</Russian>
+	</Key>
+
+	
+	
+	
+	
+	
+	
+	
 </Container>
 </Package>
 </Project>
