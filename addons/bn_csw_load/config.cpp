@@ -227,6 +227,22 @@ class CfgMagazines {
 
 	class VehicleMagazine: CA_Magazine {};
 
+	class rhs_mag_762x54mm_100: VehicleMagazine
+	{
+		descriptionShort = "Коробка 7,62x54 мм";
+		displayName = "Коробка 7,62x54 мм";
+		model = "\rhsafrf\addons\rhs_weapons\magazines\rhs_pk_mag";
+		picture = "\rhsafrf\addons\rhs_weapons\icons\pkpbox_ca.paa";
+		mass = 70;
+	};
+	class rhs_mag_762x54mm_250: rhs_mag_762x54mm_100
+	{
+		descriptionShort = "Коробка 7,62x54 мм (250)";
+		displayName = "Коробка 7,62x54 мм";
+		model = "\rhsafrf\addons\rhs_weapons\magazines\rhs_pk_mag";
+		picture = "\rhsafrf\addons\rhs_weapons\icons\pkpbox_ca.paa";
+		mass = 175;
+	};
 	class rhs_mag_2Rnd_TOW2A;	
 	class rhs_mag_TOW2a: rhs_mag_2Rnd_TOW2A {
 		descriptionShort = "Ракета BGM-71E TOW-2A в транспортно-пусковом контейнере";
@@ -560,7 +576,7 @@ class CfgWeapons {
 	
 
 	class Rhs_weap_TOW_Launcher_static;
-	class BN_RHS_weap_TOW_Launcher: Rhs_weap_TOW_Launcher_static
+	class BN_RHS_weap_TOW_Launcher: Rhs_weap_TOW_Launcher_static 
 	{
 		reloadTime = 0;
 		magazineReloadTime = 0;
@@ -574,7 +590,7 @@ class CfgWeapons {
 	};
 	
 	class RHS_weap_Ags30;
-	class BN_RHS_weap_Ags30: RHS_weap_Ags30
+	class BN_RHS_weap_Ags30: RHS_weap_Ags30 //Стационар(машины,лодки), 1 Магазин - АГС-30
 	{
 		class GunParticles
 		{
@@ -609,7 +625,7 @@ class CfgWeapons {
 	class RHS_MK19: GMG_20mm {
 		maxZeroing = 1500;
 	};
-	class BN_RHS_MK19: RHS_MK19
+	class BN_RHS_MK19: RHS_MK19 //Стационар(машины,лодки), 1 Магазин - MK19
 	{
 		class GunParticles
 		{
@@ -639,16 +655,17 @@ class CfgWeapons {
 		ballisticsComputer = 2;
 	};
 	
-	class RHS_M2;
-	class BN_RHS_M2: RHS_M2 {
+	class MGun;
+	class RHS_M2; 
+	class BN_RHS_M2: RHS_M2 //Стационар(машины,лодки), 1 Магазин - M2
+	{
 		magazines[] = {"rhs_mag_100rnd_127x99_mag","rhs_mag_100rnd_127x99_mag_Tracer_Red","rhs_mag_100rnd_127x99_mag_Tracer_Green","rhs_mag_100rnd_127x99_mag_Tracer_Yellow"};
 		magazineReloadTime = 0;
 		bn_csw_extra_capacity = 0;
 		bn_csw_ReloadTime = 6;
 		ballisticsComputer = 2;
-		class FullAuto;
 	};
-	class BN_RHS_M249: BN_RHS_M2
+	class BN_RHS_M249: BN_RHS_M2 //Стационар(машины,лодки), 1 Магазин - M249
 	{
 		displayName="M249";
 		magazines[]=
@@ -660,32 +677,7 @@ class CfgWeapons {
 			"rhsusf_200Rnd_556x45_M855_soft_pouch",
 			"rhsusf_100Rnd_556x45_soft_pouch",
 			"rhsusf_200Rnd_556x45_soft_pouch",
-			"rhsusf_100Rnd_556x45_M200_soft_pouch",
-			"rhs_mag_30Rnd_556x45_Mk318_Stanag",
-			"rhs_mag_30Rnd_556x45_Mk262_Stanag",
-			"rhs_mag_30Rnd_556x45_M855_Stanag",
-			"rhs_mag_30Rnd_556x45_M855A1_Stanag",
-			"rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer",
-			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",
-			"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red",
-			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Green",
-			"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Green",
-			"rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Yellow",
-			"rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Yellow",
-			"rhs_mag_30Rnd_556x45_M200_Stanag",
-			"30Rnd_556x45_Stanag",
-			"30Rnd_556x45_Stanag_Tracer_Red",
-			"30Rnd_556x45_Stanag_Tracer_Green",
-			"30Rnd_556x45_Stanag_Tracer_Yellow",
-			"UK3CB_BAF_556_30Rnd",
-			"UK3CB_BAF_556_30Rnd_Blank",
-			"UK3CB_BAF_556_30Rnd_T",
-			"UK3CB_BAF_556_100Rnd",
-			"UK3CB_BAF_556_100Rnd_Blank",
-			"UK3CB_BAF_556_100Rnd_T",
-			"UK3CB_BAF_556_200Rnd",
-			"UK3CB_BAF_556_200Rnd_Blank",
-			"UK3CB_BAF_556_200Rnd_T"
+			"rhsusf_100Rnd_556x45_M200_soft_pouch"
 		};
 		reloadaction="rhs_GestureReloadM249STANAG";
 		reloadmagazinesound[]=
@@ -811,7 +803,7 @@ class CfgWeapons {
 		{
 			libTextDesc="The M249 provides infantry squads with the heavy volume of fire of a machine gun combined with accuracy and portability approaching that of a rifle.";
 		};
-		class FullAuto: FullAuto
+		class FullAuto
 		{
 			aiDispersionCoefX=2;
 			aiDispersionCoefY=3;
@@ -1175,18 +1167,1820 @@ class CfgWeapons {
 			weaponSoundEffect="DefaultRifle";
 		};
 	};
+	class BN_RHS_M240: BN_RHS_M249 //Стационар(машины,лодки), 1 Магазин - M240
+	{
+		displayName="M240";
+		magazines[] =
+		{
+			"rhs_mag_1100Rnd_762x51_M240",
+			"rhs_mag_762x51_M240_1200",
+			"rhs_mag_762x51_M240_200",
+			"rhsusf_50Rnd_762x51",
+			"rhsusf_50Rnd_762x51_m61_ap",
+			"rhsusf_50Rnd_762x51_m62_tracer",
+			"rhsusf_50Rnd_762x51_m80a1epr",
+			"rhsusf_50Rnd_762x51_m82_blank",
+			"rhsusf_100Rnd_762x51",
+			"rhsusf_100Rnd_762x51_m61_ap",
+			"rhsusf_100Rnd_762x51_m62_tracer",
+			"rhsusf_100Rnd_762x51_m80a1epr",
+			"rhsusf_100Rnd_762x51_m82_blank",
+			"rhsusf_50Rnd_762x51_m993",
+			"rhsusf_100Rnd_762x51_m993",
+			"hlc_100Rnd_762x51_B_M60E4", 
+			"hlc_100Rnd_762x51_M_M60E4", 
+			"hlc_100Rnd_762x51_T_M60E4"
+		};
+		reloadAction = "GestureReloadMMG02";
+		reloadMagazineSound[] =
+		{
+			"rhsusf\addons\rhsusf_sounds\m240\reload",
+			1.3,
+			1,
+			30
+		};
+		reloadSound[] =
+		{
+			"",
+			1,
+			1
+		};
+		reloadTime = 0.15;
+		modes[] =
+		{
+			"manual",
+			"close",
+			"short",
+			"medium",
+			"far"
+		};
+		drySound[] =
+		{
+			"A3\sounds_f\weapons\Other\dry_1",
+			0.01,
+			1
+		};
+		emptySound[] =
+		{
+			"",
+			1,
+			1
+		};
+		bullet1[] = {"A3\sounds_f\weapons\shells\5_56\metal_556_01.wss",0.1,1,15};
+		bullet10[] = {"A3\sounds_f\weapons\shells\5_56\grass_556_02.wss",0.01,1,15};
+		bullet11[] = {"A3\sounds_f\weapons\shells\5_56\grass_556_03.wss",0.01,1,15};
+		bullet12[] = {"A3\sounds_f\weapons\shells\5_56\grass_556_04.wss",0.01,1,15};
+		bullet2[] = {"A3\sounds_f\weapons\shells\5_56\metal_556_02.wss",0.1,1,15};
+		bullet3[] = {"A3\sounds_f\weapons\shells\5_56\metal_556_03.wss",0.177828,1,15};
+		bullet4[] = {"A3\sounds_f\weapons\shells\5_56\metal_556_04.wss",0.177828,1,15};
+		bullet5[] = {"A3\sounds_f\weapons\shells\5_56\asphlat_556_01.wss",0.1,1,15};
+		bullet6[] = {"A3\sounds_f\weapons\shells\5_56\asphlat_556_02.wss",0.1,1,15};
+		bullet7[] = {"A3\sounds_f\weapons\shells\5_56\asphlat_556_03.wss",0.1,1,15};
+		bullet8[] = {"A3\sounds_f\weapons\shells\5_56\asphlat_556_04.wss",0.1,1,15};
+		bullet9[] = {"A3\sounds_f\weapons\shells\5_56\grass_556_01.wss",0.01,1,15};
+		burst=1;
+		class Library
+		{
+			libTextDesc = "The M240 is the US military designation for the FN MAG, a family of belt-fed, gas-operated medium machine guns.";
+		};
+		class FullAuto: FullAuto
+		{
+			aiDispersionCoefX = 2;
+			aiDispersionCoefY = 3;
+			aiRateOfFire = 2;
+			aiRateOfFireDispersion = 1;
+			aiRateOfFireDistance = 500;
+			artilleryCharge = 1;
+			artilleryDispersion = 1;
+			autoFire = 1;
+			burst = 1;
+			burstRangeMax = -1;
+			canShootInWater = 0;
+			dispersion = 0.00101;
+			displayName = "Full";
+			ffCount = 1;
+			ffFrequency = 11;
+			ffMagnitude = 0.5;
+			flash = "gunfire";
+			flashSize = 0.1;
+			maxRange = 10;
+			maxRangeProbab = 0.04;
+			midRange = 5;
+			midRangeProbab = 0.7;
+			minRange = 0;
+			minRangeProbab = 0.3;
+			multiplier = 1;
+			recoil = "recoil_auto_primary_3outof10";
+			recoilProne = "recoil_auto_primary_prone_3outof10";
+			reloadTime = 0.075;
+			requiredOpticType = -1;
+			showToPlayer = 1;
+			sound[] = {"",10,1};
+			soundBegin[] = {"sound",1};
+			soundBeginWater[] = {"sound",1};
+			soundBurst = 0;
+			soundClosure[] = {"sound",1};
+			soundContinuous = 0;
+			soundEnd[] = {"sound",1};
+			soundLoop[] = {};
+			sounds[] = {"StandardSound","SilencedSound"};
+			textureType = "fullAuto";
+			useAction = 0;
+			useActionTitle = "";
+			weaponSoundEffect = "";
+		};
+		class manual: FullAuto
+		{
+			aiDispersionCoefX = 2;
+			aiDispersionCoefY = 3;
+			aiRateOfFire = 2;
+			aiRateOfFireDispersion = 1;
+			aiRateOfFireDistance = 500;
+			artilleryCharge = 1;
+			artilleryDispersion = 1;
+			autoFire = 1;
+			class BaseSoundModeType {};
+			burst = 1;
+			burstRangeMax = -1;
+			canShootInWater = 0;
+			dispersion = 0.0008;
+			displayName = "Full";
+			ffCount = 1;
+			ffFrequency = 11;
+			ffMagnitude = 0.5;
+			flash = "gunfire";
+			flashSize = 0.1;
+			maxRange = 10;
+			maxRangeProbab = 0.04;
+			midRange = 5;
+			midRangeProbab = 0.58;
+			minRange = 0;
+			minRangeProbab = 0.3;
+			multiplier = 1;
+			recoil = "recoil_auto_primary_3outof10";
+			recoilProne = "recoil_auto_primary_prone_3outof10";
+			reloadTime = 0.08;
+			requiredOpticType = -1;
+			showToPlayer = 1;
+			class SilencedSound: BaseSoundModeType {
+			soundSetShot[] = {"RHSUSF_sd_M240_Shot_SoundSet","RHSUSF_sd_mmg1_Tail_SoundSet"};
+			};
+			sound[] = {"",10,1};
+			soundBegin[] = {"sound",1};
+			soundBeginWater[] = {"sound",1};
+			soundBurst = 0;
+			soundClosure[] = {"sound",1};
+			soundContinuous = 0;
+			soundEnd[] = {"sound",1};
+			soundLoop[] = {};
+			sounds[] = {"StandardSound","SilencedSound"};
+			class StandardSound: BaseSoundModeType {
+			soundSetShot[] = {"RHSUSF_M240_Shot_SoundSet","RHSUSF_MMG1_Tail_SoundSet"};
+			};
+			textureType = "fullAuto";
+			useAction = 0;
+			useActionTitle = "";
+			weaponSoundEffect = "";
+		};
+		class close: manual
+		{
+			aiBurstTerminable = 1;
+			aiDispersionCoefX = 2;
+			aiDispersionCoefY = 3;
+			aiRateOfFire = 0.5;
+			aiRateOfFireDispersion = 2;
+			aiRateOfFireDistance = 50;
+			artilleryCharge = 1;
+			artilleryDispersion = 1;
+			autoFire = 1;
+			class BaseSoundModeType {};
+			burst = 10;
+			burstRangeMax = 4;
+			canShootInWater = 0;
+			dispersion = 0.0008;
+			displayName = "Full";
+			ffCount = 1;
+			ffFrequency = 11;
+			ffMagnitude = 0.5;
+			flash = "gunfire";
+			flashSize = 0.1;
+			maxRange = 50;
+			maxRangeProbab = 0.04;
+			midRange = 20;
+			midRangeProbab = 0.58;
+			minRange = 10;
+			minRangeProbab = 0.05;
+			multiplier = 1;
+			recoil = "recoil_auto_primary_3outof10";
+			recoilProne = "recoil_auto_primary_prone_3outof10";
+			reloadTime = 0.08;
+			requiredOpticType = -1;
+			showToPlayer = 0;
+			class SilencedSound: BaseSoundModeType {
+			soundSetShot[] = {"RHSUSF_sd_M240_Shot_SoundSet","RHSUSF_sd_mmg1_Tail_SoundSet"};
+			};
+			sound[] = {"",10,1};
+			soundBegin[] = {"sound",1};
+			soundBeginWater[] = {"sound",1};
+			soundBurst = 0;
+			soundClosure[] = {"sound",1};
+			soundContinuous = 0;
+			soundEnd[] = {"sound",1};
+			soundLoop[] = {};
+			sounds[] = {"StandardSound","SilencedSound"};
+			class StandardSound: BaseSoundModeType {
+			soundSetShot[] = {"RHSUSF_M240_Shot_SoundSet","RHSUSF_MMG1_Tail_SoundSet"};
+			};
+			textureType = "fullAuto";
+			useAction = 0;
+			useActionTitle = "";
+			weaponSoundEffect = "";
+		};
+		class short: close
+		{
+			aiBurstTerminable = 1;
+			aiDispersionCoefX = 2;
+			aiDispersionCoefY = 3;
+			aiRateOfFire = 1;
+			aiRateOfFireDispersion = 2;
+			aiRateOfFireDistance = 300;
+			artilleryCharge = 1;
+			artilleryDispersion = 1;
+			autoFire = 1;
+			class BaseSoundModeType {};
+			burst = 5;
+			burstRangeMax = 10;
+			canShootInWater = 0;
+			dispersion = 0.0008;
+			displayName = "Full";
+			ffCount = 1;
+			ffFrequency = 11;
+			ffMagnitude = 0.5;
+			flash = "gunfire";
+			flashSize = 0.1;
+			maxRange = 300;
+			maxRangeProbab = 0.04;
+			midRange = 150;
+			midRangeProbab = 0.58;
+			minRange = 50;
+			minRangeProbab = 0.05;
+			multiplier = 1;
+			recoil = "recoil_auto_primary_3outof10";
+			recoilProne = "recoil_auto_primary_prone_3outof10";
+			reloadTime = 0.08;
+			requiredOpticType = -1;
+			showToPlayer = 0;
+			class SilencedSound: BaseSoundModeType {
+			soundSetShot[] = {"RHSUSF_sd_M240_Shot_SoundSet","RHSUSF_sd_mmg1_Tail_SoundSet"};
+			};
+			sound[] = {"",10,1};
+			soundBegin[] = {"sound",1};
+			soundBeginWater[] = {"sound",1};
+			soundBurst = 0;
+			soundClosure[] = {"sound",1};
+			soundContinuous = 0;
+			soundEnd[] = {"sound",1};
+			soundLoop[] = {};
+			sounds[] = {"StandardSound","SilencedSound"};
+			class StandardSound: BaseSoundModeType {
+			soundSetShot[] = {"RHSUSF_M240_Shot_SoundSet","RHSUSF_MMG1_Tail_SoundSet"};
+			};
+			textureType = "fullAuto";
+			useAction = 0;
+			useActionTitle = "";
+			weaponSoundEffect = "";
+		};
+		class medium: close
+		{
+			aiBurstTerminable = 1;
+			aiDispersionCoefX = 2;
+			aiDispersionCoefY = 3;
+			aiRateOfFire = 2;
+			aiRateOfFireDispersion = 2;
+			aiRateOfFireDistance = 600;
+			artilleryCharge = 1;
+			artilleryDispersion = 1;
+			autoFire = 1;
+			class BaseSoundModeType {};
+			burst = 7;
+			burstRangeMax = 14;
+			canShootInWater = 0;
+			dispersion = 0.0008;
+			displayName = "Full";
+			ffCount = 1;
+			ffFrequency = 11;
+			ffMagnitude = 0.5;
+			flash = "gunfire";
+			flashSize = 0.1;
+			maxRange = 600;
+			maxRangeProbab = 0.04;
+			midRange = 400;
+			midRangeProbab = 0.58;
+			minRange = 200;
+			minRangeProbab = 0.05;
+			multiplier = 1;
+			recoil = "recoil_auto_primary_3outof10";
+			recoilProne = "recoil_auto_primary_prone_3outof10";
+			reloadTime = 0.08;
+			requiredOpticType = -1;
+			showToPlayer = 0;
+			class SilencedSound: BaseSoundModeType {
+			soundSetShot[] = {"RHSUSF_sd_M240_Shot_SoundSet","RHSUSF_sd_mmg1_Tail_SoundSet"};
+			};
+			sound[] = {"",10,1};
+			soundBegin[] = {"sound",1};
+			soundBeginWater[] = {"sound",1};
+			soundBurst = 0;
+			soundClosure[] = {"sound",1};
+			soundContinuous = 0;
+			soundEnd[] = {"sound",1};
+			soundLoop[] = {};
+			sounds[] = {"StandardSound","SilencedSound"};
+			class StandardSound: BaseSoundModeType {
+			soundSetShot[] = {"RHSUSF_M240_Shot_SoundSet","RHSUSF_MMG1_Tail_SoundSet"};
+			};
+			textureType = "fullAuto";
+			useAction = 0;
+			useActionTitle = "";
+			weaponSoundEffect = "";
+		};
+		class far: close 
+		{
+			aiBurstTerminable = 1;
+			aiDispersionCoefX = 2;
+			aiDispersionCoefY = 3;
+			aiRateOfFire = 2;
+			aiRateOfFireDispersion = 3;
+			aiRateOfFireDistance = 1000;
+			artilleryCharge = 1;
+			artilleryDispersion = 1;
+			autoFire = 1;
+			class BaseSoundModeType {};
+			burst = 8;
+			burstRangeMax = 16;
+			canShootInWater = 0;
+			dispersion = 0.0008;
+			displayName = "Full";
+			ffCount = 1;
+			ffFrequency = 11;
+			ffMagnitude = 0.5;
+			flash = "gunfire";
+			flashSize = 0.1;
+			maxRange = 900;
+			maxRangeProbab = 0.01;
+			midRange = 600;
+			midRangeProbab = 0.4;
+			minRange = 400;
+			minRangeProbab = 0.05;
+			multiplier = 1;
+			recoil = "recoil_auto_primary_3outof10";
+			recoilProne = "recoil_auto_primary_prone_3outof10";
+			reloadTime = 0.08;
+			requiredOpticType = -1;
+			showToPlayer = 0;
+			class SilencedSound: BaseSoundModeType {
+			soundSetShot[] = {"RHSUSF_sd_M240_Shot_SoundSet","RHSUSF_sd_mmg1_Tail_SoundSet"};
+			};
+			sound[] = {"",10,1};
+			soundBegin[] = {"sound",1};
+			soundBeginWater[] = {"sound",1};
+			soundBurst = 0;
+			soundClosure[] = {"sound",1};
+			soundContinuous = 0;
+			soundEnd[] = {"sound",1};
+			soundLoop[] = {};
+			sounds[] = {"StandardSound","SilencedSound"};
+			class StandardSound: BaseSoundModeType {
+			soundSetShot[] = {"RHSUSF_M240_Shot_SoundSet","RHSUSF_MMG1_Tail_SoundSet"};
+			};
+			textureType = "fullAuto";
+			useAction = 0;
+			useActionTitle = "";
+			weaponSoundEffect = "";
+		};
+	};
+	class BN_RHS_PKM: BN_RHS_M249 //Стационар(машины,лодки), 1 Магазин - ПКМ
+	{
+		displayName="PKM";
+		magazines[] =
+		{
+			"rhs_mag_762x54mm_100",
+			"rhs_mag_762x54mm_250"
+		};
+		reloadAction = "ManActReloadMagazine";
+		reloadMagazineSound[] =
+		{
+			"A3\Sounds_F\arsenal\weapons_static\Static_HMG\reload_static_HMG",
+			10,
+			1,
+			20
+		};
+		reloadSound[] =
+		{
+			"",
+			1,
+			1
+		};
+		reloadTime = 0.075;
+		modes[] =
+		{
+			"manual",
+			"close",
+			"short",
+			"medium",
+			"far"
+		};
+		drySound[] =
+		{
+			"",
+			1,
+			1
+		};
+		emptySound[] =
+		{
+			"",
+			1,
+			1
+		};
+		burst=1;
+		class Library
+		{
+			libTextDesc = "";
+		};
+		class manual: MGun
+		{
+			access = 3;
+			aiBurstTerminable = 1;
+			aiDispersionCoefX = 1;
+			aiDispersionCoefY = 1;
+			aimTransitionSpeed = 1;
+			aiRateOfFire = 0.5;
+			aiRateOfFireDispersion = 0;
+			aiRateOfFireDistance = 50;
+			ammo = "";
+			artilleryCharge = 1;
+			artilleryDispersion = 1;
+			autoFire = 1;
+			autoReload = 1;
+			backgroundReload = 0;
+			ballisticsComputer = 0;
+			class BaseSoundModeType {
+			};
+			burst = 1;
+			canDrop = 1;
+			canLock = 2;
+			canShootInWater = 0;
+			cartridgePos = "nabojnicestart";
+			cartridgeVel = "nabojniceend";
+			changeFiremodeSound[] = {"",1,1};
+			cmImmunity = 1;
+			count = 0;
+			cursor = "EmptyCursor";
+			cursoraim = "mg";
+			cursorAimOn = "";
+			cursorSize = 1;
+			descriptionShort = "";
+			detectRange = 0;
+			dexterity = 0.5;
+			dispersion = 0.00125;
+			displayName = "PKT";
+			distanceZoomMax = 400;
+			distanceZoomMin = 400;
+			drySound[] = {"",1,1};
+			emptySound[] = {"",1,1};
+			enableAttack = 1;
+			ffCount = 1;
+			ffFrequency = 1;
+			ffMagnitude = 0;
+			fireAnims[] = {};
+			fireLightAmbient[] = {0,0,0};
+			fireLightDiffuse[] = {0.937,0.631,0.259};
+			fireLightDuration = 0.05;
+			fireLightIntensity = 0.2;
+			fireSpreadAngle = 3;
+			flash = "gunfire";
+			flashSize = 0.5;
+			forceOptics = 0;
+			class GunClouds {
+			access = 0;
+			cloudletAccY = 0;
+			cloudletAlpha = 0.3;
+			cloudletAnimPeriod = 1;
+			cloudletColor[] = {1,1,1,0};
+			cloudletDuration = 0.05;
+			cloudletFadeIn = 0;
+			cloudletFadeOut = 0.1;
+			cloudletGrowUp = 0.05;
+			cloudletMaxYSpeed = 100;
+			cloudletMinYSpeed = -100;
+			cloudletShape = "cloudletClouds";
+			cloudletSize = 1;
+			deltaT = 0;
+			initT = 0;
+			interval = -0.02;
+			size = 0.3;
+			sourceSize = 0.02;
+			class Table {
+			class T0 {
+			color[] = {1,1,1,0};
+			maxT = 0;
+			};
+			};
+			timeToLive = 0;
+			};
+			class GunFire {
+			access = 0;
+			cloudletAccY = 0;
+			cloudletAlpha = 1;
+			cloudletAnimPeriod = 1;
+			cloudletColor[] = {1,1,1,0};
+			cloudletDensityCoef = -1;
+			cloudletDuration = 0.2;
+			cloudletFadeIn = 0.01;
+			cloudletFadeOut = 0.5;
+			cloudletGrowUp = 0.2;
+			cloudletMaxYSpeed = 100;
+			cloudletMinYSpeed = -100;
+			cloudletShape = "cloudletFire";
+			cloudletSize = 1;
+			deltaT = -3000;
+			initT = 4500;
+			interval = -0.01;
+			size = 3;
+			sourceSize = 0.5;
+			class Table {};
+			timeToLive = 0;
+			};
+			handAnim[] = {};
+			hiddenSelections[] = {};
+			hiddenSelectionsTextures[] = {};
+			hiddenUnderwaterSelections[] = {};
+			hiddenUnderwaterSelectionsTextures[] = {};
+			inertia = 0.7;
+			initSpeed = 0;
+			irDistance = 0;
+			irDotIntensity = 0.001;
+			irLaserEnd = "laser dir";
+			irLaserPos = "laser pos";
+			laser = 0;
+			class Library {
+			libTextDesc = "";
+			};
+			lockAcquire = 1;
+			lockedTargetSound[] = {"",0.000316228,6};
+			lockingTargetSound[] = {"",0.000316228,2};
+			magazineReloadSwitchPhase = 1;
+			magazineReloadTime = 0;
+			magazines[] = {};
+			maxRange = 3;
+			maxRangeProbab = 0.01;
+			maxRecoilSway = 0.008;
+			memoryPointCamera = "eye";
+			midRange = 2;
+			midRangeProbab = 0.01;
+			minRange = 1;
+			minRangeProbab = 0.01;
+			model = "";
+			modelMagazine = "";
+			modelOptics = "";
+			modelSpecial = "";
+			modes[] = {"this"};
+			multiplier = 1;
+			muzzleEnd = "konec hlavne";
+			muzzlePos = "usti hlavne";
+			muzzles[] = {"this"};
+			nameSound = "mgun";
+			optics = 0;
+			opticsDisablePeripherialVision = 0.67;
+			opticsFlare = 1;
+			opticsID = 0;
+			opticsPPEffects[] = {};
+			opticsZoomInit = 0.75;
+			opticsZoomMax = 1.25;
+			opticsZoomMin = 0.25;
+			picture = "";
+			primary = 10;
+			recoil = "empty";
+			recoilProne = "";
+			reloadAction = "ManActReloadMagazine";
+			reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons_static\Static_HMG\reload_static_HMG",10,1,20};
+			reloadSound[] = {"",1,1};
+			reloadTime = 0.075;
+			scope = 0;
+			selectionFireAnim = "zasleh";
+			showAimCursorInternal = 1;
+			showEmpty = 1;
+			shownUnderwaterSelections[] = {};
+			showSwitchAction = 0;
+			showToPlayer = 1;
+			simulation = "Weapon";
+			sound[] = {"",1,1};
+			soundBegin[] = {"sound",1};
+			soundBeginWater[] = {"sound",1};
+			soundBullet[] = {"emptySound",1};
+			soundBurst = 1;
+			soundClosure[] = {"sound",1};
+			soundContinuous = 0;
+			soundEnd[] = {"sound",1};
+			soundLoop[] = {"sound",1};
+			sounds[] = {"StandardSound"};
+			class StandardSound: BaseSoundModeType {
+			soundSetShot[] = {"RHS_PK_Shot_SoundSet","RHS_MMG1_Tail_SoundSet"};
+			};
+			swayDecaySpeed = 2;
+			textureType = "fullAuto";
+			type = 65536;
+			uiPicture = "";
+			useAction = 0;
+			useActionTitle = "";
+			useAsBinocular = 0;
+			useModelOptics = 1;
+			value = 2;
+			weaponLockDelay = 0;
+			weaponLockSystem = 0;
+			weaponSoundEffect = "";
+			weight = 0;
+			zeroingSound[] = {"",1,1};
+		};
+		class close: manual
+		{
+			access = 3;
+			aiBurstTerminable = 1;
+			aiDispersionCoefX = 1;
+			aiDispersionCoefY = 1;
+			aimTransitionSpeed = 1;
+			aiRateOfFire = 1;
+			aiRateOfFireDispersion = 4;
+			aiRateOfFireDistance = 50;
+			ammo = "";
+			artilleryCharge = 1;
+			artilleryDispersion = 1;
+			autoFire = 1;
+			autoReload = 1;
+			backgroundReload = 0;
+			ballisticsComputer = 0;
+			class BaseSoundModeType {
+			};
+			burst = 12;
+			canDrop = 1;
+			canLock = 2;
+			canShootInWater = 0;
+			cartridgePos = "nabojnicestart";
+			cartridgeVel = "nabojniceend";
+			changeFiremodeSound[] = {"",1,1};
+			cmImmunity = 1;
+			count = 0;
+			cursor = "EmptyCursor";
+			cursoraim = "mg";
+			cursorAimOn = "";
+			cursorSize = 1;
+			descriptionShort = "";
+			detectRange = 0;
+			dexterity = 0.5;
+			dispersion = 0.00125;
+			displayName = "PKT";
+			distanceZoomMax = 400;
+			distanceZoomMin = 400;
+			drySound[] = {"",1,1};
+			emptySound[] = {"",1,1};
+			enableAttack = 1;
+			ffCount = 1;
+			ffFrequency = 1;
+			ffMagnitude = 0;
+			fireAnims[] = {};
+			fireLightAmbient[] = {0,0,0};
+			fireLightDiffuse[] = {0.937,0.631,0.259};
+			fireLightDuration = 0.05;
+			fireLightIntensity = 0.2;
+			fireSpreadAngle = 3;
+			flash = "gunfire";
+			flashSize = 0.5;
+			forceOptics = 0;
+			class GunClouds {
+			access = 0;
+			cloudletAccY = 0;
+			cloudletAlpha = 0.3;
+			cloudletAnimPeriod = 1;
+			cloudletColor[] = {1,1,1,0};
+			cloudletDuration = 0.05;
+			cloudletFadeIn = 0;
+			cloudletFadeOut = 0.1;
+			cloudletGrowUp = 0.05;
+			cloudletMaxYSpeed = 100;
+			cloudletMinYSpeed = -100;
+			cloudletShape = "cloudletClouds";
+			cloudletSize = 1;
+			deltaT = 0;
+			initT = 0;
+			interval = -0.02;
+			size = 0.3;
+			sourceSize = 0.02;
+			class Table {
+			class T0 {
+			color[] = {1,1,1,0};
+			maxT = 0;
+			};
+			};
+			timeToLive = 0;
+			};
+			class GunFire {
+			access = 0;
+			cloudletAccY = 0;
+			cloudletAlpha = 1;
+			cloudletAnimPeriod = 1;
+			cloudletColor[] = {1,1,1,0};
+			cloudletDensityCoef = -1;
+			cloudletDuration = 0.2;
+			cloudletFadeIn = 0.01;
+			cloudletFadeOut = 0.5;
+			cloudletGrowUp = 0.2;
+			cloudletMaxYSpeed = 100;
+			cloudletMinYSpeed = -100;
+			cloudletShape = "cloudletFire";
+			cloudletSize = 1;
+			deltaT = -3000;
+			initT = 4500;
+			interval = -0.01;
+			size = 3;
+			sourceSize = 0.5;
+			class Table {
+			class T0 {
+			color[] = {0.82,0.95,0.93,0};
+			maxT = 0;
+			};
+			class T1 {
+			color[] = {0.75,0.77,0.9,0};
+			maxT = 200;
+			};
+			class T10 {
+			color[] = {0.62,0.29,0.03,0};
+			maxT = 2600;
+			};
+			class T11 {
+			color[] = {0.59,0.35,0.05,0};
+			maxT = 2650;
+			};
+			class T12 {
+			color[] = {0.75,0.37,0.03,0};
+			maxT = 2700;
+			};
+			class T13 {
+			color[] = {0.88,0.34,0.03,0};
+			maxT = 2750;
+			};
+			class T14 {
+			color[] = {0.91,0.5,0.17,0};
+			maxT = 2800;
+			};
+			class T15 {
+			color[] = {1,0.6,0.2,0};
+			maxT = 2850;
+			};
+			class T16 {
+			color[] = {1,0.71,0.3,0};
+			maxT = 2900;
+			};
+			class T17 {
+			color[] = {0.98,0.83,0.41,0};
+			maxT = 2950;
+			};
+			class T18 {
+			color[] = {0.98,0.91,0.54,0};
+			maxT = 3000;
+			};
+			class T19 {
+			color[] = {0.98,0.99,0.6,0};
+			maxT = 3100;
+			};
+			class T2 {
+			color[] = {0.56,0.62,0.67,0};
+			maxT = 400;
+			};
+			class T20 {
+			color[] = {0.96,0.99,0.72,0};
+			maxT = 3300;
+			};
+			class T21 {
+			color[] = {1,0.98,0.91,0};
+			maxT = 3600;
+			};
+			class T22 {
+			color[] = {1,1,1,0};
+			maxT = 4200;
+			};
+			class T3 {
+			color[] = {0.39,0.46,0.47,0};
+			maxT = 600;
+			};
+			class T4 {
+			color[] = {0.24,0.31,0.31,0};
+			maxT = 800;
+			};
+			class T5 {
+			color[] = {0.23,0.31,0.29,0};
+			maxT = 1000;
+			};
+			class T6 {
+			color[] = {0.21,0.29,0.27,0};
+			maxT = 1500;
+			};
+			class T7 {
+			color[] = {0.19,0.23,0.21,0};
+			maxT = 2000;
+			};
+			class T8 {
+			color[] = {0.22,0.19,0.1,0};
+			maxT = 2300;
+			};
+			class T9 {
+			color[] = {0.35,0.2,0.02,0};
+			maxT = 2500;
+			};
+			};
+			timeToLive = 0;
+			};
+			handAnim[] = {};
+			hiddenSelections[] = {};
+			hiddenSelectionsTextures[] = {};
+			hiddenUnderwaterSelections[] = {};
+			hiddenUnderwaterSelectionsTextures[] = {};
+			inertia = 0.7;
+			initSpeed = 0;
+			irDistance = 0;
+			irDotIntensity = 0.001;
+			irLaserEnd = "laser dir";
+			irLaserPos = "laser pos";
+			laser = 0;
+			class Library {
+			libTextDesc = "";
+			};
+			lockAcquire = 1;
+			lockedTargetSound[] = {"",0.000316228,6};
+			lockingTargetSound[] = {"",0.000316228,2};
+			magazineReloadSwitchPhase = 1;
+			magazineReloadTime = 0;
+			magazines[] = {};
+			maxRange = 50;
+			maxRangeProbab = 0.04;
+			maxRecoilSway = 0.008;
+			memoryPointCamera = "eye";
+			midRange = 20;
+			midRangeProbab = 0.7;
+			minRange = 0;
+			minRangeProbab = 0.05;
+			model = "";
+			modelMagazine = "";
+			modelOptics = "";
+			modelSpecial = "";
+			modes[] = {"this"};
+			multiplier = 1;
+			muzzleEnd = "konec hlavne";
+			muzzlePos = "usti hlavne";
+			muzzles[] = {"this"};
+			nameSound = "mgun";
+			optics = 0;
+			opticsDisablePeripherialVision = 0.67;
+			opticsFlare = 1;
+			opticsID = 0;
+			opticsPPEffects[] = {};
+			opticsZoomInit = 0.75;
+			opticsZoomMax = 1.25;
+			opticsZoomMin = 0.25;
+			picture = "";
+			primary = 10;
+			recoil = "empty";
+			recoilProne = "";
+			reloadAction = "ManActReloadMagazine";
+			reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons_static\Static_HMG\reload_static_HMG",10,1,20};
+			reloadSound[] = {"",1,1};
+			reloadTime = 0.075;
+			scope = 0;
+			selectionFireAnim = "zasleh";
+			showAimCursorInternal = 1;
+			showEmpty = 1;
+			shownUnderwaterSelections[] = {};
+			showSwitchAction = 0;
+			showToPlayer = 0;
+			simulation = "Weapon";
+			sound[] = {"",1,1};
+			soundBegin[] = {"sound",1};
+			soundBeginWater[] = {"sound",1};
+			soundBullet[] = {"emptySound",1};
+			soundBurst = 0;
+			soundClosure[] = {"sound",1};
+			soundContinuous = 0;
+			soundEnd[] = {"sound",1};
+			soundLoop[] = {"sound",1};
+			sounds[] = {"StandardSound"};
+			class StandardSound: BaseSoundModeType {
+			soundSetShot[] = {"RHS_PK_Shot_SoundSet","RHS_MMG1_Tail_SoundSet"};
+			};
+			swayDecaySpeed = 2;
+			textureType = "fullAuto";
+			type = 65536;
+			uiPicture = "";
+			useAction = 0;
+			useActionTitle = "";
+			useAsBinocular = 0;
+			useModelOptics = 1;
+			value = 2;
+			weaponLockDelay = 0;
+			weaponLockSystem = 0;
+			weaponSoundEffect = "";
+			weight = 0;
+			zeroingSound[] = {"",1,1};
+		};
+		class short: close
+		{
+			access = 3;
+			aiBurstTerminable = 1;
+			aiDispersionCoefX = 1;
+			aiDispersionCoefY = 1;
+			aimTransitionSpeed = 1;
+			aiRateOfFire = 2;
+			aiRateOfFireDispersion = 4;
+			aiRateOfFireDistance = 300;
+			ammo = "";
+			artilleryCharge = 1;
+			artilleryDispersion = 1;
+			autoFire = 1;
+			autoReload = 1;
+			backgroundReload = 0;
+			ballisticsComputer = 0;
+			class BaseSoundModeType {
+			};
+			burst = 10;
+			canDrop = 1;
+			canLock = 2;
+			canShootInWater = 0;
+			cartridgePos = "nabojnicestart";
+			cartridgeVel = "nabojniceend";
+			changeFiremodeSound[] = {"",1,1};
+			cmImmunity = 1;
+			count = 0;
+			cursor = "EmptyCursor";
+			cursoraim = "mg";
+			cursorAimOn = "";
+			cursorSize = 1;
+			descriptionShort = "";
+			detectRange = 0;
+			dexterity = 0.5;
+			dispersion = 0.00125;
+			displayName = "PKT";
+			distanceZoomMax = 400;
+			distanceZoomMin = 400;
+			drySound[] = {"",1,1};
+			emptySound[] = {"",1,1};
+			enableAttack = 1;
+			ffCount = 1;
+			ffFrequency = 1;
+			ffMagnitude = 0;
+			fireAnims[] = {};
+			fireLightAmbient[] = {0,0,0};
+			fireLightDiffuse[] = {0.937,0.631,0.259};
+			fireLightDuration = 0.05;
+			fireLightIntensity = 0.2;
+			fireSpreadAngle = 3;
+			flash = "gunfire";
+			flashSize = 0.5;
+			forceOptics = 0;
+			class GunClouds {
+			access = 0;
+			cloudletAccY = 0;
+			cloudletAlpha = 0.3;
+			cloudletAnimPeriod = 1;
+			cloudletColor[] = {1,1,1,0};
+			cloudletDuration = 0.05;
+			cloudletFadeIn = 0;
+			cloudletFadeOut = 0.1;
+			cloudletGrowUp = 0.05;
+			cloudletMaxYSpeed = 100;
+			cloudletMinYSpeed = -100;
+			cloudletShape = "cloudletClouds";
+			cloudletSize = 1;
+			deltaT = 0;
+			initT = 0;
+			interval = -0.02;
+			size = 0.3;
+			sourceSize = 0.02;
+			class Table {
+			class T0 {
+			color[] = {1,1,1,0};
+			maxT = 0;
+			};
+			};
+			timeToLive = 0;
+			};
+			class GunFire {
+			access = 0;
+			cloudletAccY = 0;
+			cloudletAlpha = 1;
+			cloudletAnimPeriod = 1;
+			cloudletColor[] = {1,1,1,0};
+			cloudletDensityCoef = -1;
+			cloudletDuration = 0.2;
+			cloudletFadeIn = 0.01;
+			cloudletFadeOut = 0.5;
+			cloudletGrowUp = 0.2;
+			cloudletMaxYSpeed = 100;
+			cloudletMinYSpeed = -100;
+			cloudletShape = "cloudletFire";
+			cloudletSize = 1;
+			deltaT = -3000;
+			initT = 4500;
+			interval = -0.01;
+			size = 3;
+			sourceSize = 0.5;
+			class Table {
+			class T0 {
+			color[] = {0.82,0.95,0.93,0};
+			maxT = 0;
+			};
+			class T1 {
+			color[] = {0.75,0.77,0.9,0};
+			maxT = 200;
+			};
+			class T10 {
+			color[] = {0.62,0.29,0.03,0};
+			maxT = 2600;
+			};
+			class T11 {
+			color[] = {0.59,0.35,0.05,0};
+			maxT = 2650;
+			};
+			class T12 {
+			color[] = {0.75,0.37,0.03,0};
+			maxT = 2700;
+			};
+			class T13 {
+			color[] = {0.88,0.34,0.03,0};
+			maxT = 2750;
+			};
+			class T14 {
+			color[] = {0.91,0.5,0.17,0};
+			maxT = 2800;
+			};
+			class T15 {
+			color[] = {1,0.6,0.2,0};
+			maxT = 2850;
+			};
+			class T16 {
+			color[] = {1,0.71,0.3,0};
+			maxT = 2900;
+			};
+			class T17 {
+			color[] = {0.98,0.83,0.41,0};
+			maxT = 2950;
+			};
+			class T18 {
+			color[] = {0.98,0.91,0.54,0};
+			maxT = 3000;
+			};
+			class T19 {
+			color[] = {0.98,0.99,0.6,0};
+			maxT = 3100;
+			};
+			class T2 {
+			color[] = {0.56,0.62,0.67,0};
+			maxT = 400;
+			};
+			class T20 {
+			color[] = {0.96,0.99,0.72,0};
+			maxT = 3300;
+			};
+			class T21 {
+			color[] = {1,0.98,0.91,0};
+			maxT = 3600;
+			};
+			class T22 {
+			color[] = {1,1,1,0};
+			maxT = 4200;
+			};
+			class T3 {
+			color[] = {0.39,0.46,0.47,0};
+			maxT = 600;
+			};
+			class T4 {
+			color[] = {0.24,0.31,0.31,0};
+			maxT = 800;
+			};
+			class T5 {
+			color[] = {0.23,0.31,0.29,0};
+			maxT = 1000;
+			};
+			class T6 {
+			color[] = {0.21,0.29,0.27,0};
+			maxT = 1500;
+			};
+			class T7 {
+			color[] = {0.19,0.23,0.21,0};
+			maxT = 2000;
+			};
+			class T8 {
+			color[] = {0.22,0.19,0.1,0};
+			maxT = 2300;
+			};
+			class T9 {
+			color[] = {0.35,0.2,0.02,0};
+			maxT = 2500;
+			};
+			};
+			timeToLive = 0;
+			};
+			handAnim[] = {};
+			hiddenSelections[] = {};
+			hiddenSelectionsTextures[] = {};
+			hiddenUnderwaterSelections[] = {};
+			hiddenUnderwaterSelectionsTextures[] = {};
+			inertia = 0.7;
+			initSpeed = 0;
+			irDistance = 0;
+			irDotIntensity = 0.001;
+			irLaserEnd = "laser dir";
+			irLaserPos = "laser pos";
+			laser = 0;
+			class Library {
+			libTextDesc = "";
+			};
+			lockAcquire = 1;
+			lockedTargetSound[] = {"",0.000316228,6};
+			lockingTargetSound[] = {"",0.000316228,2};
+			magazineReloadSwitchPhase = 1;
+			magazineReloadTime = 0;
+			magazines[] = {};
+			maxRange = 300;
+			maxRangeProbab = 0.1;
+			maxRecoilSway = 0.008;
+			memoryPointCamera = "eye";
+			midRange = 200;
+			midRangeProbab = 0.7;
+			minRange = 50;
+			minRangeProbab = 0.05;
+			model = "";
+			modelMagazine = "";
+			modelOptics = "";
+			modelSpecial = "";
+			modes[] = {"this"};
+			multiplier = 1;
+			muzzleEnd = "konec hlavne";
+			muzzlePos = "usti hlavne";
+			muzzles[] = {"this"};
+			nameSound = "mgun";
+			optics = 0;
+			opticsDisablePeripherialVision = 0.67;
+			opticsFlare = 1;
+			opticsID = 0;
+			opticsPPEffects[] = {};
+			opticsZoomInit = 0.75;
+			opticsZoomMax = 1.25;
+			opticsZoomMin = 0.25;
+			picture = "";
+			primary = 10;
+			recoil = "empty";
+			recoilProne = "";
+			reloadAction = "ManActReloadMagazine";
+			reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons_static\Static_HMG\reload_static_HMG",10,1,20};
+			reloadSound[] = {"",1,1};
+			reloadTime = 0.075;
+			scope = 0;
+			selectionFireAnim = "zasleh";
+			showAimCursorInternal = 1;
+			showEmpty = 1;
+			shownUnderwaterSelections[] = {};
+			showSwitchAction = 0;
+			showToPlayer = 0;
+			simulation = "Weapon";
+			sound[] = {"",1,1};
+			soundBegin[] = {"sound",1};
+			soundBeginWater[] = {"sound",1};
+			soundBullet[] = {"emptySound",1};
+			soundBurst = 0;
+			soundClosure[] = {"sound",1};
+			soundContinuous = 0;
+			soundEnd[] = {"sound",1};
+			soundLoop[] = {"sound",1};
+			sounds[] = {"StandardSound"};
+			class StandardSound: BaseSoundModeType {
+			soundSetShot[] = {"RHS_PK_Shot_SoundSet","RHS_MMG1_Tail_SoundSet"};
+			};
+			swayDecaySpeed = 2;
+			textureType = "fullAuto";
+			type = 65536;
+			uiPicture = "";
+			useAction = 0;
+			useActionTitle = "";
+			useAsBinocular = 0;
+			useModelOptics = 1;
+			value = 2;
+			weaponLockDelay = 0;
+			weaponLockSystem = 0;
+			weaponSoundEffect = "";
+			weight = 0;
+			zeroingSound[] = {"",1,1};
+		};
+		class medium: close
+		{
+			access = 3;
+			aiBurstTerminable = 1;
+			aiDispersionCoefX = 1;
+			aiDispersionCoefY = 1;
+			aimTransitionSpeed = 1;
+			aiRateOfFire = 4;
+			aiRateOfFireDispersion = 3;
+			aiRateOfFireDistance = 600;
+			ammo = "";
+			artilleryCharge = 1;
+			artilleryDispersion = 1;
+			autoFire = 1;
+			autoReload = 1;
+			backgroundReload = 0;
+			ballisticsComputer = 0;
+			class BaseSoundModeType {
+			};
+			burst = 7;
+			canDrop = 1;
+			canLock = 2;
+			canShootInWater = 0;
+			cartridgePos = "nabojnicestart";
+			cartridgeVel = "nabojniceend";
+			changeFiremodeSound[] = {"",1,1};
+			cmImmunity = 1;
+			count = 0;
+			cursor = "EmptyCursor";
+			cursoraim = "mg";
+			cursorAimOn = "";
+			cursorSize = 1;
+			descriptionShort = "";
+			detectRange = 0;
+			dexterity = 0.5;
+			dispersion = 0.00125;
+			displayName = "PKT";
+			distanceZoomMax = 400;
+			distanceZoomMin = 400;
+			drySound[] = {"",1,1};
+			emptySound[] = {"",1,1};
+			enableAttack = 1;
+			ffCount = 1;
+			ffFrequency = 1;
+			ffMagnitude = 0;
+			fireAnims[] = {};
+			fireLightAmbient[] = {0,0,0};
+			fireLightDiffuse[] = {0.937,0.631,0.259};
+			fireLightDuration = 0.05;
+			fireLightIntensity = 0.2;
+			fireSpreadAngle = 3;
+			flash = "gunfire";
+			flashSize = 0.5;
+			forceOptics = 0;
+			class GunClouds {
+			access = 0;
+			cloudletAccY = 0;
+			cloudletAlpha = 0.3;
+			cloudletAnimPeriod = 1;
+			cloudletColor[] = {1,1,1,0};
+			cloudletDuration = 0.05;
+			cloudletFadeIn = 0;
+			cloudletFadeOut = 0.1;
+			cloudletGrowUp = 0.05;
+			cloudletMaxYSpeed = 100;
+			cloudletMinYSpeed = -100;
+			cloudletShape = "cloudletClouds";
+			cloudletSize = 1;
+			deltaT = 0;
+			initT = 0;
+			interval = -0.02;
+			size = 0.3;
+			sourceSize = 0.02;
+			class Table {
+			class T0 {
+			color[] = {1,1,1,0};
+			maxT = 0;
+			};
+			};
+			timeToLive = 0;
+			};
+			class GunFire {
+			access = 0;
+			cloudletAccY = 0;
+			cloudletAlpha = 1;
+			cloudletAnimPeriod = 1;
+			cloudletColor[] = {1,1,1,0};
+			cloudletDensityCoef = -1;
+			cloudletDuration = 0.2;
+			cloudletFadeIn = 0.01;
+			cloudletFadeOut = 0.5;
+			cloudletGrowUp = 0.2;
+			cloudletMaxYSpeed = 100;
+			cloudletMinYSpeed = -100;
+			cloudletShape = "cloudletFire";
+			cloudletSize = 1;
+			deltaT = -3000;
+			initT = 4500;
+			interval = -0.01;
+			size = 3;
+			sourceSize = 0.5;
+			class Table {
+			class T0 {
+			color[] = {0.82,0.95,0.93,0};
+			maxT = 0;
+			};
+			class T1 {
+			color[] = {0.75,0.77,0.9,0};
+			maxT = 200;
+			};
+			class T10 {
+			color[] = {0.62,0.29,0.03,0};
+			maxT = 2600;
+			};
+			class T11 {
+			color[] = {0.59,0.35,0.05,0};
+			maxT = 2650;
+			};
+			class T12 {
+			color[] = {0.75,0.37,0.03,0};
+			maxT = 2700;
+			};
+			class T13 {
+			color[] = {0.88,0.34,0.03,0};
+			maxT = 2750;
+			};
+			class T14 {
+			color[] = {0.91,0.5,0.17,0};
+			maxT = 2800;
+			};
+			class T15 {
+			color[] = {1,0.6,0.2,0};
+			maxT = 2850;
+			};
+			class T16 {
+			color[] = {1,0.71,0.3,0};
+			maxT = 2900;
+			};
+			class T17 {
+			color[] = {0.98,0.83,0.41,0};
+			maxT = 2950;
+			};
+			class T18 {
+			color[] = {0.98,0.91,0.54,0};
+			maxT = 3000;
+			};
+			class T19 {
+			color[] = {0.98,0.99,0.6,0};
+			maxT = 3100;
+			};
+			class T2 {
+			color[] = {0.56,0.62,0.67,0};
+			maxT = 400;
+			};
+			class T20 {
+			color[] = {0.96,0.99,0.72,0};
+			maxT = 3300;
+			};
+			class T21 {
+			color[] = {1,0.98,0.91,0};
+			maxT = 3600;
+			};
+			class T22 {
+			color[] = {1,1,1,0};
+			maxT = 4200;
+			};
+			class T3 {
+			color[] = {0.39,0.46,0.47,0};
+			maxT = 600;
+			};
+			class T4 {
+			color[] = {0.24,0.31,0.31,0};
+			maxT = 800;
+			};
+			class T5 {
+			color[] = {0.23,0.31,0.29,0};
+			maxT = 1000;
+			};
+			class T6 {
+			color[] = {0.21,0.29,0.27,0};
+			maxT = 1500;
+			};
+			class T7 {
+			color[] = {0.19,0.23,0.21,0};
+			maxT = 2000;
+			};
+			class T8 {
+			color[] = {0.22,0.19,0.1,0};
+			maxT = 2300;
+			};
+			class T9 {
+			color[] = {0.35,0.2,0.02,0};
+			maxT = 2500;
+			};
+			};
+			timeToLive = 0;
+			};
+			handAnim[] = {};
+			hiddenSelections[] = {};
+			hiddenSelectionsTextures[] = {};
+			hiddenUnderwaterSelections[] = {};
+			hiddenUnderwaterSelectionsTextures[] = {};
+			inertia = 0.7;
+			initSpeed = 0;
+			irDistance = 0;
+			irDotIntensity = 0.001;
+			irLaserEnd = "laser dir";
+			irLaserPos = "laser pos";
+			laser = 0;
+			class Library {
+			libTextDesc = "";
+			};
+			lockAcquire = 1;
+			lockedTargetSound[] = {"",0.000316228,6};
+			lockingTargetSound[] = {"",0.000316228,2};
+			magazineReloadSwitchPhase = 1;
+			magazineReloadTime = 0;
+			magazines[] = {};
+			maxRange = 600;
+			maxRangeProbab = 0.1;
+			maxRecoilSway = 0.008;
+			memoryPointCamera = "eye";
+			midRange = 500;
+			midRangeProbab = 0.7;
+			minRange = 200;
+			minRangeProbab = 0.05;
+			model = "";
+			modelMagazine = "";
+			modelOptics = "";
+			modelSpecial = "";
+			modes[] = {"this"};
+			multiplier = 1;
+			muzzleEnd = "konec hlavne";
+			muzzlePos = "usti hlavne";
+			muzzles[] = {"this"};
+			nameSound = "mgun";
+			optics = 0;
+			opticsDisablePeripherialVision = 0.67;
+			opticsFlare = 1;
+			opticsID = 0;
+			opticsPPEffects[] = {};
+			opticsZoomInit = 0.75;
+			opticsZoomMax = 1.25;
+			opticsZoomMin = 0.25;
+			picture = "";
+			primary = 10;
+			recoil = "empty";
+			recoilProne = "";
+			reloadAction = "ManActReloadMagazine";
+			reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons_static\Static_HMG\reload_static_HMG",10,1,20};
+			reloadSound[] = {"",1,1};
+			reloadTime = 0.075;
+			scope = 0;
+			selectionFireAnim = "zasleh";
+			showAimCursorInternal = 1;
+			showEmpty = 1;
+			shownUnderwaterSelections[] = {};
+			showSwitchAction = 0;
+			showToPlayer = 0;
+			simulation = "Weapon";
+			sound[] = {"",1,1};
+			soundBegin[] = {"sound",1};
+			soundBeginWater[] = {"sound",1};
+			soundBullet[] = {"emptySound",1};
+			soundBurst = 0;
+			soundClosure[] = {"sound",1};
+			soundContinuous = 0;
+			soundEnd[] = {"sound",1};
+			soundLoop[] = {"sound",1};
+			sounds[] = {"StandardSound"};
+			class StandardSound: BaseSoundModeType {
+			soundSetShot[] = {"RHS_PK_Shot_SoundSet","RHS_MMG1_Tail_SoundSet"};
+			};
+			swayDecaySpeed = 2;
+			textureType = "fullAuto";
+			type = 65536;
+			uiPicture = "";
+			useAction = 0;
+			useActionTitle = "";
+			useAsBinocular = 0;
+			useModelOptics = 1;
+			value = 2;
+			weaponLockDelay = 0;
+			weaponLockSystem = 0;
+			weaponSoundEffect = "";
+			weight = 0;
+			zeroingSound[] = {"",1,1};
+		};
+		class far: close
+		{
+			access = 3;
+			aiBurstTerminable = 1;
+			aiDispersionCoefX = 1;
+			aiDispersionCoefY = 1;
+			aimTransitionSpeed = 1;
+			aiRateOfFire = 5;
+			aiRateOfFireDispersion = 3;
+			aiRateOfFireDistance = 1000;
+			ammo = "";
+			artilleryCharge = 1;
+			artilleryDispersion = 1;
+			autoFire = 1;
+			autoReload = 1;
+			backgroundReload = 0;
+			ballisticsComputer = 0;
+			class BaseSoundModeType {
+			};
+			burst = 6;
+			canDrop = 1;
+			canLock = 2;
+			canShootInWater = 0;
+			cartridgePos = "nabojnicestart";
+			cartridgeVel = "nabojniceend";
+			changeFiremodeSound[] = {"",1,1};
+			cmImmunity = 1;
+			count = 0;
+			cursor = "EmptyCursor";
+			cursoraim = "mg";
+			cursorAimOn = "";
+			cursorSize = 1;
+			descriptionShort = "";
+			detectRange = 0;
+			dexterity = 0.5;
+			dispersion = 0.00125;
+			displayName = "PKT";
+			distanceZoomMax = 400;
+			distanceZoomMin = 400;
+			drySound[] = {"",1,1};
+			emptySound[] = {"",1,1};
+			enableAttack = 1;
+			ffCount = 1;
+			ffFrequency = 1;
+			ffMagnitude = 0;
+			fireAnims[] = {};
+			fireLightAmbient[] = {0,0,0};
+			fireLightDiffuse[] = {0.937,0.631,0.259};
+			fireLightDuration = 0.05;
+			fireLightIntensity = 0.2;
+			fireSpreadAngle = 3;
+			flash = "gunfire";
+			flashSize = 0.5;
+			forceOptics = 0;
+			class GunClouds {
+			access = 0;
+			cloudletAccY = 0;
+			cloudletAlpha = 0.3;
+			cloudletAnimPeriod = 1;
+			cloudletColor[] = {1,1,1,0};
+			cloudletDuration = 0.05;
+			cloudletFadeIn = 0;
+			cloudletFadeOut = 0.1;
+			cloudletGrowUp = 0.05;
+			cloudletMaxYSpeed = 100;
+			cloudletMinYSpeed = -100;
+			cloudletShape = "cloudletClouds";
+			cloudletSize = 1;
+			deltaT = 0;
+			initT = 0;
+			interval = -0.02;
+			size = 0.3;
+			sourceSize = 0.02;
+			class Table {
+			class T0 {
+			color[] = {1,1,1,0};
+			maxT = 0;
+			};
+			};
+			timeToLive = 0;
+			};
+			class GunFire {
+			access = 0;
+			cloudletAccY = 0;
+			cloudletAlpha = 1;
+			cloudletAnimPeriod = 1;
+			cloudletColor[] = {1,1,1,0};
+			cloudletDensityCoef = -1;
+			cloudletDuration = 0.2;
+			cloudletFadeIn = 0.01;
+			cloudletFadeOut = 0.5;
+			cloudletGrowUp = 0.2;
+			cloudletMaxYSpeed = 100;
+			cloudletMinYSpeed = -100;
+			cloudletShape = "cloudletFire";
+			cloudletSize = 1;
+			deltaT = -3000;
+			initT = 4500;
+			interval = -0.01;
+			size = 3;
+			sourceSize = 0.5;
+			class Table {
+			class T0 {
+			color[] = {0.82,0.95,0.93,0};
+			maxT = 0;
+			};
+			class T1 {
+			color[] = {0.75,0.77,0.9,0};
+			maxT = 200;
+			};
+			class T10 {
+			color[] = {0.62,0.29,0.03,0};
+			maxT = 2600;
+			};
+			class T11 {
+			color[] = {0.59,0.35,0.05,0};
+			maxT = 2650;
+			};
+			class T12 {
+			color[] = {0.75,0.37,0.03,0};
+			maxT = 2700;
+			};
+			class T13 {
+			color[] = {0.88,0.34,0.03,0};
+			maxT = 2750;
+			};
+			class T14 {
+			color[] = {0.91,0.5,0.17,0};
+			maxT = 2800;
+			};
+			class T15 {
+			color[] = {1,0.6,0.2,0};
+			maxT = 2850;
+			};
+			class T16 {
+			color[] = {1,0.71,0.3,0};
+			maxT = 2900;
+			};
+			class T17 {
+			color[] = {0.98,0.83,0.41,0};
+			maxT = 2950;
+			};
+			class T18 {
+			color[] = {0.98,0.91,0.54,0};
+			maxT = 3000;
+			};
+			class T19 {
+			color[] = {0.98,0.99,0.6,0};
+			maxT = 3100;
+			};
+			class T2 {
+			color[] = {0.56,0.62,0.67,0};
+			maxT = 400;
+			};
+			class T20 {
+			color[] = {0.96,0.99,0.72,0};
+			maxT = 3300;
+			};
+			class T21 {
+			color[] = {1,0.98,0.91,0};
+			maxT = 3600;
+			};
+			class T22 {
+			color[] = {1,1,1,0};
+			maxT = 4200;
+			};
+			class T3 {
+			color[] = {0.39,0.46,0.47,0};
+			maxT = 600;
+			};
+			class T4 {
+			color[] = {0.24,0.31,0.31,0};
+			maxT = 800;
+			};
+			class T5 {
+			color[] = {0.23,0.31,0.29,0};
+			maxT = 1000;
+			};
+			class T6 {
+			color[] = {0.21,0.29,0.27,0};
+			maxT = 1500;
+			};
+			class T7 {
+			color[] = {0.19,0.23,0.21,0};
+			maxT = 2000;
+			};
+			class T8 {
+			color[] = {0.22,0.19,0.1,0};
+			maxT = 2300;
+			};
+			class T9 {
+			color[] = {0.35,0.2,0.02,0};
+			maxT = 2500;
+			};
+			};
+			timeToLive = 0;
+			};
+			handAnim[] = {};
+			hiddenSelections[] = {};
+			hiddenSelectionsTextures[] = {};
+			hiddenUnderwaterSelections[] = {};
+			hiddenUnderwaterSelectionsTextures[] = {};
+			inertia = 0.7;
+			initSpeed = 0;
+			irDistance = 0;
+			irDotIntensity = 0.001;
+			irLaserEnd = "laser dir";
+			irLaserPos = "laser pos";
+			laser = 0;
+			class Library {
+			libTextDesc = "";
+			};
+			lockAcquire = 1;
+			lockedTargetSound[] = {"",0.000316228,6};
+			lockingTargetSound[] = {"",0.000316228,2};
+			magazineReloadSwitchPhase = 1;
+			magazineReloadTime = 0;
+			magazines[] = {};
+			maxRange = 1100;
+			maxRangeProbab = 0.01;
+			maxRecoilSway = 0.008;
+			memoryPointCamera = "eye";
+			midRange = 850;
+			midRangeProbab = 0.4;
+			minRange = 400;
+			minRangeProbab = 0.05;
+			model = "";
+			modelMagazine = "";
+			modelOptics = "";
+			modelSpecial = "";
+			modes[] = {"this"};
+			multiplier = 1;
+			muzzleEnd = "konec hlavne";
+			muzzlePos = "usti hlavne";
+			muzzles[] = {"this"};
+			nameSound = "mgun";
+			optics = 0;
+			opticsDisablePeripherialVision = 0.67;
+			opticsFlare = 1;
+			opticsID = 0;
+			opticsPPEffects[] = {};
+			opticsZoomInit = 0.75;
+			opticsZoomMax = 1.25;
+			opticsZoomMin = 0.25;
+			picture = "";
+			primary = 10;
+			recoil = "empty";
+			recoilProne = "";
+			reloadAction = "ManActReloadMagazine";
+			reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons_static\Static_HMG\reload_static_HMG",10,1,20};
+			reloadSound[] = {"",1,1};
+			reloadTime = 0.075;
+			scope = 0;
+			selectionFireAnim = "zasleh";
+			showAimCursorInternal = 1;
+			showEmpty = 1;
+			shownUnderwaterSelections[] = {};
+			showSwitchAction = 0;
+			showToPlayer = 0;
+			simulation = "Weapon";
+			sound[] = {"",1,1};
+			soundBegin[] = {"sound",1};
+			soundBeginWater[] = {"sound",1};
+			soundBullet[] = {"emptySound",1};
+			soundBurst = 0;
+			soundClosure[] = {"sound",1};
+			soundContinuous = 0;
+			soundEnd[] = {"sound",1};
+			soundLoop[] = {"sound",1};
+			sounds[] = {"StandardSound"};
+			class StandardSound: BaseSoundModeType {
+			soundSetShot[] = {"RHS_PK_Shot_SoundSet","RHS_MMG1_Tail_SoundSet"};
+			};
+			swayDecaySpeed = 2;
+			textureType = "fullAuto";
+			type = 65536;
+			uiPicture = "";
+			useAction = 0;
+			useActionTitle = "";
+			useAsBinocular = 0;
+			useModelOptics = 1;
+			value = 2;
+			weaponLockDelay = 0;
+			weaponLockSystem = 0;
+			weaponSoundEffect = "";
+			weight = 0;
+			zeroingSound[] = {"",1,1};
+		};
+	};
 	class rhs_weap_nsvt_effects;
-	class BN_rhs_weap_nsvt: rhs_weap_nsvt_effects
+	class BN_rhs_weap_nsv: rhs_weap_nsvt_effects //Стационар(машины,лодки), 1 Магазин - НСВ
 	{
 		magazines[] = {"rhs_mag_127x108mm_50"};
 		magazineReloadTime = 0;
-		bn_csw_extra_capacity = 2;
+		bn_csw_extra_capacity = 0;
 		bn_csw_ReloadTime = 6;
 		ballisticsComputer = 2;
-	}; 
-	
+		class GunParticles
+		{
+			class effect1
+			{
+				directionname = "nabojnicestart1";
+				effectname = "MachineGunCartridge2";
+				positionname = "nabojniceend1";
+			};
+			class effect2
+			{
+				directionname = "konec hlavne";
+				effectname = "MachineGunCloud";
+				positionname = "usti hlavne";
+			};
+		};
+	};
 	class rhs_weap_kord;
-	class BN_rhs_weap_kord: rhs_weap_kord
+	class BN_rhs_weap_kord: rhs_weap_kord //Стационар(машины,лодки), 1 Магазин - КОРД
 	{
 		class GunParticles
 		{
@@ -1211,13 +3005,13 @@ class CfgWeapons {
 		};
 		magazines[] = {"rhs_mag_127x108mm_50"};
 		magazineReloadTime = 0;
-		bn_csw_extra_capacity = 2;
+		bn_csw_extra_capacity = 0;
 		bn_csw_ReloadTime = 6;
 		ballisticsComputer = 2;
 	};
 	
 	class rhs_weap_DSHKM;
-	class BN_rhs_weap_DSHKM: rhs_weap_DSHKM
+	class BN_rhs_weap_DSHKM: rhs_weap_DSHKM //Стационар(машины,лодки), 1 Магазин - ДШКМ
 	{
 		class GunParticles
 		{
@@ -1242,40 +3036,17 @@ class CfgWeapons {
 		};
 		magazines[] = {"rhs_mag_127x108mm_50"};
 		magazineReloadTime = 0;
-		bn_csw_extra_capacity = 2;
+		bn_csw_extra_capacity = 0;
 		bn_csw_ReloadTime = 6;
 		ballisticsComputer = 2;
 	};
 	class RocketPods;
-	class rhs_weap_SPG9: RocketPods
+	class rhs_weap_SPG9: RocketPods 
 	{
-	/* 
-	class missiles_titan;
-	class rhs_weap_SPG9: missiles_titan	{
-		scope = 2;
-		displayName = "$STR_RHS_DN_SPG9";
-		magazineReloadTime = 10;
-		modelOptics = ""; */
 		magazines[] = {"rhs_mag_OG9V","rhs_mag_OG9VM","rhs_mag_PG9V","rhs_mag_PG9N","rhs_mag_PG9VNT","BN_rhs_mag_og9v","BN_rhs_mag_og9vm","BN_rhs_mag_pg9v","BN_rhs_mag_pg9n","BN_rhs_mag_pg9vnt"};
-		/* sounds[] = {"StandardSound"};
-		class StandardSound
-		{
-			weaponSoundEffect = "DefaultRifle";
-			begin1[] = {"\rhsafrf\addons\rhs_c_heavyweapons\sounds\RocketLauncher_Shot04_A","db20",1,1100};
-			soundBegin[] = {"begin1",1};
-		};
-		reloadMagazineSound[] = {"\rhsafrf\addons\rhs_c_heavyweapons\sounds\flare_reload","db-70",1,20};
-		recoil = "launcherBase";
-		aiRateOfFire = 10;
-		aiRateOfFireDistance = 450;
-		minRange = 50;
-		midRange = 450;
-		maxRange = 800;
-		cursor = "Rocket";
-		cursorSize = 1;
-		canlock = 0; */
 	};
-	class BN_rhs_weap_SPG9: rhs_weap_SPG9 {
+	class BN_rhs_weap_SPG9: rhs_weap_SPG9 //Стационар(машины,лодки), 1 Магазин
+	{
 		magazineReloadTime = 0;
 		autoReload = 1;
 		bn_csw_extra_capacity = 0;
@@ -1407,10 +3178,25 @@ class CfgWeapons {
 	class rhs_weap_m240veh;
 	class rhs_weap_m240_abrams: rhs_weap_m240veh
 	{
-		magazines[] = {"rhs_mag_762x51_M240_200","rhsusf_50Rnd_762x51","rhsusf_50Rnd_762x51_m61_ap","rhsusf_50Rnd_762x51_m62_tracer","rhsusf_50Rnd_762x51_m80a1epr","rhsusf_50Rnd_762x51_m82_blank","rhsusf_100Rnd_762x51","rhsusf_100Rnd_762x51_m61_ap","rhsusf_100Rnd_762x51_m62_tracer","rhsusf_100Rnd_762x51_m80a1epr","rhsusf_100Rnd_762x51_m82_blank","rhsusf_50Rnd_762x51_m993","rhsusf_100Rnd_762x51_m993",
+		magazines[] =
+		{
+			"rhs_mag_762x51_M240_200",
+			"rhsusf_50Rnd_762x51",
+			"rhsusf_50Rnd_762x51_m61_ap",
+			"rhsusf_50Rnd_762x51_m62_tracer",
+			"rhsusf_50Rnd_762x51_m80a1epr",
+			"rhsusf_50Rnd_762x51_m82_blank",
+			"rhsusf_100Rnd_762x51",
+			"rhsusf_100Rnd_762x51_m61_ap",
+			"rhsusf_100Rnd_762x51_m62_tracer",
+			"rhsusf_100Rnd_762x51_m80a1epr",
+			"rhsusf_100Rnd_762x51_m82_blank",
+			"rhsusf_50Rnd_762x51_m993",
+			"rhsusf_100Rnd_762x51_m993",
 			"hlc_100Rnd_762x51_B_M60E4", 
 			"hlc_100Rnd_762x51_M_M60E4", 
-			"hlc_100Rnd_762x51_T_M60E4"};
+			"hlc_100Rnd_762x51_T_M60E4"
+		};
 		bn_csw_extra_capacity = 2;
 		bn_csw_ReloadTime = 15;
 		reloadTime = 0;
@@ -1419,10 +3205,28 @@ class CfgWeapons {
 	class rhs_weap_m240_abrams_coax: rhs_weap_m240veh
 	{
 		
-		magazines[] = {"rhs_mag_1100Rnd_762x51_M240","rhs_mag_762x51_M240_1200","rhs_mag_762x51_M240_200","rhs_mag_762x51_M240_200","rhsusf_50Rnd_762x51","rhsusf_50Rnd_762x51_m61_ap","rhsusf_50Rnd_762x51_m62_tracer","rhsusf_50Rnd_762x51_m80a1epr","rhsusf_50Rnd_762x51_m82_blank","rhsusf_100Rnd_762x51","rhsusf_100Rnd_762x51_m61_ap","rhsusf_100Rnd_762x51_m62_tracer","rhsusf_100Rnd_762x51_m80a1epr","rhsusf_100Rnd_762x51_m82_blank","rhsusf_50Rnd_762x51_m993","rhsusf_100Rnd_762x51_m993",
+		magazines[] =
+		{
+			"rhs_mag_1100Rnd_762x51_M240",
+			"rhs_mag_762x51_M240_1200",
+			"rhs_mag_762x51_M240_200",
+			"rhs_mag_762x51_M240_200",
+			"rhsusf_50Rnd_762x51",
+			"rhsusf_50Rnd_762x51_m61_ap",
+			"rhsusf_50Rnd_762x51_m62_tracer",
+			"rhsusf_50Rnd_762x51_m80a1epr",
+			"rhsusf_50Rnd_762x51_m82_blank",
+			"rhsusf_100Rnd_762x51",
+			"rhsusf_100Rnd_762x51_m61_ap",
+			"rhsusf_100Rnd_762x51_m62_tracer",
+			"rhsusf_100Rnd_762x51_m80a1epr",
+			"rhsusf_100Rnd_762x51_m82_blank",
+			"rhsusf_50Rnd_762x51_m993",
+			"rhsusf_100Rnd_762x51_m993",
 			"hlc_100Rnd_762x51_B_M60E4", 
 			"hlc_100Rnd_762x51_M_M60E4", 
-			"hlc_100Rnd_762x51_T_M60E4"};
+			"hlc_100Rnd_762x51_T_M60E4"
+		};
 		bn_csw_extra_capacity = 0;
 		bn_csw_ReloadTime = 40;
 		reloadTime = 0;
@@ -2746,7 +4550,7 @@ class CfgVehicles
 			class ReloadAnim
 			{
 				source = "reload";
-				weapon = "BN_rhs_weap_nsvt";
+				weapon = "BN_rhs_weap_nsv";
 			};
 			class ReloadMagazine: ReloadAnim
 			{
@@ -2769,7 +4573,7 @@ class CfgVehicles
 		class Turrets: Turrets {
 			class MainTurret: MainTurret {
 				turretInfoType = "RscOptics_Offroad_01";
-				weapons[] = {"BN_rhs_weap_nsvt"};
+				weapons[] = {"BN_rhs_weap_nsv"};
 				magazines[] = {"rhs_mag_127x108mm_50"};
 			};
 		};
