@@ -239,7 +239,7 @@ class CfgMagazines {
 	{
 		descriptionShort = "Коробка 7,62x54 мм (250)";
 		displayName = "Коробка 7,62x54 мм";
-		model = "\rhsafrf\addons\rhs_weapons\magazines\rhs_pk_mag";
+		model = "\sg_vtn_vehicles\sg_250_pk_mag";
 		picture = "\rhsafrf\addons\rhs_weapons\icons\pkpbox_ca.paa";
 		mass = 175;
 	};
