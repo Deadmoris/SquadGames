@@ -1843,6 +1843,20 @@ class CfgVehicles
 				factions[] = {};
 			};
 			
+			class KHAKI
+			{
+				displayName = "Khaki";
+				author = "Kiker";
+				textures[] = 		
+				{
+					"\sg_vehicles\data\korp4_co.paa",
+					"\sg_vehicles\data\dekor4_co.paa",
+					"\sg_vehicles\data\tur_front4_co.paa",
+					"\sg_vehicles\data\tur_back4_co.paa",
+					"\sg_vehicles\data\penel_co.paa"
+				};
+				factions[] = {};
+			};
 			
 		};
 		
