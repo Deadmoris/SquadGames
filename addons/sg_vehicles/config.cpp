@@ -1951,8 +1951,8 @@ class CfgVehicles
 				gunnerName = "$STR_REAR_GUNNER";
 				weapons[] = {"SG_VTN_pkm"};
 				magazines[] = {"rhs_mag_762x54mm_250"};
-				gunBeg = "REAR_usti_hlavne";
-				gunEnd = "REAR_konec_hlavne";
+				gunBeg = "usti hlavne";
+				gunEnd = "konec hlavne";
 				body = "REAR_otocvez";
 				gun = "REAR_otochlaven";
 				animationSourceBody = "REAR_Turret";
