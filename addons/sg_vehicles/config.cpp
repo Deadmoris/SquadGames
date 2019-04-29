@@ -3650,24 +3650,24 @@ class CfgVehicles
 			};
 			
 			
-			class m60_ReloadAnim1
+			class m60_reloadanim_1
 			{
 				source = "reload";
 				weapon = "sg_m60_veh2";
 			};
-			class m60_ReloadMagazine1: m60_ReloadAnim1
+			class m60_ReloadMagazine_1: m60_ReloadAnim_1
 			{
 				source = "reloadmagazine";
 			};
-			class m60_Revolving1: m60_ReloadAnim1
+			class m60_revolving_1: m60_ReloadAnim_1
 			{
 				source = "revolving";
 			};
-			class m60_recoil_source1: m60_ReloadAnim1
+			class m60_recoil_source_1: m60_ReloadAnim_1
 			{
 				animPeriod = 0.01;
 			};
-			class m60_MuzzleFlashROT1: m60_ReloadAnim1
+			class m60_MuzzleFlashROT_1: m60_ReloadAnim_1
 			{
 				source = "ammoRandom";
 			};
