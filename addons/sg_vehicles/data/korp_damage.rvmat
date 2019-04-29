@@ -29,7 +29,7 @@ class Stage1
 };
 class Stage2
 {
-	texture = "a3\data_f\destruct\damage_metal_cdt.paa";
+	texture = "a3\data_f\destruct\damage_metal_basicarmor_dt.paa";
 	uvSource = "tex";
 	class uvTransform
 	{
@@ -41,7 +41,7 @@ class Stage2
 };
 class Stage3
 {
-	texture = "a3\data_f\destruct\damage_metal_mc.paa";
+	texture = "a3\data_f\destruct\damage_metal_basicarmor_mc.paa";
 	uvSource = "tex";
 	class uvTransform
 	{

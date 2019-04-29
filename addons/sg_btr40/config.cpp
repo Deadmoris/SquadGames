@@ -1553,9 +1553,9 @@ class CfgVehicles
 				"A3\Data_F\default.rvmat",
 				"A3\Data_F\default_destruct.rvmat",
 				
-				"sg_btr40\data\skin3d.rvmat",
-				"sg_btr40\data\skin3d_damage.rvmat",
-				"sg_btr40\data\skin3d_destruct.rvmat",
+				"sg_btr40\data\dekor_btr.rvmat",
+				"sg_vehicles\data\dekor_damage.rvmat",
+				"sg_vehicles\data\dekor_destruct.rvmat",
 				
 				"sg_btr40\data\uaz.rvmat",
 				"sg_btr40\data\uaz_damage.rvmat",
