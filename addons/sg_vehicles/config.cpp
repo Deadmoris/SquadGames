@@ -1827,6 +1827,23 @@ class CfgVehicles
 				};
 				factions[] = {};
 			};
+			
+			class BLACK
+			{
+				displayName = "Black";
+				author = "Kiker";
+				textures[] = 		
+				{
+					"\sg_vehicles\data\korp3_co.paa",
+					"\sg_vehicles\data\dekor3_co.paa",
+					"\sg_vehicles\data\tur_front3_co.paa",
+					"\sg_vehicles\data\tur_back3_co.paa",
+					"\sg_vehicles\data\penel_co.paa"
+				};
+				factions[] = {};
+			};
+			
+			
 		};
 		
 		driverIsCommander = 0;
