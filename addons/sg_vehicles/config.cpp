@@ -174,14 +174,14 @@ class CfgAmmo
 {
 	class ShellBase;
 	
-	/*class ammo_Penetrator_Base;
+	class ammo_Penetrator_Base;
 	
 	class SG_57mm_HEAT: ammo_Penetrator_Base
 	{
 		caliber = 16.7;
 		warheadName = "HEAT";
-		hit = 235;
-	};	*/
+		hit = 250;
+	};	
 	
 	class SG_Sh_57mm_HEAT: ShellBase
 	{
@@ -191,7 +191,7 @@ class CfgAmmo
 		indirectHit = 13;
 		indirectHitRange = 2;
 		warheadName = "HEAT";
-		submunitionAmmo = "";
+		submunitionAmmo = "SG_57mm_HEAT";
 		submunitionDirectionType = "SubmunitionModelDirection";
 		submunitionInitSpeed = 1000;
 		submunitionParentSpeedCoef = 0;
@@ -324,7 +324,7 @@ class cfgWeapons
 			soundContinuous = 0;
 			showToPlayer = 1;
 			soundBurst = 0;
-			reloadTime = 0.5;
+			reloadTime = 0.4;
 			multiplier = 1;
 			minRange = 1;
 			minRangeProbab = 0.01;
@@ -820,7 +820,11 @@ class CfgVehicles
 					maxFov = 1.1;
 				};
 				
-			class Turrets: Turrets
+				maxOutElev = 50;
+				minOutElev = -20;
+				
+				
+				class Turrets: Turrets
 				{
 					class CommanderOptics: NewTurret
 					{
@@ -845,6 +849,10 @@ class CfgVehicles
 						memoryPointsGetInGunnerDir = "pos commander dir";
 						ispersonturret = 1;
 						hideWeaponsGunner = 1;
+						
+						maxOutElev = 50;
+						minOutElev = -20;
+						
 						class ViewGunner
 						{
 						initAngleX = 0;
