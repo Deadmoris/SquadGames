@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="YGOMod">
+  <Package name="yugoslavian_stuff">
+    <Container name="Names">
+	  <Key ID="STR_Yugoslav_Forces">
+        <Original>Yugoslav Forces</Original>
+        <English>Yugoslav Forces</English>
+        <Russian>Вооружённые силы Союзной Республики Югославии</Russian>
+      </Key>
+	  <Key ID="STR_YGO_Infantry">
+        <Original>YGO Infantry</Original>
+        <English>YGO Infantry</English>
+        <Russian>Пехота</Russian>
+      </Key>
+	  <Key ID="STR_YGO_Platoon">
+        <Original>YGO Platoon</Original>
+        <English>YGO Platoon</English>
+        <Russian>Взвод</Russian>
+      </Key>
+	  <Key ID="STR_YGO_Patrool">
+        <Original>YGO Patrool</Original>
+        <English>YGO Patrool</English>
+        <Russian>Патруль</Russian>
+      </Key>
+	  <Key ID="STR_YGO_Squad">
+        <Original>YGO Squad</Original>
+        <English>YGO Squad</English>
+        <Russian>Отряд</Russian>
+      </Key>
+	  <Key ID="STR_YGO_Fireteam">
+        <Original>YGO Fireteam</Original>
+        <English>YGO Fireteam</English>
+        <Russian>Отделение</Russian>
+      </Key>	  
+	  <Key ID="STR_Yugoslav_Army">
+        <Original>Yugoslav Army (Vojska Jugoslavije)</Original>
+        <English>Yugoslav Army (Vojska Jugoslavije)</English>
+        <Russian>Армия (Vojska Jugoslavije)</Russian>
+      </Key>	  
+	  <Key ID="STR_Serbian_Police">
+        <Original>Serbian Police (Полиција)</Original>
+        <English>Serbian Police (Полиција)</English>
+        <Russian>Милиция (Полиција)</Russian>
+      </Key>	  
+	  <Key ID="STR_VJ_Unarmed">
+        <Original>VJ Unarmed</Original>
+        <English>VJ Unarmed</English>
+        <Russian>Солдат (безоружный)</Russian>
+      </Key>	  
+	  <Key ID="STR_VJ_Rifleman">
+        <Original>VJ Rifleman</Original>
+        <English>VJ Rifleman</English>
+        <Russian>Солдат</Russian>
+      </Key>
+	  <Key ID="STR_VJ_Rifleman_AKMS">
+        <Original>VJ Rifleman (AKMS)</Original>
+        <English>VJ Rifleman (AKMS)</English>
+        <Russian>Солдат (АКМС)</Russian>
+      </Key>	  
+	  <Key ID="STR_VJ_Rifleman_M92">
+        <Original>VJ Rifleman (M92)</Original>
+        <English>VJ Rifleman (M92)</English>
+        <Russian>Солдат (М92)</Russian>
+      </Key>
+	  <Key ID="STR_VJ_Rifleman_AKM">
+        <Original>VJ Rifleman (AKM)</Original>
+        <English>VJ Rifleman (AKM)</English>
+        <Russian>Солдат (АКМ)</Russian>
+      </Key>
+	  <Key ID="STR_VJ_Machinegunner">
+        <Original>VJ Machinegunner</Original>
+        <English>VJ Machinegunner</English>
+        <Russian>Пулемётчик</Russian>
+      </Key>	  
+	  <Key ID="STR_VJ_Grenadier">
+        <Original>VJ Grenadier</Original>
+        <English>VJ Grenadier</English>
+        <Russian>Гренадёр</Russian>
+      </Key>	  
+	  <Key ID="STR_VJ_Marksman">
+        <Original>VJ Marksman</Original>
+        <English>VJ Marksman</English>
+        <Russian>Снайпер</Russian>
+      </Key>	  
+	  <Key ID="STR_VJ_Officer">
+        <Original>VJ Officer</Original>
+        <English>VJ Officer</English>
+        <Russian>Офицер</Russian>
+      </Key>	  
+	  <Key ID="STR_VJ_Engineer">
+        <Original>VJ Engineer</Original>
+        <English>VJ Engineer</English>
+        <Russian>Инженер</Russian>
+      </Key>	  	  
+	  <Key ID="STR_VJ_Medic">
+        <Original>VJ Medic</Original>
+        <English>VJ Medic</English>
+        <Russian>Медик</Russian>
+      </Key>	  	  	  
+	  <Key ID="STR_SP_Unarmed">
+        <Original>Policija Unarmed Soldier</Original>
+        <English>Policija Unarmed Soldier</English>
+        <Russian>Полицейский (безоружный)</Russian>
+      </Key>	  	  	  
+	  <Key ID="STR_SP_Rifleman">
+        <Original>Policija Rifleman</Original>
+        <English>Policija Rifleman</English>
+        <Russian>Стрелок</Russian>
+      </Key>	  	  	  	  
+	  <Key ID="STR_SP_Rifleman_Beanie">
+        <Original>Policija Rifleman (Light)</Original>
+        <English>Policija Rifleman (Light)</English>
+        <Russian>Стрелок (лёгк.)</Russian>
+      </Key>	  	  	  	  
+	  <Key ID="STR_SP_Rifleman_M81">
+        <Original>Policija Rifleman (M81) [AK-74M Ext.]</Original>
+        <English>Policija Rifleman (M81) [AK-74M Ext.]</English>
+        <Russian>Стрелок (М81)</Russian>
+      </Key>	  	  	  	  
+	  <Key ID="STR_SP_Rifleman_M81_Beanie">
+        <Original>Policija Rifleman (M81) [AK-74M]</Original>
+        <English>Policija Rifleman (M81) [AK-74M]</English>
+        <Russian>Стрелок (М81) [АК-74М]</Russian>
+      </Key>	  	  	  	  
+	  <Key ID="STR_SP_Rifleman_RPG">
+        <Original>Policija Rifleman [RPG-26]</Original>
+        <English>Policija Rifleman [RPG-26]</English>
+        <Russian>Стрелок [РПГ-26]</Russian>
+      </Key>	  	  	  	  
+	  <Key ID="STR_SP_Rifleman_M81_RPG">
+        <Original>Policija Rifleman [RPG-26](M81)</Original>
+        <English>Policija Rifleman [RPG-26](M81)</English>
+        <Russian>Стрелок [РПГ-26](М81)</Russian>
+      </Key>	  	  	  	  
+	  <Key ID="STR_SP_Engineer">
+        <Original>Policija Field Engineer</Original>
+        <English>Policija Field Engineer</English>
+        <Russian>Инженер</Russian>
+      </Key>	  	  	  	  
+	  <Key ID="STR_SP_Marksman">
+        <Original>Policija Marksman</Original>
+        <English>Policija Marksman</English>
+        <Russian>Снайпер</Russian>
+      </Key>	  	  	  	  
+	  <Key ID="STR_SP_Medic">
+        <Original>Policija Field Medic</Original>
+        <English>Policija Field Medic</English>
+        <Russian>Медик</Russian>
+      </Key>	  	  	  	  
+	  <Key ID="STR_SP_Machinegunner">
+        <Original>Policija Machinegunner</Original>
+        <English>Policija Machinegunner</English>
+        <Russian>Пулемётчик</Russian>
+      </Key>	  	  	  	  
+	  <Key ID="STR_SP_Grenadier">
+        <Original>Policija Grenadier</Original>
+        <English>Policija Grenadier</English>
+        <Russian>Гренадёр</Russian>
+      </Key>	  	  	  	  
+	  <Key ID="STR_SP_Sharpshooter">
+        <Original>Policija Sharpshooter</Original>
+        <English>Policija Sharpshooter</English>
+        <Russian>Меткий стрелок</Russian>
+      </Key>	  	  	  	  
+	  <Key ID="STR_VJ_Medic_Pack">
+        <Original>VJ Medic Pack</Original>
+        <English>VJ Medic Pack</English>
+        <Russian>Рюкзак медика</Russian>
+      </Key>	  	  	  	  
+	  <Key ID="STR_VJ_Engineer_Pack">
+        <Original>VJ Engineer Pack</Original>
+        <English>VJ Engineer Pack</English>
+        <Russian>Рюкзак инженера</Russian>
+      </Key>	  	  	  	  
+	  <Key ID="STR_VJ_Machinegunner_Backpack">
+        <Original>VJ Machinegunner Backpack</Original>
+        <English>VJ Machinegunner Backpack</English>
+        <Russian>Рюкзак пулемётчика</Russian>
+      </Key>	  	  	  	  	  
+	  <Key ID="STR_Flag_Serbian">
+        <Original>Flag (Serbian)</Original>
+        <English>Flag (Serbian)</English>
+        <Russian>Флаг (Сербия)</Russian>
+      </Key>	  	  	  	  	  
+	  <Key ID="STR_VJ_OKLF_D_Camo">
+        <Original>YGO Oakleaf Uniform</Original>
+        <English>YGO Oakleaf Uniform</English>
+        <Russian>Форма (М03)</Russian>
+      </Key>	  	  	  	  	  
+	  <Key ID="STR_SP_Camo">
+        <Original>SP Blue Tigerstripe Uniform</Original>
+        <English>SP Blue Tigerstripe Uniform</English>
+        <Russian>Форма (Синий тигр)</Russian>
+      </Key>	  	  	  	  	  
+	  <Key ID="STR_SP_Camo_Oak">
+        <Original>SP Blue Oakleaf Uniform</Original>
+        <English>SP Blue Oakleaf Uniform</English>
+        <Russian>Форма (Серый пазл)</Russian>
+      </Key>	  	  	  	  	  
+	  <Key ID="STR_SP_Camo_Oak_Insg">
+        <Original>SP Blue Oakleaf Uniform (Insg.)</Original>
+        <English>SP Blue Oakleaf Uniform (Insg.)</English>
+        <Russian>Форма (Серый пазл/Шеврон)</Russian>
+      </Key>	  	  	  	  	  
+	  <Key ID="STR_SP_Camo_Insg">
+        <Original>SP Blue Tigerstripe Uniform (Insg.)</Original>
+        <English>SP Blue Tigerstripe Uniform (Insg.)</English>
+        <Russian>Форма (Синий тигр/Шеврон)</Russian>
+      </Key>	  	  	  	  	  
+	  <Key ID="STR_SP_M81_Camo">
+        <Original>SP M81 Woodland Uniform</Original>
+        <English>SP M81 Woodland Uniform</English>
+        <Russian>Форма (Woodland)</Russian>
+      </Key>		 	 	  	  	  	  	  
+	  <Key ID="STR_VJ_Beret_Infantry">
+        <Original>VJ Beret - Infantry</Original>
+        <English>VJ Beret - Infantry</English>
+        <Russian>Берет (пехота)</Russian>
+      </Key>	  	  	  	  	  
+	  <Key ID="STR_VJ_Beret_Black">
+        <Original>VJ Beret - Black</Original>
+        <English>VJ Beret - Black</English>
+        <Russian>Берет (чёрный)</Russian>
+      </Key>	  	  	  	  	  
+	  <Key ID="STR_YGO_Helmet_6B27M">
+        <Original>YGO 6B27M</Original>
+        <English>YGO 6B27M</English>
+        <Russian>6Б27М</Russian>
+      </Key>	  	  	  	  	  
+	  <Key ID="STR_YGO_Helmet_6B27M_Wood">
+        <Original>YGO 6B27M (Woodland)</Original>
+        <English>YGO 6B27M (Woodland)</English>
+        <Russian>6Б27М (Woodland)</Russian>
+      </Key>	  	  	  	  	  
+	  <Key ID="STR_YGO_Helmet_M1">
+        <Original>YGO M1</Original>
+        <English>YGO M1</English>
+        <Russian>М1</Russian>
+      </Key>	  	  	  	  	  
+	  <Key ID="STR_YGO_Helmet_M1_TB">
+        <Original>YGO M1 - Tiger Blue</Original>
+        <English>YGO M1 - Tiger Blue</English>
+        <Russian>М1 (Синий)</Russian>
+      </Key>	  	  	  	  	  
+	  <Key ID="STR_Beanie_Black">
+        <Original>Beanie (Black)</Original>
+        <English>Beanie (Black)</English>
+        <Russian>Шапка (чёрная)</Russian>
+      </Key>	  	  	  	  	  
+	  <Key ID="STR_Bandana_M81">
+        <Original>Bandana (M81)</Original>
+        <English>Bandana (M81)</English>
+        <Russian>Бандана (М81)</Russian>
+      </Key>	  	  	  	  	  
+	  <Key ID="STR_YGO_Cap_Tigerstripe">
+        <Original>YGO Policija Cap - Tigerstripe</Original>
+        <English>YGO Policija Cap - Tigerstripe</English>
+        <Russian>Полицейская кепка - Синий тигр</Russian>
+      </Key>	  	  	  	  	  
+	  <Key ID="STR_YGO_Cap_Oakleaf">
+        <Original>YGO Policija Cap - Oakleaf</Original>
+        <English>YGO Policija Cap - Oakleaf</English>
+        <Russian>Полицейская кепка - Серый пазл</Russian>
+      </Key>	  	  	  	  	  
+	  <Key ID="STR_YGO_Cap_Basic">
+        <Original>YGO Policija Cap</Original>
+        <English>YGO Policija Cap</English>
+        <Russian>Полицейская кепка</Russian>
+      </Key>	  	  	  	  	  
+	  <Key ID="STR_YGO_Cap_Basic">
+        <Original>YGO Policija Cap</Original>
+        <English>YGO Policija Cap</English>
+        <Russian>Полицейская кепка</Russian>
+      </Key>	  	  	  	  	  
+	  <Key ID="STR_SP_Vest_Black">
+        <Original>Serbian Police Vest (Basic)[Black]</Original>
+        <English>Serbian Police Vest (Basic)[Black]</English>
+        <Russian>Сербский жилет полиции (База) [Чёрный]</Russian>
+      </Key>	  	  	  	  	  
+	  <Key ID="STR_VJ_Holster">
+        <Original>VJ Hoslter</Original>
+        <English>VJ Hoslter</English>
+        <Russian>Кобура</Russian>
+      </Key>	  	  	  	  	  
+	  <Key ID="STR_SP_Vest_Blue">
+        <Original>Serbian Police Vest (Blue)</Original>
+        <English>Serbian Police Vest (Blue)</English>
+        <Russian>Сербский жилет полиции (Синий)</Russian>
+      </Key>	  	  	  	  	  
+	  <Key ID="STR_SP_Vest_M99">
+        <Original>Serbian Police Vest (Assault)</Original>
+        <English>Serbian Police Vest (Assault)</English>
+        <Russian>Сербский жилет полиции (Штурмовой)</Russian>
+      </Key>	  	  	  	  	  
+	  <Key ID="STR_SP_Vest_Tactical">
+        <Original>Serbian Police Vest (Tactical)</Original>
+        <English>Serbian Police Vest (Tactical)</English>
+        <Russian>Сербский жилет полиции (Тактический)</Russian>
+      </Key>
+    </Container>
+  </Package>
+</Project>
