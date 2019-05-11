@@ -55,6 +55,7 @@ class CfgMovesBasic
 		sg_PBR_Driver = "sg_PBR_Driver";
 		
 		searchlight_Gunner = "searchlight_Gunner";
+				
 	};
 };
 
@@ -65,6 +66,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 	
 	{
 		class Crew;
+		
+
 		
 			
 		class SG_KIA_ZSU57_Gunner: DefaultDie
@@ -401,10 +404,6 @@ class cfgWeapons
 				effectname = "MachineGunEject";
 			};
 		};	
-		bn_csw_extra_capacity = 0;
-		bn_csw_ReloadTime = 6;
-		reloadTime = 0;
-		magazineReloadTime = 0;
 	};
 	
 	class MGun;
@@ -1740,7 +1739,7 @@ class CfgVehicles
 		};
 		
 		bn_csw_loading_style = 1;
-		
+		getInRadius = 5;
 	};
 	class SG_ASSAULT_BOAT_Base: sg_boat_base_turret
 	{
@@ -2164,9 +2163,17 @@ class CfgVehicles
 			{
 				source = "revolving";
 			};
-			class pkm_muzzleflashrot: REAR_ReloadAnim
+
+			
+			class muzzle_rot_1
 			{
-				source = "ammoRandom";
+				source = "ammorandom";
+				weapon = "SG_VTN_pkm";
+			};
+			class muzzle_hide_1
+			{
+				source = "reload";
+				weapon = "SG_VTN_pkm";
 			};
 		};
 		
@@ -2803,6 +2810,34 @@ class CfgVehicles
 		};
 		
 		
+		class AnimationSources: AnimationSources
+		{
+			class REAR_ReloadAnim
+			{
+				source = "reload";
+				weapon = "SG_VTN_pkm";
+			};
+			class REAR_ReloadMagazine: REAR_ReloadAnim
+			{
+				source = "reloadmagazine";
+			};
+			class REAR_Revolving: REAR_ReloadAnim
+			{
+				source = "revolving";
+			};
+			
+			class muzzle_rot_1
+			{
+				source = "ammorandom";
+				weapon = "SG_VTN_pkm";
+			};
+			class muzzle_hide_1
+			{
+				source = "reload";
+				weapon = "SG_VTN_pkm";
+			};
+		};
+		
 		
 		class CargoTurret;
 		class Turrets: Turrets {
@@ -2836,7 +2871,6 @@ class CfgVehicles
 				gunEnd = "konec hlavne";	
 				body = "mainturret";
 				gun = "maingun";
-				selectionFireAnim = "zasleh";
 				memoryPointGunnerOptics = "gunnerview";
 				gunnerLeftHandAnimName = "rear_handle_l";
 				gunnerRightHandAnimName = "rear_handle_r";
@@ -3623,7 +3657,7 @@ class CfgVehicles
 				effect = "ExhaustsEffectBig";
 			};
 		};
-		getInRadius = 15;
+		
 		class AnimationSources
 		{
 			class FRONT_ReloadMagazine
@@ -3683,11 +3717,12 @@ class CfgVehicles
 			{
 				animPeriod = 0.01;
 			};
-			class m60_MuzzleFlashROT: m60_ReloadAnim
+
+			class m60_muzzleflashrot
 			{
 				source = "ammoRandom";
+				weapon = "sg_m60_veh";
 			};
-			
 			
 			class m60_reloadanim_1
 			{
@@ -3706,10 +3741,14 @@ class CfgVehicles
 			{
 				animPeriod = 0.01;
 			};
-			class m60_MuzzleFlashROT_1: m60_ReloadAnim_1
+
+			class m60_muzzleflashrot_1
 			{
 				source = "ammoRandom";
+				weapon = "sg_m60_veh2";
 			};
+			
+			
 		};
 		class Library
 		{
@@ -3774,7 +3813,7 @@ class CfgVehicles
 				gunEnd = "REAR_konec_hlavne";
 				animationSourceBody = "Turret_2";
 				animationSourceGun = "Gun_2";
-				selectionFireAnim = "rear_zasleh";
+				//selectionFireAnim = "rear_zasleh";
 				memoryPointGunnerOptics = "rear_gunnerview";
 				gunnerOpticsModel = "\A3\weapons_f\reticle\optics_empty";
 				showgunneroptics = 1;
@@ -3841,7 +3880,7 @@ class CfgVehicles
 		};
 		
 	
-		class AnimationSources
+		class AnimationSources: AnimationSources
 		{
 			class FRONT_ReloadMagazine
 			{
@@ -3873,10 +3912,6 @@ class CfgVehicles
 			{
 				source = "revolving";
 			};
-			class REAR_M19_MuzzleFlashROT: REAR_ReloadAnim
-			{
-				source = "ammoRandom";
-			};
 			
 			
 			class m60_ReloadAnim
@@ -3896,9 +3931,10 @@ class CfgVehicles
 			{
 				animPeriod = 0.01;
 			};
-			class m60_MuzzleFlashROT: m60_ReloadAnim
+			class m60_muzzleflashrot
 			{
 				source = "ammoRandom";
+				weapon = "sg_m60_veh";
 			};
 			
 			
@@ -3919,9 +3955,10 @@ class CfgVehicles
 			{
 				animPeriod = 0.01;
 			};
-			class m60_MuzzleFlashROT1: m60_ReloadAnim1
+			class m60_muzzleflashrot_1
 			{
 				source = "ammoRandom";
+				weapon = "sg_m60_veh2";
 			};
 		};
 
@@ -4241,8 +4278,6 @@ class CfgVehicles
             assembleTo = "I_SearchLight_Cool";
         };
     };
-	
-	
 	
 	
 	
