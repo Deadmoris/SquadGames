@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="squadgames">
+  <Package name="sg_vodnik">
+    <Container name="Names">
+     
+	<Key ID="STR_VODNIK">
+		<Original>GAZ Vodnik</Original>
+		<Russian>ГАЗ "Водник"</Russian>
+	</Key>
+	 
+	<Key ID="STR_VODNIK_MED">
+		<Original>GAZ Vodnik (Medical)</Original>
+		<Russian>ГАЗ "Водник" (Медицинский)</Russian>
+	</Key>
+	
+	<Key ID="STR_VODNIK_LIB">
+		<Original>GAZ-39371 Vodnik</Original>
+		<Russian>ГАЗ-39371 "Водник"</Russian>
+	</Key>
+	
+	<Key ID="STR_VODNIK_2A72">
+		<Original>GAZ Vodnik (2A72)</Original>
+		<Russian>ГАЗ "Водник" (2А72)</Russian>
+	</Key>
+	
+	<Key ID="STR_VODNIK_PKM">
+		<Original>GAZ Vodnik (PKM)</Original>
+		<Russian>ГАЗ "Водник" (ПКМ)</Russian>
+	</Key>
+	
+	<Key ID="STR_VODNIK_KPVT">
+		<Original>GAZ Vodnik (KPVT)</Original>
+		<Russian>ГАЗ "Водник" (КПВТ)</Russian>
+	</Key>
+	
+	<Key ID="STR_VODNIK_KORD">
+		<Original>GAZ Vodnik (KORD)</Original>
+		<Russian>ГАЗ "Водник" (КОРД)</Russian>
+	</Key>
+	
+	<Key ID="STR_FRONT_HATCH_GUNNER">
+		<Original>Gunner (Front hatch)</Original>
+		<Russian>Стрелок (Передний люк)</Russian>
+	</Key>
+	
+	<Key ID="STR_REAR_HATCH_GUNNER">
+		<Original>Gunner (Rear hatch)</Original>
+		<Russian>Стрелок (Задний люк)</Russian>
+	</Key>
+	
+	
+</Container>
+</Package>
+</Project>
