@@ -1746,12 +1746,10 @@ class CfgVehicles
 		scope = 0;
 		canFloat = 0;
 		simulation = "shipX";
-		idleRpm = 100;
-		redRpm = 1000;
 		thrustDelay = 1;
-		enginePower = 100;
+		enginePower = 400;
 		engineShiftY = 0;
-		maxSpeed = 40;
+		maxSpeed = 65;
 		vehicleClass = "Ship";
 		editorSubcategory = "EdSubcat_Boats";
 		driverLeftHandAnimName = "volant";
@@ -1766,10 +1764,12 @@ class CfgVehicles
 		waterLeakiness = 5;
 		waterEffectSpeed = 5;
 		waterFastEffectSpeed = 25;
+		idleRpm = 200;
+		redRpm = 1200;
 		class complexGearbox
 		{
-			GearboxRatios[] = {"R1",-0.5,"N",0,"D1",3.5,"D2",3,"D3",2.5};
-			TransmissionRatios[] = {"High",1};
+			GearboxRatios[] = {"R1",-0.782,"N",0,"D1",2.0,"D2",1.85,"D3",1.75};
+			TransmissionRatios[] = {"High",1.0};
 			gearBoxMode = "auto";
 			moveOffGear = 1;
 			driveString = "D";
@@ -2730,7 +2730,7 @@ class CfgVehicles
 		icon = "\sg_vehicles\data\icomap_boate_ca.paa";  
 		picture = "\sg_vehicles\data\i_boate_ca.paa";  
 		transportsoldier = 10;
-		
+		maxSpeed = 55;
 		scope = 2;
 		scopeCurator = 2;
 		side = 2;
@@ -3003,8 +3003,8 @@ class CfgVehicles
 		idleRpm = 100;
 		redRpm = 1000;
 		thrustDelay = 1;
-		enginePower = 220;
-		engineShiftY = -0.7;
+		enginePower = 320;
+		engineShiftY = 0.4;
 		maxSpeed = 50;
 		waterSpeedFactor = 1;
 		waterResistanceCoef = 0.005;
@@ -3186,7 +3186,6 @@ class CfgVehicles
 		class Components {};
 		
 		minSpeed = -0.5;
-		maxSpeed = 55;
 		steerAheadSimul = 2.2;
 		steerAheadPlan = 2.4;
 		predictTurnSimul = 2.6;
