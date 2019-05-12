@@ -23,7 +23,7 @@ class CfgPatches
 		units[] = {};
 		weapons[] = {};
 		requiredVersion = 0.1;
-		requiredAddons[] = {"A3_Weapons_F","A3_Data_F","A3_Armor_F","A3_Characters_F","A3_Cargoposes_F","rhs_c_heavyweapons","rhsusf_c_heavyweapons"};
+		requiredAddons[] = {"A3_Weapons_F","A3_Data_F","A3_Armor_F","A3_Characters_F","A3_Cargoposes_F","rhs_c_heavyweapons","rhsusf_c_heavyweapons","sg_hud_display"};
 	};
 };
 
@@ -1585,6 +1585,17 @@ class RscInGameUI
 
 class cfgFunctions
 {
+	class sg
+	{
+		class functions
+		{
+			class sight_t55
+			{
+				file = "\sg_cup_vehicles\scripts\RHS_sight_t55.sqf";
+				description = "FCS for BMP-2";
+			};
+		};
+	};
 	class CUP
 	{
 		class functions
@@ -1740,6 +1751,38 @@ class CfgAmmo
 		explosionEffects = "HEShellExplosion";
 		CraterEffects = "GrenadeCrater";
 	};
+	class rhs_ammo_bm25;
+	class sg_ammo_bm25 : rhs_ammo_bm25
+	{
+		airFriction = -0.000162;
+		// airFriction = -0.000173;
+		hit = 250; //Было 520 лол, в 2 раза больше Т72
+	};
+	class sg_ammo_bm25_2 : sg_ammo_bm25
+	{
+		airFriction = -0.0003;
+	};
+	class rhs_ammo_bk17;
+	class sg_ammo_bk17 : rhs_ammo_bk17
+	{
+		airFriction = -0.000343;
+		deflecting = 0;
+	};
+	class rhs_ammo_of412;
+	class sg_ammo_of412 : rhs_ammo_of412
+	{
+		airFriction = -0.000128;
+		deflecting = 0;
+	};
+	class sg_ammo_of412_2 : sg_ammo_of412
+	{
+		airFriction = -0.00005;
+	};
+	class rhs_B_762x54_Ball;
+	class sg_B_762x54_Ball: rhs_B_762x54_Ball
+	{
+		airFriction = -0.0012;
+	};
 };
 
 class CfgMagazines
@@ -1804,6 +1847,80 @@ class CfgMagazines
 		displayNameShort = "$STR_SG_DT_MAG_SHORT";
 		count = 63;
 		tracersEvery = 3;
+	};
+	class rhs_mag_bm25_14;
+	class sg_mag_bm25_14: rhs_mag_bm25_14
+	{
+		initSpeed = 1198;
+		tracersEvery = 1;
+		ammo = "sg_ammo_bm25";
+	};
+	class sg_mag_bm25_1: sg_mag_bm25_14
+	{
+		picture = "\rhsusf\addons\rhsusf_weapons\icons\m_m136_ca.paa";
+		count = 1;
+		mass = 120;
+	};
+	class sg_mag_bm25_2_14: rhs_mag_bm25_14
+	{
+		initSpeed = 1430;
+		tracersEvery = 1;
+		ammo = "sg_ammo_bm25_2";
+	};
+	class sg_mag_bm25_2_1: sg_mag_bm25_2_14
+	{
+		picture = "\rhsusf\addons\rhsusf_weapons\icons\m_m136_ca.paa";
+		count = 1;
+		mass = 120;
+	};
+	class rhs_mag_of412_17;
+	class sg_mag_of412_17: rhs_mag_of412_17
+	{
+		initSpeed = 1210;
+		tracersEvery = 1;
+		ammo = "sg_ammo_of412";
+	};
+	class sg_mag_of412_1: sg_mag_of412_17
+	{
+		picture = "\rhsusf\addons\rhsusf_weapons\icons\m_m136_ca.paa";
+		count = 1;
+		mass = 120;
+	};
+	class rhs_mag_of412_21;
+	class sg_mag_of412_21: rhs_mag_of412_21
+	{
+		initSpeed = 1210;
+		tracersEvery = 1;
+		ammo = "sg_ammo_of412";
+	};
+	class sg_mag_of412_2_21: rhs_mag_of412_21
+	{
+		initSpeed = 900;
+		tracersEvery = 1;
+		ammo = "sg_ammo_of412_2";
+	};
+	class rhs_mag_bk17_8;
+	class sg_mag_bk17_8: rhs_mag_bk17_8
+	{
+		initSpeed = 1200;
+		tracersEvery = 1;
+		ammo = "sg_ammo_bk17";
+	};
+	class sg_mag_bk17_1:sg_mag_bk17_8
+	{
+		picture = "\rhsusf\addons\rhsusf_weapons\icons\m_m136_ca.paa";
+		count = 1;
+		mass = 120;
+	};
+	class rhs_mag_762x54mm_250;
+	class sg_mag_762x54mm_250: rhs_mag_762x54mm_250
+	{
+		initSpeed = 900;
+		ammo = "sg_B_762x54_Ball";
+		displayName = "762x54 250 rounds";
+		mass = 60;
+		model = "\rhsafrf\addons\rhs_weapons\magazines\rhs_pk_mag";
+		picture = "\rhsafrf\addons\rhs_weapons\icons\pkpbox_ca.paa";
 	};
 };
 
@@ -2030,6 +2147,33 @@ class cfgWeapons
 		canLock = 0;
 		ballisticsComputer = 2;
 	};
+	class sg_weap_D10: CUP_Vacannon_D10
+	{
+		magazines[] = {
+		"sg_mag_bm25_14",
+		"sg_mag_bm25_2_14",
+		"sg_mag_bm25_2_1",
+		"sg_mag_of412_17",
+		"sg_mag_of412_1",
+		"sg_mag_of412_21",
+		"sg_mag_of412_2_21",
+		"sg_mag_bk17_8",
+		"sg_mag_bk17_1"};
+		magazineReloadTime = 0;
+		autoReload = 1;
+		bn_csw_extra_capacity = 0;
+		bn_csw_ReloadTime = 7;
+		reloadtime = 0;
+	};
+	class rhs_weap_pkt;
+	class sg_pkt_t55: rhs_weap_pkt {
+		magazines[] = {"sg_mag_762x54mm_250"};
+		magazineReloadTime = 0;
+		autoReload = 1;
+		bn_csw_extra_capacity = 0;
+		bn_csw_ReloadTime = 7;
+		reloadtime = 0;
+	};
 	class CUP_Vacannon_D5_T34: cannon_125mm
 	{
 		scope = 1;
@@ -2057,7 +2201,6 @@ class cfgWeapons
 	};
 	
 	class MGun;
-	class rhs_weap_pkt;
 	class SG_PKT: rhs_weap_pkt
 	{
 		class GunParticles
@@ -2458,6 +2601,7 @@ class CfgVehicles
 			class Movement;
 		};
 		class EventHandlers;
+		class ACE_SelfActions;
 	};
 	class SG_T34_Base: Tank_F  //Двигатель Т-34-85
 	{
@@ -3587,6 +3731,7 @@ class CfgVehicles
 		model = "\sg_cup_vehicles\CUP_T55.p3d";
 		picture = "\sg_cup_vehicles\Data\UI\Picture_t55_CA.paa";
 		Icon = "\sg_cup_vehicles\Data\UI\Icon_t55_CA.paa";
+		driverOpticsModel = "\rhsafrf\addons\rhs_optics\vehicles\rhs_tvn5.p3d";
 		mapSize = 10;
 		driverForceOptics = 1;
 		driverAction = "CUP_M113_Driver_EP1";
@@ -3607,6 +3752,13 @@ class CfgVehicles
 		tankTurnForce = 330000;
 		idleRpm = 500;
 		redRpm = 1200;
+		//физика
+		maxFordingDepth = -0.8;
+		waterResistance		= 0;
+		waterDamageEngine	= 0.2;
+		waterLeakiness		= 5;	
+		accelAidForceYOffset = -3;
+		//конец
 		engineLosses = 25;
 		transmissionLosses = 15;
 		changeGearMinEffectivity[] = {0.5,0.15,0.95,0.95,0.95,0.95,0.75};
@@ -3752,25 +3904,59 @@ class CfgVehicles
 		};
 		scope = 0;
 		accuracy = 0.8;
-		armor = 360;
-		armorStructural = 3.5;
+		armor=150;
+		armorStructural=200; //Было 500, тогда как у Т72 - 220
 		crewCrashProtection = 0.25;
 		crewExplosionProtection = 0.995;
 		damageResistance = 0.00843;
 		destrType = "DestructDefault";
 		cost = 1500000;
+		unitInfoType = "RHS_RscInfoT72";
 		acre_hasInfantryPhone = 1;
 		acre_infantryPhoneControlActions[] = {"all"};
 		acre_infantryPhoneDisableRinging = 0;
 		acre_infantryPhonePosition[] = {0,0,0};
 		acre_infantryPhoneIntercom[] = {"all"};
-		
+		class ACE_SelfActions: ACE_SelfActions {
+			class BN_CSW_Load_loader {
+				displayName = "Зарядить...";
+				distance = 2;
+				condition = "(!isturnedout _player) && {((assignedVehicleRole _player) select 1) in (getarray (configFile >> 'CfgVehicles' >> typeOf (vehicle _player) >> 'bn_csw_loading_loaders'))} && {count (_target call bn_csw_fnc_add_subactions_loader) > 0}";
+				icon = "\bn_csw_load\data\ui\load.paa";
+				statement = "";
+				showDisabled = 0;
+				priority = 5;
+				hotkey = "L";
+				position = [0.1,0,0];
+				enableInside = 1;
+				insertChildren = "_target call bn_csw_fnc_add_subactions_loader";
+			};
+			class BN_CSW_Load_loader_turnedout {
+				displayName = "Зарядить (снаружи)...";
+				distance = 2;
+				condition = "(isturnedout _player) && {((assignedVehicleRole _player) select 1) in (getarray (configFile >> 'CfgVehicles' >> typeOf (vehicle _player) >> 'bn_csw_loading_loaders_turnedout'))} && {count (_target call bn_csw_fnc_add_subactions_loader_turnedout) > 0}";
+				icon = "\bn_csw_load\data\ui\load.paa";
+				statement = "";
+				showDisabled = 0;
+				priority = 5;
+				hotkey = "L";
+				position = [0.1,0,0];
+				enableInside = 1;
+				insertChildren = "_target call bn_csw_fnc_add_subactions_loader_turnedout";
+			};
+		};
+		transportMaxMagazines = 400;
+		bn_csw_loading_loaders[] = {{0,1}};
+		bn_csw_loading_loaders_turnedout[] = {{0,1},{0,0}};
+		bn_csw_loading_loaderturrets[] = {{{0}}};
+		bn_csw_loading_loaderturrets_turnedout[] = {{{0,1}},{{0,0}}};
+		bn_csw_loading_loaderguns[] = {{{"sg_weap_D10","sg_pkt_t55"}}};
 				
 		class ViewOptics: ViewOptics
 		{
-					initFov = 0.466;
-					minFov = 0.466;
-					maxFov = 0.466;
+			initFov = 0.466;
+			minFov = 0.466;
+			maxFov = 0.466;
 		};	
 		
 		class AcreIntercoms
@@ -3806,44 +3992,45 @@ class CfgVehicles
 		{
 			class HitHull: HitHull
 			{
-				armor = 1.6;
-				material = -1;
-				name = "telo";
-				visual = "zbytek";
-				passThrough = 0;
-				minimalHit = 0.24;
-				explosionShielding = 0.009;
-				radius = 0.25;
+				armor=0.8;
+				material=-1;
+				name="telo";
+				visual="zbytek";
+				passThrough=0;
+				minimalHit=0.34;
+				explosionShielding=0.1;
+				radius=0.25;
 			};
 			class HitEngine: HitEngine
 			{
-				armor = 0.45;
-				material = -1;
-				name = "motor";
-				passThrough = 0;
-				minimalHit = 0.139;
-				explosionShielding = 0.015;
-				radius = 0.27;
+				armor=0.35;
+				material=-1;
+				name="motor";
+				visual="zbytek";
+				passThrough=0;
+				minimalHit=0.09;
+				explosionShielding=0.1;
+				radius=0.27;
 			};
 			class HitLTrack: HitLTrack
 			{
-				armor = 0.25;
-				material = -1;
-				name = "pas_L";
-				passThrough = 0;
-				minimalHit = 0.25;
-				explosionShielding = 0.02;
-				radius = 0.3;
+				armor=0.25;
+				material=-1;
+				name="pas_L";
+				passThrough=0;
+				minimalHit=0.25;
+				explosionShielding=0.5;
+				radius=0.3;
 			};
 			class HitRTrack: HitRTrack
 			{
-				armor = 0.25;
-				material = -1;
-				name = "pas_P";
-				passThrough = 0;
-				minimalHit = 0.25;
-				explosionShielding = 0.02;
-				radius = 0.3;
+				armor=0.25;
+				material=-1;
+				name="pas_P";
+				passThrough=0;
+				minimalHit=0.25;
+				explosionShielding=0.5;
+				radius=0.3;
 			};
 		};
 		maxSpeed = 48;
@@ -3891,6 +4078,28 @@ class CfgVehicles
 		ArmorCrash2[] = {"A3\Sounds_F\vehicles\crashes\armors\tank_coll_armor_3",1.0,1,200};
 		ArmorCrash3[] = {"A3\Sounds_F\vehicles\crashes\armors\tank_coll_armor_4",1.0,1,200};
 		soundArmorCrash[] = {"ArmorCrash0",0.25,"ArmorCrash1",0.25,"ArmorCrash2",0.25,"ArmorCrash3",0.25};
+		class TransportMagazines {
+			class _xx_sg_mag_bm25_1
+			{
+				magazine = "sg_mag_bm25_2_1";
+				count = 13;
+			};
+			class _xx_sg_mag_bk17_1
+			{
+				magazine = "sg_mag_bk17_1";
+				count = 14;
+			};
+			class _xx_sg_mag_of412_1
+			{
+				magazine = "sg_mag_of412_1";
+				count = 15;
+			};
+			class _xx_sg_mag_762x54mm_250
+			{
+				magazine = "sg_mag_762x54mm_250";
+				count = 4;
+			};
+		}; 
 		class Sounds
 		{
 			class Idle_ext
@@ -4176,7 +4385,7 @@ class CfgVehicles
 		{
 			class MainTurret: MainTurret
 			{
-				isPersonTurret = 1;
+				isPersonTurret = 0;
 				LODTurnedOut = 1;
 				gunnerAction = "passenger_bench_1";
 				gunnerInAction = "CUP_T55_Gunner_EP1";
@@ -4184,27 +4393,20 @@ class CfgVehicles
 				memoryPointsGetInGunnerDir = "pos gunner dir";
 				gunnerGetInAction = "GetInMedium";
 				gunnerGetOutAction = "GetOutMedium";
-				weapons[] = {"CUP_Vacannon_D10","SG_PKT"};
 				selectionFireAnim = "zasleh";
-				magazines[] = {
-					"CUP_20Rnd_100mmHEAT_D10",
-					"CUP_15Rnd_100mmHEFRAG_D10",
-					"rhs_mag_762x54mm_250",
-					"rhs_mag_762x54mm_250",
-					"rhs_mag_762x54mm_250",
-					"rhs_mag_762x54mm_250",
-					"rhs_mag_762x54mm_250"
-					};
+				weapons[] = {"sg_weap_D10","sg_pkt_t55"};
+				magazines[] = {"sg_mag_762x54mm_250"};
 				gunnerOutOpticsModel = "";
 				gunnerOutOpticsEffect[] = {};
-				stabilizedInAxes = 0;
-				maxHorizontalRotSpeed = 0.33;
-				maxVerticalRotSpeed = 0.1;
+				stabilizedInAxes = 3;
+				maxHorizontalRotSpeed = 0.45; 
+				maxVerticalRotSpeed = 0.2;
 				gunnerOpticsEffect[] = {"TankGunnerOptics1","OpticsBlur3","OpticsCHAbera3"};
 				visionMode[] = {"Normal","NVG"};
-				turretInfoType = "CUP_RscOptics_gunner_NECO";
-				discreteDistance[] = {100,200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500,1600,1700,1800,1900,2000};
-				discreteDistanceInitIndex = 3;
+				turretInfoType = "sg_RscWeapont55_FCS";
+				lockWhenDriverOut = 1;
+				discreteDistance[] = {100};
+				discreteDistanceInitIndex = 0;
 				ace_fcs_enabled = 0;
 				minElev = -3;
 				maxElev = 18;
@@ -4215,6 +4417,11 @@ class CfgVehicles
 				minOutTurn = -90;
 				maxOutTurn = 90;
 				initOutTurn = 0;
+				class TurnIn //Ограничиваем вертикальный угол на жопу, чтобы пушка не уходила в текстуру
+				{
+					limitsArrayTop[] = {{18,-180},{18,180}};
+					limitsArrayBottom[] = {{1.4,-180},{0.7,-134.6867},{-9.3683,-133.6867},{-10,0},{-9.7173,133.6372},{0.7,134.6867},{1.4,180}};
+				};
 				class ViewOptics
 				{
 					initAngleX = 0;
@@ -4242,8 +4449,9 @@ class CfgVehicles
 						minFov = 0.466666;
 						maxFov = 0.466666;
 						visionMode[] = {"Normal","NVG"};
-						gunnerOpticsModel = "\a3\weapons_f\reticle\Optics_Driver_01_f";
+						gunnerOpticsModel = "\rhsafrf\addons\rhs_optics\vehicles\rhs_tvn5.p3d";
 						gunnerOpticsEffect[] = {"TankGunnerOptics1","OpticsBlur2","OpticsCHAbera2"};
+						opticsDisplayName = "PERISCOPE";
 					};
 					class Wide: ViewOptics
 					{
@@ -4253,27 +4461,51 @@ class CfgVehicles
 						initAngleY = 0;
 						minAngleY = -100;
 						maxAngleY = 100;
-						initFov = 0.3;
-						minFov = 0.3;
-						maxFov = 0.3;
+						initFov = "0.35/ 3.5";
+						minFov = "0.35/ 3.5";
+						maxFov = "0.35/ 3.5";
 						visionMode[] = {"Normal","NVG"};
 						thermalMode[] = {4,5};
-						gunnerOpticsModel = "\sg_cup_vehicles\optika_t72_gunner.p3d";
+						gunnerOpticsModel = "\rhsafrf\addons\rhs_optics\vehicles\rhs_empty";
 						gunnerOpticsEffect[] = {};
 					};
 					class Medium: Wide
 					{
-						gunnerOpticsModel = "\sg_cup_vehicles\optika_t72_gunner.p3d";
-						initFov = 0.07;
-						minFov = 0.07;
-						maxFov = 0.07;
+						initFov =  "0.35/ 6.5";
+						minFov =  "0.35/ 6.5";
+						maxFov =  "0.35/ 6.5";
+						gunnerOpticsModel = "\rhsafrf\addons\rhs_optics\vehicles\rhs_empty";
 					};
 				};
 				class Turrets: Turrets
 				{
+					class Loader: Newturret
+					{
+						startEngine = 0;
+						forceHideGunner = 0;
+						memoryPointGunnerOptics = "commanderview";
+						gunnerAction = "passenger_bench_1";
+						isPersonTurret = 1;
+						// personTurretAction = "vehicle_turnout_1";
+						gunnerInAction = "CUP_T55_Gunner_EP1";
+						animationSourceHatch = "hatchGunner";
+						gunnername = "Loader";
+						class OpticsIn
+						{
+							class Periscope: ViewOptics
+							{
+								initFov = 0.7;
+								minFov = 0.7;
+								maxFov = 0.7;
+								visionMode[] = {"Normal"};
+								gunnerOpticsModel = "\a3\weapons_f\reticle\Optics_Driver_01_f";
+								gunnerOpticsEffect[] = {"TankGunnerOptics1","OpticsBlur2","OpticsCHAbera2"};
+							};
+						};
+					};
 					class CommanderOptics: CommanderOptics
 					{
-						turretInfoType = "CUP_RscOptics_commander_ECO";
+						turretInfoType = "sg_compas";
 						isPersonTurret = 1;
 						LODTurnedOut = 1;
 						weapons[] = {};
@@ -4303,7 +4535,8 @@ class CfgVehicles
 						gunnerOutOpticsColor[] = {0,0,0,1};
 						gunnerOutForceOptics = 0;
 						gunnerOutOpticsShowCursor = 0;
-						gunnerOpticsEffect[] = {"TankGunnerOptics1","OpticsBlur3","OpticsCHAbera3"};
+						gunnerOpticsModel = "\rhsafrf\addons\rhs_optics\vehicles\rhs_tkn3.p3d";
+						gunnerOpticsEffect[] = {"TankGunnerOptics1","OpticsBlur2","OpticsCHAbera3"};
 						startEngine = 0;
 						memoryPointGunnerOutOptics = "CommanderViewOut";
 						memoryPointGunnerOptics = "commanderview";
@@ -4361,7 +4594,7 @@ class CfgVehicles
 								initFov = 0.155;
 								minFov = 0.034;
 								maxFov = 0.155;
-								gunnerOpticsModel = "\sg_cup_vehicles\TPK1";
+								gunnerOpticsModel = "\rhsafrf\addons\rhs_optics\vehicles\rhs_tkn3_night.p3d";
 								visionMode[] = {"Normal","NVG"};
 								thermalMode[] = {4,5};
 							};
@@ -4372,25 +4605,25 @@ class CfgVehicles
 				{
 					class HitTurret
 					{
-						armor = 2;
-						material = -1;
-						name = "vez";
-						visual = "vez";
-						passThrough = 0;
-						minimalHit = 0.3;
-						explosionShielding = 0.001;
-						radius = 0.25;
+						armor=1;
+						material=-1;
+						name="vez";
+						visual="vez";
+						passThrough=0;
+						minimalHit=0.2;
+						explosionShielding=0.005;
+						radius=0.25;
 					};
 					class HitGun
 					{
-						armor = 0.6;
-						material = -1;
-						name = "zbran";
-						visual = "";
-						passThrough = 0;
-						minimalHit = 0.13;
-						explosionShielding = 0.001;
-						radius = 0.25;
+						armor=1;
+						material=-1;
+						name="zbran";
+						visual="";
+						passThrough=0;
+						minimalHit=0.5;
+						explosionShielding=0.005;
+						radius=0.25;
 					};
 				};
 			};
@@ -4483,17 +4716,17 @@ class CfgVehicles
 			class recoil_source
 			{
 				source = "reload";
-				weapon = "CUP_Vacannon_D10";
+				weapon = "sg_weap_D10";
 			};
 			class muzzle_hide_main
 			{
 				source = "reload";
-				weapon = "SG_PKT";
+				weapon = "sg_pkt_t55";
 			};
 			class muzzle_rot_main
 			{
 				source = "ammorandom";
-				weapon = "SG_PKT";
+				weapon = "sg_pkt_t55";
 			};
 		};
 		hiddenSelections[] = {"Camo1","Camo2"};
