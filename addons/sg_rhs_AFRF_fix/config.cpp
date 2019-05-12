@@ -1703,7 +1703,23 @@ class cfgVehicles
 	};
 	class rhs_a3t72tank_base: Tank_F
 	{
+		radarType = 8;
 		driverWeaponsInfoType = "RscOptics_MBT_01_Driver";
+		class ViewOptics
+		{
+			visionMode[] = {"Normal","NVG"};
+		};
+		class ViewPilot: ViewPilot
+		{
+			visionMode[] = {"Normal","NVG"};
+		};
+		class DriverOpticsIn
+		{
+			class OpticView: ViewPilot
+			{
+				visionMode[] = {"Normal","NVG"};
+			};
+		};
 		class Turrets: Turrets 
         {
 			class MainTurret : MainTurret 
@@ -1773,6 +1789,7 @@ class cfgVehicles
 	class rhs_tank_base: Tank_F
 	{
 		driverWeaponsInfoType = "RscOptics_MBT_01_Driver";
+		radarType = 8;
 		class Turrets: Turrets 
         {
 			class MainTurret : MainTurret 
@@ -1959,6 +1976,7 @@ class cfgVehicles
 	class rhs_bmp1_vdv: rhs_bmp_base {};
 	class rhs_bmp2e_vdv: rhs_bmp1_vdv
 	{
+		radarType = 8;
 		driverWeaponsInfoType = "sg_compas";
 		class Turrets: Turrets 
         {
@@ -1978,6 +1996,7 @@ class cfgVehicles
 	class rhs_bmd_base: Tank_F
 	{
 		driverWeaponsInfoType = "sg_compas";
+		radarType = 8;
 		class Turrets: Turrets 
         {
 			class MainTurret: MainTurret
@@ -1993,6 +2012,7 @@ class cfgVehicles
 	class rhs_bmd1_base: rhs_bmd_base
 	{
 		driverWeaponsInfoType = "sg_compas";
+		radarType = 8;
 		class Turrets: Turrets 
         {
 			class MainTurret : MainTurret 
@@ -2008,6 +2028,7 @@ class cfgVehicles
 	class rhs_bmd2_base: rhs_bmd_base
 	{
 		driverWeaponsInfoType = "sg_compas";
+		radarType = 8;
 		class Turrets: Turrets 
         {
 			class MainTurret : MainTurret 
@@ -2038,6 +2059,7 @@ class cfgVehicles
 	class rhs_a3spruttank_base: Tank_f 
 	{
 		driverWeaponsInfoType = "RscOptics_MBT_01_Driver";
+		radarType = 8;
 		class Turrets: Turrets 
         {
 			class MainTurret : MainTurret 
@@ -2074,6 +2096,7 @@ class cfgVehicles
 	class rhs_bmp3tank_base: Tank_f
 	{
 		driverWeaponsInfoType = "RscOptics_MBT_01_Driver";
+		radarType = 8;
 		class Turrets: Turrets 
         {
 			class MainTurret : MainTurret 
@@ -2124,5 +2147,134 @@ class cfgVehicles
                 };        
             };
         }; 
+	};
+	class rhs_zsutank_base: rhs_a3t72tank_base
+	{
+		irScanGround = 0;		
+		ace_fcs_Enabled = 0;
+		class Components: Components
+		{
+			class SensorsManagerComponent
+			{
+				class Components
+				{
+					class ActiveRadarSensorComponent: SensorTemplateActiveRadar
+					{
+						class AirTarget
+						{
+							minRange = 5000;
+							maxRange = 5000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						class GroundTarget
+						{
+							minRange = 5000;
+							maxRange = 5000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						typeRecognitionDistance = 5000;
+						angleRangeHorizontal = 360;
+						angleRangeVertical = 360;
+						aimDown = 0;
+						minSpeedThreshold = 0;
+						maxSpeedThreshold = 0;
+						minTrackableATL= 10;
+					};
+				};
+			};
+			class VehicleSystemsDisplayManagerComponentLeft: pzn_vdisp_Radar_zsu23_Left {};
+			class VehicleSystemsDisplayManagerComponentRight: pzn_vdisp_Radar_zsu23_Right {};
+		};
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{	
+				gunnerForceoptics = 1;
+				ace_fcs_Enabled = 0;
+				class Components: Components
+				{
+					class VehicleSystemsDisplayManagerComponentLeft: pzn_vdisp_Radar_zsu23_Left {};
+					class VehicleSystemsDisplayManagerComponentRight: pzn_vdisp_Radar_zsu23_Right {};
+				};
+				class Turrets: Turrets
+				{
+					class CommanderOptics: CommanderOptics
+					{
+						
+						gunnerForceoptics = 1;
+						class Components: Components
+						{
+							class VehicleSystemsDisplayManagerComponentLeft: pzn_vdisp_Radar_zsu23_Left {};
+							class VehicleSystemsDisplayManagerComponentRight: pzn_vdisp_Radar_zsu23_Right {};
+						};
+					};
+				};
+			};
+		};
+	};
+	class rhs_zsu234_aa: rhs_zsutank_base
+	{
+		irScanGround = 0;		
+		ace_fcs_Enabled = 0;
+		class Components: Components
+		{
+			class SensorsManagerComponent
+			{
+				class Components
+				{
+					class ActiveRadarSensorComponent: SensorTemplateActiveRadar
+					{
+						class AirTarget
+						{
+							minRange = 5000;
+							maxRange = 5000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						class GroundTarget
+						{
+							minRange = 5000;
+							maxRange = 5000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						typeRecognitionDistance = 5000;
+						angleRangeHorizontal = 360;
+						angleRangeVertical = 360;
+						aimDown = 0;
+						minSpeedThreshold = 0;
+						maxSpeedThreshold = 0;
+						minTrackableATL= 10;
+					};
+				};
+			};
+			class VehicleSystemsDisplayManagerComponentLeft: pzn_vdisp_Radar_zsu23_Left {};
+			class VehicleSystemsDisplayManagerComponentRight: pzn_vdisp_Radar_zsu23_Right {};
+		};
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{	
+				ace_fcs_Enabled = 0;
+				class Components: Components
+				{
+					class VehicleSystemsDisplayManagerComponentLeft: pzn_vdisp_Radar_zsu23_Left {};
+					class VehicleSystemsDisplayManagerComponentRight: pzn_vdisp_Radar_zsu23_Right {};
+				};
+				class Turrets: Turrets
+				{
+					class CommanderOptics: CommanderOptics
+					{
+						class Components: Components
+						{
+							class VehicleSystemsDisplayManagerComponentLeft: pzn_vdisp_Radar_zsu23_Left {};
+							class VehicleSystemsDisplayManagerComponentRight: pzn_vdisp_Radar_zsu23_Right {};
+						};
+					};
+				};
+			};
+		};
 	};
 };
