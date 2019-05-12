@@ -81,3 +81,140 @@ class cfgAmmo
 		indirectHitRange = 40;
     };
 };
+
+class cfgVehicles
+{
+    class Land;
+	class LandVehicle: Land
+	{
+		class Turrets;
+	};
+	class Tank: LandVehicle
+	{
+		class NewTurret;
+		class Sounds;
+		class HitPoints;
+		class CommanderOptics;
+		class Components;
+        class ViewOptics;
+		class Turrets : Turrets {
+			class MainTurret;
+		};
+	};
+	class Tank_F: Tank {};
+    class MBT_01_base_F : Tank_F {};
+    class rhsusf_m1a1tank_base : MBT_01_base_F
+    {
+        driverWeaponsInfoType = "RscOptics_MBT_01_Driver";
+        class Turrets: Turrets 
+        {
+            class MainTurret : MainTurret 
+            {
+                turretInfoType = "sg_RHS_RscWeaponM1_FCS"; //добавляем компасы на абрамс
+                class Turrets: Turrets
+				{
+					class CommanderOptics: CommanderOptics
+					{
+                        turretInfoType = "sg_m1a1_commander";
+                    };
+                    class Loader: CommanderOptics
+					{
+						turretInfoType = "sg_compas";
+						gunnerForceoptics = 1;
+						class OpticsIn
+						{
+							class Periscope: ViewOptics
+							{
+								initFov = 0.75;
+								minFov = 0.25;
+								maxFov = 1.1;
+								visionMode[] = {};
+							};
+						};
+					};
+                };       	
+            };
+        };   
+    }; 
+    class rhsusf_m1a2tank_base: rhsusf_m1a1tank_base //Добавляем базовый класс для танков модели М1А2, так как базовая модель на М1А1 на них не распростроняется
+	{
+		driverWeaponsInfoType = "RscOptics_MBT_01_Driver";
+		class Turrets: Turrets {
+			class MainTurret : MainTurret {
+				turretInfoType = "sg_RHS_RscWeaponM1_FCS";
+				class Turrets: Turrets
+				{
+					class CommanderOptics: CommanderOptics
+					{	
+						gunnerForceoptics = 1;
+						turretInfoType = "sg_m1a1_commander";
+						class ViewOptics;
+					};
+					class Loader: CommanderOptics
+					{
+						gunnerForceoptics = 1;
+						turretInfoType = "sg_compas";
+						class OpticsIn
+						{
+							class Periscope: ViewOptics
+							{
+								initFov = 0.75;
+								minFov = 0.25;
+								maxFov = 1.1;
+								visionMode[] = {};
+								gunnerOpticsModel = "\a3\weapons_f\reticle\Optics_Driver_01_f";
+								gunnerOpticsEffect[] = {"TankGunnerOptics1","OpticsBlur2","OpticsCHAbera2"};
+							};
+						};
+					};
+				};	
+			};
+		};
+	};
+    class APC_Tracked_02_base_F: Tank_F {};   
+    class rhsusf_m113tank_base: APC_Tracked_02_base_F
+    {
+        DriverForceOptics = 1;
+        driverWeaponsInfoType = "RscOptics_MBT_01_Driver";
+    };
+    class APC_Tracked_03_base_F : Tank_F {}; 
+    class RHS_M2A2_Base : APC_Tracked_03_base_F 
+    {
+        driverWeaponsInfoType = "RscOptics_MBT_01_Driver";
+        radartype = 8;
+		irtarget = 0;
+        class Turrets: Turrets 
+        {
+			class MainTurret : MainTurret 
+            {
+                turretInfoType = "sg_RHS_RscODS_ISU";
+                class Turrets: Turrets
+				{
+					class CommanderOptics: CommanderOptics
+					{	
+                        turretInfoType = "sg_m2a2_commander_hud";
+                    };
+                };        
+            };
+        };        
+    };   
+    class RHS_M2A2: RHS_M2A2_Base {};
+    class RHS_M2A3: RHS_M2A2
+    {
+        driverWeaponsInfoType = "RscOptics_MBT_01_Driver";
+        class Turrets: Turrets 
+        {
+			class MainTurret : MainTurret 
+            {
+                turretInfoType = "sg_RHS_RscIBAS";
+                class Turrets: Turrets
+				{
+					class CommanderOptics: CommanderOptics
+					{	
+                        turretInfoType = "sg_RHS_RscCIV";
+                    };
+                };        
+            };
+        };  
+    };
+};

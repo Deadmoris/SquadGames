@@ -3,7 +3,7 @@ class CfgPatches {
 		units[] = {};
 		weapons[] = {};
 		requiredVersion = 1.32;
-		requiredAddons[] = {"A3_Air_F", "A3_Air_F_Beta", "A3_Air_F_EPC_Plane_CAS_02", "A3_Air_F_Heli_Light_02", "A3_Air_F_Beta_Heli_Attack_02", "rhs_c_a2port_air", "rhs_c_heavyweapons", "rhs_main", "rhs_decals", "rhs_optics", "rhs_c_troops", "rhs_c_btr", "A3_Armor_F", "A3_Armor_F_Beta", "A3_armor_f_beta_APC_Tracked_02", "A3_Soft_F", "rhs_c_radars", "A3_CargoPoses_F", "A3_Armor_F_T100K", "rhs_aps", "A3_Anims_F_Config_Sdr","rhs_c_weapons","rhs_c_a2port_armor", "rhs_c_mi28", "rhsgref_c_troops", "rhsgref_c_a2port_armor", "rhs_sounds", "rhs_c_mig29", "rhssaf_c_weapons", "rhsgref_c_weapons", "rhs_weapon_sounds"};
+		requiredAddons[] = {"A3_Air_F", "A3_Air_F_Beta", "A3_Air_F_EPC_Plane_CAS_02", "A3_Air_F_Heli_Light_02", "A3_Air_F_Beta_Heli_Attack_02", "rhs_c_a2port_air", "rhs_c_heavyweapons", "rhs_main", "rhs_decals", "rhs_optics", "rhs_c_troops", "rhs_c_btr", "A3_Armor_F", "A3_Armor_F_Beta", "A3_armor_f_beta_APC_Tracked_02", "A3_Soft_F", "rhs_c_radars", "A3_CargoPoses_F", "A3_Armor_F_T100K", "rhs_aps", "A3_Anims_F_Config_Sdr","rhs_c_weapons","rhs_c_a2port_armor","rhs_c_t72", "rhs_c_bmd", "rhs_c_bmp", "rhs_c_bmp3", "rhs_c_sprut", "rhs_c_tanks"};
 		version = 1.0;
 		magazines[] = {};
 		ammo[] = {};
@@ -132,5 +132,473 @@ class cfgAmmo
 		hit = 350;
 		indirectHit = 130;
 		indirectHitRange = 40;
+	};
+};
+
+class cfgVehicles
+{
+	class LandVehicle;
+	class Tank: LandVehicle 
+	{
+		class NewTurret;
+		class HitPoints;
+		class Sounds;
+		class CommanderOptics;
+	};
+	class Tank_F: Tank
+	{
+		class Turrets
+		{
+			class MainTurret: NewTurret
+			{
+				class Turrets
+				{
+					class CommanderOptics;
+				};
+			};
+		};
+		class AnimationSources;
+		class ViewPilot;
+		class ViewOptics;
+		class ViewCargo;
+		class HeadLimits;
+		class HitPoints: HitPoints
+		{
+			class HitHull;
+			class HitEngine;
+			class HitLTrack;
+			class HitRTrack;
+		};
+		class Sounds: Sounds
+		{
+			class Engine;
+			class Movement;
+		};
+		class EventHandlers;
+		class Components;
+	};
+	class rhs_a3t72tank_base: Tank_F
+	{
+		driverWeaponsInfoType = "RscOptics_MBT_01_Driver";
+		class Turrets: Turrets 
+        {
+			class MainTurret : MainTurret 
+            {
+				turretInfoType = "sg_RHS_RscWeaponT72_FCS";
+                class Turrets: Turrets
+				{
+					class CommanderOptics: CommanderOptics
+					{	
+                        turretInfoType = "sg_compas";
+                    };
+                };        
+            };
+        };  
+	};
+	class rhs_t72bd_tv: rhs_a3t72tank_base
+	{
+		class Turrets: Turrets 
+        {
+			class MainTurret : MainTurret 
+            {
+				turretInfoType = "sg_RHS_RscWeaponSosnaU_FCS";
+                class Turrets: Turrets
+				{
+					class CommanderOptics: CommanderOptics
+					{	
+                        turretInfoType = "sg_compas";
+                    };
+                };        
+            };
+        };  
+	};
+	class rhs_t90_tv: rhs_t72bd_tv
+	{
+		class Turrets: Turrets 
+        {
+			class MainTurret : MainTurret 
+            {
+				turretInfoType = "sg_rhs_gui_optic_t90_rangefinder";
+                class Turrets: Turrets
+				{
+					class CommanderOptics: CommanderOptics
+					{	
+                        turretInfoType = "sg_compas";
+                    };
+                };        
+            };
+        };  
+	};
+	class rhs_t90a_tv: rhs_t90_tv
+	{
+		class Turrets: Turrets 
+        {
+			class MainTurret : MainTurret 
+            {
+				turretInfoType = "sg_RHS_RscWeaponPlissa_t90_FCS";
+                class Turrets: Turrets
+				{
+					class CommanderOptics: CommanderOptics
+					{	
+                        turretInfoType = "sg_compas";
+                    };
+                };        
+            };
+        };  
+	};
+	class rhs_tank_base: Tank_F
+	{
+		driverWeaponsInfoType = "RscOptics_MBT_01_Driver";
+		class Turrets: Turrets 
+        {
+			class MainTurret : MainTurret 
+            {
+				turretInfoType = "sg_rhs_gui_optic_t80_rangefinder";
+                class Turrets: Turrets
+				{
+					class CommanderOptics: CommanderOptics
+					{	
+                        turretInfoType = "sg_compas";
+                    };
+                };        
+            };
+        };  
+	};
+	class rhs_t80b: rhs_tank_base
+	{
+		class Turrets: Turrets 
+        {
+			class MainTurret : MainTurret 
+            {
+				turretInfoType = "sg_rhs_gui_optic_t80_rangefinder";
+                class Turrets: Turrets
+				{
+					class CommanderOptics: CommanderOptics
+					{	
+                        turretInfoType = "sg_compas";
+                    };
+                };        
+            };
+        };  
+	};
+	class rhs_t80bv: rhs_t80b
+	{
+		class Turrets: Turrets 
+        {
+			class MainTurret : MainTurret 
+            {
+				turretInfoType = "sg_rhs_gui_optic_t80_rangefinder";
+                class Turrets: Turrets
+				{
+					class CommanderOptics: CommanderOptics
+					{	
+                        turretInfoType = "sg_compas";
+                    };
+                };        
+            };
+        };  
+	};
+	class rhs_t80a: rhs_t80bv
+	{
+		class Turrets: Turrets 
+        {
+			class MainTurret : MainTurret 
+            {
+				turretInfoType = "sg_rhs_gui_optic_t80u_rangefinder";
+                class Turrets: Turrets
+				{
+					class CommanderOptics: CommanderOptics
+					{	
+                        turretInfoType = "sg_compas";
+                    };
+                };        
+            };
+        };  
+	};
+	class rhs_t80u: rhs_t80a
+	{
+		class Turrets: Turrets 
+        {
+			class MainTurret : MainTurret 
+            {
+				turretInfoType = "sg_rhs_gui_optic_t80u_rangefinder";
+                class Turrets: Turrets
+				{
+					class CommanderOptics: CommanderOptics
+					{	
+                        turretInfoType = "sg_compas";
+                    };
+                };        
+            };
+        };  
+	};
+	class rhs_t80uk: rhs_t80u
+	{
+		class Turrets: Turrets 
+        {
+			class MainTurret : MainTurret 
+            {
+				turretInfoType = "sg_RHS_RscWeaponAgava_FCS";
+                class Turrets: Turrets
+				{
+					class CommanderOptics: CommanderOptics
+					{	
+                        turretInfoType = "sg_compas";
+                    };
+                };        
+            };
+        };  
+	};
+	class  rhs_t80ue1: rhs_t80a
+	{
+		class Turrets: Turrets 
+        {
+			class MainTurret : MainTurret 
+            {
+				turretInfoType = "sg_RHS_RscWeaponPlissa_FCS";
+                class Turrets: Turrets
+				{
+					class CommanderOptics: CommanderOptics
+					{	
+                        turretInfoType = "sg_compas";
+                    };
+                };        
+            };
+        }; 
+	};
+	class rhs_t80um: rhs_t80u
+	{
+		class Turrets: Turrets 
+        {
+			class MainTurret : MainTurret 
+            {
+				turretInfoType = "sg_RHS_RscWeaponAgava_FCS";
+                class Turrets: Turrets
+				{
+					class CommanderOptics: CommanderOptics
+					{	
+                        turretInfoType = "sg_compas";
+                    };
+                };        
+            };
+        }; 
+	};/*
+	class rhs_bmp1tank_base: Tank_F
+	{
+		driverWeaponsInfoType = "sg_compas";
+		class Turrets: Turrets 
+        {
+			class MainTurret : MainTurret 
+            {
+                turretInfoType = "sg_compas";    
+            };
+			class Com_BMP1: NewTurret
+			{
+				turretInfoType = "sg_compas";
+			};
+        };  
+	};
+	class rhs_bmp_base: rhs_bmp1tank_base
+	{
+		driverWeaponsInfoType = "sg_compas";
+		class Turrets: Turrets 
+        {
+			class MainTurret : MainTurret 
+            {
+                turretInfoType = "sg_compas"; 
+				class Turrets{};   
+            };
+			class Com_BMP1: NewTurret
+			{
+				turretInfoType = "sg_compas";
+			};
+        };  
+	};
+	class rhs_bmp1_vdv: rhs_bmp_base
+	{
+		driverWeaponsInfoType = "sg_compas";
+		class Turrets: Turrets 
+        {
+			class MainTurret : MainTurret 
+            {
+                turretInfoType = "sg_compas";  
+				class Turrets{};   
+            };
+			class Com_BMP1: NewTurret
+			{
+				turretInfoType = "sg_compas";
+			};
+        };  
+	};*/
+	class rhs_bmp1tank_base: Tank_f {};
+	class rhs_bmp_base: rhs_bmp1tank_base {};
+	class rhs_bmp1_vdv: rhs_bmp_base {};
+	class rhs_bmp2e_vdv: rhs_bmp1_vdv
+	{
+		driverWeaponsInfoType = "sg_compas";
+		class Turrets: Turrets 
+        {
+			class MainTurret : MainTurret 
+            {
+				 turretInfoType = "sg_RHS_RscWeaponBPK42_FCS";
+                class Turrets: Turrets
+				{
+					class CommanderOptics: CommanderOptics
+					{	
+                        turretInfoType = "sg_compas";
+                    };
+                };        
+            };
+        };  
+	};
+	class rhs_bmd_base: Tank_F
+	{
+		driverWeaponsInfoType = "sg_compas";
+		class Turrets: Turrets 
+        {
+			class MainTurret: MainTurret
+			{
+				turretInfoType = "sg_compas";
+			};
+			class CommanderOptics: NewTurret 
+            {
+                turretInfoType = "sg_compas";      
+            };
+        };  
+	};
+	class rhs_bmd1_base: rhs_bmd_base
+	{
+		driverWeaponsInfoType = "sg_compas";
+		class Turrets: Turrets 
+        {
+			class MainTurret : MainTurret 
+            {
+				turretInfoType = "sg_compas";    
+            };
+			class CommanderOptics1: CommanderOptics
+			{
+				turretInfoType = "sg_compas";
+			};
+        };  
+	};
+	class rhs_bmd2_base: rhs_bmd_base
+	{
+		driverWeaponsInfoType = "sg_compas";
+		class Turrets: Turrets 
+        {
+			class MainTurret : MainTurret 
+            {
+				turretInfoType = "sg_RHS_RscWeaponBPK42_FCS";
+                class Turrets: Turrets
+				{
+					class Launcher: CommanderOptics
+					{	
+                        turretInfoType = "sg_compas";
+                    };
+                };        
+            };
+        };  
+	};
+	class rhs_bmd2: rhs_bmd2_base {};
+	class rhs_bmd2m: rhs_bmd2
+	{
+		driverWeaponsInfoType = "RscOptics_MBT_01_Driver";
+		class Turrets: Turrets 
+        {
+			class MainTurret : MainTurret 
+            {
+				turretInfoType = "sg_RHS_RscWeaponESSA_FCS";      
+            };
+        };  
+	};
+	class rhs_a3spruttank_base: Tank_f 
+	{
+		driverWeaponsInfoType = "RscOptics_MBT_01_Driver";
+		class Turrets: Turrets 
+        {
+			class MainTurret : MainTurret 
+            {
+				turretInfoType = "sg_RHS_RscWeaponSprutSD_FCS";
+                class Turrets: Turrets
+				{
+					class CommanderOptics: CommanderOptics
+					{	
+                        turretInfoType = "sg_RHS_RscWeapon1k13_FCS";
+                    };
+                };        
+            };
+        };  
+	};
+	class rhs_bmd4_vdv: rhs_a3spruttank_base
+	{
+		driverWeaponsInfoType = "RscOptics_MBT_01_Driver";
+		class Turrets: Turrets 
+        {
+			class MainTurret : MainTurret 
+            {
+				turretInfoType = "sg_RHS_RscWeaponESSA_FCS";
+                class Turrets: Turrets
+				{
+					class CommanderOptics: CommanderOptics
+					{	
+                        turretInfoType = "sg_RHS_RscWeaponESSA_commander_FCS";
+                    };
+                };        
+            };
+        };  
+	};
+	class rhs_bmp3tank_base: Tank_f
+	{
+		driverWeaponsInfoType = "RscOptics_MBT_01_Driver";
+		class Turrets: Turrets 
+        {
+			class MainTurret : MainTurret 
+            {
+				turretInfoType = "sg_RHS_RscWeapon1k13_bmp3_FCS";
+                class Turrets: Turrets
+				{
+					class CommanderOptics: CommanderOptics
+					{	
+                        turretInfoType = "sg_RHS_RscWeaponTKN3_FCS";
+                    };
+                };        
+            };
+        };  
+	};
+	class rhs_bmp3_msv: rhs_bmp3tank_base
+	{
+		driverWeaponsInfoType = "RscOptics_MBT_01_Driver";
+		class Turrets: Turrets 
+        {
+			class MainTurret : MainTurret 
+            {
+				turretInfoType = "sg_RHS_RscWeapon1k13_bmp3_FCS";
+                class Turrets: Turrets
+				{
+					class CommanderOptics: CommanderOptics
+					{	
+                        turretInfoType = "sg_RHS_RscWeaponTKN3_FCS";
+                    };
+                };        
+            };
+        };  
+	};
+	class rhs_bmp3m_msv: rhs_bmp3tank_base
+	{
+		driverWeaponsInfoType = "RscOptics_MBT_01_Driver";
+		class Turrets: Turrets 
+        {
+			class MainTurret : MainTurret 
+            {
+				turretInfoType = "sg_RHS_RscWeaponESSA_FCS";
+                class Turrets: Turrets
+				{
+					class CommanderOptics: CommanderOptics
+					{	
+                        turretInfoType = "sg_RHS_RscWeaponTKN3_FCS";
+                    };
+                };        
+            };
+        }; 
 	};
 };
