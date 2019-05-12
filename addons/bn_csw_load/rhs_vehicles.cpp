@@ -649,6 +649,191 @@
 		};
 	};
 	
+	class rhsusf_Cougar_base: MRAP_01_base_F {};
+	class rhsusf_cougar_GPK_base: rhsusf_Cougar_base {
+		class AnimationSources;
+		class Turrets : Turrets {
+			class MainTurret;
+		};
+	};
+	
+	class rhsusf_CGRCAT1A2_M2_usmc_d: rhsusf_cougar_GPK_base {
+		class Turrets : Turrets {
+			class M2_Turret : MainTurret {
+				weapons[] = {"BN_RHS_M2"};
+				magazines[] = {"rhs_mag_100rnd_127x99_mag_Tracer_Red"};
+				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500};
+				discreteDistanceInitIndex = 2;
+				startEngine = 0;
+			};
+		};
+		bn_csw_loading_style = 1;
+		class TransportMagazines {
+			class bn_mk2_car_mags {
+				magazine = "rhs_mag_100rnd_127x99_mag_Tracer_Red";
+				count = 9;
+			};
+		};
+		class AnimationSources: AnimationSources
+		{
+			class ReloadAnim
+			{
+				source = "reload";
+				weapon = "BN_RHS_M2";
+			};
+			class ReloadMagazine
+			{
+				source = "reloadmagazine";
+				weapon = "BN_RHS_M2";
+			};
+			class Revolving
+			{
+				source = "revolving";
+				weapon = "BN_RHS_M2";
+			};
+			class muzzle_rot_MG
+			{
+				source = "ammorandom";
+				weapon = "BN_RHS_M2";
+			};
+		};		
+	};
+		class rhsusf_CGRCAT1A2_M2_usmc_wd: rhsusf_CGRCAT1A2_M2_usmc_d {
+		class Turrets : Turrets {
+			class M2_Turret : MainTurret {
+				weapons[] = {"BN_RHS_M2"};
+				magazines[] = {"rhs_mag_100rnd_127x99_mag_Tracer_Red"};
+				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500};
+				discreteDistanceInitIndex = 2;
+				startEngine = 0;
+			};
+		};
+		bn_csw_loading_style = 1;
+		class TransportMagazines {
+			class bn_mk2_car_mags {
+				magazine = "rhs_mag_100rnd_127x99_mag_Tracer_Red";
+				count = 9;
+			};
+		};
+		class AnimationSources: AnimationSources
+		{
+			class ReloadAnim
+			{
+				source = "reload";
+				weapon = "BN_RHS_M2";
+			};
+			class ReloadMagazine
+			{
+				source = "reloadmagazine";
+				weapon = "BN_RHS_M2";
+			};
+			class Revolving
+			{
+				source = "revolving";
+				weapon = "BN_RHS_M2";
+			};
+			class muzzle_rot_MG
+			{
+				source = "ammorandom";
+				weapon = "BN_RHS_M2";
+			};
+		};		
+	}
+	
+		class rhsusf_CGRCAT1A2_Mk19_usmc_d: rhsusf_CGRCAT1A2_M2_usmc_d {
+		class Turrets : Turrets {
+			class M2_Turret : M2_Turret {
+				weapons[] = {"BN_RHS_MK19"};
+				magazines[] = {"RHS_48Rnd_40mm_MK19"};
+				discreteDistance[] = {300, 400, 500, 600, 700, 750, 800, 850, 900, 950, 1000, 1050, 1100, 1150, 1200, 1250, 1300, 1350, 1400, 1450, 1500};
+				discreteDistanceInitIndex = 2;
+				startEngine = 0;
+			};
+		};
+		bn_csw_loading_style = 1;
+		class TransportMagazines {
+			class bn_mk2_car_mags {
+				magazine = "RHS_48Rnd_40mm_MK19";
+				count = 4;
+			};
+		};
+		class AnimationSources: AnimationSources
+		{
+			class ReloadAnim
+			{
+				source = "reload";
+				weapon = "BN_RHS_MK19";
+			};
+			class ReloadMagazine
+			{
+				source = "reloadmagazine";
+				weapon = "BN_RHS_MK19";
+			};
+			class Revolving
+			{
+				source = "revolving";
+				weapon = "BN_RHS_MK19";
+			};
+			class muzzle_rot_MG
+			{
+				source = "ammorandom";
+				weapon = "BN_RHS_MK19";
+			};
+			class belt_rotation
+			{
+				source = "reload";
+				weapon = "BN_RHS_MK19";
+			};
+		};
+	};
+	
+			class rhsusf_CGRCAT1A2_Mk19_usmc_wd: rhsusf_CGRCAT1A2_Mk19_usmc_d {
+		class Turrets : Turrets {
+			class M2_Turret : M2_Turret {
+				weapons[] = {"BN_RHS_MK19"};
+				magazines[] = {"RHS_48Rnd_40mm_MK19"};
+				discreteDistance[] = {300, 400, 500, 600, 700, 750, 800, 850, 900, 950, 1000, 1050, 1100, 1150, 1200, 1250, 1300, 1350, 1400, 1450, 1500};
+				discreteDistanceInitIndex = 2;
+				startEngine = 0;
+			};
+		};
+		bn_csw_loading_style = 1;
+		class TransportMagazines {
+			class bn_mk2_car_mags {
+				magazine = "RHS_48Rnd_40mm_MK19";
+				count = 4;
+			};
+		};
+		class AnimationSources: AnimationSources
+		{
+			class ReloadAnim
+			{
+				source = "reload";
+				weapon = "BN_RHS_MK19";
+			};
+			class ReloadMagazine
+			{
+				source = "reloadmagazine";
+				weapon = "BN_RHS_MK19";
+			};
+			class Revolving
+			{
+				source = "revolving";
+				weapon = "BN_RHS_MK19";
+			};
+			class muzzle_rot_MG
+			{
+				source = "ammorandom";
+				weapon = "BN_RHS_MK19";
+			};
+			class belt_rotation
+			{
+				source = "reload";
+				weapon = "BN_RHS_MK19";
+			};
+		};
+	};
+	
 	class rhsusf_M1232_M2_usarmy_d: rhsusf_RG33L_base {
 		class Turrets : Turrets {
 			class M2_Turret : MainTurret {
