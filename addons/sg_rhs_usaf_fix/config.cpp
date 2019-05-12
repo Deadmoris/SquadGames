@@ -95,12 +95,12 @@ class cfgAmmo
 	class rhs_ammo_127x99_Ball:B_127x99_Ball
 	{
 		caliber = 2.6;		
-	}
+	};
 
 	class rhs_ammo_127x99_SLAP: B_127x99_SLAP
 	{
 		caliber = 3.4;
-	}
+	};
 };
 
 class cfgVehicles
