@@ -140,7 +140,7 @@ class CfgVehicles {
 			};
 		};
 	};
-	
+	*/
 	class tu_RHS_L159_base;
 	
 	class rhs_l159_CDF: tu_RHS_L159_base {
@@ -160,7 +160,6 @@ class CfgVehicles {
 			};
 		};
 	};
-	*/
 	class Plane_CAS_01_base_F;
 	
 	class RHS_A10 : Plane_CAS_01_base_F {

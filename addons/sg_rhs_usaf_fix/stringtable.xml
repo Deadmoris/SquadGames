@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project ID="Arma3">
+	<Package ID="Addons">
+		<Container ID="rebalanceblue">
+			<Key ID="STR_FIM92E">
+				<English>
+				FIM-92E
+				</English>
+				<Russian>
+				FIM-92E
+				</Russian>
+			</Key> 
+			<Key ID="STR_FIM92F">
+				<English>
+				FIM-92F
+				</English>
+				<Russian>
+				FIM-92F
+				</Russian>
+			</Key> 
+			<Key ID="STR_FIM92C">
+				<English>
+				FIM-92C
+				</English>
+				<Russian>
+				FIM-92C
+				</Russian>
+			</Key> 
+			<Key ID="STR_FIM92A">
+				<English>
+				FIM-92A
+				</English>
+				<Russian>
+				FIM-92A
+				</Russian>
+			</Key>
+			<Key ID="STR_FIM92">
+				<English>
+				FIM-92 Stinger
+				</English>
+				<Russian>
+				FIM-92 Stinger
+				</Russian>
+			</Key>
+			<Key ID="STR_FIM92_used">
+				<English>
+				FIM-92 Stinger (Used)
+				</English>
+				<Russian>
+				FIM-92 Stinger (Использ.)
+				</Russian>
+			</Key>
+			<Key ID="STR_FIM92E_nonactive">
+				<English>
+				FIM-92E (non-activated)
+				</English>
+				<Russian>
+				FIM-92E (не актив.)
+				</Russian>
+			</Key> 
+			<Key ID="STR_FIM92F_nonactive">
+				<English>
+				FIM-92F (non-activated)
+				</English>
+				<Russian>
+				FIM-92F (не актив.)
+				</Russian>
+			</Key> 
+			<Key ID="STR_FIM92C_nonactive">
+				<English>
+				FIM-92C (non-activated)
+				</English>
+				<Russian>
+				FIM-92C (не актив.)
+				</Russian>
+			</Key> 
+			<Key ID="STR_FIM92A_nonactive">
+				<English>
+				FIM-92A (non-activated)
+				</English>
+				<Russian>
+				FIM-92A (не актив.)
+				</Russian>
+			</Key>
+			<Key ID="STR_FIM92_nonactive">
+				<English>
+				FIM-92 Stinger (non-activated)
+				</English>
+				<Russian>
+				FIM-92 Stinger (не актив.)
+				</Russian>
+			</Key>
+		</Container>
+	</Package>
+</Project>
