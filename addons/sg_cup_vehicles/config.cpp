@@ -77,8 +77,6 @@ class CfgMovesBasic
 		
 		SG_T34_Driver = "SG_T34_Driver";
 		
-		
-		
 	};
 };
 
@@ -2393,6 +2391,7 @@ class CfgVehicles
 		class Eventhandlers;
 		class AnimationSources;
 	};
+	
 	class Wheeled_APC_F: Car_F
 	{
 		class Sounds: Sounds
@@ -2402,6 +2401,17 @@ class CfgVehicles
 		};
 		class AnimationSources;
 		class EventHandlers;
+		
+		class ViewOptics;
+		class ViewCargo;
+		class NewTurret;
+		class Turrets
+		{
+			class MainTurret: NewTurret
+			{
+				class HitPoints;
+			};
+		};
 	};
 	
 	
@@ -7850,6 +7860,7 @@ class CfgVehicles
 		brakeDistance = 3.0;
 		acceleration = 15;
 		fireResistance = 5;
+		maxSpeed=130;
 		armor = 30;
 		cost = 50000;
 		transportMaxBackpacks = 3;
@@ -8507,7 +8518,6 @@ class CfgVehicles
 		};
 		thrustDelay = 0.5;
 		brakeIdleSpeed = 1.78;
-		maxSpeed = 200;
 		fuelCapacity = 45;
 		wheelCircumference = 2.805;
 		antiRollbarForceCoef = 1.9;
@@ -8715,6 +8725,7 @@ class CfgVehicles
 		transportMaxBackpacks = 5000;
 		transportMaxWeapons = 5000;
 		transportMaxMagazines = 20000;
+		maxSpeed=100;
 		armor = 90;
 		cost = 100000;
 		class Damage
@@ -9399,7 +9410,7 @@ class CfgVehicles
 		brakeDistance = 3;
 		acceleration = 15;
 		fireResistance = 5;
-		maxSpeed = 140;
+		maxSpeed = 110;
 		fuelCapacity = 45;
 		fuelConsumptionRate = 1.5;
 		wheelCircumference = 2.2;
@@ -11545,18 +11556,7 @@ class CfgVehicles
 		{};
 	};
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
 	
 	
 	
