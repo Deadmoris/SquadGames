@@ -9,6 +9,353 @@ class CfgPatches {
 		ammo[] = {};
 	};
 };
+class SensorTemplatePassiveRadar;
+class SensorTemplateActiveRadar;
+class SensorTemplateIR;
+class SensorTemplateVisual;
+class SensorTemplateLaser;
+class SensorTemplateNV;
+class vdisp_lasersensor_Left;
+class vdisp_lasersensor_Right;
+class vdisp_Radar_mh6_Left;
+class vdisp_Radar_mh6_Right;
+
+
+class DefaultVehicleSystemsDisplayManagerLeft
+{
+	class Components
+	{
+		delete CrewDisplay;
+	};
+};
+class DefaultVehicleSystemsDisplayManagerRight
+{
+	class Components
+	{
+		delete CrewDisplay;
+	};
+};
+
+
+class pzn_vdisp_default_Left
+{
+	componentType = "VehicleSystemsDisplayManager";
+	x = "(profilenamespace getvariable [""IGUI_GRID_CUSTOMINFOLEFT_X"",	(safezoneX + 0.5 * 			(			((safezoneW / safezoneH) min 1.2) / 40))])";
+	y = "(profilenamespace getvariable [""IGUI_GRID_CUSTOMINFOLEFT_Y"",	(safezoneY + safezoneH - 21 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25))])";
+	left = 1;
+	defaultDisplay = "EmptyDisplay";
+	class Components
+	{
+		class EmptyDisplay
+		{
+			componentType = "EmptyDisplayComponent";
+		};
+		class MinimapDisplay
+		{
+			componentType = "MinimapDisplayComponent";
+		};
+		
+	};
+};
+class pzn_vdisp_default_Right
+{
+	componentType = "VehicleSystemsDisplayManager";
+	x = "(profilenamespace getvariable [""IGUI_GRID_CUSTOMINFORIGHT_X"",	((safezoneX + safezoneW) - (		(10 * 			(			((safezoneW / safezoneH) min 1.2) / 40)) + 0.5 * 			(			((safezoneW / safezoneH) min 1.2) / 40)))])";
+	y = "(profilenamespace getvariable [""IGUI_GRID_CUSTOMINFORIGHT_Y"",	(safezoneY + safezoneH - 21 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25))])";
+	right = 1;	
+	defaultDisplay = "MinimapDisplay";
+	class Components
+	{
+		class EmptyDisplay
+		{
+			componentType = "EmptyDisplayComponent";
+		};
+		class MinimapDisplay
+		{
+			componentType = "MinimapDisplayComponent";
+		};
+		
+	};
+};
+
+
+class pzn_vdisp_Sling_Left
+{
+	componentType = "VehicleSystemsDisplayManager";
+	x = "(profilenamespace getvariable [""IGUI_GRID_CUSTOMINFOLEFT_X"",	(safezoneX + 0.5 * 			(			((safezoneW / safezoneH) min 1.2) / 40))])";
+	y = "(profilenamespace getvariable [""IGUI_GRID_CUSTOMINFOLEFT_Y"",	(safezoneY + safezoneH - 21 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25))])";
+	left = 1;
+	defaultDisplay = "EmptyDisplay";
+	class Components
+	{
+		class SlingLoadDisplay
+		{
+			componentType = "SlingLoadDisplayComponent";
+		};
+		class EmptyDisplay
+		{
+			componentType = "EmptyDisplayComponent";
+		};
+		class MinimapDisplay
+		{
+			componentType = "MinimapDisplayComponent";
+		};
+		
+	};
+};
+class pzn_vdisp_Sling_Right
+{
+	componentType = "VehicleSystemsDisplayManager";
+	x = "(profilenamespace getvariable [""IGUI_GRID_CUSTOMINFORIGHT_X"",	((safezoneX + safezoneW) - (		(10 * 			(			((safezoneW / safezoneH) min 1.2) / 40)) + 0.5 * 			(			((safezoneW / safezoneH) min 1.2) / 40)))])";
+	y = "(profilenamespace getvariable [""IGUI_GRID_CUSTOMINFORIGHT_Y"",	(safezoneY + safezoneH - 21 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25))])";
+	right = 1;	
+	defaultDisplay = "SlingLoadDisplay";
+	class Components
+	{
+		class SlingLoadDisplay
+		{
+			componentType = "SlingLoadDisplayComponent";
+		};
+		class EmptyDisplay
+		{
+			componentType = "EmptyDisplayComponent";
+		};
+		class MinimapDisplay
+		{
+			componentType = "MinimapDisplayComponent";
+		};
+		
+	};
+};
+
+
+
+class pzn_vdisp_Radar_Left
+{
+	componentType = "VehicleSystemsDisplayManager";
+	x = "(profilenamespace getvariable [""IGUI_GRID_CUSTOMINFOLEFT_X"",	(safezoneX + 0.5 * 			(			((safezoneW / safezoneH) min 1.2) / 40))])";
+	y = "(profilenamespace getvariable [""IGUI_GRID_CUSTOMINFOLEFT_Y"",	(safezoneY + safezoneH - 21 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25))])";
+	left = 1;
+	defaultDisplay = "EmptyDisplay";
+	class Components
+	{
+		class SensorDisplay
+		{
+			componentType = "SensorsDisplayComponent";
+			range[] = {8000,4000,2000};     //accepts an integer or an array of available ranges (submode)
+			showTargetTypes = 1+2+4+8+16+32+64+128+256; // 1 - Sensor sectors, 2 - Threats, 4 - Marked tgt symbol, 8 - Own detection, 16 - Remote detection, 32 - Active detection, 64 - Passive detection, 128 - Ground tgts, 256 - Air tgts, 512 - Men, 1024 - Special (laser, NV)
+		};
+		class EmptyDisplay
+		{
+			componentType = "EmptyDisplayComponent";
+		};
+		class MinimapDisplay
+		{
+			componentType = "MinimapDisplayComponent";
+		};
+		
+	};
+};
+
+
+
+
+class pzn_vdisp_Radar_Right
+{
+	componentType = "VehicleSystemsDisplayManager";
+	x = "(profilenamespace getvariable [""IGUI_GRID_CUSTOMINFORIGHT_X"",	((safezoneX + safezoneW) - (		(10 * 			(			((safezoneW / safezoneH) min 1.2) / 40)) + 0.5 * 			(			((safezoneW / safezoneH) min 1.2) / 40)))])";
+	y = "(profilenamespace getvariable [""IGUI_GRID_CUSTOMINFORIGHT_Y"",	(safezoneY + safezoneH - 21 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25))])";
+	right = 1;	
+	defaultDisplay = "SensorDisplay";
+	class Components
+	{
+		class SensorDisplay
+		{
+			componentType = "SensorsDisplayComponent";
+			range[] = {8000,4000,2000};     //accepts an integer or an array of available ranges (submode)
+			showTargetTypes = 1+2+4+8+16+32+64+128+256; // 1 - Sensor sectors, 2 - Threats, 4 - Marked tgt symbol, 8 - Own detection, 16 - Remote detection, 32 - Active detection, 64 - Passive detection, 128 - Ground tgts, 256 - Air tgts, 512 - Men, 1024 - Special (laser, NV)
+		};
+		class EmptyDisplay
+		{
+			componentType = "EmptyDisplayComponent";
+		};
+		class MinimapDisplay
+		{
+			componentType = "MinimapDisplayComponent";
+		};
+		
+	};
+};
+
+
+
+class pzn_vdisp_RadarSling_Left
+{
+	componentType = "VehicleSystemsDisplayManager";
+	x = "(profilenamespace getvariable [""IGUI_GRID_CUSTOMINFOLEFT_X"",	(safezoneX + 0.5 * 			(			((safezoneW / safezoneH) min 1.2) / 40))])";
+	y = "(profilenamespace getvariable [""IGUI_GRID_CUSTOMINFOLEFT_Y"",	(safezoneY + safezoneH - 21 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25))])";
+	left = 1;
+	defaultDisplay = "SlingLoadDisplay";
+	class Components
+	{
+		class SlingLoadDisplay
+		{
+			componentType = "SlingLoadDisplayComponent";
+		};
+		class SensorDisplay
+		{
+			componentType = "SensorsDisplayComponent";
+			range[] = {8000,4000,2000};     //accepts an integer or an array of available ranges (submode)
+			showTargetTypes = 1+2+4+8+16+32+64+128+256; // 1 - Sensor sectors, 2 - Threats, 4 - Marked tgt symbol, 8 - Own detection, 16 - Remote detection, 32 - Active detection, 64 - Passive detection, 128 - Ground tgts, 256 - Air tgts, 512 - Men, 1024 - Special (laser, NV)
+		};
+		class EmptyDisplay
+		{
+			componentType = "EmptyDisplayComponent";
+		};
+		class MinimapDisplay
+		{
+			componentType = "MinimapDisplayComponent";
+		};
+		
+	};
+};
+class pzn_vdisp_RadarSling_Right
+{
+	componentType = "VehicleSystemsDisplayManager";
+	x = "(profilenamespace getvariable [""IGUI_GRID_CUSTOMINFORIGHT_X"",	((safezoneX + safezoneW) - (		(10 * 			(			((safezoneW / safezoneH) min 1.2) / 40)) + 0.5 * 			(			((safezoneW / safezoneH) min 1.2) / 40)))])";
+	y = "(profilenamespace getvariable [""IGUI_GRID_CUSTOMINFORIGHT_Y"",	(safezoneY + safezoneH - 21 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25))])";
+	right = 1;	
+	defaultDisplay = "SensorDisplay";
+	class Components
+	{
+		class SlingLoadDisplay
+		{
+			componentType = "SlingLoadDisplayComponent";
+		};
+		class SensorDisplay
+		{
+			componentType = "SensorsDisplayComponent";
+			range[] = {8000,4000,2000};     //accepts an integer or an array of available ranges (submode)
+			showTargetTypes = 1+2+4+8+16+32+64+128+256; // 1 - Sensor sectors, 2 - Threats, 4 - Marked tgt symbol, 8 - Own detection, 16 - Remote detection, 32 - Active detection, 64 - Passive detection, 128 - Ground tgts, 256 - Air tgts, 512 - Men, 1024 - Special (laser, NV)
+		};
+		class EmptyDisplay
+		{
+			componentType = "EmptyDisplayComponent";
+		};
+		class MinimapDisplay
+		{
+			componentType = "MinimapDisplayComponent";
+		};
+		
+	};
+};
+
+class pzn_vdisp_Radar_zsu23_Left
+{
+	componentType = "VehicleSystemsDisplayManager";
+	x = "(profilenamespace getvariable [""IGUI_GRID_CUSTOMINFOLEFT_X"",	(safezoneX + 0.5 * 			(			((safezoneW / safezoneH) min 1.2) / 40))])";
+	y = "(profilenamespace getvariable [""IGUI_GRID_CUSTOMINFOLEFT_Y"",	(safezoneY + safezoneH - 21 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25))])";
+	left = 1;
+	defaultDisplay = "EmptyDisplay";
+	class Components
+	{
+		class SensorDisplay
+		{
+			componentType = "SensorsDisplayComponent";
+			range[] = {5000,2000};     //accepts an integer or an array of available ranges (submode)
+			showTargetTypes = 1+4+8+16+32+256; // 1 - Sensor sectors, 2 - Threats, 4 - Marked tgt symbol, 8 - Own detection, 16 - Remote detection, 32 - Active detection, 64 - Passive detection, 128 - Ground tgts, 256 - Air tgts, 512 - Men, 1024 - Special (laser, NV)
+		};
+		class EmptyDisplay
+		{
+			componentType = "EmptyDisplayComponent";
+		};
+		class MinimapDisplay
+		{
+			componentType = "MinimapDisplayComponent";
+		};
+	};
+};
+
+class pzn_vdisp_Radar_zsu23_Right
+{
+	componentType = "VehicleSystemsDisplayManager";
+	x = "(profilenamespace getvariable [""IGUI_GRID_CUSTOMINFORIGHT_X"",	((safezoneX + safezoneW) - (		(10 * 			(			((safezoneW / safezoneH) min 1.2) / 40)) + 0.5 * 			(			((safezoneW / safezoneH) min 1.2) / 40)))])";
+	y = "(profilenamespace getvariable [""IGUI_GRID_CUSTOMINFORIGHT_Y"",	(safezoneY + safezoneH - 21 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25))])";
+	right = 1;	
+	defaultDisplay = "SensorDisplay";
+	class Components
+	{
+		class SensorDisplay
+		{
+			componentType = "SensorsDisplayComponent";
+			range[] = {5000,2000};     //accepts an integer or an array of available ranges (submode)
+			showTargetTypes = 1+4+8+16+32+256; // 1 - Sensor sectors, 2 - Threats, 4 - Marked tgt symbol, 8 - Own detection, 16 - Remote detection, 32 - Active detection, 64 - Passive detection, 128 - Ground tgts, 256 - Air tgts, 512 - Men, 1024 - Special (laser, NV)
+		};
+		class EmptyDisplay
+		{
+			componentType = "EmptyDisplayComponent";
+		};
+		class MinimapDisplay
+		{
+			componentType = "MinimapDisplayComponent";
+		};
+		
+	};
+};
+
+class vdisp_Radar_mi28_Left
+{
+	componentType = "VehicleSystemsDisplayManager";
+	x = "(profilenamespace getvariable [""IGUI_GRID_CUSTOMINFOLEFT_X"",	(safezoneX + 0.5 * 			(			((safezoneW / safezoneH) min 1.2) / 40))])";
+	y = "(profilenamespace getvariable [""IGUI_GRID_CUSTOMINFOLEFT_Y"",	(safezoneY + safezoneH - 21 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25))])";
+	left = 1;
+	defaultDisplay = "EmptyDisplay";
+	class Components
+	{
+		class SensorDisplay
+		{
+			componentType = "SensorsDisplayComponent";
+			range[] = {7000,5000,2000};     //accepts an integer or an array of available ranges (submode)
+			showTargetTypes = 1+2+4+8+16+32+128+256+1024; // 1 - Sensor sectors, 2 - Threats, 4 - Marked tgt symbol, 8 - Own detection, 16 - Remote detection, 32 - Active detection, 64 - Passive detection, 128 - Ground tgts, 256 - Air tgts, 512 - Men, 1024 - Special (laser, NV)
+		};
+		class EmptyDisplay
+		{
+			componentType = "EmptyDisplayComponent";
+		};
+		class MinimapDisplay
+		{
+			componentType = "MinimapDisplayComponent";
+		};
+		
+	};
+};
+
+class vdisp_Radar_mi28_Right
+{
+	componentType = "VehicleSystemsDisplayManager";
+	x = "(profilenamespace getvariable [""IGUI_GRID_CUSTOMINFORIGHT_X"",	((safezoneX + safezoneW) - (		(10 * 			(			((safezoneW / safezoneH) min 1.2) / 40)) + 0.5 * 			(			((safezoneW / safezoneH) min 1.2) / 40)))])";
+	y = "(profilenamespace getvariable [""IGUI_GRID_CUSTOMINFORIGHT_Y"",	(safezoneY + safezoneH - 21 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25))])";
+	right = 1;	
+	defaultDisplay = "SensorDisplay";
+	class Components
+	{
+		class SensorDisplay
+		{
+			componentType = "SensorsDisplayComponent";
+			range[] = {7000,5000,2000};     //accepts an integer or an array of available ranges (submode)
+			showTargetTypes = 1+2+4+8+16+32+128+256+1024; // 1 - Sensor sectors, 2 - Threats, 4 - Marked tgt symbol, 8 - Own detection, 16 - Remote detection, 32 - Active detection, 64 - Passive detection, 128 - Ground tgts, 256 - Air tgts, 512 - Men, 1024 - Special (laser, NV)
+		};
+		class EmptyDisplay
+		{
+			componentType = "EmptyDisplayComponent";
+		};
+		class MinimapDisplay
+		{
+			componentType = "MinimapDisplayComponent";
+		};
+		
+	};
+};
 
 class cfgAmmo
 {
@@ -240,6 +587,1119 @@ class cfgVehicles
 		};
 		class EventHandlers;
 		class Components;
+	};
+	class Air;	// External class reference
+	class Plane : Air {
+		class EventHandlers;	// External class reference
+	};
+	
+	class Plane_Base_F : Plane {
+		class Components;
+	};
+	
+	class Plane_CAS_02_base_F;	// External class reference
+	
+	class O_Plane_CAS_02_F : Plane_CAS_02_base_F {
+		class EventHandlers;	// External class reference
+		class components;
+	};
+	class Helicopter : Air {
+		class Turrets;	// External class reference
+	};
+	
+	class Helicopter_Base_F : Helicopter {
+		class Turrets : Turrets {
+			class MainTurret;	// External class reference
+		};
+		class Eventhandlers;	// External class reference
+		class ViewOptics;	// External class reference
+	};
+	class Helicopter_Base_H : Helicopter_Base_F 
+	{
+		class Components;
+		
+		class Turrets : Turrets {
+			class CopilotTurret;	// External class reference
+		};
+	};
+	
+	class Heli_Transport_02_base_F : Helicopter_Base_H 
+	{
+		class Components;
+		};
+	class Heli_Light_02_base_F : Helicopter_Base_H {
+		class Components;
+		class Turrets : Turrets {
+			class CopilotTurret;	// External class reference
+			class MainTurret;	// External class reference
+		};
+	};
+	
+	class Heli_Attack_02_base_F : Helicopter_Base_F 
+	{
+		class Components;
+		class AnimationSources;
+	};
+	class RHS_Mi24_base : Heli_Attack_02_base_F {
+		altFullForce = 1400; //Статический потолок
+		altNoForce = 4950; //Практический потолок
+		/* class PilotCamera
+        {
+            class OpticsIn
+            {
+                delete Wide;
+            };
+        }; */
+		weapons[]=
+		{
+			"CMFlareLauncher",
+			"rhs_weap_gsh30"
+		};
+		magazines[]=
+		{
+			"rhs_mag_gsh30_ofzt_750",
+			"168Rnd_CMFlare_Chaff_Magazine"
+		};
+		radarType = 8;
+		radarTargetSize=1;
+		visualTargetSize=1;
+		LockDetectionSystem = 8;
+		incomingMissileDetectionSystem = 8;
+		soundLocked[]=
+		{
+			"\sg_rhs_AFRF_fix\Untitled.ogg",
+			db+12,
+			1
+		};
+		soundIncommingMissile[]=
+		{
+			"\sg_rhs_AFRF_fix\SPOIR.ogg",
+			db+10,
+			1
+		};
+		class Components: Components
+		{
+			class VehicleSystemsDisplayManagerComponentLeft: pzn_vdisp_Sling_Left {
+				defaultDisplay="EmptyDisplay";
+				class Components: components
+				{
+				delete CrewDisplay;
+				};
+			};
+			class VehicleSystemsDisplayManagerComponentRight: pzn_vdisp_Sling_Right {
+				defaultDisplay="EmptyDisplay";
+				class Components: components
+				{
+				delete CrewDisplay;
+				};
+			};
+		};
+		class Turrets : Turrets {
+			class MainTurret : MainTurret {
+				ace_fcs_Enabled = 0;
+				class Components: Components
+		{
+			class VehicleSystemsDisplayManagerComponentLeft: pzn_vdisp_Sling_Left {
+				defaultDisplay="EmptyDisplay";
+				class Components: components
+				{
+				delete CrewDisplay;
+				};
+			};
+			class VehicleSystemsDisplayManagerComponentRight: pzn_vdisp_Sling_Right {
+				defaultDisplay="EmptyDisplay";
+				class Components: components
+				{
+				delete CrewDisplay;
+				};
+			};
+		};
+			
+			};
+		};
+	};
+	class RHS_Mi24V_Base: RHS_Mi24_base
+	{
+		weapons[]=
+		{
+			"CMFlareLauncher",
+		};
+		magazines[]=
+		{
+			"168Rnd_CMFlare_Chaff_Magazine"
+		};
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				weapons[]=
+				{
+					"rhs_weap_yakB",
+					"tu_FakeWeapon"
+				};
+				magazines[]=
+				{
+					"rhs_mag_127x108mm_1SLT_1470",
+					"FakeMagazine"
+				};
+		    };	// fakeweapon это трекер tu_atgm, он нужен для работы отображения куда смотрит стрелок (пилоту), а также отображения и работы ПР	
+	    };
+    };
+	class RHS_Mi24D_Base: RHS_Mi24V_Base
+	{
+		weapons[]=
+		{
+			"CMFlareLauncher"
+		};
+		magazines[]=
+		{
+			"168Rnd_CMFlare_Chaff_Magazine"
+		};
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				weapons[]=
+				{
+					"rhs_weap_yakB",
+					"rhs_weap_2K8_launcher",
+					"tu_FakeWeapon"
+				};
+				magazines[]=
+				{
+					"rhs_mag_127x108mm_1SLT_1470",
+					"FakeMagazine"
+				};
+			};
+		};
+    };		
+	
+	class RHS_Mi24V_VVS_Base: RHS_Mi24V_base {};
+	class tu_mi24VP_base:  RHS_Mi24V_VVS_Base
+	{
+		scope = 0;
+		scopeArsenal = 0;
+		scopeCurator = 0;
+		side = 0;
+		displayName = "Mi-24VP";
+		editorPreview = "rhsafrf\addons\rhs_editorPreviews\data\rhs_Mi24V_vvs.paa";
+		weapons[] = {"CMFlareLauncher"};
+		magazines[] = {"168Rnd_CMFlare_Chaff_Magazine"};
+		class AnimationSources: AnimationSources
+		{
+			class Gatling_1
+			{
+				source = "revolving";
+				weapon = "RHS_Weap_GSh23L";
+			};
+			class muzzle_rot_hmg
+			{
+				weapon = "RHS_Weap_GSh23L";
+				source = "ammorandom";
+			};
+		};
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				weapons[] = {"RHS_Weap_GSh23L","tu_FakeWeapon"};
+				magazines[] = {"rhs_mag_upk23_mixed","FakeMagazine"};
+			};
+		};		
+	};
+	class tu_mi24vp_vv: tu_mi24VP_base
+	{
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		faction = "rhs_faction_vv";
+	};
+	class tu_mi24vp_vvs: tu_mi24VP_base
+	{
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		faction = "rhs_faction_vvs";
+	};
+	class tu_mi24vp_vdv: tu_mi24VP_base
+	{
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		faction = "rhs_faction_vdv";
+	};
+	class rhsgref_cdf_Mi35: RHS_Mi24V_VVS_Base
+	{
+		class Components;
+	};
+	class rhsgref_mi24g_base: rhsgref_cdf_Mi35
+	{
+		weapons[]=
+		{
+			"CMFlareLauncher"
+		};
+		magazines[]=
+		{
+			"168Rnd_CMFlare_Chaff_Magazine"
+		};
+		soundLocked[]=
+		{
+			"\sg_rhs_AFRF_fix\Untitled.ogg",
+			db+12,
+			1
+		};
+		soundIncommingMissile[]=
+		{
+			"\sg_rhs_AFRF_fix\SPOIR.ogg",
+			db+10,
+			1
+		};
+    };
+	class tu_rhsgref_mi24g_base: rhsgref_mi24g_base
+	{
+	    class Components: Components
+		{
+			class VehicleSystemsDisplayManagerComponentLeft: pzn_vdisp_default_Left {};
+			class VehicleSystemsDisplayManagerComponentRight: pzn_vdisp_default_Right {};
+		};
+		class Turrets: Turrets {
+			class MainTurret: MainTurret {
+				turretInfoType = "RHS_RscOptics_Heli_Attack_01_gunner";
+			class Components: Components
+			{
+				class VehicleSystemsDisplayManagerComponentLeft: vdisp_Radar_mh6_Left {};
+				class VehicleSystemsDisplayManagerComponentRight: vdisp_Radar_mh6_Right {};
+			};
+		 };
+	   };
+	};
+	
+	class rhsgref_mi24g_CAS: tu_rhsgref_mi24g_base {};
+	
+	class RHS_Mi8_base : Heli_Light_02_base_F {
+		altFullForce = 1900; //Статический потолок
+		altNoForce = 4500; //Практический потолок
+		weapons[]=
+		{
+			"CMFlareLauncher"
+		};
+		magazines[]=
+		{
+			"168Rnd_CMFlare_Chaff_Magazine"
+		};
+		radarType = 0;
+		radarTargetSize=1;
+		LockDetectionSystem = 0;
+		incomingMissileDetectionSystem = 8;
+		driverCanEject = 1;
+		gunnerCanSee = 2+4+8+16;
+		driverCanSee = 2+4+8+16;
+		class Components: Components
+		        {
+			    class VehicleSystemsDisplayManagerComponentLeft: pzn_vdisp_Sling_Left {
+					defaultDisplay="EmptyDisplay";
+					class Components: components
+				    {
+						delete CrewDisplay;
+					};
+				};
+			    class VehicleSystemsDisplayManagerComponentRight: pzn_vdisp_Sling_Right {
+					defaultDisplay="EmptyDisplay";
+					class Components: components
+				    {
+						delete CrewDisplay;
+					};
+				};
+		        };
+		class Turrets : Turrets {
+			class CopilotTurret : CopilotTurret {
+				canEject = 1;
+				class Components: Components
+		        {
+			    class VehicleSystemsDisplayManagerComponentLeft: pzn_vdisp_Sling_Left {
+					defaultDisplay="EmptyDisplay";
+					class Components: components
+				    {
+						delete CrewDisplay;
+					};
+				};
+			    class VehicleSystemsDisplayManagerComponentRight: pzn_vdisp_Sling_Right {
+					defaultDisplay="EmptyDisplay";
+					class Components: components
+				    {
+						delete CrewDisplay;
+					};
+				};
+		        };
+			};
+		};
+	};
+	class rhs_mi28_base: Heli_Attack_02_base_F
+	{
+		altFullForce = 3700; //Статический потолок
+		altNoForce = 5700; //Практический потолок
+		radartype = 4;
+		radarTargetSize=1;
+		LockDetectionSystem = 8;
+		incomingMissileDetectionSystem = "8 + 16";
+		weapons[]=
+		{
+			"rhs_weap_MASTERSAFE",
+			"CMFlareLauncher"
+		};
+		magazines[]=
+		{
+			"168Rnd_CMFlare_Chaff_Magazine"
+		};
+		soundLocked[]=
+		{
+			"\sg_rhs_AFRF_fix\Untitled.ogg",
+			db+12,
+			1
+		};
+		soundIncommingMissile[]=
+		{
+			"\sg_rhs_AFRF_fix\SPOIR.ogg",
+			db+10,
+			1
+		};
+	};
+	class rhs_mi28n_base: rhs_mi28_base
+	{
+		class Components;
+	};
+	class tu_rhs_mi28n_base: rhs_mi28n_base
+	{
+		class Components: Components
+		{
+			class SensorsManagerComponent
+			{
+				class Components
+				{
+					class ActiveRadarSensorComponent_Ground: SensorTemplateActiveRadar
+					{
+						class AirTarget
+						{
+							minRange = 0;
+							maxRange = 0;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						class GroundTarget
+						{
+							minRange = 6000;
+							maxRange = 6000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						typeRecognitionDistance = 0;
+						groundNoiseDistanceCoef=-1;
+						maxGroundNoiseDistance=-1;
+						angleRangeHorizontal = 90;
+						angleRangeVertical = 50;
+						minTrackableSpeed = 7.5;
+					};	
+					class ActiveRadarSensorComponent_Air: SensorTemplateActiveRadar
+					{
+						class AirTarget
+						{
+							minRange = 7000;
+							maxRange = 7000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						class GroundTarget
+						{
+							minRange = 7000;
+							maxRange = 7000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						typeRecognitionDistance = 0;
+						groundNoiseDistanceCoef=-1;
+						maxGroundNoiseDistance=-1;
+						angleRangeHorizontal = 180;
+						angleRangeVertical = 30;
+						minTrackableATL = 20;
+					};
+					class LaserSensorComponent: SensorTemplateLaser
+					{
+						class AirTarget
+						{
+							minRange = 5000;
+							maxRange = 5000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						class GroundTarget
+						{
+							minRange = 5000;
+							maxRange = 5000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						AnimDirection =  "mainTurret";
+						typeRecognitionDistance = 0;
+						groundNoiseDistanceCoef=-1;
+						maxGroundNoiseDistance=-1;
+						angleRangeHorizontal = 50;
+						angleRangeVertical = 50;
+					};
+				};
+			};
+			class VehicleSystemsDisplayManagerComponentLeft: vdisp_Radar_mi28_Left {};
+			class VehicleSystemsDisplayManagerComponentRight: vdisp_Radar_mi28_Right {};
+		};
+		class Turrets : Turrets {
+			class MainTurret : MainTurret {
+				ace_fcs_Enabled = 0;
+				
+				class Components: Components
+				{
+					class VehicleSystemsDisplayManagerComponentLeft: vdisp_Radar_mi28_Left {};
+			        class VehicleSystemsDisplayManagerComponentRight: vdisp_Radar_mi28_Right {};
+				};
+			};
+		};
+	};
+	
+	class RHS_Ka52_base: Heli_Attack_02_base_F
+	{
+		altFullForce = 3600; //Статический потолок
+		altNoForce = 5500; //Практический потолок
+		weapons[]=
+		{
+			"rhs_weap_MASTERSAFE",
+			"CMFlareLauncher"
+		};
+		magazines[]=
+		{
+			"168Rnd_CMFlare_Chaff_Magazine"
+		};
+		radartype = 4;
+		radarTargetSize=1;
+		LockDetectionSystem = 8;
+		incomingMissileDetectionSystem = "8 + 16";
+		soundLocked[]=
+		{
+			"\sg_rhs_AFRF_fix\Untitled.ogg",
+			db+12,
+			1
+		};
+		soundIncommingMissile[]=
+		{
+			"\sg_rhs_AFRF_fix\SPOIR.ogg",
+			db+10,
+			1
+		};
+		class PilotCamera
+        {
+            class OpticsIn
+            {
+                delete Wide;
+            };
+        };
+	};
+	class tu_RHS_Ka52_base: RHS_Ka52_base
+	{
+		class Components: Components
+		{
+			class SensorsManagerComponent
+			{
+				class Components
+				{
+					class ActiveRadarSensorComponent_Ground: SensorTemplateActiveRadar
+					{
+						class AirTarget
+						{
+							minRange = 0;
+							maxRange = 0;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						class GroundTarget
+						{
+							minRange = 6000;
+							maxRange = 6000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						typeRecognitionDistance = 0;
+						groundNoiseDistanceCoef=-1;
+						maxGroundNoiseDistance=-1;
+						angleRangeHorizontal = 120;
+						angleRangeVertical = 60;
+						minTrackableSpeed = 7.5;
+					};
+					class ActiveRadarSensorComponent: SensorTemplateActiveRadar
+					{
+						class AirTarget
+						{
+							minRange = 7000;
+							maxRange = 7000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						class GroundTarget
+						{
+							minRange = 7000;
+							maxRange = 7000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						typeRecognitionDistance = 0;
+						groundNoiseDistanceCoef=-1;
+						maxGroundNoiseDistance=-1;
+						minTrackableATL = 20;
+						angleRangeHorizontal = 360;
+						angleRangeVertical = 60;
+					};
+					class LaserSensorComponent: SensorTemplateLaser
+					{
+						class AirTarget
+						{
+							minRange = 5000;
+							maxRange = 5000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						class GroundTarget
+						{
+							minRange = 5000;
+							maxRange = 5000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						AnimDirection =  "mainTurret";
+						typeRecognitionDistance = 0;
+						groundNoiseDistanceCoef=-1;
+						maxGroundNoiseDistance=-1;
+						angleRangeHorizontal = 50;
+						angleRangeVertical = 50;
+					};
+				};
+			};
+			class VehicleSystemsDisplayManagerComponentLeft: vdisp_Radar_mi28_Left {};
+			class VehicleSystemsDisplayManagerComponentRight: vdisp_Radar_mi28_Right {};
+		};
+		class Turrets : Turrets {
+			class MainTurret : MainTurret {
+				ace_fcs_Enabled = 0;
+				
+				class Components: Components
+				{
+					class VehicleSystemsDisplayManagerComponentLeft: vdisp_Radar_mi28_Left {};
+			        class VehicleSystemsDisplayManagerComponentRight: vdisp_Radar_mi28_Right {};
+				};
+			};
+		};
+	};
+	class rhs_mi28n_S13_base: tu_rhs_mi28n_base {};
+	class rhs_mi28n_vvsc: tu_rhs_mi28n_base {};
+	
+	class rhs_mi28n_vvs: tu_rhs_mi28n_base 
+	{
+		class AnimationSources;
+		class radome_hide;
+		class Components;
+		class Turrets;
+		class MainTurret;
+	};
+    class tu_rhs_mi28n_vvs: rhs_mi28n_vvs
+	{
+		displayName="$STR_MI28N_nowarning";
+		LockDetectionSystem = 8;
+		incomingMissileDetectionSystem = 8;
+	};
+	class RHS_Ka52_vvsc: tu_RHS_Ka52_base {};
+	
+	class RHS_Ka52Black_base: RHS_Ka52_base
+	{
+	class Components;
+    };
+	class RHS_Ka52_vvs: RHS_Ka52Black_base
+	{
+	    class Components: Components
+		{
+			class SensorsManagerComponent
+			{
+				class Components
+				{
+					class ActiveRadarSensorComponent_Ground: SensorTemplateActiveRadar
+					{
+						class AirTarget
+						{
+							minRange = 0;
+							maxRange = 0;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						class GroundTarget
+						{
+							minRange = 6000;
+							maxRange = 6000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						typeRecognitionDistance = 0;
+						groundNoiseDistanceCoef=-1;
+						maxGroundNoiseDistance=-1;
+						angleRangeHorizontal = 120;
+						angleRangeVertical = 60;
+						minTrackableSpeed = 7.5;
+					};
+					class ActiveRadarSensorComponent: SensorTemplateActiveRadar
+					{
+						class AirTarget
+						{
+							minRange = 7000;
+							maxRange = 7000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						class GroundTarget
+						{
+							minRange = 7000;
+							maxRange = 7000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						typeRecognitionDistance = 0;
+						groundNoiseDistanceCoef=-1;
+						maxGroundNoiseDistance=-1;
+						minTrackableATL = 20;
+						angleRangeHorizontal = 360;
+						angleRangeVertical = 60;
+					};
+					class LaserSensorComponent: SensorTemplateLaser
+					{
+						class AirTarget
+						{
+							minRange = 5000;
+							maxRange = 5000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						class GroundTarget
+						{
+							minRange = 5000;
+							maxRange = 5000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						AnimDirection =  "mainTurret";
+						typeRecognitionDistance = 0;
+						groundNoiseDistanceCoef=-1;
+						maxGroundNoiseDistance=-1;
+						angleRangeHorizontal = 50;
+						angleRangeVertical = 50;
+					};
+				};
+			};
+			class VehicleSystemsDisplayManagerComponentLeft: vdisp_Radar_mi28_Left {};
+			class VehicleSystemsDisplayManagerComponentRight: vdisp_Radar_mi28_Right {};
+		};
+		class Turrets : Turrets {
+			class MainTurret : MainTurret {
+				ace_fcs_Enabled = 0;
+				
+				class Components: Components
+				{
+					class VehicleSystemsDisplayManagerComponentLeft: vdisp_Radar_mi28_Left {};
+			        class VehicleSystemsDisplayManagerComponentRight: vdisp_Radar_mi28_Right {};
+				};
+			};
+		};
+	};	
+	class rhs_mi8amt_base : rhs_mi8_base {};
+	class tu_RHS_Ka52_vvs: RHS_Ka52_vvs
+	{
+		displayName="$STR_KA52_nowarning";
+		LockDetectionSystem = 8;
+		incomingMissileDetectionSystem = 8;
+	};
+	class tu_rhs_mi28n_vvs_noradar: rhs_mi28n_vvs
+	{
+		displayName="$STR_MI28N_noradar_nowarning";
+		radarType = 8;
+		LockDetectionSystem = 8;
+		incomingMissileDetectionSystem = 8;
+		class AnimationSources: AnimationSources {
+		class radome_hide: radome_hide 
+		{
+				initPhase=1;
+		};
+		};
+		class Components: Components
+		{
+			class SensorsManagerComponent
+			{
+				class Components
+				{
+				class LaserSensorComponent: SensorTemplateLaser
+					{
+						class AirTarget
+						{
+							minRange = 5000;
+							maxRange = 5000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						class GroundTarget
+						{
+							minRange = 5000;
+							maxRange = 5000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						AnimDirection =  "mainTurret";
+						typeRecognitionDistance = 0;
+						groundNoiseDistanceCoef=-1;
+						maxGroundNoiseDistance=-1;
+						angleRangeHorizontal = 50;
+						angleRangeVertical = 50;
+				};
+				};
+			};
+			class VehicleSystemsDisplayManagerComponentLeft: vdisp_Radar_mh6_Left {};
+		    class VehicleSystemsDisplayManagerComponentRight: vdisp_Radar_mh6_Right {};
+		};
+		class Turrets : Turrets {
+			class MainTurret : MainTurret {
+			class Components: Components
+		    {
+			class VehicleSystemsDisplayManagerComponentLeft: vdisp_Radar_mh6_Left {};
+			class VehicleSystemsDisplayManagerComponentRight: vdisp_Radar_mh6_Right {};
+		    };
+			};
+		};
+	};
+	
+	class tu_rhs_mi28n_vvs_noradar2: rhs_mi28n_vvs
+	{
+		displayName="$STR_MI28N_noradara";
+		class AnimationSources: AnimationSources {
+		class radome_hide: radome_hide 
+		{
+				initPhase=1;
+		};
+		};
+		class Components: Components
+		{
+			class SensorsManagerComponent
+			{
+				class Components
+				{
+				class LaserSensorComponent: SensorTemplateLaser
+					{
+						class AirTarget
+						{
+							minRange = 5000;
+							maxRange = 5000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						class GroundTarget
+						{
+							minRange = 5000;
+							maxRange = 5000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						AnimDirection =  "mainTurret";
+						typeRecognitionDistance = 0;
+						groundNoiseDistanceCoef=-1;
+						maxGroundNoiseDistance=-1;
+						angleRangeHorizontal = 50;
+						angleRangeVertical = 50;
+				    };
+				};
+			};
+			class VehicleSystemsDisplayManagerComponentLeft: vdisp_Radar_mh6_Left {};
+		    class VehicleSystemsDisplayManagerComponentRight: vdisp_Radar_mh6_Right {};
+		};
+		class Turrets : Turrets {
+			class MainTurret : MainTurret {
+			class Components: Components
+		    {
+			class VehicleSystemsDisplayManagerComponentLeft: vdisp_Radar_mh6_Left {};
+			class VehicleSystemsDisplayManagerComponentRight: vdisp_Radar_mh6_Right {};
+		    };
+			};
+		};
+	};
+	
+	class rhs_mig29s_base: Plane_Base_F {
+		attenuationEffectType = "HeliAttenuation";
+		
+	    weapons[]=
+		{
+			"rhs_weap_MASTERSAFE",
+			"CMFlareLauncher",
+			"rhs_weap_GSh301"
+		};
+		magazines[]=
+		{
+			"rhs_mag_gsh30_mixed_150",
+			"168Rnd_CMFlare_Chaff_Magazine"
+		};
+	    soundLocked[]=
+		{
+			"\sg_rhs_AFRF_fix\Untitled.ogg",
+			db+12,
+			1
+		};
+		soundIncommingMissile[]=
+		{
+			"\sg_rhs_AFRF_fix\SPOIR.ogg",
+			db+10,
+			1
+		};
+	};
+	
+	class tu_rhs_mig29s_base: rhs_mig29s_base {
+		class Components: Components
+		{
+			class SensorsManagerComponent
+			{
+				class Components
+				{
+				    delete IRSensorComponent;
+					class ActiveRadarSensorComponent_Air: SensorTemplateActiveRadar
+					{
+						class AirTarget
+						{
+							minRange = 10000;
+							maxRange = 10000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						class GroundTarget
+						{
+							minRange = 10000;
+							maxRange = 10000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						typeRecognitionDistance = 10000;
+						groundNoiseDistanceCoef=-1;
+						maxGroundNoiseDistance=-1;
+						angleRangeHorizontal = 120;
+						angleRangeVertical = 120;
+						aimDown = 0;
+						minTrackableATL = 20;
+					};
+					class LaserSensorComponent: SensorTemplateLaser
+					{
+						class AirTarget
+						{
+							minRange = 7000;
+							maxRange = 7000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						class GroundTarget
+						{
+							minRange = 7000;
+							maxRange = 7000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						typeRecognitionDistance = 7000;
+						groundNoiseDistanceCoef=-1;
+						maxGroundNoiseDistance=-1;
+						angleRangeHorizontal = 180;
+						angleRangeVertical = 90;
+						aimDown = 0;
+						minSpeedThreshold = 0;
+						maxSpeedThreshold = 0;
+					};
+				};
+			};
+			class VehicleSystemsDisplayManagerComponentLeft: pzn_vdisp_Radar_Left {};
+			class VehicleSystemsDisplayManagerComponentRight: pzn_vdisp_Radar_Right {};
+		};
+	};
+	
+    class rhs_mig29s_vvs: tu_rhs_mig29s_base {};
+	
+	class rhs_mig29sm_base: rhs_mig29s_base {
+		class Components;
+	};
+	
+	class tu_rhs_mig29sm_base: rhs_mig29sm_base {
+	    LockDetectionSystem = 8;
+		incomingMissileDetectionSystem = "8 + 16";
+		class Components: Components
+		{
+			class SensorsManagerComponent
+			{
+				class Components
+				{
+					class ActiveRadarSensorComponent_Air: SensorTemplateActiveRadar
+					{
+						class AirTarget
+						{
+							minRange = 10000;
+							maxRange = 10000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						class GroundTarget
+						{
+							minRange = 10000;
+							maxRange = 10000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						typeRecognitionDistance = 10000;
+						groundNoiseDistanceCoef=-1;
+						maxGroundNoiseDistance=-1;
+						angleRangeHorizontal = 120;
+						angleRangeVertical = 120;
+						aimDown = 0;
+						minTrackableATL = 20;
+					};
+					class LaserSensorComponent: SensorTemplateLaser
+					{
+						class AirTarget
+						{
+							minRange = 7000;
+							maxRange = 7000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						class GroundTarget
+						{
+							minRange = 7000;
+							maxRange = 7000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						typeRecognitionDistance = 7000;
+						groundNoiseDistanceCoef=-1;
+						maxGroundNoiseDistance=-1;
+						angleRangeHorizontal = 180;
+						angleRangeVertical = 90;
+						aimDown = 0;
+						minSpeedThreshold = 0;
+						maxSpeedThreshold = 0;
+					};
+				};
+			};
+			class VehicleSystemsDisplayManagerComponentLeft: pzn_vdisp_Radar_Left {};
+			class VehicleSystemsDisplayManagerComponentRight: pzn_vdisp_Radar_Right {};
+		};
+	};
+	
+	class rhs_mig29sm_vvs: tu_rhs_mig29sm_base {};
+
+    class tu_rhs_mig29s_vvs: rhs_mig29sm_vvs {
+		displayname = "$STR_mig29k";
+	};
+	
+	 class tu_rhs_mig29s_vvs_nowarning: tu_rhs_mig29s_vvs {
+		displayname = "$STR_mig29k_nowarn";
+		LockDetectionSystem = 8;
+		incomingMissileDetectionSystem = 8;
+	};
+	
+	class RHS_su25_base : O_Plane_CAS_02_F {
+		displayname = "$STR_RHS_SU25_Name";
+		radarType = 0;
+		radarTargetSize=1;
+		LockDetectionSystem = 8;
+		incomingMissileDetectionSystem = 8;
+		weapons[] = {"CMFlareLauncher","rhs_weap_klen_ps","rhs_weap_GSh302"};
+		magazines[] = {"168Rnd_CMFlare_Chaff_Magazine","rhs_lasermag","rhs_mag_gsh30_bt_250"};
+		soundLocked[]=
+		{
+			"\sg_rhs_AFRF_fix\Untitled.ogg",
+			db+12,
+			1
+		};
+		soundIncommingMissile[]=
+		{
+			"\sg_rhs_AFRF_fix\SPOIR.ogg",
+			db+10,
+			1
+		};
+		class Components: Components
+		{
+			class SensorsManagerComponent
+			{
+				class Components
+				{
+				    delete PassiveRadarSensorComponent;
+					class LaserSensorComponent: SensorTemplateLaser
+					{
+						class AirTarget
+						{
+							minRange = 7000;
+							maxRange = 7000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						class GroundTarget
+						{
+							minRange = 7000;
+							maxRange = 7000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						typeRecognitionDistance = 7000;
+						groundNoiseDistanceCoef=-1;
+						maxGroundNoiseDistance=-1;
+						angleRangeHorizontal = 180;
+						angleRangeVertical = 90;
+						aimDown = 0;
+						minSpeedThreshold = 0;
+						maxSpeedThreshold = 0;
+					};
+				};
+			};
+			class VehicleSystemsDisplayManagerComponentLeft: vdisp_lasersensor_Left {};
+			class VehicleSystemsDisplayManagerComponentRight: vdisp_lasersensor_Right {};
+		};
+	};	
+	
+	class RHS_Su25_VVS_Base : RHS_Su25_base {};
+	
+	class RHS_Su25SM_vvs : RHS_Su25_VVS_Base {
+		displayname = "$STR_RHS_SU25_Name";
+	};
+	
+	class TU_RHS_Su25SM_vvs : RHS_Su25_VVS_Base {
+		displayName = "$STR_RHS_SU25SM_Name";
+		LockDetectionSystem = 8;
+		incomingMissileDetectionSystem = "8 + 16";
+	};
+	
+	class RHS_Su25SM_KH29_vvs : RHS_Su25SM_vvs {
+		scope = 2;
+	};
+	
+	class RHS_Su25SM_vvsc : RHS_Su25SM_vvs {};
+	
+	class TU_RHS_Su25SM_vvsc : RHS_Su25SM_vvs {
+		displayName = "$STR_RHS_SU25SM_Name";
+		LockDetectionSystem = 8;
+		incomingMissileDetectionSystem = "8 + 16";
+	};
+	
+	class RHS_Su25SM_KH29_vvsc : RHS_Su25SM_vvsc {
+		scope = 2;
+	};
+	class O_Heli_Light_02_unarmed_F;
+	class rhs_ka60_grey: O_Heli_Light_02_unarmed_F
+	{
+		class PilotCamera
+        {
+            class OpticsIn
+            {
+                delete Wide;
+            };
+        };
 	};
 	class rhs_a3t72tank_base: Tank_F
 	{

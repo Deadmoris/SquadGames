@@ -3931,25 +3931,10 @@ class CfgVehicles
 				enableInside = 1;
 				insertChildren = "_target call bn_csw_fnc_add_subactions_loader";
 			};
-			class BN_CSW_Load_loader_turnedout {
-				displayName = "Зарядить (снаружи)...";
-				distance = 2;
-				condition = "(isturnedout _player) && {((assignedVehicleRole _player) select 1) in (getarray (configFile >> 'CfgVehicles' >> typeOf (vehicle _player) >> 'bn_csw_loading_loaders_turnedout'))} && {count (_target call bn_csw_fnc_add_subactions_loader_turnedout) > 0}";
-				icon = "\bn_csw_load\data\ui\load.paa";
-				statement = "";
-				showDisabled = 0;
-				priority = 5;
-				hotkey = "L";
-				position = [0.1,0,0];
-				enableInside = 1;
-				insertChildren = "_target call bn_csw_fnc_add_subactions_loader_turnedout";
-			};
 		};
 		transportMaxMagazines = 400;
 		bn_csw_loading_loaders[] = {{0,1}};
-		bn_csw_loading_loaders_turnedout[] = {{0,1},{0,0}};
 		bn_csw_loading_loaderturrets[] = {{{0}}};
-		bn_csw_loading_loaderturrets_turnedout[] = {{{0,1}},{{0,0}}};
 		bn_csw_loading_loaderguns[] = {{{"sg_weap_D10","sg_pkt_t55"}}};
 				
 		class ViewOptics: ViewOptics
@@ -4479,30 +4464,7 @@ class CfgVehicles
 				};
 				class Turrets: Turrets
 				{
-					class Loader: Newturret
-					{
-						startEngine = 0;
-						forceHideGunner = 0;
-						memoryPointGunnerOptics = "commanderview";
-						gunnerAction = "passenger_bench_1";
-						isPersonTurret = 1;
-						// personTurretAction = "vehicle_turnout_1";
-						gunnerInAction = "CUP_T55_Gunner_EP1";
-						animationSourceHatch = "hatchGunner";
-						gunnername = "Loader";
-						class OpticsIn
-						{
-							class Periscope: ViewOptics
-							{
-								initFov = 0.7;
-								minFov = 0.7;
-								maxFov = 0.7;
-								visionMode[] = {"Normal"};
-								gunnerOpticsModel = "\a3\weapons_f\reticle\Optics_Driver_01_f";
-								gunnerOpticsEffect[] = {"TankGunnerOptics1","OpticsBlur2","OpticsCHAbera2"};
-							};
-						};
-					};
+					
 					class CommanderOptics: CommanderOptics
 					{
 						turretInfoType = "sg_compas";
@@ -4597,6 +4559,30 @@ class CfgVehicles
 								gunnerOpticsModel = "\rhsafrf\addons\rhs_optics\vehicles\rhs_tkn3_night.p3d";
 								visionMode[] = {"Normal","NVG"};
 								thermalMode[] = {4,5};
+							};
+						};
+					};
+					class Loader: Newturret
+					{
+						startEngine = 0;
+						forceHideGunner = 0;
+						memoryPointGunnerOptics = "commanderview";
+						gunnerAction = "passenger_bench_1";
+						isPersonTurret = 1;
+						// personTurretAction = "vehicle_turnout_1";
+						gunnerInAction = "CUP_T55_Gunner_EP1";
+						animationSourceHatch = "hatchGunner";
+						gunnername = "Loader";
+						class OpticsIn
+						{
+							class Periscope: ViewOptics
+							{
+								initFov = 0.7;
+								minFov = 0.7;
+								maxFov = 0.7;
+								visionMode[] = {"Normal"};
+								gunnerOpticsModel = "\a3\weapons_f\reticle\Optics_Driver_01_f";
+								gunnerOpticsEffect[] = {"TankGunnerOptics1","OpticsBlur2","OpticsCHAbera2"};
 							};
 						};
 					};

@@ -1,0 +1,6 @@
+///'pzn_rhs_decals_fix.pbo' from Mikero's dos tools, dll version 5.66///
+mikero=DePbo.dll
+prefix=pzn_rhs_decals_fix
+Pbo Type is: Arma Addon
+Sha: '14A5C2162406F170D224E0497741AD53936528B9'
+//////</HEADER>//////

@@ -1,0 +1,6 @@
+///////<HEADER>///////
+prefix=tu_aircraft
+Mikero=DePbo.dll
+Pbo Type is: Arma Addon
+Sha: 'DC6191EB46A6F85CBDA0C1AD921B99B56C104324'
+//////</HEADER>//////

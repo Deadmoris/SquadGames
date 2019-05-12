@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=ri65b
+Pbo Type is: Arma Addon
+Sha: '4DE4D73B45F4B1FB8A186FA312DBC2B142E5A9E2'
+//////</HEADER>//////

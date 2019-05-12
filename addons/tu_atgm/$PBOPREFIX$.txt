@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=tu_atgm
+Pbo Type is: Arma Addon
+Sha: 'F34963B1165B752CD36459DB5EBA28400941D9BF'
+//////</HEADER>//////

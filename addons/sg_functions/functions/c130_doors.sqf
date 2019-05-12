@@ -1,0 +1,1 @@
+hint "door is here";

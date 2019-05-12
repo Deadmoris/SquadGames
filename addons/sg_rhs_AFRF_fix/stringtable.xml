@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project ID="Arma3">
+	<Package ID="Addons">
+		<Container ID="rebalancered">
+			<Key ID="STR_MI28N_noradar_nowarning">
+				<English>
+				MI-28N no radar, no IMS
+				</English>
+				<Russian>
+				МИ-28Н без радара, без СП
+				</Russian>
+			</Key> 
+			<Key ID="STR_MI28N_nowarning">
+				<English>
+				MI-28N no IMS
+				</English>
+				<Russian>
+				МИ-28Н без СП
+				</Russian>
+			</Key>
+			<Key ID="STR_MI28N_noradar_nowarning_s13">
+				<English>
+				MI-28N (S13) no radar, no IMS
+				</English>
+				<Russian>
+				МИ-28Н (C13) без радара, без СП
+				</Russian>
+			</Key>
+			<Key ID="STR_mig29k">
+				<English>
+				MiG-29K
+				</English>
+				<Russian>
+				МиГ-29К
+				</Russian>
+			</Key>
+			<Key ID="STR_mig29k_nowarn">
+				<English>
+				MiG-29K no IMS
+				</English>
+				<Russian>
+				МиГ-29К без СП
+				</Russian>
+			</Key>
+            <Key ID="STR_MI28N_nowarning_s13">
+				<English>
+				MI-28N (S13) no IMS
+				</English>
+				<Russian>
+				МИ-28Н (C13) без СП
+				</Russian>
+			</Key>
+			<Key ID="STR_MI28N_noradara">
+				<English>
+				MI-28N no radar
+				</English>
+				<Russian>
+				МИ-28Н без радара
+				</Russian>
+			</Key>
+            <Key ID="STR_KA52_noradar_nowarning">
+				<English>
+				KA-52 no radar, no IMS
+				</English>
+				<Russian>
+				КА-52 без радара, без СП
+				</Russian>
+			</Key> 
+			<Key ID="STR_KA52_nowarning">
+				<English>
+				KA-52 no IMS
+				</English>
+				<Russian>
+				КА-52 без СП
+				</Russian>
+			</Key>
+			<Key ID="STR_KA52upk_noradar_nowarning">
+				<English>
+				RF-52 (UPK) no radar, no IMS
+				</English>
+				<Russian>
+				КА-52 (УПК) без радара, без СП
+				</Russian>
+			</Key>
+            <Key ID="STR_KA52upk_nowarning">
+				<English>
+				KA-52 (UPK) no IMS
+				</English>
+				<Russian>
+				КА-52 (УПК) без СП
+				</Russian>
+			</Key> 
+            <Key ID="STR_MI28N_VVradar">
+				<English>
+				MI-28N AA radar
+				</English>
+				<Russian>
+				МИ-28Н В-В радар
+				</Russian>
+			</Key>
+            <Key ID="STR_MI28N_VVradar_IMS">
+				<English>
+				MI-28N AA radar, no IMS
+				</English>
+				<Russian>
+				МИ-28Н В-В радар, без СП
+				</Russian>
+			</Key>
+            <Key ID="STR_MI28NS13_VVradar">
+				<English>
+				MI-28N (S13) AA radar
+				</English>
+				<Russian>
+				МИ-28Н (С13) В-В радар
+				</Russian>
+			</Key>
+            <Key ID="STR_MI28NS13_VVradar_IMS">
+				<English>
+				MI-28N (S13) AA radar, no IMS
+				</English>
+				<Russian>
+				МИ-28Н (С13) В-В радар, без СП
+				</Russian>
+              </Key>				
+				<Key ID="STR_ka52_VVradar">
+				<English>
+				KA-52 AA radar
+				</English>
+				<Russian>
+				КА-52 В-В радар
+				</Russian>
+			</Key>
+            <Key ID="STR_ka52_VVradar_IMS">
+				<English>
+				KA-52 AA radar, no IMS
+				</English>
+				<Russian>
+				КА-52 В-В радар, без СП
+				</Russian>
+			</Key>
+            <Key ID="STR_ka52upk_VVradar">
+				<English>
+				KA-52 (UPK) AA radar
+				</English>
+				<Russian>
+				КА-52 (УПК) В-В радар
+				</Russian>
+			</Key>
+            <Key ID="STR_ka52upk_VVradar_IMS">
+				<English>
+				KA-52 (UPK) AA radar, no IMS
+				</English>
+				<Russian>
+				КА-52 (УПК) В-В радар, без СП
+				</Russian>
+			</Key>
+				<Key ID="STR_9K32">
+				<English>
+				9M32 Strela-2
+				</English>
+				<Russian>
+				9М32 «Стрела-2»
+				</Russian>
+			</Key>
+			<Key ID="STR_9K32M">
+				<English>
+				9M32M Strela-2M
+				</English>
+				<Russian>
+				9М32М «Стрела-2М»
+				</Russian>
+			</Key>
+			<Key ID="STR_9K38">
+				<English>
+				9M39 Igla
+				</English>
+				<Russian>
+				9М39 Игла
+				</Russian>
+			</Key>
+			<Key ID="STR_9K338C">
+				<English>
+				9M342 Igla-S
+				</English>
+				<Russian>
+				9М342 «Игла-С»
+				</Russian>
+			</Key>
+			<Key ID="STR_9M336">
+				<English>
+				9M336 Verba
+				</English>
+				<Russian>
+				9М336 «Верба»
+				</Russian>
+			</Key>
+			<Key ID="STR_strela">
+				<English>
+				9K32 Strela-2 (non-activated)
+				</English>
+				<Russian>
+				9К32 «Стрела-2» (не актив.)
+				</Russian>
+			</Key>
+			<Key ID="STR_strela2m">
+				<English>
+				9K32M Strela-2M (non-activated)
+				</English>
+				<Russian>
+				9К32М «Стрела-2М» (не актив.)
+				</Russian>
+			</Key>
+			<Key ID="STR_igla">
+				<English>
+				9K38 Igla (non-activated)
+				</English>
+				<Russian>
+				9К38 «Игла» (не актив.)
+				</Russian>
+			</Key>
+			<Key ID="STR_igla_used">
+				<English>
+				9K338 Igla (used)
+				</English>
+				<Russian>
+				9К38 «Игла» (использ.)
+				</Russian>
+			</Key>
+			<Key ID="STR_igla_c">
+				<English>
+				9K338 Igla-S (non-activated)
+				</English>
+				<Russian>
+				9К338 «Игла-С» (не актив.)
+				</Russian>
+			</Key>
+			<Key ID="STR_igla_c_used">
+				<English>
+				9K338 Igla-S (used)
+				</English>
+				<Russian>
+				9К338 «Игла-С» (использ.)
+				</Russian>
+			</Key>
+			<Key ID="STR_verba">
+				<English>
+				9K333 Verba (non-activated)
+				</English>
+				<Russian>
+				9К333 «Верба» (не актив.)
+				</Russian>
+			</Key>
+			<Key ID="STR_verba_used">
+				<English>
+				9K333 Verba (used)
+				</English>
+				<Russian>
+				9К333 «Верба» (использ.)
+				</Russian>
+			</Key>
+			<Key ID="STR_strela_active">
+				<English>
+				9K32 Strela-2
+				</English>
+				<Russian>
+				9К32 «Стрела-2»
+				</Russian>
+			</Key>
+			<Key ID="STR_strela_used">
+				<English>
+				9K32 Strela-2 (used)
+				</English>
+				<Russian>
+				9К32 «Стрела-2» (использ.)
+				</Russian>
+			</Key>
+			<Key ID="STR_strela2m_active">
+				<English>
+				9K32M Strela-2M 
+				</English>
+				<Russian>
+				9К32М «Стрела-2М»
+				</Russian>
+			</Key>
+			<Key ID="STR_strela2m_used">
+				<English>
+				9K32M Strela-2M (used)
+				</English>
+				<Russian>
+				9К32М «Стрела-2М» (использ.)
+				</Russian>
+			</Key>
+			<Key ID="STR_igla_active">
+				<English>
+				9K38 Igla
+				</English>
+				<Russian>
+				9К38 «Игла»
+				</Russian>
+			</Key>
+			<Key ID="STR_igla_c_active">
+				<English>
+				9K338 Igla-S
+				</English>
+				<Russian>
+				9К338 «Игла-С»
+				</Russian>
+			</Key>
+			<Key ID="STR_verba_active">
+				<English>
+				9K333 Verba
+				</English>
+				<Russian>
+				9К333 «Верба»
+				</Russian>
+			</Key>
+			<Key ID="STR_BTR82A">
+				<English>
+				BTR-82A (Late)
+				</English>
+				<Russian>
+				БТР-82А (Позд)
+				</Russian>
+			</Key>
+			<Key ID="STR_BTR82A2">
+				<English>
+				BTR-82A
+				</English>
+				<Russian>
+				БТР-82А
+				</Russian>
+			</Key>
+			<Key ID="STR_BTR80_poz">
+				<English>
+				BTR-80(Late)
+				</English>
+				<Russian>
+				БТР-80(Позд)
+				</Russian>
+			</Key>
+			<Key ID="STR_BTR80_nnvg">
+				<English>
+				BTR-80(No NVG)
+				</English>
+				<Russian>
+				БТР-80(Без ПНВ)
+				</Russian>
+			</Key>
+			<Key ID="STR_BTR82">
+				<English>
+				BTR-82 (Late)
+				</English>
+				<Russian>
+				БТР-82 (Позд)
+				</Russian>
+			</Key>
+			<Key ID="STR_BTR82_nvg">
+				<English>
+				BTR-82
+				</English>
+				<Russian>
+				БТР-82
+				</Russian>
+			</Key>
+			
+			<Key ID="STR_TU_CFGMAGAZINES_10RND_762X54R_NAME">
+				<English>
+				7N14 10Rnd. SVD Mag.
+				</English>
+				<Russian>
+				7Н14 10Птр. СВД Маг.
+				</Russian>
+			</Key>
+		</Container>
+	</Package>
+</Project>

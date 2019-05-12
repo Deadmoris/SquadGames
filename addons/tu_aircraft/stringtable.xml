@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project name="tu_aircraft">
+    <Package name="Names">
+		<Key ID="STR_TU_AIRCRAFT_SU35">
+			<English>Su35 Flanker E</English>
+			<Russian>СУ-35</Russian>
+		</Key>
+		<Key ID="STR_TU_AIRCRAFT_GSH301">
+			<English>GSh-30-1</English>
+			<Russian>ГШ-30-1</Russian>
+		</Key>
+		<Key ID="STR_TU_AIRCRAFT_R77">
+			<English>R-77 Adder</English>
+			<Russian>Р77</Russian>
+		</Key>
+		<Key ID="STR_TU_AIRCRAFT_R77_SHORT">
+			<English>R-77</English>
+			<Russian>Р77</Russian>
+		</Key>
+		<Key ID="STR_TU_AIRCRAFT_KAB500L">
+			<English>KAB-500L</English>
+			<Russian>КАБ-500Л</Russian>
+		</Key>
+		<Key ID="STR_TU_AIRCRAFT_AIM9X">
+			<English>AIM-9X Sidewinder</English>
+			<Russian>AIM-9X Sidewinder</Russian>
+		</Key>
+		<Key ID="STR_TU_AIRCRAFT_AIM9X_SHORT">
+			<English>AIM-9X</English>
+			<Russian>AIM-9X</Russian>
+		</Key>
+		<Key ID="STR_TU_AIRCRAFT_M61">
+			<English>M61 Vulcan</English>
+			<English>M61 Vulcan</English>
+		</Key>
+		<Key ID="STR_TU_AIRCRAFT_M61_SHORT">
+			<English>M61 20mm</English>
+			<English>M61 20mm</English>
+		</Key>
+		<Key ID="STR_TU_AIRCRAFT_120">
+			<English>AIM-120 AMRAAM</English>
+			<Russian>AIM-120 AMRAAM</Russian>
+		</Key>
+		<Key ID="STR_TU_AIRCRAFT_120_SHORT">
+			<English>AIM-120</English>
+			<Russian>AIM-120</Russian>
+		</Key>
+		<Key ID="STR_TU_AIRCRAFT_AGM84">
+			<English>AGM-84 Harpoon</English>
+			<Russian>AGM-84 Harpoon</Russian>
+		</Key>
+		<Key ID="STR_TU_AIRCRAFT_AGM84_SHORT">
+			<English>AGM-84</English>
+			<Russian>AGM-84</Russian>
+		</Key>
+		<Key ID="STR_TU_AIRCRAFT_AIM9M">
+			<English>AIM-9M Sidewinder</English>
+			<Russian>AIM-9M Sidewinder</Russian>
+		</Key>
+		<Key ID="STR_TU_AIRCRAFT_AIM9M_SHORT">
+			<English>AIM-9M</English>
+			<Russian>AIM-9M</Russian>
+		</Key>
+		<Key ID="STR_TU_AIRCRAFT_AIM7">
+			<English>AIM-7 Sparrow</English>
+			<Russian>AIM-7 Sparrow</Russian>
+		</Key>
+		<Key ID="STR_TU_AIRCRAFT_AIM7_SHORT">
+			<English>AIM-7</English>
+			<Russian>AIM-7</Russian>
+		</Key>
+		<Key ID="STR_TU_AIRCRAFT_AAM3">
+			<English>AAM-3</English>
+			<Russian>AAM-3</Russian>
+		</Key>
+		<Key ID="STR_TU_AIRCRAFT_AAM4">
+			<English>AAM-4</English>
+			<Russian>AAM-4</Russian>
+		</Key>
+		<Key ID="STR_TU_AIRCRAFT_GBU38">
+			<English>GBU38 JDAM 500 lbs</English>
+			<Russian>GBU38 JDAM 500 lbs</Russian>
+		</Key>
+		<Key ID="STR_TU_AIRCRAFT_GBU38_SHORT">
+			<English>GBU38</English>
+			<Russian>GBU38</Russian>
+		</Key>
+		<Key ID="STR_TU_AIRCRAFT_GBU32">
+			<English>GBU32 JDAM 1000lbs</English>
+			<Russian>GBU32 JDAM 1000lbs</Russian>
+		</Key>
+		<Key ID="STR_TU_AIRCRAFT_GBU32_SHORT">
+			<English>GBU38</English>
+			<Russian>GBU38</Russian>
+		</Key>
+		<Key ID="STR_TU_AIRCRAFT_GBU31">
+			<English>GBU31 JDAM 2000 lbs</English>
+			<Russian>GBU31 JDAM 2000 lbs</Russian>
+		</Key>
+		<Key ID="STR_TU_AIRCRAFT_GBU31_SHORT">
+			<English>GBU31</English>
+			<Russian>GBU31</Russian>
+		</Key>
+		<Key ID="STR_TU_AIRCRAFT_GATLING_25MM">
+			<English>GAU-12/U Cannon 25mm</English>
+			<Russian>GAU-12/U Cannon 25mm</Russian>
+		</Key>
+    </Package>
+</Project>
