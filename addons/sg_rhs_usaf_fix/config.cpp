@@ -80,6 +80,27 @@ class cfgAmmo
         indirectHit = 130;
 		indirectHitRange = 40;
     };
+	class B_127x99_Ball;
+	class B_127x99_SLAP;
+	class rhsusf_ammo_127x99_M33_Ball: B_127x99_Ball
+	{
+		caliber = 2.5;
+		hit = 30;
+	};
+	
+	class rhsusf_ammo_127x99_mk211 : rhsusf_ammo_127x99_M33_Ball {
+		hit = 35;
+		caliber = 2.8;
+	};
+	class rhs_ammo_127x99_Ball:B_127x99_Ball
+	{
+		caliber = 2.6;		
+	};
+
+	class rhs_ammo_127x99_SLAP: B_127x99_SLAP
+	{
+		caliber = 3.4;
+	};
 };
 
 class cfgVehicles

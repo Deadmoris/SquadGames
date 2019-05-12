@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project name="Arma3">
+  <Package name="STR">
+        <Key ID="STR_full_auto">
+          <Original>Auto</Original>
+          <English>Auto</English>
+          <Russian>Автомат.</Russian>
+        </Key>
+  </Package>
+</Project>
