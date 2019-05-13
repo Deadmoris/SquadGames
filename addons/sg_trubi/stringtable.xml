@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project name="sg_trubi">
+	<Package name="Weapons">
+		<Container name="AT">
+			<Key ID="STR_RPG18">
+			<English>
+			RPG-18
+			</English>
+			<Russian>
+			РПГ-18
+			</Russian>
+			</Key>
+			<Key ID="STR_RPG18_used">
+			<English>
+			RPG-18 (used)
+			</English>
+			<Russian>
+			РПГ-18 (исп.)
+			</Russian>
+			</Key>
+			<Key ID="STR_M72">
+			<English>
+			M72 LAW
+			</English>
+			<Russian>
+			M72
+			</Russian>
+			</Key>
+			<Key ID="STR_M72_used">
+			<English>
+			M72 LAW (used)
+			</English>
+			<Russian>
+			M72 (исп.)
+			</Russian>
+			</Key>
+		</Container>
+	</Package>
+</Project>
