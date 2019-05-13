@@ -100,6 +100,10 @@
 		<Original>Front gunner</Original>
 		<Russian>Стрелок на носу</Russian>
 	</Key>
+	<Key ID="STR_Loader_t55">
+		<Original>Loader</Original>
+		<Russian>Заряжающий</Russian>
+	</Key>
 	
 	
 </Container>

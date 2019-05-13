@@ -677,7 +677,7 @@
 				maxOutTurn = 90;
 				initOutTurn = 0;
 				soundElevation[] = {"",0.00316228,1};
-				soundServo[] = {"rhsafrf\addons\rhs_t72\sounds\traverse",7,1,30};
+				soundServo[] = {"rhsafrf\addons\rhs_btr70\sounds\hand_turret_servo",3.14125,1,30};
                 soundServoVertical[] = {"rhsafrf\addons\rhs_btr70\sounds\hand_turret_servo_elev.wss",1.141254,1,30};
 				class TurnIn //Ограничиваем вертикальный угол на жопу, чтобы пушка не уходила в текстуру
 				{
@@ -843,13 +843,15 @@
 					{
 						startEngine = 0;
 						forceHideGunner = 0;
+						gunnerForceOptics = 1;
+						
 						memoryPointGunnerOptics = "commanderview";
 						gunnerAction = "passenger_bench_1";
 						isPersonTurret = 1;
 						// personTurretAction = "vehicle_turnout_1";
 						gunnerInAction = "CUP_T55_Gunner_EP1";
 						animationSourceHatch = "hatchGunner";
-						gunnername = "Loader";
+						gunnername = "$STR_Loader_t55";
 						class OpticsIn
 						{
 							class Periscope: ViewOptics
@@ -858,7 +860,7 @@
 								minFov = 0.7;
 								maxFov = 0.7;
 								visionMode[] = {"Normal"};
-								gunnerOpticsModel = "\a3\weapons_f\reticle\Optics_Driver_01_f";
+								gunnerOpticsModel = "\rhsafrf\addons\rhs_optics\vehicles\rhs_tvn5.p3d";
 								gunnerOpticsEffect[] = {"TankGunnerOptics1","OpticsBlur2","OpticsCHAbera2"};
 							};
 						};
