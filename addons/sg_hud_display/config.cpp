@@ -3169,7 +3169,7 @@ class RscInGameUI
 					idc = 1;
 					style = "0x30 + 0x800";
 					sizeEx = "0.038*SafezoneH";
-					colorText[] = {0.706,0.0745,0.0196,1};
+					colorText[] = {0,0,0,1};
 					shadow = 0;
 					font = "EtelkaMonospacePro";
 					text = "\sg_cup_vehicles\data\t55_ret_w.paa";
@@ -3183,7 +3183,7 @@ class RscInGameUI
 					idc = 2;
 					style = "0x30 + 0x800";
 					sizeEx = "0.038*SafezoneH";
-					colorText[] = {0.706,0.0745,0.0196,1};
+					colorText[] = {0,0,0,1};
 					shadow = 0;
 					font = "EtelkaMonospacePro";
 					text = "\sg_cup_vehicles\data\t55_mark_w.paa";
@@ -3196,7 +3196,7 @@ class RscInGameUI
 				{
 					idc = 180;
 					style = 1;
-					colorText[] = {0.706,0.0745,0.0196,1};
+					colorText[] = {0,0,0,1};
 					sizeEx = "0.038*SafezoneH";
 					shadow = 0;
 					font = "EtelkaMonospacePro";
