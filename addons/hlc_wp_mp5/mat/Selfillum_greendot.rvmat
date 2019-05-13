@@ -1,0 +1,17 @@
+////////////////////////////////////////////////////////////////////
+//DeRap: hlc_wp_mp5\mat\Selfillum_greendot.rvmat
+//Produced from mikero's Dos Tools Dll version 6.24
+//'now' is Mon May 13 14:16:35 2019 : 'file' last modified on Tue Jan 09 08:45:00 2018
+//http://dev-heaven.net/projects/list_files/mikero-pbodll
+////////////////////////////////////////////////////////////////////
+
+#define _ARMA_
+
+ambient[] = {0.9300001,1,0.8870002,1};
+diffuse[] = {0.9300001,1,0.8870002,1};
+forcedDiffuse[] = {0,0,0,0};
+emmisive[] = {0.812,0.99499965,0.85499966,0.6610005};
+specular[] = {0.042999953,0.27999932,0.058999937,1};
+specularPower = 2.8;
+PixelShaderID = "Normal";
+VertexShaderID = "Basic";

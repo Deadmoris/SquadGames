@@ -1,0 +1,17 @@
+////////////////////////////////////////////////////////////////////
+//DeRap: hlc_wp_fal\mat\PSO_retillum.rvmat
+//Produced from mikero's Dos Tools Dll version 6.24
+//'now' is Mon May 13 14:15:42 2019 : 'file' last modified on Mon Jan 08 15:09:13 2018
+//http://dev-heaven.net/projects/list_files/mikero-pbodll
+////////////////////////////////////////////////////////////////////
+
+#define _ARMA_
+
+ambient[] = {0.5,1,0.5,1};
+diffuse[] = {0.312,1,0.29600033,1};
+forcedDiffuse[] = {0,1,0,0};
+emmisive[] = {0.1,0.5,0.1,1};
+specular[] = {0.1,0.5,0.1,1};
+specularPower = 100;
+PixelShaderID = "Normal";
+VertexShaderID = "Basic";

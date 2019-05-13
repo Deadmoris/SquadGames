@@ -1,0 +1,17 @@
+////////////////////////////////////////////////////////////////////
+//DeRap: hlc_wp_g3\mat\hk53\no_maps_plastic.rvmat
+//Produced from mikero's Dos Tools Dll version 6.24
+//'now' is Mon May 13 14:15:48 2019 : 'file' last modified on Fri Jan 12 08:18:44 2018
+//http://dev-heaven.net/projects/list_files/mikero-pbodll
+////////////////////////////////////////////////////////////////////
+
+#define _ARMA_
+
+ambient[] = {1,1,1,1};
+diffuse[] = {1,1,1,1};
+forcedDiffuse[] = {0,0,0,0};
+emmisive[] = {0,0,0,1};
+specular[] = {0.09,0.09,0.09,1};
+specularPower = 35;
+PixelShaderID = "Normal";
+VertexShaderID = "Basic";

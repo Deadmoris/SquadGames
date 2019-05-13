@@ -1,0 +1,17 @@
+PREP(addDigger);
+PREP(applyCamouflageAttribute);
+PREP(automaticFilePath);
+PREP(canHelpDiggingTrench);
+PREP(canPlaceCamouflage);
+PREP(canRemoveCamouflage);
+PREP(continueDiggingTrench);
+PREP(deleteCamouflage);
+PREP(getSurfaceTexturePath);
+PREP(initTrench);
+PREP(initTrench3DEN);
+PREP(placeCamouflage);
+PREP(placeConfirm);
+PREP(placeTrench);
+PREP(progressBar);
+PREP(removeCamouflage);
+PREP(removeTrench);

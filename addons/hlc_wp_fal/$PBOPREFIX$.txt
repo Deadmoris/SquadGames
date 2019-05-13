@@ -1,0 +1,6 @@
+///'hlc_wp_fal.pbo' from Mikero's dos tools, dll version 6.24///
+prefix=hlc_WP_FAL
+Mikero=DePbo.dll
+Pbo Type is: Arma Addon
+Sha: '5CD6EF166A4B9D82F3F6F7B492B3FDF23560B39E'
+//////</HEADER>//////

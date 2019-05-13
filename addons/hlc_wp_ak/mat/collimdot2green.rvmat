@@ -1,0 +1,22 @@
+////////////////////////////////////////////////////////////////////
+//DeRap: hlc_wp_ak\mat\collimdot2green.rvmat
+//Produced from mikero's Dos Tools Dll version 6.24
+//'now' is Mon May 13 14:14:51 2019 : 'file' last modified on Mon Jan 08 09:27:14 2018
+//http://dev-heaven.net/projects/list_files/mikero-pbodll
+////////////////////////////////////////////////////////////////////
+
+#define _ARMA_
+
+class StageTI
+{
+	texture = "a3\data_f\default_vehicle_ti_ca.paa";
+};
+ambient[] = {10,10,10,1};
+diffuse[] = {1,0,0,1};
+forcedDiffuse[] = {0,0,0,0};
+emmisive[] = {500,10,10,1};
+specular[] = {0,0,0,1};
+specularPower = 1;
+renderFlags[] = {"NoReceiveShadow","AddBlend","NoZwrite"};
+PixelShaderID = "Normal";
+VertexShaderID = "Basic";
