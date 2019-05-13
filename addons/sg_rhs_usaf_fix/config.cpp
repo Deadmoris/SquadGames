@@ -1743,25 +1743,6 @@ class cfgVehicles
 		radarType = 0;
 		weapons[] = {"rhs_weap_MASTERSAFE","RHS_weap_gau8","CMFlareLauncher"};
 		magazines[] = {"rhs_mag_1150Rnd_30x173_mixed","168Rnd_CMFlare_Chaff_Magazine"};
-		soundengineonint[] = {"tu_sound\sound_air_veh\a10\plane_cas_01\plane_cas_01_engine_start_int.ogg",1,1};
-		soundengineonext[] = {"tu_sound\sound_air_veh\a10\plane_cas_01\plane_cas_01_engine_start_ext.ogg",1,1,300};
-		soundengineoffint[] = {"tu_sound\sound_air_veh\a10\plane_cas_01\plane_cas_01_engine_shut_int.ogg",1,1};
-		soundengineoffext[] = {"tu_sound\sound_air_veh\a10\plane_cas_01\plane_cas_01_engine_shut_ext.ogg",1,1,300};
-		class sounds
-		{
-			soundsets[] = {"jsrs_plane_cas_01_enginelowext_soundset",
-			"jsrs_plane_cas_01_enginehighext_soundset",
-			"jsrs_plane_cas_01_forsageext_soundset",
-			"jsrs_plane_cas_01_windnoiseext_soundset",
-			"jsrs_plane_cas_01_engineext_dist_front_soundset",
-			"jsrs_plane_cas_01_engineext_middle_soundset",
-			"jsrs_plane_cas_01_engineext_dist_rear_soundset",
-			"jsrs_plane_cas_01_enginelowint_soundset",
-			"jsrs_plane_cas_01_enginehighint_soundset",
-			"jsrs_plane_cas_01_forsageint_soundset",
-			"jsrs_plane_cas_01_windnoiseint_soundset",
-			"jsrs_plane_cas_01_velocityint_soundset"};
-		};
 		soundLocked[]=
 		{
 			"\sg_rhs_usaf_fix\VulcanLock.ogg",

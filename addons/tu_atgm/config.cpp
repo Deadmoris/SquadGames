@@ -425,7 +425,8 @@ class CfgVehicles {
 	{
 		class EventHandlers;
 	};
-	class Tank_F: Car_F
+	class Tank;
+	class Tank_F: Tank
 	{
 		class EventHandlers;
 	};
