@@ -1,0 +1,453 @@
+class CfgPatches
+{
+	class 40th_bp_cfg
+	{
+		units[]=
+		{
+			"RD_6B3",
+			"RD_6B3_RF",
+			"RD_6B3_PK",
+			"RD_6B3_R148",
+			"RD_6B3_S",
+			"RD_6B3_S_RF",
+			"RD_6B3_S_PK"
+		};
+		weapons[]={};
+		requiredVersion=1;
+		requiredAddons[]=
+		{
+			"rhs_main",
+			"OKSV_units_addon"
+		};
+	};
+};
+class CfgSkeletons
+{
+	class Default
+	{
+		isDiscrete=1;
+		skeletonInherit="";
+		skeletonBones[]={};
+	};
+	class OFP2_ManSkeleton
+	{
+		isDiscrete=0;
+		skeletonInherit="";
+		skeletonBones[]=
+		{
+			"Pelvis",
+			"",
+			"Spine",
+			"Pelvis",
+			"Spine1",
+			"Spine",
+			"Spine2",
+			"Spine1",
+			"Spine3",
+			"Spine2",
+			"Camera",
+			"Pelvis",
+			"weapon",
+			"Spine1",
+			"launcher",
+			"Spine1",
+			"neck",
+			"Spine3",
+			"neck1",
+			"neck",
+			"head",
+			"neck1",
+			"Face_Hub",
+			"head",
+			"Face_Jawbone",
+			"Face_Hub",
+			"Face_Jowl",
+			"Face_Jawbone",
+			"Face_chopRight",
+			"Face_Jawbone",
+			"Face_chopLeft",
+			"Face_Jawbone",
+			"Face_LipLowerMiddle",
+			"Face_Jawbone",
+			"Face_LipLowerLeft",
+			"Face_Jawbone",
+			"Face_LipLowerRight",
+			"Face_Jawbone",
+			"Face_Chin",
+			"Face_Jawbone",
+			"Face_Tongue",
+			"Face_Jawbone",
+			"Face_CornerRight",
+			"Face_Hub",
+			"Face_CheekSideRight",
+			"Face_CornerRight",
+			"Face_CornerLeft",
+			"Face_Hub",
+			"Face_CheekSideLeft",
+			"Face_CornerLeft",
+			"Face_CheekFrontRight",
+			"Face_Hub",
+			"Face_CheekFrontLeft",
+			"Face_Hub",
+			"Face_CheekUpperRight",
+			"Face_Hub",
+			"Face_CheekUpperLeft",
+			"Face_Hub",
+			"Face_LipUpperMiddle",
+			"Face_Hub",
+			"Face_LipUpperRight",
+			"Face_Hub",
+			"Face_LipUpperLeft",
+			"Face_Hub",
+			"Face_NostrilRight",
+			"Face_Hub",
+			"Face_NostrilLeft",
+			"Face_Hub",
+			"Face_Forehead",
+			"Face_Hub",
+			"Face_BrowFrontRight",
+			"Face_Forehead",
+			"Face_BrowFrontLeft",
+			"Face_Forehead",
+			"Face_BrowMiddle",
+			"Face_Forehead",
+			"Face_BrowSideRight",
+			"Face_Forehead",
+			"Face_BrowSideLeft",
+			"Face_Forehead",
+			"Face_Eyelids",
+			"Face_Hub",
+			"Face_EyelidUpperRight",
+			"Face_Hub",
+			"Face_EyelidUpperLeft",
+			"Face_Hub",
+			"Face_EyelidLowerRight",
+			"Face_Hub",
+			"Face_EyelidLowerLeft",
+			"Face_Hub",
+			"EyeLeft",
+			"Face_Hub",
+			"EyeRight",
+			"Face_Hub",
+			"LeftShoulder",
+			"Spine3",
+			"LeftArm",
+			"LeftShoulder",
+			"LeftArmRoll",
+			"LeftArm",
+			"LeftForeArm",
+			"LeftArmRoll",
+			"LeftForeArmRoll",
+			"LeftForeArm",
+			"LeftHand",
+			"LeftForeArmRoll",
+			"LeftHandRing",
+			"LeftHand",
+			"LeftHandRing1",
+			"LeftHandRing",
+			"LeftHandRing2",
+			"LeftHandRing1",
+			"LeftHandRing3",
+			"LeftHandRing2",
+			"LeftHandPinky1",
+			"LeftHandRing",
+			"LeftHandPinky2",
+			"LeftHandPinky1",
+			"LeftHandPinky3",
+			"LeftHandPinky2",
+			"LeftHandMiddle1",
+			"LeftHand",
+			"LeftHandMiddle2",
+			"LeftHandMiddle1",
+			"LeftHandMiddle3",
+			"LeftHandMiddle2",
+			"LeftHandIndex1",
+			"LeftHand",
+			"LeftHandIndex2",
+			"LeftHandIndex1",
+			"LeftHandIndex3",
+			"LeftHandIndex2",
+			"LeftHandThumb1",
+			"LeftHand",
+			"LeftHandThumb2",
+			"LeftHandThumb1",
+			"LeftHandThumb3",
+			"LeftHandThumb2",
+			"RightShoulder",
+			"Spine3",
+			"RightArm",
+			"RightShoulder",
+			"RightArmRoll",
+			"RightArm",
+			"RightForeArm",
+			"RightArmRoll",
+			"RightForeArmRoll",
+			"RightForeArm",
+			"RightHand",
+			"RightForeArmRoll",
+			"RightHandRing",
+			"RightHand",
+			"RightHandRing1",
+			"RightHandRing",
+			"RightHandRing2",
+			"RightHandRing1",
+			"RightHandRing3",
+			"RightHandRing2",
+			"RightHandPinky1",
+			"RightHandRing",
+			"RightHandPinky2",
+			"RightHandPinky1",
+			"RightHandPinky3",
+			"RightHandPinky2",
+			"RightHandMiddle1",
+			"RightHand",
+			"RightHandMiddle2",
+			"RightHandMiddle1",
+			"RightHandMiddle3",
+			"RightHandMiddle2",
+			"RightHandIndex1",
+			"RightHand",
+			"RightHandIndex2",
+			"RightHandIndex1",
+			"RightHandIndex3",
+			"RightHandIndex2",
+			"RightHandThumb1",
+			"RightHand",
+			"RightHandThumb2",
+			"RightHandThumb1",
+			"RightHandThumb3",
+			"RightHandThumb2",
+			"LeftUpLeg",
+			"Pelvis",
+			"LeftUpLegRoll",
+			"LeftUpLeg",
+			"LeftLeg",
+			"LeftUpLegRoll",
+			"LeftLegRoll",
+			"LeftLeg",
+			"LeftFoot",
+			"LeftLegRoll",
+			"LeftToeBase",
+			"LeftFoot",
+			"RightUpLeg",
+			"Pelvis",
+			"RightUpLegRoll",
+			"RightUpLeg",
+			"RightLeg",
+			"RightUpLegRoll",
+			"RightLegRoll",
+			"RightLeg",
+			"RightFoot",
+			"RightLegRoll",
+			"RightToeBase",
+			"RightFoot"
+		};
+		pivotsModel="A3\anims_f\data\skeleton\SkeletonPivots.p3d";
+	};
+};
+class CfgModels
+{
+	class Default
+	{
+		sectionsInherit="";
+		sections[]={};
+		skeletonName="";
+	};
+	class ArmaMan: Default
+	{
+		htMin=60;
+		htMax=1800;
+		afMax=30;
+		mfMax=0;
+		mFact=1;
+		tBody=37;
+		sections[]=
+		{
+			"osobnost",
+			"Head_Injury",
+			"Body_Injury",
+			"l_leg_injury",
+			"l_arm_injury",
+			"r_arm_injury",
+			"r_leg_injury",
+			"injury_body",
+			"injury_legs",
+			"injury_hands",
+			"clan",
+			"clan_sign",
+			"Camo",
+			"CamoB",
+			"Camo1",
+			"Camo2",
+			"personality",
+			"hl",
+			"injury_head",
+			"insignia",
+			"ghillie_hide"
+		};
+		skeletonName="OFP2_ManSkeleton";
+	};
+	class RD54_6B3: ArmaMan
+	{
+	};
+	class RD54_6B3_R148: ArmaMan
+	{
+	};
+	class RD54_6B3_S: ArmaMan
+	{
+	};
+};
+class cfgVehicles
+{
+	class Bag_Base;
+	class RD_6B3: Bag_Base
+	{
+		author="Xeno";
+		scope=2;
+		model="40th_backpack\RD54_6B3.p3d";
+		picture="40th_backpack\ico\RD_ico.paa";
+		displayName="$STR_RD54_NAME";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"40th_backpack\data\data_rd54\RD-54_co.paa"
+		};
+		maximumLoad=160;
+		mass=20;
+	};
+	class RD_6B3_RF: RD_6B3
+	{
+		scope=1;
+		class TransportItems
+		{
+			class _xx_rhs_30Rnd_545x39_AK
+			{
+				name="rhs_30Rnd_545x39_AK";
+				count=8;
+			};
+			class _xx_FirstAidKit
+			{
+				name="FirstAidKit";
+				count=2;
+			};
+			class _xx_rhs_weap_rsp30_green
+			{
+				name="rhs_weap_rsp30_green";
+				count=2;
+			};
+			class _xx_rhs_weap_rsp30_red
+			{
+				name="rhs_weap_rsp30_red";
+				count=2;
+			};
+			class _xx_rhs_weap_rsp30_white
+			{
+				name="rhs_weap_rsp30_white";
+				count=2;
+			};
+		};
+	};
+	class RD_6B3_PK: RD_6B3
+	{
+		scope=1;
+		class TransportItems
+		{
+			class _xx_rhs_100Rnd_762x54mmR_green
+			{
+				name="rhs_100Rnd_762x54mmR_green";
+				count=3;
+			};
+			class _xx_FirstAidKit
+			{
+				name="FirstAidKit";
+				count=2;
+			};
+		};
+	};
+	class RD_6B3_S: RD_6B3
+	{
+		author="Xeno";
+		scope=2;
+		model="40th_backpack\RD54_6B3_S.p3d";
+		displayName="$STR_RD54_S_NAME";
+	};
+	class RD_6B3_S_RF: RD_6B3_S
+	{
+		scope=1;
+		class TransportItems
+		{
+			class _xx_rhs_30Rnd_545x39_AK
+			{
+				name="rhs_30Rnd_545x39_AK";
+				count=8;
+			};
+			class _xx_FirstAidKit
+			{
+				name="FirstAidKit";
+				count=2;
+			};
+			class _xx_rhs_weap_rsp30_green
+			{
+				name="rhs_weap_rsp30_green";
+				count=2;
+			};
+			class _xx_rhs_weap_rsp30_red
+			{
+				name="rhs_weap_rsp30_red";
+				count=2;
+			};
+			class _xx_rhs_weap_rsp30_white
+			{
+				name="rhs_weap_rsp30_white";
+				count=2;
+			};
+		};
+	};
+	class RD_6B3_S_PK: RD_6B3_S
+	{
+		scope=1;
+		class TransportItems
+		{
+			class _xx_rhs_100Rnd_762x54mmR_green
+			{
+				name="rhs_100Rnd_762x54mmR_green";
+				count=3;
+			};
+			class _xx_FirstAidKit
+			{
+				name="FirstAidKit";
+				count=2;
+			};
+		};
+	};
+	class RD_6B3_R148: RD_6B3
+	{
+		author="Xeno";
+		scope=2;
+		model="40th_backpack\RD54_6B3_R148.p3d";
+		displayName="$STR_RD54_148";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"40th_backpack\data\data_rd54\RD-54_co.paa"
+		};
+		maximumLoad=80;
+		mass=30;
+		tf_encryptionCode="tf_east_radio_code";
+		tf_dialog="rt1523g_radio_dialog";
+		tf_subtype="digital";
+		tf_range=6000;
+		tf_hasLRradio=1;
+	};
+};
+class cfgMods
+{
+	author="Basher";
+	timepacked="1545954541";
+};

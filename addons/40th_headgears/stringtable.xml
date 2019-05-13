@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="40th_headgears">
+  <Package name="40th_headgears_str">
+    <Container name="Names">
+	  <Key ID="STR_PANAMA">
+        <Original>Panama model 1955</Original>
+        <English>Panama model 1955</English>
+        <Russian>Панама обр. 1955</Russian>
+      </Key>
+	  <Key ID="STR_ssh68_kzs">
+        <Original>SSh-68 (KZS)</Original>
+        <English>SSh-68 (KZS)</English>
+        <Russian>СШ-68 (КЗС)</Russian>
+      </Key>
+	  <Key ID="STR_ssh68_khaki">
+        <Original>SSh-68 (Dark green)</Original>
+        <English>SSh-68 (Dark green)</English>
+        <Russian>СШ-68 (Тёмно-зелёная)</Russian>
+      </Key>
+	  <Key ID="STR_ssh68_reg">
+        <Original>SSh-68 (Military Police)</Original>
+        <English>SSh-68 (Military Police)</English>
+        <Russian>СШ-68 (Регулировщик)</Russian>
+      </Key>
+	  <Key ID="STR_ssh68_cy">
+        <Original>SSh-68 (Paint Sand)</Original>
+        <English>SSh-68 (Paint Sand)</English>
+        <Russian>СШ-68 (Жёлтые пятна)</Russian>
+      </Key>
+	  <Key ID="STR_ssh68_cg">
+        <Original>SSh-68 (Paint Green)</Original>
+        <English>SSh-68 (Paint Green)</English>
+        <Russian>СШ-68 (Зелёные пятна)</Russian>
+      </Key>
+	  <Key ID="STR_DS_SSh_KZS">
+        <Original>Steel helmet model 1968 with KZS cover</Original>
+        <English>Steel helmet model 1968 with KZS cover</English>
+        <Russian>Стальной шлем образца 1968 года с чехлом КЗС</Russian>
+      </Key>
+	  <Key ID="STR_DS_SSh_Khaki">
+        <Original>Steel helmet model 1968</Original>
+        <English>Steel helmet model 1968</English>
+        <Russian>Стальной шлем образца 1968 года</Russian>
+      </Key>
+	  <Key ID="STR_DS_SSh_reg">
+        <Original>Steel helmet model 1968 for military adjusters</Original>
+        <English>Steel helmet model 1968 for military adjusters</English>
+        <Russian>Стальной шлем образца 1968 года для регулировщиков</Russian>
+      </Key>
+	  <Key ID="STR_DS_Panama">
+        <Original>Panama for a hot climate with a green star</Original>
+        <English>Panama for a hot climate with a green star</English>
+        <Russian>Панама для жаркого климата со звездой защитного цвета</Russian>
+      </Key>
+	   <Key ID="STR_DS_Butan_cap">
+        <Original>Field cap in TTsKO camo</Original>
+        <English>Field cap in TTsKO camo</English>
+        <Russian>Полевая кепка в расцветке "Бутан"</Russian>
+      </Key>
+	  <Key ID="STR_DS_SSh_Camo_yel">
+        <Original>Steel helmet model 1968 with yellow camo</Original>
+        <English>Steel helmet model 1968 with yellow camo</English>
+        <Russian>Стальной шлем образца 1968 года с жёлтыми пятнами</Russian>
+      </Key>
+	  <Key ID="STR_DS_SSh_Camo_gr">
+        <Original>Steel helmet model 1968 with green camo</Original>
+        <English>Steel helmet model 1968 with green camo</English>
+        <Russian>Стальной шлем образца 1968 года с зелёными пятнами</Russian>
+      </Key>
+    </Container>
+  </Package>
+</Project>

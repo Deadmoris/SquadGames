@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="40th_uni">
+  <Package name="40th_uni_str">
+    <Container name="Names">
+	  <Key ID="STR_M88_Afghanka">
+        <Original>Field uniform model 1988 (VDV)</Original>
+        <English>Field uniform model 1988 (VDV)</English>
+        <Russian>Полевая униформа обр. 1988 (ВДВ)</Russian>
+      </Key>
+	  <Key ID="STR_M88_Afghanka_reg">
+        <Original>Field uniform model 1988 (Military Police)</Original>
+        <English>Field uniform model 1988 (Military Police)</English>
+        <Russian>Полевая униформа обр. 1988 (Регулировщик)</Russian>
+      </Key>
+	  <Key ID="STR_Butan_M88_vdv">
+        <Original>Field uniform model 1988 for VDV</Original>
+        <English>Field uniform model 1988 for VDV</English>
+        <Russian>Полевая униформа обр. 1988 для ВДВ</Russian>
+      </Key>
+	  <Key ID="STR_pilot_suit_ttsko">
+        <Original>Pilot suit (TTsKO)</Original>
+        <English>Pilot suit (TTsKO)</English>
+        <Russian>Костюм пилота (Бутан)</Russian>
+      </Key>
+	  <Key ID="STR_DS_Afghanka">
+        <Original>Experimental field uniform for Soviet Army</Original>
+        <English>Experimental field uniform for Soviet Army</English>
+        <Russian>Экспериментальная полевая форма Советской Армии образца 1988 года</Russian>
+      </Key>
+	  <Key ID="STR_DS_Afghanka_reg">
+        <Original>Experimental field uniform for Soviet Army for military adjusters</Original>
+        <English>Experimental field uniform for Soviet Army for military adjusters</English>
+        <Russian>Экспериментальная полевая форма Советской Армии образца 1988 года для регулировщиков</Russian>
+      </Key>
+	  <Key ID="STR_DS_Butan">
+        <Original>Soviet Army field uniform in TTsKO camo</Original>
+        <English>Soviet Army field uniform in TTsKO camo</English>
+        <Russian>Полевая форма Советской Армии образца 1988 года в расцветке Бутан</Russian>
+      </Key>
+	  <Key ID="STR_DS_Butan_vdv">
+        <Original>Soviet Army field uniform in TTsKO camo for VDV</Original>
+        <English>Soviet Army field uniform in TTsKO camo for VDV</English>
+        <Russian>Полевая форма Советской Армии образца 1988 года в расцветке Бутан с тельняшкой для ВДВ</Russian>
+      </Key>
+    </Container>
+  </Package>
+</Project>

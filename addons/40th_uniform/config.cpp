@@ -1,0 +1,238 @@
+class CfgPatches
+{
+	class 40th_uniforms_conf
+	{
+		units[]={};
+		weapons[]={};
+		requiredVersion=1;
+		requiredAddons[]=
+		{
+			"rhs_main"
+		};
+	};
+};
+class cfgVehicles
+{
+	class O_Soldier_base_F;
+	class vdv_desert_M88: O_Soldier_base_F
+	{
+		author="Basher";
+		scope=1;
+		scopeCurator=0;
+		scopeArsenal=0;
+		displayName="$STR_M88_Afghanka";
+		descriptionShort="$STR_DS_Afghanka";
+		model="\rhsafrf\addons\rhs_infantry\rhs_msv_base.p3d";
+		uniformClass="m88_desert_vdv";
+		class Wounds
+		{
+			tex[]={};
+			mat[]=
+			{
+				"rhsafrf\addons\rhs_infantry\data\flora.rvmat",
+				"rhsafrf\addons\rhs_infantry\data\flora_w1.rvmat",
+				"rhsafrf\addons\rhs_infantry\data\flora_w2.rvmat",
+				"rhsafrf\addons\rhs_infantry\data\flora_bz.rvmat",
+				"rhsafrf\addons\rhs_infantry\data\flora_bz_w1.rvmat",
+				"rhsafrf\addons\rhs_infantry\data\flora_bz_w2.rvmat",
+				"rhsafrf\addons\rhs_infantry\data\flora_vydra.rvmat",
+				"rhsafrf\addons\rhs_infantry\data\flora_vydra_w1.rvmat",
+				"rhsafrf\addons\rhs_infantry\data\flora_vydra_w2.rvmat",
+				"rhsafrf\addons\rhs_infantry\data\6b23.rvmat",
+				"rhsafrf\addons\rhs_infantry\data\6b23_w1.rvmat",
+				"rhsafrf\addons\rhs_infantry\data\6b23_w2.rvmat"
+			};
+		};
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"camob",
+			"insignia"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\40th_uniform\data\afghanka_vdv.paa",
+			"",
+			""
+		};
+	};
+	class mp_desert_M88: vdv_desert_M88
+	{
+		displayName="$STR_M88_Afghanka_reg";
+		descriptionShort="$STR_DS_Afghanka_reg";
+		uniformClass="m88_desert_mp";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"camob",
+			"insignia"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\40th_uniform\data\afghanka_reg.paa",
+			"",
+			""
+		};
+	};
+	class vdv_ttsko_m88: vdv_desert_M88
+	{
+		author="Basher";
+		displayName="$STR_Butan_M88_vdv";
+		descriptionShort="$STR_DS_Butan_vdv";
+		uniformClass="m88_ttsko_vdv";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"camob",
+			"insignia"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\40th_uniform\data\butan_vdv.paa",
+			"",
+			"",
+			"\40th_insignia\data\VDV.paa"
+		};
+	};
+	class uni_ttsko_pilot_suit: O_Soldier_base_F
+	{
+		author="Soviet Army: Rearmed";
+		scope=1;
+		scopeCurator=0;
+		scopeArsenal=0;
+		displayName="$STR_pilot_suit_ttsko";
+		model="\rhsafrf\addons\rhs_infantry\rhs_pilot_base.p3d";
+		uniformClass="pilot_suit_ttsko";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\40th_uniform\data\butan_pilot.paa"
+		};
+		picture="\rhsafrf\addons\rhs_infantry\Data\inventory\gear_icon_df15_ca.paa";
+	};
+};
+class cfgWeapons
+{
+	class Uniform_Base;
+	class UniformItem;
+	class m88_desert_vdv: Uniform_Base
+	{
+		author="Basher";
+		scope=2;
+		displayName="$STR_M88_Afghanka";
+		descriptionShort="$STR_DS_Afghanka";
+		picture="\rhsafrf\addons\rhs_infantry\Data\inventory\gear_icon_flora_ca.paa";
+		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_soldier";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"camob",
+			"insignia"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\40th_uniform\data\afghanka_vdv.paa",
+			"",
+			""
+		};
+		class ItemInfo: UniformItem
+		{
+			uniformModel="-";
+			uniformClass="vdv_desert_M88";
+			containerClass="Supply40";
+			mass=60;
+		};
+	};
+	class m88_desert_mp: m88_desert_vdv
+	{
+		author="Basher";
+		scope=2;
+		displayName="$STR_M88_Afghanka_reg";
+		descriptionShort="$STR_DS_Afghanka_reg";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"camob",
+			"insignia"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\40th_uniform\data\afghanka_reg.paa",
+			"",
+			""
+		};
+		class ItemInfo: UniformItem
+		{
+			uniformModel="-";
+			uniformClass="mp_desert_M88";
+			containerClass="Supply40";
+			mass=60;
+		};
+	};
+	class m88_ttsko_vdv: m88_desert_vdv
+	{
+		author="Basher";
+		scope=2;
+		displayName="$STR_Butan_M88_vdv";
+		descriptionShort="$STR_DS_Butan_vdv";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"camob",
+			"insignia"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\40th_uniform\data\butan_vdv.paa",
+			"",
+			"",
+			"\40th_insignia\data\VDV.paa"
+		};
+		class ItemInfo: UniformItem
+		{
+			uniformModel="-";
+			uniformClass="vdv_ttsko_m88";
+			containerClass="Supply40";
+			mass=60;
+		};
+	};
+	class pilot_suit_ttsko: Uniform_Base
+	{
+		author="Basher";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		displayName="$STR_pilot_suit_ttsko";
+		picture="\rhsafrf\addons\rhs_infantry\Data\inventory\gear_icon_df15_ca.paa";
+		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_soldier";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\40th_uniform\data\butan_pilot.paa"
+		};
+		class ItemInfo: UniformItem
+		{
+			uniformModel="-";
+			uniformClass="uni_ttsko_pilot_suit";
+			containerClass="Supply40";
+			mass=60;
+		};
+	};
+};
+class cfgMods
+{
+	author="Basher";
+	timepacked="1545954568";
+};

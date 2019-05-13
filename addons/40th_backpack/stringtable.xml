@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="40th_bp">
+  <Package name="40th_bp_str">
+    <Container name="Names">
+      <Key ID="STR_RD54_NAME">
+        <Original>Rukzack Desantnika 1954</Original>
+        <English>Rukzack Desantnika 1954</English>
+        <Russian>Рюкзак Десантника обр.1954</Russian>
+      </Key>
+      <Key ID="STR_RD54_S_NAME">
+        <Original>Rukzack Desantnika 1954 (MPL-50)</Original>
+        <English>Rukzack Desantnika 1954 (MPL-50)</English>
+        <Russian>Рюкзак Десантника обр.1954 (МПЛ-50)</Russian>
+      </Key>
+	  <Key ID="STR_RD54_148">
+        <Original>Rukzack Desantnika 1954 (R-148)</Original>
+        <English>Rukzack Desantnika 1954 (R-148)</English>
+        <Russian>Рюкзак Десантника обр.1954 (Р-148)</Russian>
+      </Key>
+    </Container>
+  </Package>
+</Project>

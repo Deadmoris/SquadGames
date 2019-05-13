@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="40thArmy">
+  <Package name="soviet_config">
+    <Container name="Names">
+      <Key ID="STR_40th_faction">
+        <Original>Limited Contingent of Soviet Forces in Afghanistan</Original>
+        <English>Limited Contingent of Soviet Forces in Afghanistan</English>
+        <Russian>Ограниченный Контингент Советских Войск в Афганистане</Russian>
+      </Key>
+	  <Key ID="STR_40th_faction_wood">
+        <Original>Soviet Army</Original>
+        <English>Soviet Army</English>
+        <Russian>Советская армия</Russian>
+      </Key>
+	  <Key ID="STR_40th_faction_afg_vdv">
+        <Original>Infantry (VDV)</Original>
+        <English>Infantry (VDV)</English>
+        <Russian>Пехота (ВДВ)</Russian>
+      </Key>
+	  <Key ID="STR_40th_faction_afg_mp">
+        <Original>Infantry (MP)</Original>
+        <English>Infantry (MP)</English>
+        <Russian>Пехота (Комендатура)</Russian>
+      </Key>
+	  <Key ID="STR_oksv_rifleman">
+        <Original>Rifleman</Original>
+        <English>Rifleman</English>
+        <Russian>Стрелок</Russian>
+      </Key>
+	  <Key ID="STR_oksv_rifleman_rpg">
+        <Original>Rifleman (RPG)</Original>
+        <English>Rifleman (RPG)</English>
+        <Russian>Стрелок (РПГ)</Russian>
+      </Key>
+	  <Key ID="STR_oksv_rto">
+        <Original>RTO</Original>
+        <English>RTO</English>
+        <Russian>Радист</Russian>
+      </Key>
+	  <Key ID="STR_oksv_wns">
+        <Original>Rifleman (no gear)</Original>
+        <English>Rifleman (no gear)</English>
+        <Russian>Стрелок (без снаряжения)</Russian>
+      </Key>
+	  <Key ID="STR_oksv_officer">
+        <Original>Officer</Original>
+        <English>Officer</English>
+        <Russian>Офицер</Russian>
+      </Key>
+	  <Key ID="STR_oksv_marksman">
+        <Original>Marksman</Original>
+        <English>Marksman</English>
+        <Russian>Снайпер</Russian>
+      </Key>
+	  <Key ID="STR_oksv_marksman_panama">
+        <Original>Marksman (Panama)</Original>
+        <English>Marksman (Panama)</English>
+        <Russian>Снайпер (Панама)</Russian>
+      </Key>
+	  <Key ID="STR_oksv_machinegunne">
+        <Original>Machine Gunner (PKM)</Original>
+        <English>Machine Gunner (PKM)</English>
+        <Russian>Первый номер расчёта ПКМ</Russian>
+      </Key>
+	  <Key ID="STR_oksv_secnumber">
+        <Original>Machine Gunner Assistant</Original>
+        <English>Machine Gunner Assistant</English>
+        <Russian>Второй номер расчёта ПКМ</Russian>
+      </Key>
+	  <Key ID="STR_oksv_crew">
+        <Original>Crew</Original>
+        <English>Crew</English>
+        <Russian>Экипаж</Russian>
+      </Key>
+	  <Key ID="STR_oksv_serg">
+        <Original>Sergeant</Original>
+        <English>Sergeant</English>
+        <Russian>Сержант</Russian>
+      </Key>
+	  <Key ID="STR_oksv_driver">
+        <Original>Driver</Original>
+        <English>Driver</English>
+        <Russian>Водитель</Russian>
+      </Key>
+	  <Key ID="STR_oksv_medic">
+        <Original>Medic</Original>
+        <English>Medic</English>
+        <Russian>Санинструктор</Russian>
+      </Key>
+	  <Key ID="STR_oksv_reg">
+        <Original>Military policeman</Original>
+        <English>Military policeman</English>
+        <Russian>Регулировщик</Russian>
+      </Key>
+	  <Key ID="STR_oksv_reg_arm">
+        <Original>Military policeman (Armed)</Original>
+        <English>Military policeman (Armed)</English>
+        <Russian>Регулировщик (Вооружёенный)</Russian>
+      </Key>
+	  <Key ID="STR_oksv_reg_bv">
+        <Original>Military policeman (Armored)</Original>
+        <English>Military policeman (Armored)</English>
+        <Russian>Регулировщик (Бронежилет)</Russian>
+      </Key>
+	  <Key ID="STR_oksv_pilot_cargo_ttsko">
+        <Original>Helicopter pilot</Original>
+        <English>Helicopter pilot</English>
+        <Russian>Пилот вертолёта</Russian>
+      </Key>
+	  <Key ID="STR_oksv_zil131_open">
+        <Original>ZiL 131 (Open)</Original>
+        <English>ZiL 131 (Open)</English>
+        <Russian>ЗиЛ 131 (Открытый)</Russian>
+      </Key>
+	  <Key ID="STR_oksv_zil131">
+        <Original>ZiL 131</Original>
+        <English>ZiL 131</English>
+        <Russian>ЗиЛ 131</Russian>
+      </Key>
+	  <Key ID="STR_oksv_btr_70_mp">
+        <Original>BTR-70 (Military Police)</Original>
+        <English>BTR-70 (Military Police)</English>
+        <Russian>БТР-70 (Комендатура)</Russian>
+      </Key>
+	  <Key ID="STR_oksv_nsv">
+        <Original>NSV-12,7 "Utes"</Original>
+        <English>NSV-12,7 "Utes"</English>
+        <Russian>НСВ-12,7 "Утёс"</Russian>
+      </Key>
+	  <Key ID="STR_oksv_ags">
+        <Original>AGS-30 (6T7)</Original>
+        <English>AGS-30 (6T7)</English>
+        <Russian>АГС-30 (6Т7)</Russian>
+      </Key>
+	  <Key ID="STR_oksv_zu23">
+        <Original>ZU-23-2</Original>
+        <English>ZU-23-2</English>
+        <Russian>ЗУ-23-2</Russian>
+      </Key>
+	  <Key ID="STR_oksv_brdm2">
+        <Original>BRDM-2</Original>
+        <English>BRDM-2</English>
+        <Russian>БРДМ-2</Russian>
+      </Key>
+	  <Key ID="STR_oksv_brdm2um">
+        <Original>BRDM-2UM</Original>
+        <English>BRDM-2UM</English>
+        <Russian>БРДМ-2УМ</Russian>
+      </Key>
+	  <Key ID="STR_oksv_wood_brdm2ATGM">
+        <Original>BRDM-2 (9P148)</Original>
+        <English>BRDM-2 (9P148)</English>
+        <Russian>БРДМ-2 (9П148)</Russian>
+      </Key>
+	  <Key ID="STR_oksv_wood_brdm2HQ">
+        <Original>BRDM-2UM (Armed)</Original>
+        <English>BRDM-2UM (Armed)</English>
+        <Russian>БРДМ-2УМ (Вооруженная)</Russian>
+      </Key>
+	  <Key ID="STR_40th_dshb">
+        <Original>Infantry</Original>
+        <English>Infantry</English>
+        <Russian>Пехота</Russian>
+      </Key>
+	  <Key ID="STR_40th_squad_bmd2">
+        <Original>Air Assault Troops (BMD-2)</Original>
+        <English>Air Assault Troops (BMD-2)</English>
+        <Russian>Десантно-штурмовое отделение (БМД-2)</Russian>
+      </Key>
+	  <Key ID="STR_40th_squad_bmp2">
+        <Original>Squadron (BMP-2)</Original>
+        <English>Squadron (BMP-2)</English>
+        <Russian>Отделение (БМП-2)</Russian>
+      </Key>
+	  <Key ID="STR_40th_squad_bmp1">
+        <Original>Squadron (BMP-1)</Original>
+        <English>Squadron (BMP-1)</English>
+        <Russian>Отделение (БМП-1)</Russian>
+      </Key>
+	  <Key ID="STR_40th_squad">
+        <Original>Squadron</Original>
+        <English>Squadron</English>
+        <Russian>Отделение</Russian>
+      </Key>
+	  <Key ID="STR_40th_patrol">
+        <Original>Patrol</Original>
+        <English>Patrol</English>
+        <Russian>Патруль</Russian>
+      </Key>
+	  <Key ID="STR_40th_medics">
+        <Original>Medics</Original>
+        <English>Medics</English>
+        <Russian>Санитарная группа</Russian>
+      </Key>
+	  <Key ID="STR_40th_squad_crew">
+        <Original>Crew</Original>
+        <English>Crew</English>
+        <Russian>Расчёты</Russian>
+      </Key>
+	  <Key ID="STR_40th_squad_pkm">
+        <Original>PKM Crew</Original>
+        <English>PKM Crew</English>
+        <Russian>Расчёт ПКМ</Russian>
+      </Key>
+	  <Key ID="STR_40th_squad_ft">
+        <Original>Fire Team</Original>
+        <English>Fire Team</English>
+        <Russian>Звено</Russian>
+      </Key>
+	  <Key ID="STR_40th_squad_hq">
+        <Original>HQ</Original>
+        <English>HQ</English>
+        <Russian>Штаб</Russian>
+      </Key>
+	  <Key ID="STR_40th_squad_hq_car">
+        <Original>HQ (UAZ)</Original>
+        <English>HQ (UAZ)</English>
+        <Russian>Штаб (УАЗ)</Russian>
+      </Key>
+	  <Key ID="STR_40th_squad_vdv">
+        <Original>Airborne Troops</Original>
+        <English>Airborne Troops</English>
+        <Russian>Десантники</Russian>
+      </Key>
+    </Container>
+  </Package>
+</Project>

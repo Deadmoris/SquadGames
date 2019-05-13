@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="sar">
+  <Package name="sar_flags">
+    <Container name="Names">
+	  <Key ID="STR_sar_flag_ussr">
+        <Original>Flag (USSR)</Original>
+        <English>Flag (USSR)</English>
+        <Russian>Флаг (СССР)</Russian>
+      </Key>
+	  <Key ID="STR_sar_flag_ussr_vdv">
+        <Original>Flag (VDV USSR)</Original>
+        <English>Flag (VDV USSR)</English>
+        <Russian>Флаг (ВДВ СССР)</Russian>
+      </Key>
+	  <Key ID="STR_sar_flag_ussr_short">
+        <Original>Flag (USSR/Short)</Original>
+        <English>Flag (USSR/Short)</English>
+        <Russian>Флаг (СССР/Короткий)</Russian>
+      </Key>
+	  <Key ID="STR_sar_flag_ussr_vdv_short">
+        <Original>Flag (VDV USSR/Short)</Original>
+        <English>Flag (VDV USSR/Short)</English>
+        <Russian>Флаг (ВДВ СССР/Короткий)</Russian>
+      </Key>
+    </Container>
+  </Package>
+</Project>

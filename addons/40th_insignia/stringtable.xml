@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="40th_insignia">
+  <Package name="40th_insignia_str">
+    <Container name="Names">
+	  <Key ID="STR_40th_vdv_patch">
+        <Original>USSR VDV</Original>
+        <English>USSR VDV</English>
+        <Russian>Шеврон ВэДэВэшный</Russian>
+      </Key>
+    </Container>
+  </Package>
+</Project>

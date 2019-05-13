@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="sar_weapons">
+  <Package name="weapons">
+    <Container name="Names">
+	  <Key ID="STR_SVD_WOOD">
+        <Original>SVD</Original>
+        <English>SVD</English>
+        <Russian>СВД</Russian>
+      </Key>
+    </Container>
+  </Package>
+</Project>
