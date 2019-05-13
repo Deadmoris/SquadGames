@@ -1,0 +1,51 @@
+﻿/**
+Stores an array of classnames and service dates.
+Returns a CBA hash constructed from the same array.
+*/
+private _bn_test_suite_dates = [
+	["rhs_rpg7_OG7V_mag",[1999,0]],
+	["rhs_rpg7_PG7VL_mag",[1977,0]],
+	["rhs_rpg7_PG7VR_mag",[1988,0]],
+	["rhs_rpg7_TBG7V_mag",[1988,0]],
+	["rhs_rpg7_PG7V_mag",[1961,1980]],
+	["rhs_30Rnd_545x39_7N22_AK",[1998,0]],
+	["rhs_45Rnd_545x39_7N22_AK",[1998,0]],
+	["tu_rhs_60Rnd_545X39_7N22_AK",[1998,0]],
+	["rhs_30Rnd_545x39_AK",[0,1992]],
+	["rhs_45Rnd_545x39_AK",[0,1992]],
+	["rhs_weap_m4a1_carryhandle",[1994,0]],
+	["rhs_mag_30Rnd_556x45_M855A1_Stanag",[2010,0]],
+	["rhs_mag_30Rnd_556x45_Mk318_Stanag",[2010,0]],
+	["rhs_mag_30Rnd_556x45_Mk262_Stanag",[2002,0]],
+	["rhs_weap_rpg18",[1972,1993]],
+	["rhs_weap_rpg26",[1985,0]],
+	["tu_RPG32",[2013,0]],
+	["rhs_weap_rshg2",[2000,0]],
+	["rhs_weap_fgm148",[1996,0]],
+	["rhs_weap_m72a7",[1963,0]],
+	["rhs_weap_svds",[1995,0]],
+	["RH_M16a1",[1967,1985]],
+	["RH_M16a2",[1983,0]],
+	["BWA3_MG3",[1960,0]],
+	["BWA3_MG4",[2005,0]],
+	["BWA3_MG5",[2010,0]],
+	["CUP_glaunch_M79",[1961,0]],
+	["hlc_lmg_m60",[1957,0]],
+	["hlc_lmg_m60e4",[1995,0]],
+	["rhs_weap_m76",[1976,0]],
+	["rhs_weap_m92",[1995,0]],
+	["RH_SAMR",[2001,2015]],
+	["rhs_weap_asval",[1987,0]],
+	["rhs_weap_vss",[1987,0]],
+	["CUP_srifle_ksvk",[2000,0]],
+	["tu_rhs_weap_fim92A",[1981,0]],
+	["tu_rhs_weap_fim92C",[1981,1991]],
+	["tu_rhs_weap_fim92E",[1995,0]],
+	["rhs_weap_igla",[2002,0]],
+	["rhs_weap_strela",[1968,0]],
+	["tu_rhs_weap_igla",[1983,0]],
+	["rhs_weap_smaw",[1984,0]],
+	["pzn_rpom",[2004,0]]
+];
+
+[_bn_test_suite_dates,[0,0]] call CBA_fnc_hashCreate

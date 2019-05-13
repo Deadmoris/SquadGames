@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project name="CUP">
+	<Package name="Weapons">
+		<Container name="RPG18">
+			<Key ID="STR_CUP_dn_rpg18">
+				  <Original>RPG18</Original>
+				  <French>RPG18</French>
+				  <Spanish>RPG18</Spanish>
+				  <Italian>RPG18</Italian>
+				  <Hungarian>RPG18</Hungarian>
+				  <Polish>RPG18</Polish>
+				  <Russian>РПГ-18 'Муха'</Russian>
+				  <German>RPG18</German>
+				  <Czech>RPG18</Czech>
+				  <English>RPG18</English>
+				  <Japanese>RPG18</Japanese>
+			</Key>
+			<Key ID="STR_CUP_dss_rpg18">
+				  <Original>Anti-tank missile launcher &lt;br/&gt;Unguided</Original>
+				  <French>Lance-missiles anti-blindés &lt;br/&gt;Non guidés</French>
+				  <Spanish>Lanzamisiles antitanque &lt;br/&gt;No dirigido</Spanish>
+				  <Italian>Lanciamissili anticarro &lt;br/&gt;Non guidati</Italian>
+				  <Hungarian>Tankelhárító rakéta &lt;br/&gt; Irányítatlan</Hungarian>
+				  <Polish>Wyrzutnia rakiet przeciwpancernych &lt;br/&gt;Niekierowane</Polish>
+				  <Russian>Реактивная противотанковая граната</Russian>
+				  <German>Panzerabwehr-Raketenwerfer &lt;br/&gt;Ungelenkt</German>
+				  <Czech>Odpalovací zařízení protitankových střel &lt;br/&gt;Neřízené</Czech>
+				  <English>Anti-tank missile launcher &lt;br/&gt;Unguided</English>
+				  <Japanese>Anti-tank missile launcher &lt;br/&gt;Unguided</Japanese>
+			</Key>
+			<Key ID="STR_CUP_lib_rpg18">
+				  <Original>The RPG-18 Mukah (in English: Fly) is a short-range, disposable, light weight anti-tank rocket launcher made in Russia.&lt;br/&gt;The RPG-18 fires a 64 mm warhead mounted on small rocket with an effective range of 200 m. This weapon is able to penetrate up to 375mm of conventional armor and is not reloadable.</Original>
+				  <French>Le RPG-18 Mukah (Mouche en français) est un lance-roquettes courte portée jetable fabriqué en Russie.&lt;br/&gt;Le RPG-18 expédie une roquette de 64 mm d'une portée pratique de 200 m. Cette arme à usage unique peut pénétrer 375 mm de blindage classique.</French>
+				  <Spanish>El RPG-18 Mukah ("Mosca" en español) es un lanzacohetes antitanque de corto alcance ligero y desechable de fabricación rusa.&lt;br/&gt;El RPG-18 dispara una cabeza armada de 64 mm montada sobre un pequeño cohete con un alcance efectivo de 200 metros. Esta arma es capaz de hacer una perforación de 375 mm en un blindaje convencional y no es recargable.</Spanish>
+				  <Italian>L'RPG-18 Mukah (in italiano: mosca) è un lanciarazzi anticarro leggero a corta gittata prodotto in Russia.&lt;br/&gt;L'RPG-18 spara testate da 64 mm installate su piccoli razzi con una portata effettiva di 200 metri. Quest'arma può penetrare un blindato convenzionale e non è ricaricabile.</Italian>
+				  <Hungarian>Az RPG-18 Mukha (magyarul: légy) egy orosz rövid hatótávolságú, egylövetű, vállról indítható könnyű páncéltörő fegyver. A robbanófeje 64 mm-es átmérőjű, és egy kis rakétahajtómű gyorsítja fel, effektív lőtávolsága 200m. A kumulatív robbanófeje mintegy 375mm-nyi homogén acélpáncélt képes átütni. A rakétavető egyszer használatos, nem újratölthető.</Hungarian>
+				  <Polish>RPG-18 Mukah (Mucha) to rosyjska, jednorazowa, lekka, przeciwpancerna wyrzutnia rakietowa, krótkiego zasięgu.&lt;br/&gt;RPG-18 strzela pociskami rakietowymi 64 mm. Zasięg skuteczny wynosi 200 m. Pocisk może przebić konwencjonalny pancerz o grubości 375 mm. </Polish>
+				  <Russian>РПГ-18 'Муха' - реактивная противотанковая граната советского производства. Не может переснаряжаться или переводиться в походное положение после раскладки в боевое.&lt;br/&gt;Если необходимость в выстреле отпала, граната отстреливается в направлении противника.</Russian>
+				  <German>Die RPG-18 Mukah (Fliege) ist ein leichter russischer Kurzstrecken-Panzerabwehrraketenwerfer für den einmaligen Gebrauch.&lt;br/&gt;Die RPG-18 feuert ein 64mm-Geschütz mit einer effektiven Reichweite von 200 Metern ab. Die Waffe kann konventionelle Panzerungen bis zu einer Stärke von 375 mm durchbrechen.</German>
+				  <Czech>RPG-18 Mucha je lehké jednoúčelové odpalovací zařízení protitankových střel krátkého doletu vyráběné v Sovětském svazu. &lt;br/&gt;RPG-18 odpaluje hlavice ráže 64 mm na malé raketě s efektivním dosahem 200 m. Tato zbraň dokáže prorazit až 375 mm běžného pancéře a nelze ji dobíjet.</Czech>
+				  <English>The RPG-18 Mukah (in English: Fly) is a short-range, disposable, light weight anti-tank rocket launcher made in Russia.&lt;br/&gt;The RPG-18 fires a 64 mm warhead mounted on small rocket with an effective range of 200 m. This weapon is able to penetrate up to 375mm of conventional armor and is not reloadable.</English>
+				  <Japanese>The RPG-18 Mukah (in English: Fly) is a short-range, disposable, light weight anti-tank rocket launcher made in Russia.&lt;br/&gt;The RPG-18 fires a 64 mm warhead mounted on small rocket with an effective range of 200 m. This weapon is able to penetrate up to 375mm of conventional armor and is not reloadable.</Japanese>
+			</Key>
+		</Container>
+	</Package>
+</Project>

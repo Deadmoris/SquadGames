@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project name="CUP">
+	<Package name="Weapons">
+		<Container name="Strela">
+			<Key ID="STR_CUP_dn_strela">
+				<Original>Strela-2 9K32</Original>
+				<French>9K32 Strela-2</French>
+				<Spanish>Lanzador 9K32 Strela-2</Spanish>
+				<Italian>Lanciarazzi 9K32 Strela</Italian>
+				<Hungarian>Sztrela-2 9K32</Hungarian>
+				<Polish>Strieła-2 9K32</Polish>
+				<Russian>ЗУР 9М32М</Russian>
+				<German>9K32 Strela-2</German>
+				<Czech>9K32 Strela</Czech>
+				<English>Strela-2 9K32</English>
+				<Japanese>Strela-2 9K32</Japanese>
+			</Key>
+			<Key ID="STR_CUP_dss_strela">
+				  <Original>Surface-to-air missile launcher &lt;br/&gt;Guided</Original>
+				  <French>Lance-missiles Sol-Air &lt;br/&gt;Guidés</French>
+				  <Spanish>Lanzamisiles tierra-aire dirigido &lt;br/&gt;Guided</Spanish>
+				  <Italian>Lanciamissili terra-aria &lt;br/&gt;Guidati</Italian>
+				  <Hungarian>Föld levegő rakétavető &lt;br/&gt; Irányított</Hungarian>
+				  <Polish>Wyrzutnia rakiet ziemia-powietrze &lt;br/&gt;Kierowane</Polish>
+				  <Russian>Переносной зенитно-ракетный комплекс&lt;br/&gt;ЗУР с ГСН</Russian>
+				  <German>Boden-Luft-Raketenwerfer &lt;br/&gt;Gelenkt</German>
+				  <Czech>Odpalovací zařízení střel země-vzduch &lt;br/&gt;Řízené</Czech>
+				  <English>Surface-to-air missile launcher &lt;br/&gt;Guided</English>
+				  <Japanese>Surface-to-air missile launcher &lt;br/&gt;Guided</Japanese>
+			</Key>
+			<Key ID="STR_CUP_lib_strela">
+				<Original>The 9K32 Strela-2 (NATO name SA-7 Grail) is a man-portable, shoulder-fired surface-to-air missile (SAM) with passive infrared homing guidance, similar to the US Army Stinger.&lt;br/&gt;The 9K32 is a tail-chase missile dependent on the operator’s ability to lock it onto the heat source of low-flying jets and helicopters.</Original>
+				<French>Le 9K32 Strela-2 (désignation OTAN : SA-7 Grail) est un missile antiaérien portable tiré à l'épaule et doté d'un système de guidage infrarouge passif similaire au Stinger de l'US Army.&lt;br/&gt;Le 9K32 suit la chaleur de la tuyère et son efficacité dépend de la capacité de son tireur à se verrouiller sur la source d'émissions thermiques des avions et hélicoptères évoluant à basse altitude.</French>
+				<Spanish>El 9K32 Strela-2 (SA-7 Grail según la OTAN) es un misil de tierra-aire portátil que se dispara desde el hombro, similar al Stinger del ejército americano y dotado de un sistema de seguimiento de infrarrojos.&lt;br/&gt;El 9K32 es un misil de seguimiento de cola que debe ser lanzado hacia una fuente de calor en aviones y helicópteros de vuelo bajo.</Spanish>
+				<Italian>Il 9K32 Strela-2 (conosciuto anche come SA-7 Grail) è un missile terra-aria (SAM) da spalla simile allo Stinger in dotazione all’esercito americano, con un sistema di guida passivo a infrarossi.&lt;br/&gt;Il missile 9K32 si basa sulla capacità di chi lo opera di agganciarlo alla sorgente di calore di aerei ed elicotteri in volo a bassa quota.</Italian>
+				<Hungarian>A 9K32 Sztrela-2 (NATO neve SA-7 Grail) hordozható, vállról indítható föld-levegő rakéta (Surface-to-air missile, SAM). Nagyban hasonlít az amerikai hadsereg Stingeréhez. Passzív infravörös önirányító rendszerrel rendelkezik, amely hatékonysága nagyban függ attól, hogy a mennyire lát rá a célpont legfőbb hőforrására, a hajtóműre.</Hungarian>
+				<Polish>9K32 Strieła-2 (nazwa NATO SA-7 Grail) to przenośna, wystrzeliwana z ramienia rakieta ziemia-powietrze. Podobnie jak amerykański Stinger wyposażona w podczerwony pasywny system naprowadzania.&lt;br/&gt;9K32 naprowadza się na źródło ciepła w lecących nisko odrzutowcach i śmigłowcach.</Polish>
+				<Russian>Комплекс 9K32 'Стрела-2' (по классификации НАТО - SA-7 'Grail') - это персональный портативный зенитно-ракетный комплекс с пассивным инфракрасным самонаведением, похожий на Стингер армии США.&lt;br/&gt;9K32 стреляет вдогон, попадание зависит от способности стреляющего взять на мушку источник тепла низколетящих самолетов или вертолетов.</Russian>
+				<German>Die 9K32 Strela-2 (NATO-Kennung SA-7 Grail) ist eine tragbare, schultergestützte Boden-Luft-Rakete. Sie ähnelt der Stinger-Rakete der US Army und verfügt über ein passives Infrarotzielsuchsystem.&lt;br/&gt;Die Effektivität der 9K32 hängt von der Fähigkeit des Soldaten ab, die Hitzequelle tief fliegender Jets und Hubschrauber anzuvisieren.</German>
+				<Czech>9K32 Strela-2 (v označení NATO SA-7 Grail) je střela typu země-vzduch (SAM) podobná střele Stinger; je vybavena infračerveným naváděním.&lt;br/&gt;Střela 9K32 je závislá na schopnosti operátora zaměřit tepelný signál nízko letících letadel a helikoptér.</Czech>
+				<English>The 9K32 Strela-2 (NATO name SA-7 Grail) is a man-portable, shoulder-fired surface-to-air missile (SAM) with passive infrared homing guidance, similar to the US Army Stinger.&lt;br/&gt;The 9K32 is a tail-chase missile dependent on the operator’s ability to lock it onto the heat source of low-flying jets and helicopters.</English>
+				<Japanese>The 9K32 Strela-2 (NATO name SA-7 Grail) is a man-portable, shoulder-fired surface-to-air missile (SAM) with passive infrared homing guidance, similar to the US Army Stinger.&lt;br/&gt;The 9K32 is a tail-chase missile dependent on the operator’s ability to lock it onto the heat source of low-flying jets and helicopters.</Japanese>
+			</Key>
+		</Container>
+	</Package>
+</Project>
