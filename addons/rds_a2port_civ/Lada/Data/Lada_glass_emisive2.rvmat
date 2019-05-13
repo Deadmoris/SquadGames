@@ -1,0 +1,18 @@
+////////////////////////////////////////////////////////////////////
+//DeRap: Produced from mikero's Dos Tools Dll version 5.66
+//'now' is Sun Jun 18 20:21:41 2017 : 'file' last modified on Tue Sep 06 15:03:40 2016
+//http://dev-heaven.net/projects/list_files/mikero-pbodll
+////////////////////////////////////////////////////////////////////
+
+#define _ARMA_
+
+//Class rds_a2port_civ : Lada\Data\Lada_glass_emisive2.rvmat{
+ambient[] = {10.0,10.0,100.0,1.0};
+diffuse[] = {1.0,1.0,1.0,1.0};
+forcedDiffuse[] = {1.0,1.0,1.0,0.0};
+emmisive[] = {40.0,40.0,40.0,1.0};
+specular[] = {0.0,0.0,0.0,0.0};
+specularPower = 0.0;
+PixelShaderID = "Normal";
+VertexShaderID = "Basic";
+//};

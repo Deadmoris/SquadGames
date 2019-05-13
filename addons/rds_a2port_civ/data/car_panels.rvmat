@@ -1,0 +1,22 @@
+////////////////////////////////////////////////////////////////////
+//DeRap: Produced from mikero's Dos Tools Dll version 5.66
+//'now' is Sun Jun 18 20:21:41 2017 : 'file' last modified on Tue Sep 06 15:03:25 2016
+//http://dev-heaven.net/projects/list_files/mikero-pbodll
+////////////////////////////////////////////////////////////////////
+
+#define _ARMA_
+
+//Class rds_a2port_civ : data\car_panels.rvmat{
+class StageTI
+{
+	texture = "a3\data_f\default_vehicle_ti_ca.paa";
+};
+ambient[] = {5,5,5,1};
+diffuse[] = {0,0,0,1};
+forcedDiffuse[] = {0,0,0,0};
+emmisive[] = {16,15,15,1};
+specular[] = {0,0,0,1};
+specularPower = 1;
+PixelShaderID = "Normal";
+VertexShaderID = "Basic";
+//};

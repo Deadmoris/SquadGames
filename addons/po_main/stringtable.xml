@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project name="Leights OPFOR">
+    <Package name="Language_Alpha">
+        <Container name="PhoneticalAlphabet">
+            <Key ID="STR_LOP_FULL_NAME">
+                <Original>Project OPFOR</Original>
+                <English>Project OPFOR</English>
+                <Czech>Project OPFOR</Czech>
+                <French>Project OPFOR</French>
+                <German>Project OPFOR</German>
+                <Italian>Project OPFOR</Italian>
+                <Polish>Project OPFOR</Polish>
+                <Portuguese>Project OPFOR</Portuguese>
+                <Russian>Project OPFOR</Russian>
+                <Spanish>Project OPFOR</Spanish>
+            </Key>
+            <Key ID="STR_LOP_CHR_Civ">
+                <English>Civilians (Eastern European)</English>
+                <Original>Civilians (Eastern European)</Original>
+				<Polish>Cywile (Europa Wschodnia)</Polish>
+                <Russian>Восточноевропейские жители</Russian>
+            </Key>
+            <Key ID="STR_LOP_UN">
+                <English>United Nations</English>
+                <Original>United Nations</Original>
+				<Polish>Organizacja Narodów Zjednoczonych</Polish>
+                <Russian>ООН</Russian>
+            </Key>
+            <Key ID="STR_LOP_CDF">
+                <English>Chernarussian Defence Forces</English>
+                <Original>Chernarussian Defence Forces</Original>
+				<Polish>Siły Obronne Czarnorusi</Polish>
+                <Russian>Чернорусские силы обороны</Russian>
+            </Key>
+            <Key ID="STR_LOP_TAK_Civ">
+                <English>Civilians (Middle Eastern)</English>
+                <Original>Civilians (Middle Eastern)</Original>
+				<Polish>Cywile (Bliski Wschód)</Polish>
+                <Russian>Ближневосточные жители</Russian>
+            </Key>
+            <Key ID="STR_LOP_AFR_Civ">
+                <English>Civilians (African)</English>
+                <Original>Civilians (African)</Original>
+				<Polish>Cywile (Afryka)</Polish>
+                <Russian>Африканские жители</Russian>
+            </Key>
+            <Key ID="STR_LOP_AA">
+                <English>Afghan National Army and Police</English>
+                <Original>Afghan National Army and Police</Original>
+				<Polish>Afgańskie Wojsko i Policja</Polish>
+                <Russian>Афганская национальная армия и полиция</Russian>
+            </Key>
+            <Key ID="STR_LOP_IA">
+                <English>Iraqi Armed Forces</English>
+                <Original>Iraqi Armed Forces</Original>
+				<Polish>Siły Zbrojne Iraku</Polish>
+                <Russian>Вооружённые силы Ирака</Russian>
+            </Key>
+            <Key ID="STR_LOP_US">
+                <English>United Armed Forces of Novorossiya</English>
+                <Original>United Armed Forces of Novorossiya</Original>
+                <Russian>Вооружённые силы Новороссии</Russian>
+            </Key>
+            <Key ID="STR_LOP_ChDKZ">
+                <English>ChDKZ</English>
+                <Original>ChDKZ</Original>
+                <Russian>ЧДКЗ</Russian>
+            </Key>
+            <Key ID="STR_LOP_TKA">
+                <English>Takistani Armed Forces</English>
+                <Original>Takistani Armed Forces</Original>
+                <Russian>Вооружённые силы Такистана</Russian>
+            </Key>
+            <Key ID="STR_LOP_SLA">
+                <English>Sahrani Liberation Army</English>
+                <Original>Sahrani Liberation Army</Original>
+                <Russian>Армия освобождения Сарани</Russian>
+            </Key>
+            <Key ID="STR_LOP_RACS">
+                <English>Royal Army Corps of Sahrani</English>
+                <Original>Royal Army Corps of Sahrani</Original>
+                <Russian>Королевский корпус Сарани</Russian>
+            </Key>
+            <Key ID="STR_LOP_PMC">
+                <English>Private Military Company</English>
+                <Original>Private Military Company</Original>
+                <Russian>Частная военная компания</Russian>
+            </Key>
+            <Key ID="STR_LOP_ISTS">
+                <English>Islamic State</English>
+                <Original>Islamic State</Original>
+                <Russian>Исламское государство</Russian>
+            </Key>
+            <Key ID="STR_LOP_NAPA">
+                <English>Chernarussian National Insurgents</English>
+                <Original>Chernarussian National Insurgents</Original>
+                <Russian>НАПА</Russian>
+            </Key>
+            <Key ID="STR_LOP_AM">
+                <English>Middle Eastern Militia</English>
+                <Original>Middle Eastern Militia</Original>
+                <Russian>Ближневосточное ополчение</Russian>
+            </Key>
+            <Key ID="STR_LOP_AFR">
+                <English>African Militia</English>
+                <Original>African Militia</Original>
+                <Russian>Африканское ополчение</Russian>
+            </Key>
+            <Key ID="STR_LOP_UA">
+                <English>Ultranationalists</English>
+                <Original>Ultranationalists</Original>
+                <Russian>Ультранационалисты</Russian>
+            </Key>
+            <Key ID="STR_LOP_Pesh">
+                <English>Kurdish Peshmerga Forces</English>
+                <Original>Kurdish Peshmerga Forces</Original>
+                <Russian>Пешмерга</Russian>
+            </Key>
+            <Key ID="STR_LOP_UKR">
+                <English>Ukrainian Armed Forces</English>
+                <Original>Ukrainian Armed Forces</Original>
+                <Russian>Вооружённые силы Украины</Russian>
+            </Key>
+			 <Key ID="STR_LOP_BH">
+                <English>Boko Haram</English>
+                <Original>Boko Haram</Original>
+                <Russian>Боко харам</Russian>
+            </Key>
+			 <Key ID="STR_LOP_IRA">
+                <English>Irish Republican Army</English>
+                <Original>Irish Republican Army</Original>
+                <Russian>Ирландская республиканская армия</Russian>
+            </Key>
+			 <Key ID="STR_LOP_UVF">
+                <English>Ulster Volunteer Force</English>
+                <Original>Ulster Volunteer Force</Original>
+                <Russian>Ольстерские добровольческие силы</Russian>
+            </Key>
+			 <Key ID="STR_LOP_IRAN">
+                <English>Iranian Armed Forces</English>
+                <Original>Iranian Armed Forces</Original>
+                <Russian>Вооружённые силы Ирана</Russian>
+            </Key>			
+            <Key ID="STR_LOP_Men">
+                <English>Men</English>
+                <Original>Men</Original>
+                <Russian>Люди</Russian>
+            </Key>
+            <Key ID="STR_LOP_Men_D">
+                <English>Men (Desert)</English>
+                <Original>Men (Desert)</Original>
+                <Russian>Люди (пустыня)</Russian>
+            </Key>
+            <Key ID="STR_LOP_Men_W">
+                <English>Men (Woodland)</English>
+                <Original>Men (Woodland)</Original>
+                <Russian>Люди (лес)</Russian>
+            </Key>
+			 <Key ID="STR_LOP_Men_SF">
+                <English>Men (Special Forces)</English>
+                <Original>Men (Special Forces)</Original>
+                <Russian>Люди (коммандос)</Russian>
+            </Key>
+			<Key ID="STR_LOP_Men_B">
+                <English>Men (Black)</English>
+                <Original>Men (Black)</Original>
+                <Russian>Люди (Black)</Russian>
+            </Key>
+			<Key ID="STR_LOP_Men_C">
+                <English>Chechen</English>
+                <Original>Chechen</Original>
+                <Russian>чеченцы</Russian>
+            </Key>
+            <Key ID="STR_LOP_Armed_civ">
+                <English>Armed Civilians</English>
+                <Original>Armed Civilians</Original>
+                <Russian>Вооруженные гражданские</Russian>
+            </Key>
+            <Key ID="STR_LOP_Men_police">
+                <English>Men (police)</English>
+                <Original>Men (police)</Original>
+                <Russian>Люди (полиция)</Russian>
+            </Key>
+            <Key ID="STR_LOP_Wheeled">
+                <English>Cars</English>
+                <Original>Cars</Original>
+                <Russian>Машины</Russian>
+            </Key>
+            <Key ID="STR_LOP_Support">
+                <English>Support</English>
+                <Original>Support</Original>
+                <Russian>Поддержка</Russian>
+            </Key>
+            <Key ID="STR_LOP_Aircraft">
+                <English>Aircraft</English>
+                <Original>Aircraft</Original>
+                <Russian>Авиация</Russian>
+            </Key>
+            <Key ID="STR_LOP_Armored">
+                <English>Armored</English>
+                <Original>Armored</Original>
+                <Russian>Бронетехника</Russian>
+            </Key>
+            <Key ID="STR_LOP_Static">
+                <English>Static</English>
+                <Original>Static</Original>
+                <Russian>Турели</Russian>
+            </Key>
+			<Key ID="STR_LOP_KAMAZ_cov_base">
+                <English>KAMAZ (covered)</English>
+                <Original>KAMAZ (covered)</Original>
+                <Russian>КамАЗ</Russian>
+            </Key>
+			<Key ID="STR_LOP_KAMAZ_trans_base">
+                <English>KAMAZ (open)</English>
+                <Original>KAMAZ (open)</Original>
+                <Russian>КамАЗ (открытый)</Russian>
+            </Key>
+			<Key ID="STR_LOP_KAMAZ_med_base">
+                <English>Kamaz Medical</English>
+                <Original>Kamaz Medical</Original>
+                <Russian>КамАЗ (медецинский)</Russian>
+            </Key>
+			<Key ID="STR_LOP_KAMAZ_rep_base">
+                <English>KAMAZ (repair)</English>
+                <Original>KAMAZ (repair)</Original>
+                <Russian>КамАЗ (ремонтный)</Russian>
+            </Key>
+			<Key ID="STR_LOP_KAMAZ_ammo_base">
+                <English>KAMAZ (ammo)</English>
+                <Original>KAMAZ (ammo)</Original>
+                <Russian>КамАЗ (боеприпасы)</Russian>
+            </Key>
+        </Container>
+    </Package>
+</Project>

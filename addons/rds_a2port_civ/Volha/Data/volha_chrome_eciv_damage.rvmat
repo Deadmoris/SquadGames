@@ -1,0 +1,106 @@
+////////////////////////////////////////////////////////////////////
+//DeRap: Produced from mikero's Dos Tools Dll version 5.66
+//'now' is Sun Jun 18 20:21:41 2017 : 'file' last modified on Tue Sep 06 15:03:50 2016
+//http://dev-heaven.net/projects/list_files/mikero-pbodll
+////////////////////////////////////////////////////////////////////
+
+#define _ARMA_
+
+//Class rds_a2port_civ : Volha\Data\volha_chrome_eciv_damage.rvmat{
+ambient[] = {0.999999,1.0,1.0,1.0};
+diffuse[] = {0.0,0.0,0.0,0.995};
+forcedDiffuse[] = {0.0,0.0,0.0,0.0};
+emmisive[] = {0.0,0.0,0.0,1.0};
+specular[] = {0.598,0.598,0.598,0.0};
+specularPower = 100.0;
+PixelShaderID = "Super";
+VertexShaderID = "Super";
+class Stage1
+{
+	texture = "rds_a2port_civ\Volha\Data\Volha_Glass_ECIV_NOHQ.paa";
+	uvSource = "tex";
+	class uvTransform
+	{
+		aside[] = {1.0,0.0,0.0};
+		up[] = {0.0,1.0,0.0};
+		dir[] = {0.0,0.0,0.0};
+		pos[] = {0.0,0.0,0.0};
+	};
+};
+class Stage2
+{
+	texture = "a3\data_f\destruct\damage_metal_basicarmor_dt.paa";
+	uvSource = "tex";
+	class uvTransform
+	{
+		aside[] = {2.0,0.0,0.0};
+		up[] = {0.0,2.0,0.0};
+		dir[] = {0.0,0.0,0.0};
+		pos[] = {0.0,0.0,0.0};
+	};
+};
+class Stage3
+{
+	texture = "a3\data_f\destruct\damage_metal_basicarmor_mc.paa";
+	uvSource = "tex";
+	class uvTransform
+	{
+		aside[] = {2.0,0.0,0.0};
+		up[] = {0.0,2.0,0.0};
+		dir[] = {0.0,0.0,0.0};
+		pos[] = {0.0,0.0,0.0};
+	};
+};
+class Stage4
+{
+	texture = "rds_a2port_civ\Volha\Data\Volha_Glass_ECIV_ADS.paa";
+	uvSource = "tex1";
+	class uvTransform
+	{
+		aside[] = {1.0,0.0,0.0};
+		up[] = {0.0,1.0,0.0};
+		dir[] = {0.0,0.0,0.0};
+		pos[] = {0.0,0.0,0.0};
+	};
+};
+class Stage5
+{
+	texture = "rds_a2port_civ\Volha\Data\Volha_Glass_ECIV_SMDI.paa";
+	uvSource = "tex";
+	class uvTransform
+	{
+		aside[] = {1.0,0.0,0.0};
+		up[] = {0.0,1.0,0.0};
+		dir[] = {0.0,0.0,0.0};
+		pos[] = {0.0,0.0,0.0};
+	};
+};
+class Stage6
+{
+	texture = "#(ai,32,128,1)fresnel(0.11,0.94)";
+	uvSource = "tex";
+	class uvTransform
+	{
+		aside[] = {1.0,0.0,0.0};
+		up[] = {0.0,1.0,0.0};
+		dir[] = {0.0,0.0,0.0};
+		pos[] = {0.0,0.0,0.0};
+	};
+};
+class Stage7
+{
+	texture = "a3\data_f\env_chrome_co.paa";
+	uvSource = "tex";
+	class uvTransform
+	{
+		aside[] = {1.0,0.0,0.0};
+		up[] = {0.0,1.0,0.0};
+		dir[] = {0.0,0.0,0.0};
+		pos[] = {0.0,0.0,0.0};
+	};
+};
+class StageTI
+{
+	texture = "a3\data_f\default_vehicle_ti_ca.paa";
+};
+//};

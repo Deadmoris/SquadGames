@@ -1,0 +1,18 @@
+////////////////////////////////////////////////////////////////////
+//DeRap: Produced from mikero's Dos Tools Dll version 5.66
+//'now' is Sun Jun 18 20:21:41 2017 : 'file' last modified on Tue Sep 06 15:03:35 2016
+//http://dev-heaven.net/projects/list_files/mikero-pbodll
+////////////////////////////////////////////////////////////////////
+
+#define _ARMA_
+
+//Class rds_a2port_civ : Ikarus\Data\bus_caugesshine.rvmat{
+ambient[] = {1.0,1.0,1.0,1.0};
+diffuse[] = {1.0,1.0,1.0,1.0};
+forcedDiffuse[] = {0.0,0.0,0.0,1.0};
+emmisive[] = {20.992157,21.0,26.58824,1.0};
+specular[] = {0.0,0.0,0.0,1.0};
+specularPower = 1.0;
+PixelShaderID = "Normal";
+VertexShaderID = "Basic";
+//};

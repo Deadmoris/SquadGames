@@ -112,20 +112,3 @@ class CfgVehicles
 		};
 	};
 };
-/* class CfgWeapons
-{
-	class ACE_ItemCore;
-	class InventoryItem_Base_F;
-	class pzn_rope: ACE_ItemCore
-	{
-		displayName = "$STR_pzn_unfold";
-		descriptionShort = "$STR_pzn_unfold";
-		model = "\A3\Structures_F_Heli\Items\Tools\Rope_01_F.p3d";
-		picture = "\z\ace\addons\captives\UI\ace_cabletie_ca.paa";
-		scope = 2;
-		class ItemInfo: InventoryItem_Base_F
-		{
-			mass = 60;
-		};
-	};
-}; */

@@ -1,0 +1,446 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project name="p_opf">
+    <Package name="namesp_opf">
+        <Container name="Names">
+            <Key ID="STR_DF-15-2_ukr">
+                <Original>[PO]DF-15-2 (Ukraine)</Original>
+                <English>[PO]DF-15-2 (Ukraine)</English>
+                <Russian>[PO]ДФ-15-2 (ВСУ)</Russian>
+            </Key>
+            <Key ID="STR_ukr_uniform_digi">
+                <Original>[PO]Combat Uniform (Ukraine/Digital)</Original>
+                <English>[PO]Combat Uniform (Ukraine/Digital)</English>
+                <Russian>[PO]Форма ВСУ (ММ-14)</Russian>
+            </Key>
+            <Key ID="STR_ukr_uniform_flec">
+                <Original>[PO]Combat Uniform (Ukraine/Flectarn)</Original>
+                <English>[PO]Combat Uniform (Ukraine/Flectarn)</English>
+                <Russian>[PO]Форма ВСУ (Флектарн)</Russian>
+            </Key>
+            <Key ID="STR_ukr_uniform_mult">
+                <Original>[PO]Combat Uniform (Ukraine/Multicam)</Original>
+                <English>[PO]Combat Uniform (Ukraine/Multicam)</English>
+                <Russian>[PO]Форма ВСУ (Мультикам)</Russian>
+            </Key>
+            <Key ID="STR_ukr_uniform_ttsko">
+                <Original>[PO]Combat Uniform (Ukraine/TTsKO)</Original>
+                <English>[PO]Combat Uniform (Ukraine/TTsKO)</English>
+                <Russian>[PO]Форма ВСУ (Дубок)</Russian>
+            </Key>
+            <Key ID="STR_ukr_uniform_ttsko_izl">
+                <Original>[PO]Combat Uniform (Ukraine/TTsKO + Izlom)</Original>
+                <English>[PO]Combat Uniform (Ukraine/TTsKO + Izlom)</English>
+                <Russian>[PO]Форма ВСУ (Дубок + излом)</Russian>
+            </Key>
+            <Key ID="STR_ukr_uniform_tan_mtp">
+                <Original>[PO]Combat Uniform (Ukraine/Tan + MTP)</Original>
+                <English>[PO]Combat Uniform (Ukraine/Tan + MTP)</English>
+                <Russian>[PO]Форма ВСУ (Песочный + МТП)</Russian>
+            </Key>
+            <Key ID="STR_ukr_uniform_dpmw_dpmd">
+                <Original>[PO]Combat Uniform (Ukraine/DPMW + DPMD)</Original>
+                <English>[PO]Combat Uniform (Ukraine/DPMW + DPMD)</English>
+                <Russian>[PO]Форма ВСУ (DPMW + DPMD)</Russian>
+            </Key>
+            <Key ID="STR_ukr_head_ttsko">
+                <Original>[PO]Field Cap TTsKO</Original>
+                <English>[PO]Field Cap TTsKO</English>
+                <Russian>[PO]Кепка ВСУ (Дубок)</Russian>
+            </Key>
+            <Key ID="STR_ukr_head_6b27_digi">
+                <Original>[PO]6B27M MM-14</Original>
+                <English>[PO]6B27M MM-14</English>
+                <Russian>[PO]6Б27М ММ-14</Russian>
+            </Key>
+            <Key ID="STR_ukr_head_6b27_digi_ess">
+                <Original>[PO]6B27M MM-14(ESS)</Original>
+                <English>[PO]6B27M MM-14(ESS)</English>
+                <Russian>[PO]6Б27М ММ-14(ESS)</Russian>
+            </Key>
+            <Key ID="STR_ukr_head_6b27_izlom">
+                <Original>[PO]6B27M Izlom</Original>
+                <English>[PO]6B27M Izlom</English>
+                <Russian>[PO]6Б27М Излом</Russian>
+            </Key>
+            <Key ID="STR_ukr_head_6b27_izlom_ess">
+                <Original>[PO]6B27M Izlom(ESS)</Original>
+                <English>[PO]6B27M Izlom(ESS)</English>
+                <Russian>[PO]6Б27М Излом(ESS)</Russian>
+            </Key>
+            <Key ID="STR_ukr_head_6b27_mult">
+                <Original>[PO]6B27M Multicam</Original>
+                <English>[PO]6B27M Multicam</English>
+                <Russian>[PO]6Б27М Мультикам</Russian>
+            </Key>
+            <Key ID="STR_ukr_head_6b27_mult_ess">
+                <Original>[PO]6B27M Multicam(ESS)</Original>
+                <English>[PO]6B27M Multicam(ESS)</English>
+                <Russian>[PO]6Б27М Мультикам(ESS)</Russian>
+            </Key>
+            <Key ID="STR_ukr_head_6b27_ttsko">
+                <Original>[PO]6B27M TTsKO</Original>
+                <English>[PO]6B27M TTsKO</English>
+                <Russian>[PO]6Б27М Дубок</Russian>
+            </Key>
+            <Key ID="STR_ukr_head_6b27_ttsko_ess">
+                <Original>[PO]6B27M TTsKO(ESS)</Original>
+                <English>[PO]6B27M TTsKO(ESS)</English>
+                <Russian>[PO]6Б27М Дубок(ESS)</Russian>
+            </Key>
+            <Key ID="STR_ukr_head_6b27_wz93">
+                <Original>[PO]6B27M Wz.93</Original>
+                <English>[PO]6B27M Wz.93</English>
+                <Russian>[PO]6Б27М Wz.93</Russian>
+            </Key>
+            <Key ID="STR_ukr_head_6b27_wz93_ess">
+                <Original>[PO]6B27M Wz.93(ESS)</Original>
+                <English>[PO]6B27M Wz.93(ESS)</English>
+                <Russian>[PO]6Б27М Wz.93(ESS)</Russian>
+            </Key>
+            <Key ID="STR_ukr_head_bean_digi">
+                <Original>[PO]Beanie (MM-14)</Original>
+                <English>[PO]Beanie (MM-14)</English>
+                <Russian>[PO]Шапка (ММ-14)</Russian>
+            </Key>
+            <Key ID="STR_ukr_head_bean_dpm">
+                <Original>[PO]Beanie (DPM)</Original>
+                <English>[PO]Beanie (DPM)</English>
+                <Russian>[PO]Шапка (ДПМ)</Russian>
+            </Key>
+            <Key ID="STR_ukr_head_bean_flec">
+                <Original>[PO]Beanie (Flectarn)</Original>
+                <English>[PO]Beanie (Flectarn)</English>
+                <Russian>[PO]Шапка (Флектарн)</Russian>
+            </Key>
+            <Key ID="STR_ukr_head_bean_marp">
+                <Original>[PO]Beanie (Marpat)</Original>
+                <English>[PO]Beanie (Marpat)</English>
+                <Russian>[PO]Шапка (Марпат)</Russian>
+            </Key>
+            <Key ID="STR_ukr_head_bean_mtp">
+                <Original>[PO]Beanie (MTP)</Original>
+                <English>[PO]Beanie (MTP)</English>
+                <Russian>[PO]Шапка (МТП)</Russian>
+            </Key>
+            <Key ID="STR_ukr_head_bean_multicam">
+                <Original>[PO]Beanie (Multicam)</Original>
+                <English>[PO]Beanie (Multicam)</English>
+                <Russian>[PO]Шапка (Мультикам)</Russian>
+            </Key>
+            <Key ID="STR_ukr_head_bean_tan">
+                <Original>[PO]Beanie (Tan)</Original>
+                <English>[PO]Beanie (Tan)</English>
+                <Russian>[PO]Шапка (Песочная)</Russian>
+            </Key>
+            <Key ID="STR_ukr_head_bean_m81">
+                <Original>[PO]Beanie (M81)</Original>
+                <English>[PO]Beanie (M81)</English>
+                <Russian>[PO]Шапка (М81)</Russian>
+            </Key>
+            <Key ID="STR_ukr_vest_6b23_tan">
+                <Original>[PO]6B23 (Tan)</Original>
+                <English>[PO]6B23 (Tan)</English>
+                <Russian>[PO]6Б23 (Песочный)</Russian>
+            </Key>
+            <Key ID="STR_ukr_vest_6b23_ttsko">
+                <Original>[PO]6B23 (TTsKO)</Original>
+                <English>[PO]6B23 (TTsKO)</English>
+                <Russian>[PO]6Б23 (Дубок)</Russian>
+            </Key>
+            <Key ID="STR_ukr_vest_6b23_acu">
+                <Original>[PO]6B23 (6Sh92 ACU)</Original>
+                <English>[PO]6B23 (6Sh92 ACU)</English>
+                <Russian>[PO]6Б23 (6Ш92 ACU)</Russian>
+            </Key>
+            <Key ID="STR_ukr_vest_6b23_dpm">
+                <Original>[PO]6B23 (6Sh92 DPM)</Original>
+                <English>[PO]6B23 (6Sh92 DPM)</English>
+                <Russian>[PO]6Б23 (6Ш92 ДПМ)</Russian>
+            </Key>
+            <Key ID="STR_ukr_vest_6b23_olive">
+                <Original>[PO]6B23 (6Sh92 olive)</Original>
+                <English>[PO]6B23 (6Sh92 olive)</English>
+                <Russian>[PO]6Б23 (6Ш92 олива)</Russian>
+            </Key>
+            <Key ID="STR_ukr_vest_6b23_ttsko_6sh92">
+                <Original>[PO]6B23 (6Sh92 TTsKO)</Original>
+                <English>[PO]6B23 (6Sh92 TTsKO)</English>
+                <Russian>[PO]6Б23 (6Ш92 дубок)</Russian>
+            </Key>
+            <Key ID="STR_ukr_vest_6b23_CrewOfficer_TAN">
+                <Original>[PO]6B23 Tan (Crew Officer)</Original>
+                <English>[PO]6B23 Tan (Crew Officer)</English>
+                <Russian>[PO]6Б23 Песочный (командир экипажа)</Russian>
+            </Key>
+            <Key ID="STR_LOP_V_6B23_CrewOfficer_TTKO">
+                <Original>[PO]6B23 TTKO (Crew Officer)</Original>
+                <English>[PO]6B23 TTKO (Crew Officer)</English>
+                <Russian>[PO]6Б23 Дубок (командир экипажа)</Russian>
+            </Key>
+            <Key ID="STR_LOP_V_6B23_Rifleman_TAN">
+                <Original>[PO]6B23 Tan (Rifleman)</Original>
+                <English>[PO]6B23 Tan (Rifleman)</English>
+                <Russian>[PO]6Б23 Песочный (стрелок)</Russian>
+            </Key>
+            <Key ID="STR_LOP_V_6B23_Rifleman_TTKO">
+                <Original>[PO]6B23 TTKO (Rifleman)</Original>
+                <English>[PO]6B23 TTKO (Rifleman)</English>
+                <Russian>[PO]6Б23 Дубок (стрелок)</Russian>
+            </Key>
+            <Key ID="STR_LOP_V_6B23_Medic_TAN">
+                <Original>[PO]6B23 Tan (Medic)</Original>
+                <English>[PO]6B23 Tan (Medic)</English>
+                <Russian>[PO]6Б23 Песочный (медик)</Russian>
+            </Key>
+            <Key ID="STR_LOP_V_6B23_Medic_TTKO">
+                <Original>[PO]6B23 TTsKO (Medic)</Original>
+                <English>[PO]6B23 TTsKO (Medic)</English>
+                <Russian>[PO]6Б23 Дубок (медик)</Russian>
+            </Key>
+            <Key ID="STR_LOP_V_6B23_sniper">
+                <Original>[PO]6B23 TTKO (Sniper)</Original>
+                <English>[PO]6B23 TTKO (Sniper)</English>
+                <Russian>[PO]6Б23 Дубок (снайпер)</Russian>
+            </Key>
+            <Key ID="STR_LOP_V_6B23_headset_mapcase">
+                <Original>[PO]6B23 TTKO (6Sh92/Headset/Mapcase)</Original>
+                <English>[PO]6B23 TTKO (6Sh92/Headset/Mapcase)</English>
+                <Russian>[PO]6Б23 Дубок (6Ш92/наушники/карта)</Russian>
+            </Key>	 
+			<Key ID="STR_LOP_V_6B23_OLV">
+                <Original>[PO]6B23 Olive</Original>
+                <English>[PO]6B23 Olive</English>
+                <Russian>[PO]6Б23 Олива</Russian>
+            </Key>
+			<Key ID="STR_LOP_U_US_Fatigue_01">
+				<Original>[PO]Combat Uniform (Novorussian/Surpat)</Original>
+				<English>[PO]Combat Uniform (Novorussian/Surpat)</English>
+				<Russian>[PO]Форма ВСН (Сурпат)</Russian>
+			</Key>
+			<Key ID="STR_LOP_U_US_Fatigue_02">
+				<Original>[PO]Combat Uniform (Novorussian/Multicam)</Original>
+				<English>[PO]Combat Uniform (Novorussian/Multicam)</English>
+				<Russian>[PO]Форма ВСН (Мультикам)</Russian>
+			</Key>
+			<Key ID="STR_LOP_U_US_Fatigue_03">
+				<Original>[PO]Combat Uniform (Novorussian/Olive)</Original>
+				<English>[PO]Combat Uniform (Novorussian/Olive)</English>
+				<Russian>[PO]Форма ВСН (Олива)</Russian>
+			</Key>
+			<Key ID="STR_LOP_U_US_Fatigue_04">
+				<Original>[PO]Combat Uniform (Novorussian/Partizan)</Original>
+				<English>[PO]Combat Uniform (Novorussian/Partizan)</English>
+				<Russian>[PO]Форма ВСН (СС-Лето)</Russian>
+			</Key>
+			<Key ID="STR_LOP_U_US_Fatigue_05">
+				<Original>[PO]Combat Uniform (Novorussian/Spectre-SKVO)</Original>
+				<English>[PO]Combat Uniform (Novorussian/Spectre-SKVO)</English>
+				<Russian>[PO]Форма ВСН (Спектр-СКВО)</Russian>
+			</Key>
+			<Key ID="STR_LOP_U_US_Fatigue_06">
+				<Original>[PO]Combat Uniform (Novorussian/EMR-summer &amp; Lizard)</Original>
+				<English>[PO]Combat Uniform (Novorussian/EMR-summer &amp; Lizard)</English>
+				<Russian>[PO]Форма ВСН (ЕМР-лето и камыш)</Russian>
+			</Key>
+			<Key ID="STR_LOP_U_US_Fatigue_07">
+				<Original>[PO]Combat Uniform (Novorussian/VSR-93 &amp; Skol)</Original>
+				<English>[PO]Combat Uniform (Novorussian/VSR-93 &amp; Skol)</English>
+				<Russian>[PO]Форма ВСН (ВСР-93 и Скол)</Russian>
+			</Key>
+			<Key ID="STR_LOP_U_US_Fatigue_08">
+				<Original>[PO]Combat Uniform (Novorussian/Olive &amp; Multicam)</Original>
+				<English>[PO]Combat Uniform (Novorussian/Olive &amp; Multicam)</English>
+				<Russian>[PO]Форма ВСН (Олива и Мультикам)</Russian>
+			</Key>
+			<Key ID="STR_LOP_U_US_Fatigue_09">
+				<Original>[PO]Combat Uniform (Novorussian/Olive &amp; EMR-summer)</Original>
+				<English>[PO]Combat Uniform (Novorussian/Olive &amp; EMR-summer)</English>
+				<Russian>[PO]Форма ВСН (Олива и ЕМР-лето)</Russian>
+			</Key>
+			<Key ID="STR_LOP_U_US_Fatigue_10">
+				<Original>[PO]Combat Uniform (Novorussian/Tan &amp; Partizan)</Original>
+				<English>[PO]Combat Uniform (Novorussian/Tan &amp; Partizan)</English>
+				<Russian>[PO]Форма ВСН (Песочный и СС-Лето)</Russian>
+			</Key>
+			<Key ID="STR_LOP_U_US_Fatigue_11">
+				<Original>[PO]Combat Uniform (Novorussian/Partizan mix)</Original>
+				<English>[PO]Combat Uniform (Novorussian/Partizan mix)</English>
+				<Russian>[PO]Форма ВСН (СС-Осень и СС-Лето)</Russian>
+			</Key>
+			<Key ID="STR_LOP_U_US_Fatigue_12">
+				<Original>[PO]Combat Uniform (Novorussian/Izlom &amp; Skol)</Original>
+				<English>[PO]Combat Uniform (Novorussian/Izlom &amp; Skol)</English>
+				<Russian>[PO]Форма ВСН (Излом и Скол)</Russian>
+			</Key>
+			<Key ID="STR_LOP_U_US_Fatigue_13">
+				<Original>[PO]Combat Uniform (Novorussian/KLMK)</Original>
+				<English>[PO]Combat Uniform (Novorussian/KLMK)</English>
+				<Russian>[PO]Форма ВСН (КЛМК)</Russian>
+			</Key>
+			<Key ID="STR_LOP_U_US_Fatigue_14">
+				<Original>[PO]Combat Uniform (Novorussian/Gorka-1)</Original>
+				<English>[PO]Combat Uniform (Novorussian/Gorka-1)</English>
+				<Russian>[PO]Форма ВСН (Горка-1)</Russian>
+			</Key>
+			<Key ID="STR_LOP_H_6B27M_Flora">
+				<Original>[PO]6B27M VSR-93</Original>
+				<English>[PO]6B27M VSR-93</English>
+				<Russian>[PO]6Б27М ВСР-93</Russian>
+			</Key><Key ID="STR_LOP_H_6B27M_Flora_ess">
+				<Original>[PO]6B27M VSR-93 (ESS)</Original>
+				<English>[PO]6B27M VSR-93 (ESS)</English>
+				<Russian>[PO]6Б27М ВСР-93(ESS)</Russian>
+			</Key>
+			<Key ID="STR_LOP_H_6B27M_Skol">
+				<English>[PO]6B27M Skol</English>
+				<Original>[PO]6B27M Skol</Original>
+				<Russian>[PO]6Б27М Скол</Russian>
+			</Key>
+			<Key ID="STR_LOP_H_6B27M_Skol_ess">
+				<English>[PO]6B27M Skol (ESS)</English>
+				<Original>[PO]6B27M Skol (ESS)</Original>
+				<Russian>[PO]6Б27М Скол (ESS)</Russian>
+			</Key>
+			<Key ID="STR_LOP_U_CHR_Villager_01">
+				<English>[PO]Civilian Clothes (Peasant)</English>
+				<Original>[PO]Civilian Clothes (Peasant)</Original>
+				<Russian>[PO]Гражданская одежда (сельская)</Russian>
+			</Key>
+			<Key ID="STR_LOP_U_CHR_Profiteer_01">
+				<English>[PO]Civilian Clothes (Profiteer)</English>
+				<Original>[PO]Civilian Clothes (Profiteer)</Original>
+				<Russian>[PO]Гражданская одежда (спекулянт)</Russian>
+			</Key>
+				<Key ID="STR_LOP_U_CHR_Rocker_01">
+				<English>[PO]Civilian Clothes (Rocker)</English>
+				<Original>[PO]Civilian Clothes (Rocker)</Original>
+				<Russian>[PO]Гражданская одежда (рокер)</Russian>
+			</Key>
+			<Key ID="STR_LOP_U_CHR_Woodlander_01">
+				<English>[PO]Civilian Clothes (Woodlander)</English>
+				<Original>[PO]Civilian Clothes (Woodlander)</Original>
+				<Russian>[PO]Гражданская одежда (лесная)</Russian>
+			</Key>
+			<Key ID="STR_LOP_U_CHR_Worker_01">
+				<English>[PO]Civilian Clothes (Worker)</English>
+				<Original>[PO]Civilian Clothes (Worker)</Original>
+				<Russian>[PO]Гражданская одежда (рабочий)</Russian>
+			</Key>
+			<Key ID="STR_LOP_U_CHR_Functionary_01">
+				<English>[PO]Civilian Clothes (Suit)</English>
+				<Original>[PO]Civilian Clothes (Suit)</Original>
+				<Russian>[PO]Гражданская одежда (деловой костюм)</Russian>
+			</Key>
+			<Key ID="STR_LOP_U_CHR_Policeman_01">
+				<English>[PO]Policeman Coveralls (EE)</English>
+				<Original>[PO]Policeman Coveralls (EE)</Original>
+				<Russian>[PO]Милицейская форма</Russian>
+			</Key>
+			<Key ID="STR_LOP_U_CHR_Priest_01">
+				<English>[PO]Civilian Clothes (Priest)</English>
+				<Original>[PO]Civilian Clothes (Priest)</Original>
+				<Russian>[PO]Гражданская одежда (священник)</Russian>
+			</Key>
+			<Key ID="STR_LOP_U_CHR_Doctor_01">
+				<English>[PO]Civilian Clothes (Doctor)</English>
+				<Original>[PO]Civilian Clothes (Doctor)</Original>
+				<Russian>[PO]Гражданская одежда (врач)</Russian>
+			</Key>
+			<Key ID="STR_LOP_H_Ushanka">
+				<English>[PO]Ushanka cap</English>
+				<Original>[PO]Ushanka cap</Original>
+				<Russian>[PO]Шапка-ушанка</Russian>
+			</Key>
+			<Key ID="STR_LOP_H_Policeman_cap">
+				<English>[PO]Policeman cap</English>
+				<Original>[PO]Policeman cap</Original>
+				<Russian>[PO]Милицейская фуражка</Russian>
+			</Key>
+			<Key ID="STR_LOP_H_Villager_cap">
+				<English>[PO]Villager cap</English>
+				<Original>[PO]Villager cap</Original>
+				<Russian>[PO]Деревенская шапка</Russian>
+			</Key>
+			<Key ID="STR_LOP_H_Worker_cap">
+				<English>[PO]Worker cap</English>
+				<Original>[PO]Worker cap</Original>
+				<Russian>[PO]Шапка рабочего</Russian>
+			</Key>
+			<Key ID="STR_LOP_jet_pilot">
+				<English>Jet pilot</English>
+				<Original>Jet pilot</Original>
+				<Russian>Пилот самолёта</Russian>
+			</Key>
+			<Key ID="STR_LOP_kamaz_fuel">
+				<English>KamAZ (fuel)</English>
+				<Original>KamAZ (fuel)</Original>
+				<Russian>КамАЗ (топливо)</Russian>
+			</Key>
+			<Key ID="STR_lop_team_leader">
+				<English>Team Leader</English>
+				<Original>Team Leader</Original>
+				<Russian>Командир</Russian>
+			</Key>
+			<Key ID="STR_lop_section_leader">
+				<English>Section Leader</English>
+				<Original>Section Leader</Original>
+				<Russian>Командир отделения</Russian>
+			</Key>
+			<Key ID="STR_lop_rifleman_gp">
+				<English>Grenadier</English>
+				<Original>Grenadier</Original>
+				<Russian>Стрелок с ГП</Russian>
+			</Key>
+			<Key ID="STR_lop_machinegunner_pkp">
+				<English>Machine Gunner (PKP)</English>
+				<Original>Machine Gunner (PKP)</Original>
+				<Russian>Пулеметчик (ПКП)</Russian>
+			</Key>
+			<Key ID="STR_lop_villager">
+				<English>Villager</English>
+				<Original>Villager</Original>
+				<Russian>Сельский житель</Russian>
+			</Key>
+			<Key ID="STR_lop_woodlander">
+				<English>Woodlander</English>
+				<Original>Woodlander</Original>
+				<Russian>Лесник</Russian>
+			</Key>
+			<Key ID="STR_lop_worker">
+				<English>Worker</English>
+				<Original>Worker</Original>
+				<Russian>Рабочий</Russian>
+			</Key>
+			<Key ID="STR_lop_rocker">
+				<English>Rocker</English>
+				<Original>Rocker</Original>
+				<Russian>Рокер</Russian>
+			</Key>
+			<Key ID="STR_lop_profiteer">
+				<English>Profiteer</English>
+				<Original>Profiteer</Original>
+				<Russian>Спекулянт</Russian>
+			</Key>
+			<Key ID="STR_lop_priest">
+				<English>Priest</English>
+				<Original>Priest</Original>
+				<Russian>Священник</Russian>
+			</Key>
+			<Key ID="STR_lop_doctor">
+				<English>Doctor</English>
+				<Original>Doctor</Original>
+				<Russian>Врач</Russian>
+			</Key>
+			<Key ID="STR_lop_policeman">
+				<English>Policeman</English>
+				<Original>Policeman</Original>
+				<Russian>Милиционер</Russian>
+			</Key>
+			<Key ID="STR_lop_functionaty">
+				<English>Functionary</English>
+				<Original>Functionary</Original>
+				<Russian>Чиновник</Russian>
+			</Key>
+		</Container>
+    </Package>
+</Project>
