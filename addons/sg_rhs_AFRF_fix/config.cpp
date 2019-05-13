@@ -1725,6 +1725,8 @@ class cfgVehicles
 			class MainTurret : MainTurret 
             {
 				turretInfoType = "sg_RHS_RscWeaponT72_FCS";
+				soundServo[] = {"sg_sound_file\soundTurret\soundServo.ogg",0.562341,1,30}; //звуки поворота башни
+				soundServoVertical[] = {"sg_sound_file\soundTurret\soundServoVertical.ogg",0.562341,1,30};
                 class Turrets: Turrets
 				{
 					class CommanderOptics: CommanderOptics
@@ -1795,6 +1797,7 @@ class cfgVehicles
 			class MainTurret : MainTurret 
             {
 				turretInfoType = "sg_rhs_gui_optic_t80_rangefinder";
+				soundServoVertical[] = {"sg_sound_file\soundTurret\soundServoVertical.ogg",0.562341,1,30};
                 class Turrets: Turrets
 				{
 					class CommanderOptics: CommanderOptics
@@ -2065,6 +2068,8 @@ class cfgVehicles
 			class MainTurret : MainTurret 
             {
 				turretInfoType = "sg_RHS_RscWeaponSprutSD_FCS";
+				soundServo[] = {"sg_sound_file\soundTurret\soundServo.ogg",0.562341,1,30}; //звуки поворота башни
+				soundServoVertical[] = {"sg_sound_file\soundTurret\soundServoVertical.ogg",0.562341,1,30};
                 class Turrets: Turrets
 				{
 					class CommanderOptics: CommanderOptics

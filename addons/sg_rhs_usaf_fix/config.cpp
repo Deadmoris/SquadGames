@@ -1960,6 +1960,8 @@ class cfgVehicles
             class MainTurret : MainTurret 
             {
                 turretInfoType = "sg_RHS_RscWeaponM1_FCS"; //добавляем компасы на абрамс
+				soundServo[] = {"sg_sound_file\soundTurret\soundServo.ogg",0.562341,1,30};//звуки поворота башни
+				soundServoVertical[] = {"sg_sound_file\soundTurret\soundServoVertical.ogg",0.562341,1,30};
                 class Turrets: Turrets
 				{
 					class CommanderOptics: CommanderOptics
@@ -1991,6 +1993,8 @@ class cfgVehicles
 		class Turrets: Turrets {
 			class MainTurret : MainTurret {
 				turretInfoType = "sg_RHS_RscWeaponM1_FCS";
+				soundServo[] = {"sg_sound_file\soundTurret\soundServo.ogg",0.562341,1,30};//звуки поворота башни
+				soundServoVertical[] = {"sg_sound_file\soundTurret\soundServoVertical.ogg",0.562341,1,30};
 				class Turrets: Turrets
 				{
 					class CommanderOptics: CommanderOptics
