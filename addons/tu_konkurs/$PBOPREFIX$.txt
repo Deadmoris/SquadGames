@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=tu_konkurs
+Pbo Type is: Arma Addon
+Sha: 'FC02C0F5E4E7E7FC087F899A323EC14383EFC78F'
+//////</HEADER>//////

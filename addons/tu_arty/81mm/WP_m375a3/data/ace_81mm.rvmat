@@ -1,0 +1,100 @@
+#define _ARMA_
+
+//Class tu_arty\81mm_HE_m375a3\data\ace_81mm.rvmat{
+ambient[] = {1,1,1,1.0};
+diffuse[] = {1,1,1,1.0};
+forcedDiffuse[] = {0.0,0.0,0.0,0.0};
+emmisive[] = {0.0,0.0,0.0,1.0};
+specular[] = {0.273158,0.3,0.27,1};
+specularPower = 100;
+PixelShaderID = "super";
+VertexShaderID = "super";
+class Stage1
+{
+	texture = "tu_arty\81mm\81mm_WP_m375a3\data\ace_81mm_nohq.paa";
+	uvSource = "tex";
+	class uvTransform
+	{
+		aside[] = {1.0,0.0,0.0};
+		up[] = {0.0,1.0,0.0};
+		dir[] = {0.0,0.0,0.0};
+		pos[] = {0.0,0.0,0.0};
+	};
+};
+class Stage2
+{
+	texture = "tu_arty\81mm\81mm_WP_m375a3\data\metal_detail_dt.paa";
+	uvSource = "tex";
+	class uvTransform
+	{
+		aside[] = {8.0,0.0,0.0};
+		up[] = {0.0,8.0,0.0};
+		dir[] = {0.0,0.0,0.0};
+		pos[] = {0.0,0.0,0.0};
+	};
+};
+class Stage3
+{
+	texture = "#(argb,8,8,3)color(0,0,0,0,MC)";
+	uvSource = "tex";
+	class uvTransform
+	{
+		aside[] = {1.0,0.0,0.0};
+		up[] = {0.0,1.0,0.0};
+		dir[] = {0.0,0.0,0.0};
+		pos[] = {0.0,0.0,0.0};
+	};
+};
+class Stage4
+{
+	texture = "#(argb,8,8,3)color(1,1,1,1,AS)";
+	uvSource = "tex";
+	class uvTransform
+	{
+		aside[] = {1.0,0.0,0.0};
+		up[] = {0.0,1.0,0.0};
+		dir[] = {0.0,0.0,0.0};
+		pos[] = {0.0,0.0,0.0};
+	};
+};
+class Stage5
+{
+	texture = "tu_arty\81mm\81mm_WP_m375a3\data\ace_81mm_smdi.paa";
+	uvSource = "tex";
+	class uvTransform
+	{
+		aside[] = {1.0,0.0,0.0};
+		up[] = {0.0,1.0,0.0};
+		dir[] = {0.0,0.0,0.0};
+		pos[] = {0.0,0.0,0.0};
+	};
+};
+class Stage6
+{
+	texture = "#(ai,16,2,2)fresnel(0.45,0.35)";
+	uvSource = "tex";
+	class uvTransform
+	{
+		aside[] = {1.0,0.0,0.0};
+		up[] = {0.0,1.0,0.0};
+		dir[] = {0.0,0.0,0.0};
+		pos[] = {0.0,0.0,0.0};
+	};
+};
+class Stage7
+{
+	texture = "tu_arty\81mm\81mm_WP_m375a3\data\env_land_co.paa";
+	uvSource = "tex";
+	class uvTransform
+	{
+		aside[] = {1.0,0.0,0.0};
+		up[] = {0.0,1.0,0.0};
+		dir[] = {0.0,0.0,0.0};
+		pos[] = {0.0,0.0,0.0};
+	};
+};
+class StageTI
+{
+	texture = "ca\ca_e\data\default_vehicle_ti_ca.paa";
+};
+//};

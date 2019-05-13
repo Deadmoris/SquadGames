@@ -1,3 +1,12 @@
+////////////////////////////////////////////////////////////////////
+//DeRap: tu_colt\config.bin
+//Produced from mikero's Dos Tools Dll version 6.24
+//'now' is Mon May 13 14:26:46 2019 : 'file' last modified on Sun Apr 14 19:08:23 2019
+//http://dev-heaven.net/projects/list_files/mikero-pbodll
+////////////////////////////////////////////////////////////////////
+
+#define _ARMA_
+
 class CfgPatches
 {
 	class tu_colt
@@ -90,7 +99,6 @@ class CfgWeapons
 		scopeArsenal = 0;
 		model = "\tu_colt\coltpvs4_old.p3d";
 	};
-	
 	class rhs_weap_m16a4;
 	class tu_m16a2_ris: rhs_weap_m16a4
 	{
@@ -112,13 +120,13 @@ class CfgWeapons
 			class PointerSlot: PointerSlot
 			{
 				iconPosition[] = {0,0};
-				iconScale = 1.0;
+				iconScale = 1;
 				iconPicture = "\A3\Weapons_F\Data\clear_empty.paa";
 				iconPinPoint = "Left";
 				linkProxy = "\A3\data_f\proxies\weapon_slots\SIDE";
 			};
-			class UnderBarrelSlot {};
-			class GripodSlot {};
+			class UnderBarrelSlot{};
+			class GripodSlot{};
 		};
 	};
 	class tu_m16a2: tu_m16a2_ris
@@ -136,13 +144,13 @@ class CfgWeapons
 			class PointerSlot: PointerSlot
 			{
 				iconPosition[] = {0,0};
-				iconScale = 1.0;
+				iconScale = 1;
 				iconPicture = "\A3\Weapons_F\Data\clear_empty.paa";
 				iconPinPoint = "Left";
 				linkProxy = "\A3\data_f\proxies\weapon_slots\SIDE";
 			};
-			class UnderBarrelSlot {};
-			class GripodSlot {};
+			class UnderBarrelSlot{};
+			class GripodSlot{};
 		};
 		class Single;
 		class Burst;
@@ -168,13 +176,13 @@ class CfgWeapons
 			class PointerSlot: PointerSlot
 			{
 				iconPosition[] = {0,0};
-				iconScale = 1.0;
+				iconScale = 1;
 				iconPicture = "\A3\Weapons_F\Data\clear_empty.paa";
 				iconPinPoint = "Left";
 				linkProxy = "\A3\data_f\proxies\weapon_slots\SIDE";
 			};
-			class UnderBarrelSlot {};
-			class GripodSlot {};
+			class UnderBarrelSlot{};
+			class GripodSlot{};
 		};
 	};
 	class tu_m16a2_gl: tu_m16a2_gl_ris
@@ -192,15 +200,20 @@ class CfgWeapons
 			class PointerSlot: PointerSlot
 			{
 				iconPosition[] = {0,0};
-				iconScale = 1.0;
+				iconScale = 1;
 				iconPicture = "\A3\Weapons_F\Data\clear_empty.paa";
 				iconPinPoint = "Left";
 				linkProxy = "\A3\data_f\proxies\weapon_slots\SIDE";
 			};
-			class UnderBarrelSlot {};
-			class GripodSlot {};
+			class UnderBarrelSlot{};
+			class GripodSlot{};
 		};
 		class M203_GL;
 		class SAFE;
 	};
+};
+class cfgMods
+{
+	author = "Kiker";
+	timepacked = "1555279703";
 };

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project ID="SG">
+	<Package ID="Platform">
+		<Key ID="STR_TU_FoldUnfoldWeapon">
+			<English>Fold\Unfold stock</English>
+			<Russian>Сложить\разложить приклад</Russian>
+        </Key>
+		<Key ID="STR_TU_DismountNpz">
+			<English>Dismount rail adapter</English>
+			<Russian>Снять рельсу для прицелов</Russian>
+        </Key>
+		
+	</Package>
+</Project>

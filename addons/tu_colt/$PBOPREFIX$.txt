@@ -1,0 +1,5 @@
+///'tu_colt.pbo' from Mikero's dos tools, dll version 6.24///
+prefix=tu_colt
+Pbo Type is: Arma Addon
+Sha: '32752E5D57198403D95AD67099743C18F50EEE52'
+//////</HEADER>//////

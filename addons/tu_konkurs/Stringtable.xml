@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="tu_konkurs">
+  <Package name="tu_konkurs">
+      <Key ID="STR_TU_MAG_9M131M">
+        <Original>ATGM 9M131M</Original>
+        <English>ATGM 9M131M</English>
+        <Czech>ATGM 9M131M</Czech>
+        <French>ATGM 9M131M</French>
+        <Spanish>ATGM 9M131M</Spanish>
+        <Italian>ATGM 9M131M</Italian>
+        <Polish>ATGM 9M131M</Polish>
+        <Portuguese>ATGM 9M131M</Portuguese>
+        <Russian>9М131</Russian>
+        <German>ATGM 9M131M</German>
+      </Key>
+      <Key ID="STR_TU_MAG_SH_9M131M">
+        <Original>9M131M</Original>
+        <English>9M131M</English>
+        <Czech>9M131M</Czech>
+        <French>9M131M</French>
+        <Spanish>9M131M</Spanish>
+        <Italian>9M131M</Italian>
+        <Polish>9M131M</Polish>
+        <Portuguese>9M131M</Portuguese>
+        <Russian>9М131</Russian>
+        <German>9M131M</German>
+      </Key>
+      <Key ID="STR_TU_MAG_9M113M">
+        <Original>ATGM 9M113M</Original>
+        <English>ATGM 9M113M</English>
+        <Czech>ATGM 9M113M</Czech>
+        <French>ATGM 9M113M</French>
+        <Spanish>ATGM 9M113M</Spanish>
+        <Italian>ATGM 9M113M</Italian>
+        <Polish>ATGM 9M113M</Polish>
+        <Portuguese>ATGM 9M113M</Portuguese>
+        <Russian>9М113М</Russian>
+        <German>ATGM 9M113M</German>
+      </Key>
+      <Key ID="STR_TU_MAG_SH_9M113M">
+        <Original>9M113M</Original>
+        <English>9M113M</English>
+        <Czech>9M113M</Czech>
+        <French>9M113M</French>
+        <Spanish>9M113M</Spanish>
+        <Italian>9M113M</Italian>
+        <Polish>9M113M</Polish>
+        <Portuguese>9M113M</Portuguese>
+        <Russian>9М113M</Russian>
+        <German>9M113M</German>
+      </Key>
+      <Key ID="STR_TU_MAG_9M111M">
+        <Original>ATGM 9M111M</Original>
+        <English>ATGM 9M111M</English>
+        <Czech>ATGM 9M111M</Czech>
+        <French>ATGM 9M111M</French>
+        <Spanish>ATGM 9M111M</Spanish>
+        <Italian>ATGM 9M111M</Italian>
+        <Polish>ATGM 9M111M</Polish>
+        <Portuguese>ATGM 9M111M</Portuguese>
+        <Russian>9М111М</Russian>
+        <German>ATGM 9M111M</German>
+      </Key>
+      <Key ID="STR_TU_MAG_SH_9M111M">
+        <Original>9M111M</Original>
+        <English>9M111M</English>
+        <Czech>9M111M</Czech>
+        <French>9M111M</French>
+        <Spanish>9M111M</Spanish>
+        <Italian>9M111M</Italian>
+        <Polish>9M111M</Polish>
+        <Portuguese>9M111M</Portuguese>
+        <Russian>9М111M</Russian>
+        <German>9M111M</German>
+      </Key>
+      <Key ID="STR_TU_WEAP_9M131M">
+        <Original>9M131M</Original>
+        <English>9M131M</English>
+        <Czech>9M131M</Czech>
+        <French>9M131M</French>
+        <Spanish>9M131M</Spanish>
+        <Italian>9M131M</Italian>
+        <Polish>9M131M</Polish>
+        <Portuguese>9M131M</Portuguese>
+        <Russian>9М131</Russian>
+        <German>9M131M</German>
+      </Key>
+      <Key ID="STR_TU_WEAP_9M113">
+        <Original>9M113</Original>
+        <English>9M113</English>
+        <Czech>9M113</Czech>
+        <French>9M113</French>
+        <Spanish>9M113</Spanish>
+        <Italian>9M113</Italian>
+        <Polish>9M113</Polish>
+        <Portuguese>9M113</Portuguese>
+        <Russian>9М113</Russian>
+        <German>9M113</German>
+      </Key>
+      <Key ID="STR_TU_WEAP_9M111M">
+        <Original>9M111M</Original>
+        <English>9M111M</English>
+        <Czech>9M111M</Czech>
+        <French>9M111M</French>
+        <Spanish>9M111M</Spanish>
+        <Italian>9M111M</Italian>
+        <Polish>9M111M</Polish>
+        <Portuguese>9M111M</Portuguese>
+        <Russian>9М111M</Russian>
+        <German>9M111M</German>
+      </Key>
+      <Key ID="STR_TU_9M113M_2TUBE_BAG">
+        <Original>9M113M Konkurs-M Rockets</Original>
+        <English>9M113M Konkurs-M Rockets</English>
+        <Czech>9M113M Konkurs-M Rockets</Czech>
+        <French>9M113M Konkurs-M Rockets</French>
+        <Spanish>9M113M Konkurs-M Rockets</Spanish>
+        <Italian>9M113M Konkurs-M Rockets</Italian>
+        <Polish>9M113M Konkurs-M Rockets</Polish>
+        <Portuguese>9M113M Konkurs-M Rockets</Portuguese>
+        <Russian>Ракеты 9М113M Конкурс-М</Russian>
+        <German>9M113M Konkurs-M Rockets</German>
+      </Key>
+      <Key ID="STR_TU_9M113M_1TUBE_BAG">
+        <Original>9M113M Konkurs-M Rocket</Original>
+        <English>9M113M Konkurs-M Rocket</English>
+        <Czech>9M113M Konkurs-M Rocket</Czech>
+        <French>9M113M Konkurs-M Rocket</French>
+        <Spanish>9M113M Konkurs-M Rocket</Spanish>
+        <Italian>9M113M Konkurs-M Rocket</Italian>
+        <Polish>9M113M Konkurs-M Rocket</Polish>
+        <Portuguese>9M113M Konkurs-M Rocket</Portuguese>
+        <Russian>Ракета 9М113M Конкурс-М</Russian>
+        <German>9M113M Konkurs-M Rocket</German>
+      </Key>
+      <Key ID="STR_TU_9M113_2TUBE_BAG">
+        <Original>9M113 Konkurs Rockets</Original>
+        <English>9M113 Konkurs Rockets</English>
+        <Czech>9M113 Konkurs Rockets</Czech>
+        <French>9M113 Konkurs Rockets</French>
+        <Spanish>9M113 Konkurs Rockets</Spanish>
+        <Italian>9M113 Konkurs Rockets</Italian>
+        <Polish>9M113 Konkurs Rockets</Polish>
+        <Portuguese>9M113 Konkurs Rockets</Portuguese>
+        <Russian>Ракеты 9М113 Конкурс</Russian>
+        <German>9M113 Konkurs Rockets</German>
+      </Key>
+      <Key ID="STR_TU_9M113_1TUBE_BAG">
+        <Original>9M113 Konkurs Rocket</Original>
+        <English>9M113 Konkurs Rocket</English>
+        <Czech>9M113 Konkurs Rocket</Czech>
+        <French>9M113 Konkurs Rocket</French>
+        <Spanish>9M113 Konkurs Rocket</Spanish>
+        <Italian>9M113 Konkurs Rocket</Italian>
+        <Polish>9M113 Konkurs Rocket</Polish>
+        <Portuguese>9M113 Konkurs Rocket</Portuguese>
+        <Russian>Ракета 9М113 Конкурс</Russian>
+        <German>9M113 Konkurs Rocket</German>
+      </Key>
+      <Key ID="STR_TU_9M111M_2TUBE_BAG">
+        <Original>9M111M Faktoriya Rockets</Original>
+        <English>9M111M Faktoriya Rockets</English>
+        <Czech>9M111M Faktoriya Rockets</Czech>
+        <French>9M111M Faktoriya Rockets</French>
+        <Spanish>9M111M Faktoriya Rockets</Spanish>
+        <Italian>9M111M Faktoriya Rockets</Italian>
+        <Polish>9M111M Faktoriya Rockets</Polish>
+        <Portuguese>9M111M Faktoriya Rockets</Portuguese>
+        <Russian>Ракеты 9М111M Фактория</Russian>
+        <German>9M111M Faktoriya Rockets</German>
+      </Key>
+      <Key ID="STR_TU_9M111M_1TUBE_BAG">
+        <Original>9M111M Faktoriya Rocket</Original>
+        <English>9M111M Faktoriya Rocket</English>
+        <Czech>9M111M Faktoriya Rocket</Czech>
+        <French>9M111M Faktoriya Rocket</French>
+        <Spanish>9M111M Faktoriya Rocket</Spanish>
+        <Italian>9M111M Faktoriya Rocket</Italian>
+        <Polish>9M111M Faktoriya Rocket</Polish>
+        <Portuguese>9M111M Faktoriya Rocket</Portuguese>
+        <Russian>Ракета 9М111M Фактория</Russian>
+        <German>9M111M Faktoriya Rocket</German>
+      </Key>
+      <Key ID="STR_TU_9M131M_2TUBE_BAG">
+        <Original>9M131M Metis-M Rockets</Original>
+        <English>9M131M Metis-M Rockets</English>
+        <Czech>9M131M Metis-M Rockets</Czech>
+        <French>9M131M Metis-M Rockets</French>
+        <Spanish>9M131M Metis-M Rockets</Spanish>
+        <Italian>9M131M Metis-M Rockets</Italian>
+        <Polish>9M131M Metis-M Rockets</Polish>
+        <Portuguese>9M131M Metis-M Rockets</Portuguese>
+        <Russian>Ракеты 9М131М Метис-М</Russian>
+        <German>9M131M Metis-M Rockets</German>
+      </Key>
+      <Key ID="STR_TU_9M131M_1TUBE_BAG">
+        <Original>9M131M Metis-M Rocket</Original>
+        <English>9M131M Metis-M Rocket</English>
+        <Czech>9M131M Metis-M Rocket</Czech>
+        <French>9M131M Metis-M Rocket</French>
+        <Spanish>9M131M Metis-M Rocket</Spanish>
+        <Italian>9M131M Metis-M Rocket</Italian>
+        <Polish>9M131M Metis-M Rocket</Polish>
+        <Portuguese>9M131M Metis-M Rocket</Portuguese>
+        <Russian>Ракета 9М131М Метис-М</Russian>
+        <German>9M131M Metis-M Rocket</German>
+      </Key>
+      <Key ID="STR_TU_9P135">
+        <Original>9P135</Original>
+        <English>9P135</English>
+        <Czech>9P135</Czech>
+        <French>9P135</French>
+        <Spanish>9P135</Spanish>
+        <Italian>9P135</Italian>
+        <Polish>9P135</Polish>
+        <Portuguese>9P135</Portuguese>
+        <Russian>9П135</Russian>
+        <German>9P135</German>
+      </Key>
+      <Key ID="STR_TU_9P135M1">
+        <Original>9P135M1</Original>
+        <English>9P135M1</English>
+        <Czech>9P135M1</Czech>
+        <French>9P135M1</French>
+        <Spanish>9P135M1</Spanish>
+        <Italian>9P135M1</Italian>
+        <Polish>9P135M1</Polish>
+        <Portuguese>9P135M1</Portuguese>
+        <Russian>9П135М1</Russian>
+        <German>9P135M1</German>
+      </Key>
+      <Key ID="STR_TU_9P135M2">
+        <Original>9P135M2</Original>
+        <English>9P135M2</English>
+        <Czech>9P135M2</Czech>
+        <French>9P135M2</French>
+        <Spanish>9P135M2</Spanish>
+        <Italian>9P135M2</Italian>
+        <Polish>9P135M2</Polish>
+        <Portuguese>9P135M2</Portuguese>
+        <Russian>9П135М2</Russian>
+        <German>9P135M2</German>
+      </Key>
+      <Key ID="STR_TU_9P135M3">
+        <Original>9P135M3</Original>
+        <English>9P135M3</English>
+        <Czech>9P135M3</Czech>
+        <French>9P135M3</French>
+        <Spanish>9P135M3</Spanish>
+        <Italian>9P135M3</Italian>
+        <Polish>9P135M3</Polish>
+        <Portuguese>9P135M3</Portuguese>
+        <Russian>9П135М3</Russian>
+        <German>9P135M3</German>
+      </Key>
+	  <Key ID="STR_Disassemble">
+        <English>Disassemble</English>
+        <Russian>Разобрать</Russian>
+        <German>Demontieren</German>
+      </Key>
+  </Package>
+</Project>

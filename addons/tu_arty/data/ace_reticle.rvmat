@@ -1,0 +1,19 @@
+////////////////////////////////////////////////////////////////////
+//DeRap: Produced from mikero's Dos Tools Dll version 4.97
+//Sat Oct 03 21:55:04 2015 : Source 'file' date Sat Oct 03 21:55:04 2015
+//http://dev-heaven.net/projects/list_files/mikero-pbodll
+////////////////////////////////////////////////////////////////////
+
+#define _ARMA_
+
+//Class tu_arty : data\ace_reticle.rvmat{
+ambient[] = {0,0,0,1};
+diffuse[] = {0,0,0,1};
+forcedDiffuse[] = {0,0,0,0};
+emmisive[] = {1,1,1,1};
+specular[] = {0,0,0,1};
+specularPower = 0;
+renderFlags[] = {"NoZWrite"};
+PixelShaderID = "Normal";
+VertexShaderID = "Basic";
+//};

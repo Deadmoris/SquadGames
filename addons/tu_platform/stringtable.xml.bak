@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project ID="SG">
+	<Package ID="Platform">
+		<Key ID="STR_TU_Platform">
+			<English>SG platform</English>
+			<Russian>Платформа SG</Russian>
+        </Key>
+		<Key ID="STR_TU_DefaultHardfreeze">
+			<English>Default hardfreeze length</English>
+			<Russian>Продолжительность хардфриза</Russian>
+        </Key>
+		<Key ID="STR_TU_DefaultHardfreeze">
+			<English>Do not remove bots after freezetime</English>
+			<Russian>Оставить ботов после конца фризтайма</Russian>
+        </Key>
+		<Key ID="STR_TU_Menu">
+			<English>Platform menu</English>
+			<Russian>Меню платформы</Russian>
+        </Key>
+		<Key ID="STR_TU_ShowMenu">
+			<English>Show menu</English>
+			<Russian>Показать меню</Russian>
+        </Key>
+		<Key ID="STR_TU_ViewDistanceDown">
+			<English>View distance [-]</English>
+			<Russian>Дальность прорисовки [-]</Russian>
+        </Key>
+		<Key ID="STR_TU_ViewDistanceUp">
+			<English>View distance [+]</English>
+			<Russian>Дальность прорисовки [+]</Russian>
+        </Key>
+		<Key ID="STR_TU_ViewDistanceHalf">
+			<English>View distance (50%) (on/off)</English>
+			<Russian>Дальность прорисовки [50%] (вкл./выкл.)</Russian>
+        </Key>
+		<Key ID="STR_TU_SoundVolumeDown">
+			<English>Sound volume [-]</English>
+			<Russian>Громкость звука [-]</Russian>
+        </Key>
+		<Key ID="STR_TU_SoundVolumeUp">
+			<English>Sound volume [+]</English>
+			<Russian>Громкость звука [+]</Russian>
+        </Key>
+		<Key ID="STR_TU_SoundVolumeHalf">
+			<English>Sound volume (50%) (on/off)</English>
+			<Russian>Громкость звука [50%] (вкл./выкл.)</Russian>
+        </Key>	
+		<Key ID="STR_TU_ViewDistance_Action">
+			<English>View Distance</English>
+			<Russian>Дистанция Обзора</Russian>
+		</Key>
+		<Key ID="STR_TU_ViewDistance">
+			<English>SG View Distance</English>
+			<Russian>Дальности Обзора SG</Russian>
+		</Key>
+		<Key ID="STR_TU_ViewDistance_Infantry">
+			<English>Infantry</English>
+			<Russian>Пехота</Russian>
+		</Key>
+		<Key ID="STR_TU_ViewDistance_Vehicles">
+			<English>Vehicles</English>
+			<Russian>Техника</Russian>
+		</Key>
+		<Key ID="STR_TU_ViewDistance_Air">
+			<English>Air</English>
+			<Russian>Воздух</Russian>
+		</Key>
+		<Key ID="STR_TU_ViewDistance_Max">
+			<English>Maximum : %1m</English>
+			<Russian>Максимум: %1м</Russian>
+		</Key>
+		<Key ID="STR_TU_Paused">
+			<English>Mission paused by admin</English>
+			<Russian>Миссия поставлена на паузу админом</Russian>
+        </Key>
+		<Key ID="STR_TU_Pause">
+			<English>(Admin) Pause mission</English>
+			<Russian>(Админ) Поставить миссию на паузу</Russian>
+        </Key>
+		<Key ID="STR_TU_Unpaused">
+			<English>Mission unpaused by admin</English>
+			<Russian>Миссия снята с паузы админом</Russian>
+        </Key>
+		<Key ID="STR_TU_Unpause">
+			<English>(Admin) Unpause mission</English>
+			<Russian>(Админ) Снять миссию с паузы</Russian>
+        </Key>
+		<Key ID="STR_TU_Broadcast">
+			<Original>(Admin) Broadcast message</Original>
+			<Russian>(Админ) Сообщение игрокам</Russian>
+		</Key>		
+		<Key ID="STR_TU_FeedBack">
+			<Original>Feedback</Original>
+			<Russian>Связь с админом</Russian>
+		</Key>		
+		<Key ID="STR_TU_GameAdmin">
+			<Original>Game admin:</Original>
+			<Russian>Игровой администратор:</Russian>
+		</Key>		
+		<Key ID="STR_TU_Send">
+			<Original>Send</Original>
+			<Russian>Отправить</Russian>
+		</Key>		
+		<Key ID="STR_TU_Close">
+			<Original>Close</Original>
+			<Russian>Закрыть</Russian>
+		</Key>
+		<Key ID="STR_TU_NoAdmin">
+			<Original>Admin is not in game</Original>
+			<Russian>Админ не в игре</Russian>
+		</Key>				
+		<Key ID="STR_TU_EmptyTextField">
+			<Original>Empty text field</Original>
+			<Russian>Пустое текстовое поле</Russian>
+		</Key>
+		<Key ID="STR_TU_Messages_Diary_Subject">
+			<Original>Player Messages</Original>
+			<Russian>Сообщения от игроков</Russian>
+		</Key>
+		<Key ID="STR_TU_Flood_Warning">
+			<Original>Report urgent technical problems only. \nRefrain from sending the message if: \n - it can be done by your commander; \n - it can wait till the end of the game.</Original>
+			<Russian>Только для срочных сообщений о технических проблемах. \nНе пиши, если: \n - написать может твой командир; \n - вопрос подождёт до конца игры.</Russian>
+		</Key>
+		<Key ID="STR_TU_End_Briefing">
+			<Original>End breifing</Original>
+			<Russian>Сообщить о готовности стороны</Russian>
+		</Key>
+		<Key ID="STR_TU_Continue_Briefing">
+			<Original>Continue briefing</Original>
+			<Russian>Продолжать фризтайм</Russian>
+		</Key>
+		<Key ID="STR_TU_End_Briefing_Admin">
+			<Original>(Admin) End freezetime</Original>
+			<Russian>(Админ) Завершить фризтайм</Russian>
+		</Key>
+		<Key ID="STR_TU_Briefing_AddMin">
+			<Original>(Admin) Increase freezetime for a minute</Original>
+			<Russian>(Админ) Увеличить фризтайм на минуту</Russian>
+		</Key>
+		<Key ID="STR_TU_Briefing_SubMin">
+			<Original>(Admin) Decrease freezetime for a minute</Original>
+			<Russian>(Админ) Сократить фризтайм на минуту</Russian>
+		</Key>
+		<Key ID="STR_TU_Game_Start">
+			<Original>GAME STARTED</Original>
+			<Russian>Начали</Russian>
+		</Key>
+		<Key ID="STR_TU_BLUEFOR">
+			<Original>BULEFOR</Original>
+			<Russian>Синие</Russian>
+		</Key>
+		<Key ID="STR_TU_OPFOR">
+			<Original>OPFOR</Original>
+			<Russian>Красные</Russian>
+		</Key>
+		<Key ID="STR_TU_GUER">
+			<Original>GUER</Original>
+			<Russian>Зеленые</Russian>
+		</Key>
+		<Key ID="STR_TU_Side_Ready">
+			<Original>%1 ready (%2)</Original>
+			<Russian>%1 готовы (%2)</Russian>
+		</Key>
+		<Key ID="STR_TU_Side_Not_Ready">
+			<Original>%1 NOT ready (%2)</Original>
+			<Russian>%1 не готовы (%2)</Russian>
+		</Key>
+		<Key ID="STR_TU_Freezetime_Ended_By_Admin">
+			<Original>Freeze time ended by admin (%2)</Original>
+			<Russian>Фризтайм завершен админом (%2)</Russian>
+		</Key>
+		<Key ID="STR_TU_DoNotRemoveBots">
+			<Original>Do not remove bots after freezetime</Original>
+			<Russian>Не удалять ботов после фризтайма</Russian>
+		</Key>
+		<Key ID="STR_TU_CompassSizeCat">
+			<Original>Compass size</Original>
+			<Russian>Размер компаса</Russian>
+		</Key>
+		<Key ID="STR_TU_CompassSize">
+			<Original>In game compass size</Original>
+			<Russian>Размер компаса в игре</Russian>
+		</Key>
+		<Key ID="STR_TU_MapSmallCompassSize">
+			<Original>Small map compass size</Original>
+			<Russian>Размер мал. компаса на карте</Russian>
+		</Key>
+		<Key ID="STR_TU_MapLargeCompassSize">
+			<Original>Large map compass size</Original>
+			<Russian>Размер бол. компаса на карте</Russian>
+		</Key>
+		<Key ID="STR_TU_CompassNeedRestart">
+			<Original>Restart game to apply compass scale</Original>
+			<Russian>Перезапустите игру, чтобы изменился размер компаса</Russian>
+		</Key>
+		<Key ID="STR_TU_Spectator">
+			<Original>Spectator</Original>
+			<Russian>Спектатор</Russian>
+		</Key>
+		
+	</Package>
+</Project>

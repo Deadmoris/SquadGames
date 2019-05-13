@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project name="TU">
+    <Package name="WindDeflection">
+        <Key ID="STR_TU_WindDeflection_windDeflection_DisplayName">
+            <English>Wind Deflection</English>
+            <Polish>Wpływ wiatru</Polish>
+            <Spanish>Desviación por viento</Spanish>
+            <Czech>Účinky větru</Czech>
+            <German>Windablenkung</German>
+            <Portuguese>Desvio de vento</Portuguese>
+            <French>Déflexion du vent</French>
+            <Hungarian>Szél-hárítás</Hungarian>
+            <Russian>Отклонение ветром</Russian>
+            <Italian>Deviazione del Vento</Italian>
+            <Japanese>風向の変化</Japanese>
+            <Korean>풍향 변화</Korean>
+            <Chinesesimp>风偏</Chinesesimp>
+            <Chinese>風偏</Chinese>
+        </Key>
+        <Key ID="STR_TU_WindDeflection_windDeflection_Description">
+            <English>Wind influence on projectiles trajectory</English>
+            <Polish>Wpływ wiatru na trajektorię lotu pocisków</Polish>
+            <Spanish>Influencia del viento en la trayectoria de proyectiles</Spanish>
+            <German>Windeinfluss auf die Geschossbahnen</German>
+            <Czech>Vítr ovlivňuje trajektorii projektilu</Czech>
+            <Portuguese>Influência do vento na trajetória dos projéteis</Portuguese>
+            <French>Le vent influe sur la trajectoire des projectiles</French>
+            <Hungarian>Szél hatása a lövedékek röppályájára</Hungarian>
+            <Russian>Влияние втера на траекторию снарядов</Russian>
+            <Italian>Influenza del vento sulla traiettoria dei proiettili</Italian>
+            <Japanese>風を弾道へ影響させます</Japanese>
+            <Korean>발사체의 궤도에 풍향 변화를 줍니다.</Korean>
+            <Chinesesimp>风力的大小会引响到弹道的轨迹</Chinesesimp>
+            <Chinese>風力的大小會引響到彈道的軌跡</Chinese>
+        </Key>        
+        <Key ID="STR_TU_WindDeflection_simulationInterval_DisplayName">
+            <English>Simulation Interval</English>
+            <Polish>Interwał symulacji</Polish>
+            <Spanish>Intervalo de simulación</Spanish>
+            <German>Simulationsintervall</German>
+            <Czech>Interval simulace</Czech>
+            <Portuguese>Intervalo de simulação</Portuguese>
+            <French>Intervalle de simulation</French>
+            <Hungarian>Szimulációs intervallum</Hungarian>
+            <Russian>Интервал симуляции</Russian>
+            <Italian>Intervallo Simulazione</Italian>
+            <Japanese>シミュレーションの間隔</Japanese>
+            <Chinesesimp>模拟间隔</Chinesesimp>
+            <Chinese>模擬間隔</Chinese>
+            <Korean>시뮬레이션 간격</Korean>
+        </Key>
+        <Key ID="STR_TU_WindDeflection_simulationInterval_Description">
+            <English>Defines the interval between every calculation step</English>
+            <Polish>Określa interwał pomiędzy każdym krokiem kalkulacji</Polish>
+            <Spanish>Define el intervalo entre cada calculo</Spanish>
+            <German>Definiert das Intervall zwischen jedem Berechnungsschritt</German>
+            <Czech>Určuje interval mezi každým výpočtem</Czech>
+            <Portuguese>Define o intervalo entre cada cálculo</Portuguese>
+            <French>Défini l'intervalle entre deux points de calcul</French>
+            <Hungarian>Megszabja a számítási lépések közötti intervallumot</Hungarian>
+            <Russian>Определяет временной интервал между расчетами</Russian>
+            <Italian>Definisce l'intervallo tra ogni passaggio di calcolo</Italian>
+            <Japanese>各計算に適用させる間隔を定義します</Japanese>
+            <Korean>매 계산마다의 간격을 정의합니다</Korean>
+            <Chinesesimp>定义每个计算之间的时间间隔</Chinesesimp>
+            <Chinese>定義每個計算之間的時間間隔</Chinese>
+        </Key>
+    </Package>
+</Project>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Project name="FUB">
+    <Key ID="STR_fix_uniform_bug_name">
+      <English>Fix uniform bug</English>
+      <Russian>Исправить баг с формой</Russian>
+    </Key>
+</Project>

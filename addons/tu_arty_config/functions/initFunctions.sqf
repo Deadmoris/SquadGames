@@ -1,0 +1,16 @@
+tu_arty_fnc_air_friction = compile preprocessFileLineNumbers "air_friction.sqf";
+tu_arty_fnc_traverse = compile preprocessFileLineNumbers "traverse.sqf";
+tu_arty_fnc_elevate = compile preprocessFileLineNumbers "elevate.sqf";
+tu_arty_fnc_def_change = compile preprocessFileLineNumbers "def_change.sqf";
+tu_arty_fnc_optic_change = compile preprocessFileLineNumbers "optic_change.sqf";
+tu_arty_fnc_optic_swing = compile preprocessFileLineNumbers "optic_swing.sqf";
+tu_arty_fnc_el_dial_change = compile preprocessFileLineNumbers "el_dial_change.sqf";
+tu_arty_fnc_fired_EH = compile preprocessFileLineNumbers "fired.sqf";
+tu_arty_fnc_keydown_EH = compile preprocessFileLineNumbers "keydown.sqf";
+tu_arty_fnc_getIn_EH = compile preprocessFileLineNumbers "GetIn.sqf";
+tu_arty_fnc_getOut_EH = compile preprocessFileLineNumbers "GetOut.sqf";
+//tu_arty_fnc_dev_buildTable = compile preprocessFileLineNumbers "dev_buildTable.sqf";
+//tu_arty_fnc_dev_simulateFindSolution = compile preprocessFileLineNumbers "dev_simulateFindSolution.sqf";
+//tu_arty_fnc_dev_simulateCalcRangeTableLine = compile preprocessFileLineNumbers "dev_simulateCalcRangeTableLine.sqf";
+//tu_arty_fnc_dev_simulateShot = compile preprocessFileLineNumbers "dev_simulateShot.sqf";
+tu_arty_init_functions = true;
