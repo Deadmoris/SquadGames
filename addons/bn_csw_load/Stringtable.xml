@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="bn_csw_load">
+  <Package name="bn_csw_load_all">
+    <Container name="Names">
+    <Key ID="STR_LOAD_BN">
+		<Original>Load...</Original>
+		<Russian>Зарядить...</Russian>
+      </Key>
+	<Key ID="STR_UNLOAD_BN">
+		<Original>Unload</Original>
+		<Russian>Разрядить</Russian>
+	</Key>
+	
+	
+	
+</Container>
+</Package>
+</Project>

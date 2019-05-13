@@ -3639,7 +3639,7 @@ class CfgVehicles
 				distance = 5;
 				condition = 1;
 				class BN_CSW_Load_New {
-					displayName = "Зарядить...";
+					displayName = "$STR_LOAD_BN";
 					distance = 3;
 					condition = "count ([_target] call bn_csw_fnc_add_subactions) > 0";
 					icon = "\bn_csw_load\data\ui\load.paa";
@@ -3652,7 +3652,7 @@ class CfgVehicles
 					insertChildren = "[_target] call bn_csw_fnc_add_subactions";
 				};
 				class BN_CSW_Unload {
-					displayName = "Разрядить";
+					displayName = "$STR_UNLOAD_BN";
 					distance = 2;
 					condition = "true";
 					icon = "\bn_csw_load\data\ui\unload.paa";
@@ -3720,7 +3720,7 @@ class CfgVehicles
 					enableInside = 0;
 				};
 				class BN_CSW_Unload {
-					displayName = "Разрядить";
+					displayName = "$STR_UNLOAD_BN";
 					distance = 2;
 					condition = "true";
 					icon = "\bn_csw_load\data\ui\unload.paa";
@@ -3818,7 +3818,7 @@ class CfgVehicles
 					enableInside = 0;
 				};
 				class BN_CSW_Unload {
-					displayName = "Разрядить";
+					displayName = "$STR_UNLOAD_BN";
 					distance = 2;
 					condition = "true";
 					icon = "\bn_csw_load\data\ui\unload.paa";
@@ -4315,7 +4315,7 @@ class CfgVehicles
 					enableInside = 0;
 				};
 				class BN_CSW_Unload {
-					displayName = "Разрядить";
+					displayName = "$STR_UNLOAD_BN";
 					distance = 2;
 					condition = "true";
 					icon = "\bn_csw_load\data\ui\unload.paa";

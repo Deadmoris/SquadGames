@@ -193,7 +193,7 @@
 		acre_infantryPhoneIntercom[] = {"all"};
 		class ACE_SelfActions: ACE_SelfActions {
 			class BN_CSW_Load_loader {
-				displayName = "Зарядить...";
+				displayName = "$STR_LOAD_BN";
 				distance = 2;
 				condition = "(!isturnedout _player) && {((assignedVehicleRole _player) select 1) in (getarray (configFile >> 'CfgVehicles' >> typeOf (vehicle _player) >> 'bn_csw_loading_loaders'))} && {count (_target call bn_csw_fnc_add_subactions_loader) > 0}";
 				icon = "\bn_csw_load\data\ui\load.paa";
@@ -658,7 +658,7 @@
 				gunnerOutOpticsModel = "";
 				gunnerOutOpticsEffect[] = {};
 				stabilizedInAxes = 3;
-				maxHorizontalRotSpeed = 0.45; 
+				maxHorizontalRotSpeed = 0.45;
 				maxVerticalRotSpeed = 0.2;
 				gunnerOpticsEffect[] = {"TankGunnerOptics1","OpticsBlur3","OpticsCHAbera3"};
 				visionMode[] = {"Normal","NVG"};
@@ -676,6 +676,9 @@
 				minOutTurn = -90;
 				maxOutTurn = 90;
 				initOutTurn = 0;
+				soundElevation[] = {"",0.00316228,1};
+				soundServo[] = {"rhsafrf\addons\rhs_t72\sounds\traverse",7,1,30};
+                soundServoVertical[] = {"rhsafrf\addons\rhs_btr70\sounds\hand_turret_servo_elev.wss",1.141254,1,30};
 				class TurnIn //Ограничиваем вертикальный угол на жопу, чтобы пушка не уходила в текстуру
 				{
 					limitsArrayTop[] = {{18,-180},{18,180}};
@@ -696,22 +699,6 @@
 				};
 				class OpticsIn
 				{
-					class Periscope: ViewOptics
-					{
-						initAngleX = 0;
-						minAngleX = -30;
-						maxAngleX = 30;
-						initAngleY = 0;
-						minAngleY = -100;
-						maxAngleY = 100;
-						initFov = 0.466666;
-						minFov = 0.466666;
-						maxFov = 0.466666;
-						visionMode[] = {"Normal","NVG"};
-						gunnerOpticsModel = "\rhsafrf\addons\rhs_optics\vehicles\rhs_tvn5.p3d";
-						gunnerOpticsEffect[] = {"TankGunnerOptics1","OpticsBlur2","OpticsCHAbera2"};
-						opticsDisplayName = "PERISCOPE";
-					};
 					class Wide: ViewOptics
 					{
 						initAngleX = 0;
@@ -734,6 +721,22 @@
 						minFov =  "0.35/ 6.5";
 						maxFov =  "0.35/ 6.5";
 						gunnerOpticsModel = "\rhsafrf\addons\rhs_optics\vehicles\rhs_empty";
+					};
+					class Periscope: ViewOptics
+					{
+						initAngleX = 0;
+						minAngleX = -30;
+						maxAngleX = 30;
+						initAngleY = 0;
+						minAngleY = -100;
+						maxAngleY = 100;
+						initFov = 0.466666;
+						minFov = 0.466666;
+						maxFov = 0.466666;
+						visionMode[] = {"Normal","NVG"};
+						gunnerOpticsModel = "\rhsafrf\addons\rhs_optics\vehicles\rhs_tvn5.p3d";
+						gunnerOpticsEffect[] = {"TankGunnerOptics1","OpticsBlur2","OpticsCHAbera2"};
+						opticsDisplayName = "PERISCOPE";
 					};
 				};
 				class Turrets: Turrets

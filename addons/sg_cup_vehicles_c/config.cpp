@@ -1903,12 +1903,8 @@ class CfgVehicles
 	class Tank: LandVehicle
 	{
 		class NewTurret;
+		class Sounds;
 		class HitPoints;
-		class Turrets
-		{
-			class MainTurret;
-		};
-		class ViewOptics;
 	};
 	class Tank_F: Tank
 	{
@@ -1927,7 +1923,6 @@ class CfgVehicles
 		class ViewOptics;
 		class ViewCargo;
 		class HeadLimits;
-		class Periscope;
 		class HitPoints: HitPoints
 		{
 			class HitHull;
@@ -1936,7 +1931,7 @@ class CfgVehicles
 			class HitRTrack;
 			class HitFuel;
 		};
-		class Sounds
+		class Sounds: Sounds
 		{
 			class Engine;
 			class Movement;

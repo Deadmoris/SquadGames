@@ -14,7 +14,7 @@
 		class ACE_SelfActions: ACE_SelfActions
 		{
 			class BN_CSW_Load_New {
-				displayName = "Зарядить...";
+				displayName = "$STR_LOAD_BN";
 				distance = 2;
 				condition = "count ([_target] call bn_csw_fnc_add_subactions) > 0";
 				icon = "\bn_csw_load\data\ui\load.paa";
@@ -27,7 +27,7 @@
 				insertChildren = "[_target] call bn_csw_fnc_add_subactions";
 			};
 			class BN_CSW_Unload {
-				displayName = "Разрядить";
+				displayName = "$STR_UNLOAD_BN";
 				distance = 2;
 				condition = "count ([_target] call bn_csw_fnc_add_subactions) > 0";
 				icon = "\bn_csw_load\data\ui\unload.paa";
@@ -61,7 +61,7 @@
 		};
 		class ACE_SelfActions: ACE_SelfActions {
 			class BN_CSW_Load_New {
-				displayName = "Зарядить...";
+				displayName = "$STR_LOAD_BN";
 				distance = 2;
 				condition = "_player == gunner (vehicle _player) && {(getNumber (configFile >> 'CfgVehicles' >> typeOf (vehicle _player) >> 'bn_csw_loading_style')) == 1} && {count ([_target] call bn_csw_fnc_add_subactions) > 0}";
 				icon = "\bn_csw_load\data\ui\load.paa";
@@ -74,7 +74,7 @@
 				insertChildren = "[_target] call bn_csw_fnc_add_subactions";
 			};
 			class BN_CSW_Unload {
-				displayName = "Разрядить";
+				displayName = "$STR_UNLOAD_BN";
 				distance = 2;
 				condition = "_player == gunner (vehicle _player) && {(getNumber (configFile >> 'CfgVehicles' >> typeOf (vehicle _player) >> 'bn_csw_loading_style')) == 1}";
 				icon = "\bn_csw_load\data\ui\unload.paa";
@@ -469,7 +469,7 @@
 		bn_csw_loading_style = 1;
 		class ACE_SelfActions: ACE_SelfActions {
 			class BN_CSW_Load_New {
-				displayName = "Зарядить...";
+				displayName = "$STR_LOAD_BN";
 				distance = 2;
 				condition = "_player == gunner (vehicle _player) && {(getNumber (configFile >> 'CfgVehicles' >> typeOf (vehicle _player) >> 'bn_csw_loading_style')) == 1} && {count ([_target] call bn_csw_fnc_add_subactions) > 0}";
 				icon = "\bn_csw_load\data\ui\load.paa";
@@ -482,7 +482,7 @@
 				insertChildren = "[_target] call bn_csw_fnc_add_subactions";
 			};
 			class BN_CSW_Unload {
-				displayName = "Разрядить";
+				displayName = "$STR_UNLOAD_BN";
 				distance = 2;
 				condition = "_player == gunner (vehicle _player) && {(getNumber (configFile >> 'CfgVehicles' >> typeOf (vehicle _player) >> 'bn_csw_loading_style')) == 1}";
 				icon = "\bn_csw_load\data\ui\unload.paa";
@@ -1068,7 +1068,7 @@
 	    maximumLoad = 8000;
 		class ACE_SelfActions: ACE_SelfActions {
 			class BN_CSW_Load_loader {
-				displayName = "Зарядить...";
+				displayName = "$STR_LOAD_BN";
 				distance = 2;
 				condition = "(!isturnedout _player) && {((assignedVehicleRole _player) select 1) in (getarray (configFile >> 'CfgVehicles' >> typeOf (vehicle _player) >> 'bn_csw_loading_loaders'))} && {count (_target call bn_csw_fnc_add_subactions_loader) > 0}";
 				icon = "\bn_csw_load\data\ui\load.paa";
@@ -1107,7 +1107,7 @@
 				insertChildren = "_target call bn_csw_fnc_add_subactions_unloader";
 			};
 			class BN_CSW_Load_unloader_turnedout {
-				displayName = "Разрядить (снаружи)...";
+				displayName = "$STR_UNLOAD_BN (снаружи)...";
 				distance = 2;
 				condition = "(isturnedout _player) && {((assignedVehicleRole _player) select 1) in (getarray (configFile >> 'CfgVehicles' >> typeOf (vehicle _player) >> 'bn_csw_loading_loaders'))} && {count (_target call bn_csw_fnc_add_subactions_unloader_turnedout) > 0}";
 				icon = "\bn_csw_load\data\ui\unload.paa";
@@ -1451,7 +1451,7 @@
 	{
 		class ACE_SelfActions: ACE_SelfActions {
 			class BN_CSW_Load_loader {
-				displayName = "Зарядить...";
+				displayName = "$STR_LOAD_BN";
 				distance = 2;
 				condition = "(!isturnedout _player) && {((assignedVehicleRole _player) select 1) in (getarray (configFile >> 'CfgVehicles' >> typeOf (vehicle _player) >> 'bn_csw_loading_loaders'))} && {count (_target call bn_csw_fnc_add_subactions_loader) > 0}";
 				icon = "\bn_csw_load\data\ui\load.paa";
