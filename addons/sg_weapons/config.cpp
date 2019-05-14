@@ -376,7 +376,7 @@ class cfgWeapons
 		scopeArsenal = 2;
 		displayName = "$STR_DP_BIPOD_NAME";
 		model = "\sg_weapons\bp_DP28.p3d";
-		picture = "\A3\Weapons_F_Mark\Data\UI\gear_accu_bipod_01_snd_CA.paa";
+		picture = "\rhsafrf\addons\rhs_weapons\gear_acc\acc_bipod.paa";
 		inertia = 0.2;
 		class ItemInfo: InventoryUnderItem_Base_F
 		{
