@@ -532,12 +532,21 @@ class cfgWeapons {
 
 class CfgVehicles {
 		
+	class Man;
+	class CAManBase: Man
+	{
+		irtarget = 0;
+	};
 	class Ship_F;
 	class Boat_F: Ship_F {
 		radarTarget = 1;
 		radarTargetSize = 1;
 	};
-	
+	class Ship;
+	class SmallShip : Ship
+	{
+		irtarget = 0;
+	};
 	class SDV_01_base_F : Boat_F {
 		irTarget = false;
 		radarTarget = 0;
@@ -548,7 +557,11 @@ class CfgVehicles {
 		irTarget = false;
 	};
 	
-	class LandVehicle;
+	class Land;
+	class LandVehicle: Land
+	{
+		irtarget = 0;
+	};
 	class Car: LandVehicle
 	{
 		class Components;

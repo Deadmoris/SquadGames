@@ -1,0 +1,6 @@
+///////<HEADER>///////
+prefix=a3\tu_pzrk_smoke
+Mikero=DePbo.dll
+Pbo Type is: Arma Addon
+Sha: '5F1F4B470C79592880D395E27A45A736EDBD63B3'
+//////</HEADER>//////

@@ -3,12 +3,15 @@ class CfgPatches {
 		units[] = {};
 		weapons[] = {};
 		requiredVersion = 1.32;
-		requiredAddons[] = {"A3_Air_F", "A3_Air_F_Beta", "A3_Air_F_EPC_Plane_CAS_02", "A3_Air_F_Heli_Light_02", "A3_Air_F_Beta_Heli_Attack_02", "rhs_c_a2port_air", "rhs_c_heavyweapons", "rhs_main", "rhs_decals", "rhs_optics", "rhs_c_troops", "rhs_c_btr", "A3_Armor_F", "A3_Armor_F_Beta", "A3_armor_f_beta_APC_Tracked_02", "A3_Soft_F", "rhs_c_radars", "A3_CargoPoses_F", "A3_Armor_F_T100K", "rhs_aps", "A3_Anims_F_Config_Sdr","rhs_c_weapons","rhs_c_a2port_armor","rhs_c_t72", "rhs_c_bmd", "rhs_c_bmp", "rhs_c_bmp3", "rhs_c_sprut", "rhs_c_tanks","rhssaf_c_weapons", "rhsgref_c_weapons"};
+		requiredAddons[] = {"A3_Air_F", "A3_Air_F_Beta", "A3_Air_F_EPC_Plane_CAS_02", "A3_Air_F_Heli_Light_02", "A3_Air_F_Beta_Heli_Attack_02", "rhs_c_a2port_air", "rhs_c_heavyweapons", "rhs_main", "rhs_decals", "rhs_optics", "rhs_c_troops", "rhs_c_btr", "A3_Armor_F", "A3_Armor_F_Beta", "A3_armor_f_beta_APC_Tracked_02", "A3_Soft_F", "rhs_c_radars", "A3_CargoPoses_F", "A3_Armor_F_T100K", "rhs_aps", "A3_Anims_F_Config_Sdr","rhs_c_weapons","rhs_c_a2port_armor","rhs_c_t72", "rhs_c_bmd", "rhs_c_bmp", "rhs_c_bmp3", "rhs_c_sprut", "rhs_c_tanks","rhssaf_c_weapons", "rhsgref_c_weapons", "tu_atgm"};
 		version = 1.0;
 		magazines[] = {};
 		ammo[] = {};
 	};
 };
+class Mode_SemiAuto;
+class Mode_Burst;
+class Mode_FullAuto;
 class SensorTemplatePassiveRadar;
 class SensorTemplateActiveRadar;
 class SensorTemplateIR;
@@ -359,6 +362,7 @@ class vdisp_Radar_mi28_Right
 
 class cfgAmmo
 {
+	class MissileBase;
 	class M_Titan_AT;
 	
 	class rhs_ammo_atgmCore_base : M_Titan_AT {
@@ -473,7 +477,15 @@ class cfgAmmo
 		typicalSpeed = 2050;
 		caliber = 31.2281;
 	};
-	class rhs_ammo_of_base;
+	class Sh_125mm_HE;
+	class rhs_ammo_of_base : Sh_125mm_HE
+	{
+		timeToLive = 360;
+		deflecting = 0;
+		CraterEffects = "HEShellCrater";
+		CraterWaterEffects = "ImpactEffectsWaterHE";
+		ExplosionEffects = "HEShellExplosion";
+	};
 	class rhs_ammo_3of_base: rhs_ammo_of_base //повышаем сплеш осколочных у N72,80,90
 	{
 		hit = 350;
@@ -524,28 +536,346 @@ class cfgAmmo
 	{
 		caliber = 1;
 	};
-	
-	class rhs_ammo_127x107mm; 
-	class rhs_ammo_145x115mm: rhs_ammo_127x107mm 
-	{ 
-		ACE_bulletMass = 64; 
-		ACE_bulletLength = 158; 
-		ACE_caliber = 14.5; 
-		hit = 40
-		indirectHit = 2; 
-		indirectHitRange = 0.2; 
-		caliber = 3.2; 
-		tracerScale = 1.5; 
-		tracerStartTime = 0.075; 
-		tracerEndTime = 2.5; 
-	};
 	class BulletBase;
 	class B_338_Ball:BulletBase 
 	{
 		hit=19
 	};	
+	class rhs_ammo_Sidewinder_AA : MissileBase {
+		airLock = 2;
+		missileLockCone = 30;
+	};
+	class rhs_ammo_3bk12_penetrator;	
+	
+	class rhs_ammo_9m112_penetrator : rhs_ammo_3bk12_penetrator {
+		caliber = 40; //(600/((15*1000)/1000))
+	};
+	
+	class rhs_ammo_9m112m_penetrator : rhs_ammo_9m112_penetrator {
+		caliber = 56; //(840/((15*1000)/1000))
+	};
+	
+	class rhs_ammo_9m113 : rhs_ammo_atgmBase_base {
+		// ais_ce_penetrators[] = {"rhs_ammo_heat_tandem", "rhs_ammo_9m113_penetrator"};
+		indirectHit = 25;
+		indirectHitRange = 3.4;
+	};
+	
+	class rhs_ammo_9m113_penetrator : rhs_ammo_9m112_penetrator {
+		caliber = 53; //(800/((15*1000)/1000))
+	};
+	
+	class rhs_ammo_9m117 : rhs_ammo_atgmCore_base {
+		// ais_ce_penetrators[] = {"rhs_ammo_heat_tandem", "rhs_ammo_9m117_penetrator"};
+		indirectHit = 25;
+		indirectHitRange = 3.4;
+	};
+	
+	class rhs_ammo_9m117_penetrator : rhs_ammo_9m112_penetrator {
+		caliber = 53; // (800/((15*1000)/1000))
+	};
+	
+	class rhs_ammo_9m118 : rhs_ammo_9m117 {
+		// ais_ce_penetrators[] = {"rhs_ammo_9m118_penetrator"};
+		indirectHit = 25;
+		indirectHitRange = 3.4;
+	};
+	
+	class rhs_ammo_9m118_penetrator : rhs_ammo_9m112_penetrator {
+		caliber = 43;  //(650/((15*1000)/1000))
+	};
+	
+	
+	class rhs_ammo_9m119 : rhs_ammo_atgmCore_base {
+		// ais_ce_penetrators[] = {"rhs_ammo_heat_tandem", "rhs_ammo_9m119_penetrator"};
+		indirectHit = 25;
+		indirectHitRange = 3.4;
+	};
+	
+	class rhs_ammo_9m119_penetrator : rhs_ammo_9m112_penetrator {
+		hit = 250;
+		caliber = 57; //(850/((15*1000)/1000))
+	};
+	
+	class rhs_ammo_9m119m : rhs_ammo_9m119 {
+		// ais_ce_penetrators[] = {"rhs_ammo_heat_tandem", "rhs_ammo_9m119m_penetrator"};
+		indirectHit = 25;
+		indirectHitRange = 3.4;
+	};
+	
+	class rhs_ammo_9m119m_penetrator : rhs_ammo_9m112_penetrator {
+		caliber = 60; //(900/((15*1000)/1000))
+	};
+	
+	class rhs_ammo_9m128 : rhs_ammo_atgmCore_base {
+		// ais_ce_penetrators[] = {"rhs_ammo_heat_tandem", "rhs_ammo_9m128_penetrator"};
+		maxControlRange = 5000;	// max range for manual control, 0 = no control (passive weapon)
+	};
+	
+	class rhs_ammo_9m128_penetrator : rhs_ammo_9m112_penetrator {
+		hit = 250;
+		caliber = 53; //(800/((15*1000)/1000))
+	};
+	
+	class rhs_ammo_9m120 : rhs_ammo_atgmBase_base {
+		indirectHit = 25;
+		indirectHitRange = 3.4;
+	};
+	//меняем дальность стрельбы ПТРК Метис
+	/* class rhs_ammo_9m115: rhs_ammo_9m119
+	{
+		maxControlRange = 600; //=1000m
+	};
+	class rhs_ammo_9m131: rhs_ammo_9m115
+	{
+		maxControlRange = 1350; //=1500m
+	};
+	class rhs_ammo_9m131m: rhs_ammo_9m131
+	{
+		maxControlRange = 2100; //=2000m
+	}; */
+	class rhs_ammo_9m131m;
+	class rhs_ammo_9m131f: rhs_ammo_9m131m
+	{
+		// maxControlRange = 2100; //=2000m
+		CraterEffects = "HEShellCrater";
+		ExplosionEffects = "HEShellExplosion";
+	};
+	//Меняем дальность стрельбы ПТРК Конкурс
+	class tu_ammo_9m113: rhs_ammo_9m113
+	{
+		timeToLive = 26;
+		maxControlRange = 4000; //=4000m
+	};
+	//Меняем дальность стрельбы ПТРК Корнет
+	class rhs_ammo_9m133: rhs_ammo_atgmBase_base
+	{
+		// maxControlRange = 5300; //=5500m
+		timetolive = 45;
+	};
+	//Меняем дальность стрельбы ПТРК Фагот
+	class tu_ammo_9m111m: rhs_ammo_9m113
+	{
+		maxControlRange = 2500; //=2500m	
+	};
+	class R_80mm_HE;	// External class reference
+	
+	class rhs_ammo_s8 : R_80mm_HE {
+		hit = 210;
+		indirectHit = 55;
+		indirectHitRange = 8;
+		// submunitionAmmo = "";
+		warheadName = "HEAT";
+	};
+	
+	class rhs_ammo_s8DF : rhs_ammo_s8 {
+		indirectHit = 55;
+		indirectHitRange = 10;
+		warheadName = "HE";
+	};
+	
+	class rhs_ammo_s8t : rhs_ammo_s8 {
+		indirectHitRange = 6;
+		warheadName = "TandemHEAT";
+	};
+	class rhs_ammo_3ubr8;
+	
+	class tu_rhs_ammo_gsh30 : rhs_ammo_3ubr8 {
+		hit = 100;
+		indirectHit = 8;
+		indirectHitRange = 2.3;
+	};
+	class rhs_ammo_127x107mm;
+	class rhs_ammo_145x115mm: rhs_ammo_127x107mm
+	{
+		//http://www.bratishka.ru/archiv/2012/06/2012_6_7.php
+		//http://militera.lib.ru/manuals/nastav_kpvt/index.html
+		ACE_bulletMass = 64;
+		ACE_bulletLength = 158;
+		ACE_caliber = 14.5;
+		hit = 42; //по формуле sqrt(mass/2)*speed/5 и увеличено на 20%, как у М2
+		indirectHit = 2;
+		indirectHitRange = 0.2;
+		//caliber = "(56/((15*988)/1000))"; //на 300 метров пробивает 20мм под углом 20 градусов с вероятностью 80%, 
+		caliber = 3.2;
+		tracerScale = 1.5;
+		tracerStartTime = 0.075;
+		tracerEndTime = 2.5;
+	};
+	class SubmunitionBase;
+	class rhs_ammo_127x108mm_x5: SubmunitionBase
+	{
+		submunitionConeType[] = {"randomcenter",2};
+	};
+	class rhs_ammo_127x108mm_1SLT_x5: rhs_ammo_127x108mm_x5
+	{
+		submunitionConeType[] = {"randomcenter",2};
+	};
+	class rhs_ammo_bm_base;
+	class rhs_ammo_bk_base : rhs_ammo_bm_base
+	{
+		deflecting = 0;
+	};
+	class rhs_ammo_20mm_AP;
+	class rhs_ammo_20x139mm_AP: rhs_ammo_20mm_AP
+	{
+		allowagainstinfantry = 1;
+		airLock = 1;
+		irLock = 0;
+		artilleryLock = 0;
+		autoSeekTarget = 0;
+		laserLock = 1;
+	};
+	class rhs_ammo_20x139mm_HE: rhs_ammo_20x139mm_AP
+	{
+		allowagainstinfantry = 1;
+		airLock = 1;
+		irLock = 0;
+		artilleryLock = 0;
+		autoSeekTarget = 0;
+		laserLock = 1;
+	};
+
+	class rhs_B_762x54_Ball : B_762x51_Ball
+	{
+		caliber = 0.93;
+	};
 };
 
+
+class cfgWeapons
+{
+	class CMFlareLauncher;
+	class rhs_weap_CMFlareLauncher : CMFlareLauncher {
+		modes[] = {"Single", "Burst", "FullAuto", "AIBurst"};
+	};
+	class rhs_weap_d81;
+	class rhs_weap_2a70: rhs_weap_d81
+	{
+		modes[] = {"player","close","short","medium","far"};
+		//ballisticsComputer = "2+16";
+		//maxZeroing = 5000;
+		//autoReload = 0;
+
+	};
+	class gatling_30mm;	// External class reference
+	
+	class rhs_weap_yakB : gatling_30mm {
+		canLock = 0;	
+		class manual : Mode_FullAuto {
+			dispersion = 0.006;
+		};
+	};
+	class RHS_weap_GSh30;
+	class RHS_Weap_GSh301 : RHS_weap_GSh30 {
+		canLock = 0;
+		magazines[] = {"rhs_mag_gsh30_ofzt_750","rhs_mag_gsh30_ofzt_250","rhs_mag_gsh30_bt_750","rhs_mag_gsh30_bt_250","tu_rhs_mag_gsh30_ofzt_180","rhs_mag_gsh30_bt_150", "rhs_mag_gsh30_mixed_150"};
+	};
+	class GrenadeLauncher;
+	class UGL_F: GrenadeLauncher{};
+	class GP25_Base: UGL_F
+	{
+		class Single: Mode_SemiAuto
+		{
+			sounds[] = {"StandardSound"};
+			class StandardSound
+			{
+				soundClosure[] = {};
+				begin1[] = {"rhsafrf\addons\rhs_sounds\ugl\GP-25_1",2.25,1,200};
+				begin2[] = {"rhsafrf\addons\rhs_sounds\ugl\GP-25_2",2.25,1,200};
+				soundBegin[] = {"begin1",0.5,"begin2",0.5};
+			};
+		};
+	};
+	
+	class Rifle_Base_F;
+	class arifle_MX_Base_F: Rifle_Base_F{};
+	
+	class rhs_weap_m4_Base: arifle_MX_Base_F
+	{
+		class M203_GL: UGL_F
+		{
+			class Single: Mode_SemiAuto
+			{
+				sounds[] = {"StandardSound"};
+				class StandardSound
+				{
+					soundClosure[] = {};
+					begin1[] = {"rhsusf\addons\rhsusf_sounds\ugl\ugl_1",1.8,1,200};
+					begin2[] = {"rhsusf\addons\rhsusf_sounds\ugl\ugl_2",1.8,1,200};
+					soundBegin[] = {"begin1",0.5,"begin2",0.5};
+				};
+			};
+		};
+		class M320_GL: M203_GL
+		{
+			class Single: Mode_SemiAuto
+			{
+				sounds[] = {"StandardSound"};
+				class StandardSound
+				{
+					soundClosure[] = {};
+					begin1[] = {"rhsusf\addons\rhsusf_sounds\ugl\ugl_1",1.8,1,200};
+					begin2[] = {"rhsusf\addons\rhsusf_sounds\ugl\ugl_2",1.8,1,200};
+					soundBegin[] = {"begin1",0.5,"begin2",0.5};
+				};
+			};
+		};
+	};
+
+	class CannonCore;
+	class RHS_weap_AZP23: CannonCore
+	{
+	    weaponLockSystem = 8;
+		class manual: CannonCore
+		{
+			dispersion = 0.01;
+		};
+	};
+	class rhs_weap_M197: gatling_30mm
+	{
+		class manual;
+	};
+	class rhs_weap_gi2: rhs_weap_M197
+	{
+		dispersion = 0.008;
+		canLock = 2;
+		class HE: rhs_weap_M197
+		{
+			class manual: manual
+			{
+				dispersion = 0.008;
+			};
+			dispersion = 0.008;
+			canLock = 2;
+		};
+		class AP: rhs_weap_M197
+		{
+			class manual: manual
+			{
+				dispersion = 0.008;
+			};
+			dispersion = 0.008;
+			canLock = 2;
+		};
+	};
+	/* class CannonCore;
+	class RHS_weap_AZP23: CannonCore
+	{
+		ballisticsComputer = 1;
+	}; */
+	
+	class autocannon_30mm_CTWS;
+	class rhs_weap_2a42_base: autocannon_30mm_CTWS
+	{
+		magazineReloadTime = 2;
+	};
+	class RHS_Weap_GSh23L: RHS_weap_GSh30
+	{
+		ballisticsComputer = 0;
+		canLock = 0;
+	};
+};
 class cfgVehicles
 {
 	class LandVehicle;
@@ -2155,6 +2485,7 @@ class cfgVehicles
 	};
 	class rhs_zsutank_base: rhs_a3t72tank_base
 	{
+		irtarget = 1;
 		irScanGround = 0;		
 		ace_fcs_Enabled = 0;
 		class Components: Components

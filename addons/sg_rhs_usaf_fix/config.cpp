@@ -3,12 +3,15 @@ class CfgPatches {
 		units[] = {};
 		weapons[] = {};
 		requiredVersion = 1.32;
-		requiredAddons[] = {"A3_Air_F", "A3_Air_F_Beta", "A3_Air_F_EPC_Plane_CAS_01", "A3_Air_F_EPB_Heli_Light_03", "A3_CargoPoses_F", "rhsusf_c_troops", "rhsusf_c_heavyweapons", "RHS_US_A2_AirImport", "A3_Armor_F_EPB_APC_tracked_03", "RHS_US_A2Port_Armor", "A3_Soft_F_MRAP_01", "rhsusf_vehicles", "rhsusf_c_hmmwv","rhsusf_c_ch53","rhsusf_c_weapons","rhs_c_weapons","A3_Ui_F", "A3_Data_F","A3_Functions_F","A3_UiFonts_F", "rhsusf_optics","A3_Sounds_F_Vehicles","rhsusf_c_m1117","rhsusf_c_melb", "rhs_c_weapons", "rhsgref_c_air","rhsusf_c_airweapons","rhsusf_c_m1a1","rhsusf_c_m1a2"};
+		requiredAddons[] = {"A3_Air_F", "A3_Air_F_Beta", "A3_Air_F_EPC_Plane_CAS_01", "A3_Air_F_EPB_Heli_Light_03", "A3_CargoPoses_F", "rhsusf_c_troops", "rhsusf_c_heavyweapons", "RHS_US_A2_AirImport", "A3_Armor_F_EPB_APC_tracked_03", "RHS_US_A2Port_Armor", "A3_Soft_F_MRAP_01", "rhsusf_vehicles", "rhsusf_c_hmmwv","rhsusf_c_ch53","rhsusf_c_weapons","rhs_c_weapons","A3_Ui_F", "A3_Data_F","A3_Functions_F","A3_UiFonts_F", "rhsusf_optics","A3_Sounds_F_Vehicles","rhsusf_c_m1117","rhsusf_c_melb", "rhs_c_weapons", "rhsgref_c_air","rhsusf_c_airweapons","rhsusf_c_m1a1","rhsusf_c_m1a2", "tu_atgm"};
 		version = 1.0;
 		magazines[] = {};
 		ammo[] = {};
 	};
 };
+class Mode_SemiAuto;
+class Mode_Burst;
+class Mode_FullAuto;
 class SensorTemplateActiveRadar; 
 class SensorTemplateLaser;
 class SensorTemplatePassiveRadar;
@@ -443,6 +446,7 @@ class pzn_vdisp_defaultblue_Right
 
 class cfgAmmo
 {
+	class MissileBase;
     class M_Titan_AT;
     class rhs_ammo_TOW_AT : M_Titan_AT {
 		indirectHit = 20;
@@ -509,7 +513,17 @@ class cfgAmmo
         hit = 350;
         indirectHit = 130;
 		indirectHitRange = 40;
+		deflecting = 0;
     };
+	class rhs_ammo_M1147: rhs_ammo_M1069{};
+	class rhs_ammo_M416: rhs_ammo_M1069
+	{
+		deflecting = 0;
+	};
+	class rhs_ammo_M1028: rhs_ammo_M1069
+	{
+		deflecting = 0;
+	};
 	class B_127x99_Ball;
 	class B_127x99_SLAP;
 	class rhsusf_ammo_127x99_M33_Ball: B_127x99_Ball
@@ -530,6 +544,307 @@ class cfgAmmo
 	class rhs_ammo_127x99_SLAP: B_127x99_SLAP
 	{
 		caliber = 3.4;
+	};
+	class M_Scalpel_AT: MissileBase
+	{
+		class Components;
+	};
+    class ACE_Hellfire_AGM114K: M_Scalpel_AT {
+		// ais_ce_penetrators[] = {"rhs_ammo_Hellfire_AT_penetrator"};
+		submunitionAmmo = "rhs_ammo_Hellfire_AT_penetrator";
+		submunitionDirectionType = "SubmunitionModelDirection";
+		submunitionInitialOffset[] = {0,0,-0.2};
+		submunitionParentSpeedCoef = 0;
+		submunitionInitSpeed = 1000;
+		triggerOnImpact = 1;
+		deleteParentWhenTriggered = 0;
+		model="\rhsusf\addons\rhsusf_airweapons\proxyammo\rhsusf_m_AGM114K_fly";
+		proxyShape="\rhsusf\addons\rhsusf_airweapons\proxyammo\rhsusf_m_AGM114K";
+		hit = 400;
+		indirectHit = 35;
+		indirectHitRange = 8;
+		maxControlRange = 8000;
+		maneuvrability = 12;
+		class ace_missileguidance {
+            enabled = 1;
+
+            minDeflection = 0.0005;      // Minium flap deflection for guidance
+            maxDeflection = 0.01;       // Maximum flap deflection for guidance
+            incDeflection = 0.0005;      // The incrmeent in which deflection adjusts.
+
+            canVanillaLock = 0;          // Can this default vanilla lock? Only applicable to non-cadet mode
+
+            // Guidance type for munitions
+            defaultSeekerType = "SALH";
+            seekerTypes[] = { "SALH", "LIDAR", "SARH", "Optic", "Thermal", "GPS", "SACLOS", "MCLOS" };
+
+            defaultSeekerLockMode = "LOAL";
+            seekerLockModes[] = { "LOAL", "LOBL" };
+
+            seekLastTargetPos = 1;      // seek last target position [if seeker loses LOS of target, continue to last known pos]
+            seekerAngle = 38;           // Angle in front of the missile which can be searched
+            seekerAccuracy = 1;         // seeker accuracy multiplier
+
+            seekerMinRange = 1;
+            seekerMaxRange = 5000;      // Range from the missile which the seeker can visually search
+
+            // Attack profile type selection
+            defaultAttackProfile = "hellfire";
+            attackProfiles[] = {"hellfire", "hellfire_hi", "hellfire_lo"};
+        };
+	};
+
+	class Missile_AGM_02_F;
+	class rhs_ammo_Hellfire_AT: Missile_AGM_02_F {};
+	class RHS_ammo_AGM_114L: rhs_ammo_Hellfire_AT
+	{
+		class ace_missileguidance {
+            enabled = 0;
+		};
+	};
+	class RHS_ammo_AGM_114K: M_Scalpel_AT
+	{
+		maneuvrability = 12;
+		
+		model = "\rhsusf\addons\rhsusf_airweapons\proxyammo\rhsusf_m_AGM114K_fly";
+		proxyShape = "\rhsusf\addons\rhsusf_airweapons\proxyammo\rhsusf_m_AGM114K";
+		indirectHit = 35;
+		indirectHitRange = 8;
+		cost = 250;
+		airLock = 0;
+		muzzleEffect = "";
+		effectsMissileInit = "MissileDAR1";
+		effectsMissile = "missile1";
+		whistleDist = 8;
+		aiAmmoUsageFlags = "64+128 + 512";
+		missileLockMaxDistance = 6000;
+		missileLockMinDistance = 400;
+		missileLockMaxSpeed = 55;
+		missileLockCone = 30;
+		missileKeepLockedCone = 60;
+		missileManualControlCone = 120;
+		lockSeekRadius = 100;
+		weaponType = "missileAA";
+		class Components: Components
+		{
+			class SensorsManagerComponent
+			{
+				class Components
+				{
+					class LaserSensorComponent: SensorTemplateLaser
+					{
+						class AirTarget
+						{
+							minRange = 7000;
+							maxRange = 7000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						class GroundTarget
+						{
+							minRange = 7000;
+							maxRange = 7000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						angleRangeHorizontal = 30;
+						angleRangeVertical = 50;
+						typeRecognitionDistance = -1;
+						maxGroundNoiseDistance = 0;
+						maxFogSeeThrough = 0.3;
+						allowsMarking = 1;
+					};
+				};
+			};
+		};
+
+        irLock = 0;
+        laserLock = 0;
+        manualControl = 0;
+        maxSpeed = 450;
+
+        thrustTime = 3; // motor burn 2-3 sec
+        thrust = 250;
+        timeToLive = 70;
+
+        ace_rearm_caliber = 178;
+
+        class ace_missileguidance {
+            enabled = 1;
+
+            minDeflection = 0.0005;      // Minium flap deflection for guidance
+            maxDeflection = 0.01;       // Maximum flap deflection for guidance
+            incDeflection = 0.0005;      // The incrmeent in which deflection adjusts.
+
+            canVanillaLock = 0;          // Can this default vanilla lock? Only applicable to non-cadet mode
+
+            // Guidance type for munitions
+            defaultSeekerType = "SALH";
+            seekerTypes[] = { "SALH", "LIDAR", "SARH", "Optic", "Thermal", "GPS", "SACLOS", "MCLOS" };
+
+            defaultSeekerLockMode = "LOAL";
+            seekerLockModes[] = { "LOAL", "LOBL" };
+
+            seekLastTargetPos = 1;      // seek last target position [if seeker loses LOS of target, continue to last known pos]
+            seekerAngle = 38;           // Angle in front of the missile which can be searched
+            seekerAccuracy = 1;         // seeker accuracy multiplier
+
+            seekerMinRange = 1;
+            seekerMaxRange = 5000;      // Range from the missile which the seeker can visually search
+
+            // Attack profile type selection
+            defaultAttackProfile = "hellfire";
+            attackProfiles[] = {"hellfire", "hellfire_hi", "hellfire_lo"};
+        };
+	};
+	class RHS_ammo_AGM_114M: RHS_ammo_AGM_114K
+	{
+		class ace_missileguidance: ace_missileguidance {};
+	};
+	class RHS_ammo_AGM_114N: RHS_ammo_AGM_114M
+	{
+		class ace_missileguidance: ace_missileguidance {};
+	};
+	class RHS_Ammo_DAGR: MissileBase
+	{
+		irLock = 0;
+		airLock = 0;
+		manualControl = 0;
+		laserLock = 0;
+		canLock = 0;
+		maneuvrability = 10;
+		thrustTime = 1.1;
+		thrust = 825;
+		weaponLockSystem = 0;
+		
+        class ace_missileguidance {
+            enabled = 1;
+
+            minDeflection = 0.0005;      // Minium flap deflection for guidance
+            maxDeflection = 0.01;       // Maximum flap deflection for guidance
+            incDeflection = 0.0005;      // The incrmeent in which deflection adjusts.
+
+            canVanillaLock = 0;          // Can this default vanilla lock? Only applicable to non-cadet mode
+
+            // Guidance type for munitions
+            defaultSeekerType = "SALH";
+            seekerTypes[] = { "SALH" };
+
+            defaultSeekerLockMode = "LOAL";
+            seekerLockModes[] = { "LOAL", "LOBL" };
+
+            seekLastTargetPos = 1;      // seek last target position [if seeker loses LOS of target, continue to last known pos]
+            seekerAngle = 38;           // Angle in front of the missile which can be searched
+            seekerAccuracy = 1;         // seeker accuracy multiplier
+
+            seekerMinRange = 1;
+            seekerMaxRange = 5000;      // Range from the missile which the seeker can visually search
+
+            // Attack profile type selection
+            defaultAttackProfile = "JAV_DIR";
+            attackProfiles[] = {"JAV_DIR"};
+        };
+	};
+	class B_30mm_APFSDS;
+	class B_30mm_APFSDS_Tracer_Red : B_30mm_APFSDS {
+		hit = 90;
+		caliber = 4;
+	};
+	
+	class  B_40mm_APFSDS : B_30mm_APFSDS {
+		hit = 100;
+		caliber = 5;
+	};
+	class B_20mm;
+	class rhs_ammo_20mm_AP: B_20mm
+	{
+		allowagainstinfantry = 1;
+		airLock = 1;
+		irLock = 0;
+		artilleryLock = 0;
+		autoSeekTarget = 0;
+		laserLock = 1;
+		indirectHit = 6;
+		indirectHitRange = 1.8;
+	};
+
+	class B_30mm_HE;
+	class rhs_ammo_30x113mm_M789_HEDP: B_30mm_HE
+	{
+		airLock = 1;
+		irLock = 0;
+		artilleryLock = 0;
+		laserLock = 1;
+		autoSeekTarget = 1;
+		indirectHit = 7;
+		indirectHitRange = 2.1;		
+	};
+	class RHS_ammo_M792_HEI : B_30mm_HE {
+		indirectHit = 8;
+		indirectHitRange = 1.9;
+		tracerEndTime = 3.3;
+	};
+	class RHS_ammo_M919_APFSDS : B_30mm_APFSDS {
+		tracerEndTime = 2;
+	};
+};
+
+class cfgMagazines
+{
+	class VehicleMagazine;	// External class reference
+	
+	class rhsusf_20Rnd_762x51_m118_special_Mag;
+
+	class rhs_mag_Sidewinder;
+	class rhs_mag_Sidewinder_heli: rhs_mag_Sidewinder {
+		ammo = "rhs_ammo_Sidewinder_AA";	
+	};
+	class rhs_mag_Sidewinder_heli_2: rhs_mag_Sidewinder_heli {
+		ammo = "rhs_ammo_Sidewinder_AA";
+	};
+	
+	class rhsusf_20Rnd_762x51_m62_Mag: rhsusf_20Rnd_762x51_m118_special_Mag
+	{
+		tracersEvery = 1;
+	};
+	
+	class TU_1Rnd_Empty : VehicleMagazine {
+		ammo = "TU_Ammo_Empty";
+		count = 1;
+	};
+	
+	class TU_2Rnd_Empty : TU_1Rnd_Empty {
+		count = 2;
+	};
+	
+	class TU_4Rnd_Empty : TU_1Rnd_Empty {
+		count = 4;
+	};
+	
+	class TU_8Rnd_Empty : TU_1Rnd_Empty {
+		count = 8;
+	};
+
+	class rhs_mag_30x113mm_M789_HEDP_1200 : VehicleMagazine {
+		tracersEvery = 1;
+	};
+	
+	class rhs_mag_M197_750 : VehicleMagazine {
+		tracersEvery = 1;
+	};
+	
+	class 1000Rnd_Gatling_30mm_Plane_CAS_01_F;
+	
+	class rhs_mag_1000Rnd_30x173 : 1000Rnd_Gatling_30mm_Plane_CAS_01_F {
+		tracersEvery = 1;
+	};
+	class CA_LauncherMagazine;
+	class rhs_mag_smaw_HEAA: CA_LauncherMagazine {
+		mass = 99.216; //4,5 kg
+	};
+
+	class rhs_mag_smaw_HEDP: CA_LauncherMagazine {
+		mass = 92.6; //4,2 kg		
 	};
 };
 
