@@ -1,0 +1,87 @@
+////////////////////////////////////////////////////////////////////
+//DeRap: hlc_wp_aug\mat\steyr_aug_mag.rvmat
+//Produced from mikero's Dos Tools Dll version 6.34
+//'now' is Tue May 14 20:04:12 2019 : 'file' last modified on Tue Apr 30 19:56:40 2019
+//http://dev-heaven.net/projects/list_files/mikero-pbodll
+////////////////////////////////////////////////////////////////////
+
+#define _ARMA_
+
+ambient[] = {1,1,1,1};
+diffuse[] = {1,1,1,1};
+forcedDiffuse[] = {0,0,0,0};
+emmisive[] = {0,0,0,1};
+specular[] = {0.194,0.194,0.194,1};
+specularPower = 75;
+PixelShaderID = "Super";
+VertexShaderID = "Super";
+class Stage1
+{
+	texture = "hlc_wp_aug\tex\steyr_aug_nohq.paa";
+	uvSource = "tex";
+	class uvTransform
+	{
+		aside[] = {1,0,0};
+		up[] = {0,1,0};
+		dir[] = {0,0,1};
+		pos[] = {0,0,0};
+	};
+};
+class Stage2
+{
+	texture = "hlc_core\tex\Metal_Detail_DT.paa";
+	uvSource = "tex";
+	class uvTransform
+	{
+		aside[] = {4,0,0};
+		up[] = {0,4,0};
+		dir[] = {0,0,0};
+		pos[] = {0,0,0};
+	};
+};
+class Stage3
+{
+	texture = "#(argb,8,8,3)color(0,0,0,0,MC)";
+	uvSource = "tex";
+	class uvTransform
+	{
+		aside[] = {1,0,0};
+		up[] = {0,1,0};
+		dir[] = {0,0,0};
+		pos[] = {0,0,0};
+	};
+};
+class Stage4
+{
+	texture = "hlc_wp_aug\tex\stey_aug_as.paa";
+	uvSource = "tex";
+	class uvTransform
+	{
+		aside[] = {1,0,0};
+		up[] = {0,1,0};
+		dir[] = {0,0,0};
+		pos[] = {0,0,0};
+	};
+};
+class Stage5
+{
+	texture = "hlc_wp_aug\tex\steyr_aug_smdi.paa";
+	uvSource = "tex";
+	class uvTransform
+	{
+		aside[] = {1,0,0};
+		up[] = {0,1,0};
+		dir[] = {0,0,1};
+		pos[] = {0,0,0};
+	};
+};
+class Stage6
+{
+	texture = "#(ai,64,64,1)fresnel(5.64,1.81)";
+	uvSource = "none";
+};
+class Stage7
+{
+	texture = "a3\Data\env_land_co.paa";
+	uvSource = "none";
+};
