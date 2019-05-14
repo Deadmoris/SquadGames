@@ -236,10 +236,11 @@ class CfgVehicles
 		
 		accuracy = 0.5;
 		side = 0;
-		faction = "OPF_F";
-		crew = "O_Soldier_F";
-		typicalCargo[] = {"O_Soldier_F"};
-
+		crew = "rhs_vmf_flora_driver_armored";
+		typicalCargo[] = {"Soldier"};
+		faction = "rhs_faction_vmf";
+		vehicleClass = "rhs_vehclass_car";
+		editorSubcategory = "rhs_EdSubcat_car";
 		
 		driverAction = "CUP_GAZ_Driver";
 		driverInAction = "CUP_GAZ_Driver";
@@ -256,7 +257,7 @@ class CfgVehicles
 		armor = 100;
 		damageResistance = 0.0001;
 		armorStructural = 1;
-		
+		viewdriverInExternal = 1;
 		forceHideDriver = 1;
 		
 		threat[] = {0.5,0.5,0.5};
@@ -739,7 +740,9 @@ class CfgVehicles
 		turnCoef = 3.0;
 		simulation = "carx";
 		dampersBumpCoef = 3.0;
+	
 		maxSpeed = 110;
+		
 		fuelCapacity = 280;
 		wheelCircumference = 3.55;
 		brakeIdleSpeed = 1.78;
@@ -780,8 +783,10 @@ class CfgVehicles
 		dampingRateZeroThrottleClutchEngaged = 2.0;
 		dampingRateZeroThrottleClutchDisengaged = 0.35;
 		torqueCurve[] = {{0,0},{0.178,0.5},{0.25,0.85},{0.4,0.9},{0.5,1},{0.725,0.95},{0.85,0.6},{1,0.3}};
+		
 		maxOmega = 471;
-		enginePower = 276;
+		engineMOI=2;
+		enginePower = 176;
 		peakTorque = 1253;
 		idleRpm = 800;
 		redRpm = 4500;
@@ -802,7 +807,7 @@ class CfgVehicles
 				center = "wheel_1_1_axis";
 				boundary = "wheel_1_1_bound";
 				width = 0.2;
-				mass = 150;
+				mass = 200;
 				MOI = 40;
 				dampingRate = 0.1;
 				dampingRateDamaged = 1.0;
@@ -1094,16 +1099,11 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		accuracy = 0.5;
-		side = 0;
-		faction = "OPF_F";
-		crew = "O_Soldier_F";
-		typicalCargo[] = {"O_Soldier_F"};
 		
 		displayname = "$STR_VODNIK";
 		picture = "sg_vodnik\data\UI\Picture_GAZ39371_CA.paa";
 		Icon = "sg_vodnik\data\UI\Icon_GAZ39371_CA.paa";
 		editorPreview = "sg_vodnik\Data\preview\CUP_O_GAZ_Vodnik_PK_RU.jpg";
-		vehicleClass = "Armored";
 		cargoAction[] = {"CUP_BRDM2_Cargo01","passenger_apc_narrow_generic01","passenger_apc_narrow_generic03","passenger_apc_generic03","passenger_apc_generic02","passenger_generic01_foldhands","passenger_apc_narrow_generic01","passenger_apc_narrow_generic02","passenger_apc_narrow_generic02","passenger_apc_narrow_generic02"};
 		transportSoldier = 10;
 		
@@ -1208,7 +1208,6 @@ class CfgVehicles
 		picture = "sg_vodnik\data\UI\Picture_GAZ39371_CA.paa";
 		Icon = "sg_vodnik\data\UI\icon_gaz39371_med_ca.paa";
 		editorPreview = "sg_vodnik\Data\preview\CUP_O_GAZ_Vodnik_MedEvac_RU.jpg";
-		vehicleClass = "Support";
 		transportSoldier = 4;
 		cargoAction[] = {"CUP_BRDM2_Cargo01","passenger_apc_narrow_generic01","passenger_injured_medevac_truck02","passenger_injured_medevac_truck02"};
 		
@@ -1579,7 +1578,6 @@ class CfgVehicles
 		displayname = "$STR_VODNIK_KPVT";
 		picture = "sg_vodnik\data\UI\Picture_GAZ39371_CA.paa";
 		Icon = "sg_vodnik\data\UI\Icon_GAZ39371_CA.paa";
-		vehicleClass = "Armored";
 		cargoAction[] = {"CUP_BRDM2_Cargo01","passenger_apc_narrow_generic01"};
 		transportSoldier = 2;
 		hideProxyInCombat = 0;
@@ -1880,7 +1878,6 @@ class CfgVehicles
 		picture = "sg_vodnik\data\UI\Picture_GAZ39371_CA.paa";
 		Icon = "sg_vodnik\data\UI\Icon_GAZ39371_CA.paa";
 		editorPreview = "sg_vodnik\Data\preview\CUP_O_GAZ_Vodnik_BPPU_RU.jpg";
-		vehicleClass = "Armored";
 		cargoAction[] = {"CUP_BRDM2_Cargo01","passenger_apc_narrow_generic01"};
 		transportSoldier = 2;
 		
