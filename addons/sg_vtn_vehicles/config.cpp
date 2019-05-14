@@ -5411,21 +5411,12 @@ class CfgVehicles
 	
 	class SG_LAV25A2: SG_LAV25_VTN_BASE
 	{
+		faction = "rhs_faction_usmc_wd";
 		scope = 2;
 		displayname = "$STR_DN_VTN_LAV25A2";
 		armor = 400;
 		armorStructural = 4;
-	};
-	
-	
-	class SG_LAV25A1: SG_LAV25A2
-	{
-		displayname = "$STR_DN_VTN_LAV25A1";
-		armor = 200;
-		armorStructural = 2;
-		
-		
-		
+		driverWeaponsInfoType = "RscOptics_MBT_01_driver"; //компас для водилы с положение орудия
 		class Turrets: Turrets
 		{
 			class MainTurret: MainTurret
@@ -5435,6 +5426,33 @@ class CfgVehicles
 				{
 					class CommanderOptics: CommanderOptics
 					{
+						class Components{};
+						class ViewGunner
+						{
+							initAngleX = 0;
+							minAngleX = -40;
+							maxAngleX = 40;
+							initAngleY = 0;
+							minAngleY = -150;
+							maxAngleY = 150;
+							initFov = "0.75";
+							minFov = "0.75";
+							maxFov = "0.75";
+							visionMode[] = {"Normal"};
+						};
+						class ViewOptics
+						{
+							initAngleX = 0;
+							minAngleX = -30;
+							maxAngleX = 30;
+							initAngleY = 0;
+							minAngleY = -100;
+							maxAngleY = 100;
+							initFov = "0.75";
+							minFov = "0.75";
+							maxFov = "0.75";
+							visionMode[] = {"Normal","NVG"};
+						};
 						class OpticsIn
 						{
 							class m36th_day_7x
@@ -5463,7 +5481,8 @@ class CfgVehicles
 								initFov = "0.46 / 2.5";
 								minFov = "0.46 / 2.5";
 								maxFov = "0.46 / 2.5";
-								visionMode[] = {"NVG"};
+								thermalmode[] = {0,1};
+								visionMode[] = {"TI"};
 								gunnerOpticsModel = "\sg_vtn_vehicles\data\itss_wf";
 								gunnerOpticsEffect[] = {};
 							};
@@ -5478,7 +5497,8 @@ class CfgVehicles
 								initFov = "0.46 / 10";
 								minFov = "0.46 / 10";
 								maxFov = "0.46 / 10";
-								visionMode[] = {"NVG"};
+								thermalmode[] = {0,1};
+								visionMode[] = {"TI"};
 								gunnerOpticsModel = "\sg_vtn_vehicles\data\itss_nf";
 								gunnerOpticsEffect[] = {};
 							};
@@ -5493,10 +5513,179 @@ class CfgVehicles
 								initFov = "0.46 / 20";
 								minFov = "0.46 / 20";
 								maxFov = "0.46 / 20";
-								visionMode[] = {"NVG"};
+								thermalmode[] = {0,1};
+								visionMode[] = {"TI"};
 								gunnerOpticsModel = "\sg_vtn_vehicles\data\itss_nf";
 								gunnerOpticsEffect[] = {};
 							};
+						};
+						turretInfoType = "RscWeaponZeroing";
+						isPersonTurret = 1;
+						gunnerHasFlares = 1;
+						viewGunnerInExternal = 1;
+						inGunnerMayFire = 1;
+						outGunnerMayFire = 0;
+						gunnerForceOptics = 0;
+					};
+				};
+				turretInfoType = "sg_FCS_ACE_hud_gunner";
+				weapons[] = {"VTN_M242_veh","VTN_M240_coax"};
+				magazines[] = {"rhs_mag_1100Rnd_762x51_M240","rhs_mag_1100Rnd_762x51_M240","rhs_mag_230Rnd_25mm_M242_HEI","rhs_mag_230Rnd_25mm_M242_HEI","rhs_mag_230Rnd_25mm_M242_HEI","rhs_mag_70Rnd_25mm_M242_APFSDS","rhs_mag_70Rnd_25mm_M242_APFSDS","rhs_mag_70Rnd_25mm_M242_APFSDS"};
+				soundServo[] = {"sg_sound_file\soundTurret\apc_hor_1.ogg",0.562341,1,30};
+				soundServoVertical[] = {"sg_sound_file\soundTurret\apc_ver_1.ogg",0.562341,1,30};
+				soundElevation[] = {"A3\Sounds_F\vehicles\armor\APC\noises\servo_APC_comm",1,1,30};
+				maxElev = 59.5; //максимальный угол подъема орудия
+				minElev = -9.5; //минимальный угол
+				maxHorizontalRotSpeed = 1.2; //60грд в секунду
+				maxVerticalRotSpeed = 0.4; 
+				startEngine = 0;
+				lockWhenDriverOut = 1; //Пушка блокируется, когда водитель вылез на ружу
+				class ViewGunner
+				{
+					initAngleX = 0;
+					minAngleX = -40;
+					maxAngleX = 40;
+					initAngleY = 0;
+					minAngleY = -120;
+					maxAngleY = 120;
+					initFov = "0.75";
+					minFov = "0.75";
+					maxFov = "0.75";
+					visionMode[] = {"Normal"};
+				};
+				ace_fcs_enabled = 1;
+				ace_fcs_minDistance = 200;
+				ace_fcs_maxDistance = 3000;
+				ace_fcs_distanceInterval = 25;
+				stabilizedInAxes = "3";
+				discreteDistance[] = {100};
+				discreteDistanceInitIndex = 0;
+				gunnerOpticsModel = "";
+				class HitPoints: HitPoints
+				{
+					class HitTurret
+					{
+						armor = 0.5;
+						material = -1;
+						name = "vez";
+						visual = "vez";
+						passThrough = 0;
+						minimalHit = 0.15;
+						explosionShielding = 0.2;
+						radius = 0.25;
+					};
+					class HitGun
+					{
+						armor = 0.25;
+						material = -1;
+						name = "zbran";
+						visual = "zbran";
+						passThrough = 0;
+						minimalHit = 0.15;
+						explosionShielding = 0.4;
+						radius = 0.25;
+					};
+				};
+				memoryPointGunnerOptics = "gunnerview";
+				selectionFireAnim = "zasleh";
+				class OpticsIn
+				{
+					class m36th_day_7x
+					{
+						initAngleX = 0;
+						minAngleX = -30;
+						maxAngleX = 30;
+						initAngleY = 0;
+						minAngleY = -100;
+						maxAngleY = 100;
+						initFov = 0.234;
+						minFov = 0.234;
+						maxFov = 0.234;
+						visionMode[] = {"Normal","NVG","TI"};
+						gunnerOpticsModel = "\sg_vtn_vehicles\2Dscope_LAV_7.p3d";
+						gunnerOpticsEffect[] = {};
+						thermalMode[] = {2,3};
+					};
+					class ITSS_2_5X
+					{
+						initAngleX = 0;
+						minAngleX = -30;
+						maxAngleX = 30;
+						initAngleY = 0;
+						minAngleY = -100;
+						maxAngleY = 100;
+						initFov = 0.0357;
+						minFov = 0.0357;
+						maxFov = 0.0357;
+						thermalMode[] = {2,3};
+						visionMode[] = {"Normal","NVG","TI"};
+						gunnerOpticsModel = "\sg_vtn_vehicles\2Dscope_LAV_7.p3d";
+						gunnerOpticsEffect[] = {};
+					};
+					delete ITSS_10X;
+					delete ITSS_20X;
+				};
+			};
+		};
+	};
+	
+	
+	class SG_LAV25A1: SG_LAV25A2
+	{
+		displayname = "$STR_DN_VTN_LAV25A1";
+		armor = 200;
+		armorStructural = 2;
+		faction = "rhs_faction_usmc_wd";
+		scopeArsenal = 2;
+		scope = 2;
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				class Components{};
+				class Turrets: Turrets
+				{
+					class CommanderOptics: CommanderOptics
+					{
+						class OpticsIn
+						{
+							class OpticsIn
+				{
+					class m36th_day_7x
+					{
+						initAngleX = 0;
+						minAngleX = -30;
+						maxAngleX = 30;
+						initAngleY = 0;
+						minAngleY = -100;
+						maxAngleY = 100;
+						initFov = 0.234;
+						minFov = 0.234;
+						maxFov = 0.234;
+						visionMode[] = {"Normal","NVG"};
+						gunnerOpticsModel = "\sg_vtn_vehicles\data\m36th_day";
+						gunnerOpticsEffect[] = {};
+						thermalMode[] = {2,3};
+					};
+					class ITSS_2_5X
+					{
+						initAngleX = 0;
+						minAngleX = -30;
+						maxAngleX = 30;
+						initAngleY = 0;
+						minAngleY = -100;
+						maxAngleY = 100;
+						initFov = 0.0357;
+						minFov = 0.0357;
+						maxFov = 0.0357;
+						thermalMode[] = {2,3};
+						visionMode[] = {"Normal","NVG"};
+						gunnerOpticsModel = "\sg_vtn_vehicles\data\m36th_day";
+						gunnerOpticsEffect[] = {};
+					};
+					delete ITSS_10X;
+					delete ITSS_20X;
+				};
 						};
 						turretInfoType = "RscWeaponZeroing";
 						isPersonTurret = 1;
