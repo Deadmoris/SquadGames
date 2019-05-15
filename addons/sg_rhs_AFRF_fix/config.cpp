@@ -2511,12 +2511,15 @@ class cfgVehicles
 							viewDistanceLimitCoef = -1;
 						};
 						typeRecognitionDistance = 5000;
-						angleRangeHorizontal = 360;
-						angleRangeVertical = 360;
 						aimDown = 0;
-						minSpeedThreshold = 0;
-						maxSpeedThreshold = 0;
-						minTrackableATL= 10;
+						angleRangeHorizontal = 75;
+						angleRangeVertical = 60;
+						minSpeedThreshold = -1e10; //минимальная скорость распознования
+						maxSpeedThreshold = 333,33; //максимальная скорость распознования (м/с)
+						minTrackableATL= 10; //минимальная высота распознования
+						maxTrackableATL= 1e10; //максимальная высота распознования (нету лимита)
+						minTrackableSpeed = -166,67; //минимальная скорость захвата
+						maxTrackableSpeed = 166,67; //максимальная скорость захвата цели
 					};
 				};
 			};
