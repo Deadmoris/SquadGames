@@ -62,41 +62,11 @@ class CfgAmmo
 		CraterEffects = "M136_Smoke";
 		explosionEffects = "M136_Explode";
 	};
-	class tf47_m3maaws_HEAT: RocketBase
-	{
-		CraterEffects = "M136_Smoke";
-		explosionEffects = "M136_Explode";
-	};
-	class tf47_m3maaws_HEDP: RocketBase
-	{
-		CraterEffects = "M136_Smoke";
-		explosionEffects = "M136_Explode";
-	};
-	class tf47_m3maaws_HE: RocketBase
-	{
-		CraterEffects = "80mm_Smoke";
-		explosionEffects = "80mm_Explode";
-	};
 	class rhs_ammo_maaws_HE: RocketBase
 	{
 		CraterEffects = "80mm_Smoke";
 		explosionEffects = "80mm_Explode";
 	};
-	class BWA3_R_CarlGustaf_HEAT: RocketBase
-	{
-		CraterEffects = "M136_Smoke";
-		explosionEffects = "M136_Explode";
-	};
-	class BWA3_R_CarlGustaf_HEDP: RocketBase
-	{
-		CraterEffects = "M136_Smoke";
-		explosionEffects = "M136_Explode";
-	};
-	class BWA3_R_CarlGustaf_HE: BWA3_R_CarlGustaf_HEAT
-	{
-		CraterEffects = "HEShellCrater";
-		ExplosionEffects = "HEShellExplosion";
-	};	
 	class rhs_ammo_maaws_HEAT: RocketBase
 	{
 		CraterEffects = "M136_Smoke";
@@ -394,11 +364,6 @@ class CfgAmmo
 		explosionEffects = "80mm_Explode";
 	};
 	class rhs_rshg2_rocket: rhs_rpg7v2_tbg7v
-	{
-		CraterEffects = "80mm_Smoke";
-		explosionEffects = "80mm_Explode";
-	};
-	class pzn_rpo_rocket: rhs_rshg2_rocket
 	{
 		CraterEffects = "80mm_Smoke";
 		explosionEffects = "80mm_Explode";
