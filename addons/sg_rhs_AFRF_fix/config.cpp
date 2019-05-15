@@ -362,9 +362,12 @@ class vdisp_Radar_mi28_Right
 
 class cfgAmmo
 {
+	class R_PG32V_F;
 	class MissileBase;
 	class M_Titan_AT;
-	
+	class rhs_ammo_atgmCore_base;
+	class rhs_ammo_atgmBase_base;
+	/*
 	class rhs_ammo_atgmCore_base : M_Titan_AT {
 		indirectHit = 25; 
 		indirectHitRange = 3.1;
@@ -477,6 +480,7 @@ class cfgAmmo
 		typicalSpeed = 2050;
 		caliber = 31.2281;
 	};
+	*/
 	class Sh_125mm_HE;
 	class rhs_ammo_of_base : Sh_125mm_HE
 	{
@@ -486,6 +490,7 @@ class cfgAmmo
 		CraterWaterEffects = "ImpactEffectsWaterHE";
 		ExplosionEffects = "HEShellExplosion";
 	};
+	
 	class rhs_ammo_3of_base: rhs_ammo_of_base //повышаем сплеш осколочных у N72,80,90
 	{
 		hit = 350;
@@ -740,6 +745,41 @@ class cfgAmmo
 	{
 		caliber = 0.93;
 	};
+	/*
+	class rhs_rpg26_rocket: R_PG32V_F
+	{
+		submunitionAmmo = "";
+	};
+	class rhs_rpg7v2_pg7vl: rhs_rpg26_rocket //повышаем показатели пробития пг-7вл
+	{
+		submunitionAmmo = "";
+		hit = 280;
+		indirectHit = 27;
+		indirectHitRange = 3;
+	};
+	class rhs_rpg7v2_pg7vr: rhs_rpg7v2_pg7vl //повышаем показатели пробития пг-7вр
+	{
+		submunitionAmmo = "";
+		hit = 260;
+		indirectHit = 25;
+		indirectHitRange = 3;
+	};
+	class rhs_rpg7v2_pg7v: rhs_rpg7v2_pg7vl //повышаем показатели пробития пг-7в
+	{
+		submunitionAmmo = "";
+		hit = 240;
+		indirectHit = 23;
+		indirectHitRange = 3;
+	};
+
+	class rhs_rpg7v2_og7v: rhs_rpg7v2_pg7vl //исправляем урон фугасного снаряда рпг-7
+	{
+		submunitionAmmo = "";
+		hit = 120;
+		indirectHit = 60;
+		indirectHitRange = 15;
+	};
+	*/
 };
 
 
@@ -2516,8 +2556,8 @@ class cfgVehicles
 						angleRangeVertical = 60;
 						minSpeedThreshold = -1e10; //минимальная скорость распознования
 						maxSpeedThreshold = 333,33; //максимальная скорость распознования (м/с)
-						minTrackableATL= 10; //минимальная высота распознования
-						maxTrackableATL= 1e10; //максимальная высота распознования (нету лимита)
+						minTrackableATL= 10; //минимальная высота захвата
+						maxTrackableATL= 1e10; //максимальная высота захвата (нету лимита)
 						minTrackableSpeed = -166,67; //минимальная скорость захвата
 						maxTrackableSpeed = 166,67; //максимальная скорость захвата цели
 					};
