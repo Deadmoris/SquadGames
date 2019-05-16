@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=tu_missile_sounds
+Pbo Type is: Arma Addon
+Sha: 'E4D12E520DD793E0809594F7D526F2266CAFD1A7'
+//////</HEADER>//////
