@@ -747,33 +747,40 @@ class cfgAmmo
 	{
 		//caliber = 0.93;
 	};
-	/*
-	class rhs_rpg26_rocket: R_PG32V_F
-	{
-		submunitionAmmo = "";
-	};
+	class rhs_ammo_base_penetrator;
+	class rhs_rpg26_rocket;
 	class rhs_rpg7v2_pg7vl: rhs_rpg26_rocket //повышаем показатели пробития пг-7вл
 	{
-		submunitionAmmo = "";
 		hit = 280;
 		indirectHit = 27;
 		indirectHitRange = 3;
 	};
+	class rhs_rpg7v2_pg7vl_penetrator: rhs_ammo_base_penetrator
+	{
+		caliber = 42;
+	};
 	class rhs_rpg7v2_pg7vr: rhs_rpg7v2_pg7vl //повышаем показатели пробития пг-7вр
 	{
-		submunitionAmmo = "";
 		hit = 260;
 		indirectHit = 25;
 		indirectHitRange = 3;
 	};
+	class rhs_rpg7v2_pg7vr_penetrator: rhs_ammo_base_penetrator
+	{
+		warheadName = "TandemHEAT";
+		caliber = 52;
+	};
 	class rhs_rpg7v2_pg7v: rhs_rpg7v2_pg7vl //повышаем показатели пробития пг-7в
 	{
-		submunitionAmmo = "";
 		hit = 240;
 		indirectHit = 23;
 		indirectHitRange = 3;
 	};
-
+	class rhs_rpg7v2_pg7v_penetrator: rhs_ammo_base_penetrator
+	{
+		caliber = 19;
+	};
+/*
 	class rhs_rpg7v2_og7v: rhs_rpg7v2_pg7vl //исправляем урон фугасного снаряда рпг-7
 	{
 		submunitionAmmo = "";
