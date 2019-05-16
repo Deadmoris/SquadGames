@@ -215,7 +215,7 @@ class CfgAmmo
 		soundHit8[] = {"\tu_arty\sound\explosions\8",2.51189,1,1900};
 		multiSoundHit[] = {"soundHit1",0.125,"soundHit2",0.125,"soundHit3",0.125,"soundHit4",0.125,"soundHit5",0.125,"soundHit6",0.125,"soundHit7",0.125,"soundHit8",0.125};
 		*/
-		SoundSetExplosion[] = {"JSRS_Mortar_Explosion_SoundSet","JSRS_Mortar_Explosion_Stereo_SoundSet","JSRS_Shell_Explosion_Reflector_SoundSet","JSRS_Big_Debris_SoundSet"};
+		SoundSetExplosion[] = {"DS_Ex_82mm_SoundSet","DS_exploSmall_Tail_placeholder_SoundSet"};
 		//soundSetSonicCrack[] = {"JSRS_SC_Arty_FlyBy_SoundSet"};
 		//soundSetFly[] = {"JSRS_SC_Arty_FlyBy_SoundSet"};
 		whistleOnFire = 0;
@@ -301,6 +301,7 @@ class CfgAmmo
 		ace_frag_force=1;
 		tu_arty_explosion_marker_size = 0.75;
 		tu_arty_explosion_marker_alpha = 1;
+		/*
 		soundHit1[] = {"\tu_arty\sound\explosions\1",2.51189,1,1900};
 		soundHit2[] = {"\tu_arty\sound\explosions\2",2.51189,1,1900};
 		soundHit3[] = {"\tu_arty\sound\explosions\3",2.51189,1,1900};
@@ -310,7 +311,8 @@ class CfgAmmo
 		soundHit7[] = {"\tu_arty\sound\explosions\7",2.51189,1,1900};
 		soundHit8[] = {"\tu_arty\sound\explosions\8",2.51189,1,1900};
 		multiSoundHit[] = {"soundHit1",0.125,"soundHit2",0.125,"soundHit3",0.125,"soundHit4",0.125,"soundHit5",0.125,"soundHit6",0.125,"soundHit7",0.125,"soundHit8",0.125};
-		SoundSetExplosion[] = {"Mortar_Exp_SoundSet","Mortar_Tail_SoundSet","Explosion_Debris_SoundSet"}; //ванильный
+		*/
+		SoundSetExplosion[] = {"DS_Ex_rocket_small_SoundSet","DS_exploSmall_Tail_placeholder_SoundSet"};
 		//SoundSetExplosion[] = {"JSRS_Mortar_Explosion_SoundSet","JSRS_Mortar_Explosion_Stereo_SoundSet","JSRS_Shell_Explosion_Reflector_SoundSet","JSRS_Big_Debris_SoundSet"};
 		//soundSetSonicCrack[] = {"JSRS_SC_Arty_FlyBy_SoundSet"};
 		//soundSetFly[] = {"JSRS_SC_Arty_FlyBy_SoundSet"};
@@ -420,7 +422,7 @@ class CfgAmmo
 		ace_frag_force=1;
 		tu_arty_explosion_marker_size = 1.4;
 		tu_arty_explosion_marker_alpha = 1;
-		SoundSetExplosion[] = {"JSRS_Mortar_Explosion_SoundSet","JSRS_Mortar_Explosion_Stereo_SoundSet","JSRS_Shell_Explosion_Reflector_SoundSet","JSRS_Big_Debris_SoundSet"};
+		SoundSetExplosion[] = {"DS_Ex_heavy_arty_SoundSet","DS_exploSmall_Tail_placeholder_SoundSet"};
 		//soundSetSonicCrack[] = {"JSRS_SC_Arty_FlyBy_SoundSet"};
 		//soundSetFly[] = {"JSRS_SC_Arty_FlyBy_SoundSet"};
 	};
@@ -471,7 +473,7 @@ class CfgAmmo
 		ace_frag_force=1;
 		tu_arty_explosion_marker_size = 1.4;
 		tu_arty_explosion_marker_alpha = 1;
-		SoundSetExplosion[] = {"DS_Ex_heavy_arty_SoundSet","JSRS_Big_Debris_SoundSet"};
+		SoundSetExplosion[] = {"DS_Ex_heavy_arty_SoundSet","DS_exploSmall_Tail_placeholder_SoundSet"};
 		soundFly[] = {"\tu_arty\sound\sound_fly",0.3,1.6,500};
 	};
 
@@ -543,7 +545,7 @@ class CfgAmmo
 		ace_frag_force=1;
 		tu_arty_explosion_marker_size = 1.4;
 		tu_arty_explosion_marker_alpha = 1;
-		SoundSetExplosion[] = {"DS_Ex_heavy_arty_SoundSet","JSRS_Big_Debris_SoundSet"};
+		SoundSetExplosion[] = {"DS_Ex_heavy_arty_SoundSet","DS_exploSmall_Tail_placeholder_SoundSet"};
 		soundFly[] = {"\tu_arty\sound\sound_fly",0.3,1.6,500};
 	};
 	
@@ -575,7 +577,7 @@ class CfgAmmo
 	class rhs_ammo_3WOF27 : Sh_155mm_AMOS {
 		airFriction = -0.000041;	
 		tu_arty_derivation = -0.267;
-		SoundSetExplosion[] = {"DS_Ex_heavy_arty_SoundSet","JSRS_Big_Debris_SoundSet"};
+		SoundSetExplosion[] = {"DS_Ex_heavy_arty_SoundSet","DS_exploSmall_Tail_placeholder_SoundSet"};
 		soundSetSonicCrack[] = {"DS_bulletSonicCrack_SoundSet","DS_bulletSonicCrackTail_SoundSet"};
 		soundFly[] = {"\tu_arty\sound\sound_fly",0.3,1.6,500};	
 	};
@@ -593,7 +595,7 @@ class CfgAmmo
 	class rhs_ammo_3WOF93 : Sh_155mm_AMOS_LG {
 		airFriction = -0.000041;	
 		tu_arty_derivation = -0.267;
-		SoundSetExplosion[] = {"DS_Ex_heavy_arty_SoundSet","JSRS_Big_Debris_SoundSet"};
+		SoundSetExplosion[] = {"DS_Ex_heavy_arty_SoundSet","DS_exploSmall_Tail_placeholder_SoundSet"};
 		soundSetSonicCrack[] = {"DS_bulletSonicCrack_SoundSet","DS_bulletSonicCrackTail_SoundSet"};
 		soundFly[] = {"\tu_arty\sound\sound_fly",0.3,1.6,500};
 	};
