@@ -490,7 +490,7 @@ class cfgAmmo
 		CraterWaterEffects = "ImpactEffectsWaterHE";
 		ExplosionEffects = "HEShellExplosion";
 	};
-	
+	/*
 	class rhs_ammo_3of_base: rhs_ammo_of_base //повышаем сплеш осколочных у N72,80,90
 	{
 		hit = 350;
@@ -515,36 +515,36 @@ class cfgAmmo
 		indirectHit = 8;
 		indirectHitRange = 4;
 	};
-
+*/
 	class B_35mm_AA;	// External class reference
 	
 	class RHS_ammo_23mm_AA : B_35mm_AA { // ЗУ
-	    indirectHit = 6;
-		indirectHitRange = 2.5;		
+	    //indirectHit = 6;
+		//indirectHitRange = 2.5;		
 		model="\A3\Weapons_f\Data\bullettracer\tracer_red";
 		tracerEndTime = 8;
 	};
 
 	class rhs_ammo_ofz_23x115mm : RHS_ammo_23mm_AA // ЗУ ОФЗ
 	{
-		indirectHit = 6;
-		indirectHitRange = 2.5;		
+		//indirectHit = 6;
+		//indirectHitRange = 2.5;		
 	};
 	
 	class rhs_ammo_ofzt_23x115mm : rhs_ammo_ofz_23x115mm // ЗУ ОФЗТ
 	{
-		indirectHit = 6;
-		indirectHitRange = 2;		
+		//indirectHit = 6;
+		//indirectHitRange = 2;		
 	};
 	class B_762x51_Ball; // external
 	class rhs_B_762x54_7N14_Ball : B_762x51_Ball // подвяжем норм калибр к СВД и зададим калибр для пробития ~10-15мм бронестали как и ИРЛ
 	{
-		caliber = 1;
+		//caliber = 1;
 	};
 	class BulletBase;
 	class B_338_Ball:BulletBase 
 	{
-		hit=19
+		//hit=19
 	};	
 	class rhs_ammo_Sidewinder_AA : MissileBase {
 		airLock = 2;
@@ -553,29 +553,29 @@ class cfgAmmo
 	class rhs_ammo_3bk12_penetrator;	
 	
 	class rhs_ammo_9m112_penetrator : rhs_ammo_3bk12_penetrator {
-		caliber = 40; //(600/((15*1000)/1000))
+	//	caliber = 40; //(600/((15*1000)/1000))
 	};
 	
 	class rhs_ammo_9m112m_penetrator : rhs_ammo_9m112_penetrator {
-		caliber = 56; //(840/((15*1000)/1000))
+		//caliber = 56; //(840/((15*1000)/1000))
 	};
 	
 	class rhs_ammo_9m113 : rhs_ammo_atgmBase_base {
 		// ais_ce_penetrators[] = {"rhs_ammo_heat_tandem", "rhs_ammo_9m113_penetrator"};
-		indirectHit = 25;
-		indirectHitRange = 3.4;
+		//indirectHit = 25;
+		//indirectHitRange = 3.4;
 	};
 	
 	class rhs_ammo_9m113_penetrator : rhs_ammo_9m112_penetrator {
-		caliber = 53; //(800/((15*1000)/1000))
+		//caliber = 53; //(800/((15*1000)/1000))
 	};
 	
 	class rhs_ammo_9m117 : rhs_ammo_atgmCore_base {
 		// ais_ce_penetrators[] = {"rhs_ammo_heat_tandem", "rhs_ammo_9m117_penetrator"};
-		indirectHit = 25;
-		indirectHitRange = 3.4;
+		//indirectHit = 25;
+		//indirectHitRange = 3.4;
 	};
-	
+	/*
 	class rhs_ammo_9m117_penetrator : rhs_ammo_9m112_penetrator {
 		caliber = 53; // (800/((15*1000)/1000))
 	};
@@ -626,6 +626,7 @@ class cfgAmmo
 		indirectHit = 25;
 		indirectHitRange = 3.4;
 	};
+	*/
 	//меняем дальность стрельбы ПТРК Метис
 	/* class rhs_ammo_9m115: rhs_ammo_9m119
 	{
@@ -664,7 +665,7 @@ class cfgAmmo
 		maxControlRange = 2500; //=2500m	
 	};
 	class R_80mm_HE;	// External class reference
-	
+	/*
 	class rhs_ammo_s8 : R_80mm_HE {
 		hit = 210;
 		indirectHit = 55;
@@ -716,6 +717,7 @@ class cfgAmmo
 	{
 		submunitionConeType[] = {"randomcenter",2};
 	};
+	*/
 	class rhs_ammo_bm_base;
 	class rhs_ammo_bk_base : rhs_ammo_bm_base
 	{
@@ -743,7 +745,7 @@ class cfgAmmo
 
 	class rhs_B_762x54_Ball : B_762x51_Ball
 	{
-		caliber = 0.93;
+		//caliber = 0.93;
 	};
 	/*
 	class rhs_rpg26_rocket: R_PG32V_F

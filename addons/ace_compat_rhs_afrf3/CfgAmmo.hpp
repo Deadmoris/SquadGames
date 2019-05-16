@@ -2,6 +2,7 @@
 class CfgAmmo {
     class BulletBase;
     class B_556x45_Ball;
+    /*
     class rhs_B_545x39_Ball: B_556x45_Ball {
         ACE_caliber=5.588;
         ACE_bulletLength=21.59;
@@ -136,12 +137,11 @@ class CfgAmmo {
         ACE_muzzleVelocities[]={};
         ACE_barrelLengths[]={};
     };
-
     class SubmunitionBase;
     class rhs_ammo_127x108mm_x5: SubmunitionBase {
         ACE_rearm_caliber=13;
     };
-
+*/
     class GrenadeHand;
     class rhs_ammo_rgd5: GrenadeHand {
         ace_frag_enabled = 1;
