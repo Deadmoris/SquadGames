@@ -2,6 +2,7 @@
 class CfgAmmo {
     class BulletBase;
     class B_127x99_Ball;
+    /*
     class rhsusf_ammo_127x99_M33_Ball: B_127x99_Ball { // B_127x99_Ball (ballistics/CfgAmmo.hpp)
         ACE_caliber = 12.954;
         ACE_bulletLength = 58.674;
@@ -208,7 +209,7 @@ class CfgAmmo {
         ACE_muzzleVelocities[] = {340, 370, 400};
         ACE_barrelLengths[] = {101.6, 127.0, 228.6};
     };
-
+*/
     class MissileBase;
     class rhs_ammo_M_fgm148_AT: MissileBase {
         irLock = 1;
@@ -291,7 +292,9 @@ class CfgAmmo {
         ace_frag_skip = 0;
         ace_frag_force = 1;
     };
+    /*
     class rhs_ammo_smaw_SR: RocketBase {
         ACE_caliber = 9;
     };
+    */
 };

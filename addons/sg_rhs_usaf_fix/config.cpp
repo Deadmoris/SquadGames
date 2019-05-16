@@ -448,6 +448,7 @@ class cfgAmmo
 {
 	class MissileBase;
     class M_Titan_AT;
+	/*
     class rhs_ammo_TOW_AT : M_Titan_AT {
 		indirectHit = 20;
 		indirectHitRange = 3.8;
@@ -545,6 +546,7 @@ class cfgAmmo
 	{
 		caliber = 3.4;
 	};
+	*/
 	class M_Scalpel_AT: MissileBase
 	{
 		class Components;
@@ -747,13 +749,13 @@ class cfgAmmo
 	};
 	class B_30mm_APFSDS;
 	class B_30mm_APFSDS_Tracer_Red : B_30mm_APFSDS {
-		hit = 90;
-		caliber = 4;
+		//hit = 90;
+		//caliber = 4;
 	};
 	
 	class  B_40mm_APFSDS : B_30mm_APFSDS {
-		hit = 100;
-		caliber = 5;
+		//hit = 100;
+		//caliber = 5;
 	};
 	class B_20mm;
 	class rhs_ammo_20mm_AP: B_20mm
@@ -764,8 +766,8 @@ class cfgAmmo
 		artilleryLock = 0;
 		autoSeekTarget = 0;
 		laserLock = 1;
-		indirectHit = 6;
-		indirectHitRange = 1.8;
+		//indirectHit = 6;
+		//indirectHitRange = 1.8;
 	};
 
 	class B_30mm_HE;
@@ -776,12 +778,12 @@ class cfgAmmo
 		artilleryLock = 0;
 		laserLock = 1;
 		autoSeekTarget = 1;
-		indirectHit = 7;
-		indirectHitRange = 2.1;		
+	//	indirectHit = 7;
+	//	indirectHitRange = 2.1;		
 	};
 	class RHS_ammo_M792_HEI : B_30mm_HE {
-		indirectHit = 8;
-		indirectHitRange = 1.9;
+		//indirectHit = 8;
+		//indirectHitRange = 1.9;
 		tracerEndTime = 3.3;
 	};
 	class RHS_ammo_M919_APFSDS : B_30mm_APFSDS {

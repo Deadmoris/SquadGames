@@ -4,6 +4,7 @@ class CfgAmmo {
         ace_frag_force = 0;
     };
     class BulletBase;
+    /*
     class rhs_ammo_762x25_Ball: BulletBase {
         ACE_caliber=7.874;
         ACE_bulletLength=13.856;
@@ -28,4 +29,5 @@ class CfgAmmo {
         ACE_muzzleVelocities[]={785, 800, 815};
         ACE_barrelLengths[]={508.0, 599.948, 660.4};
     };
+    */
 };
